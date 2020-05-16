@@ -2,9 +2,6 @@ import org.junit.Test;
 
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.HashSet;
-
-import static org.junit.Assert.*;
 
 public class HConnectionPoolTest {
 
