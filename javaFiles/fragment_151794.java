@@ -1,0 +1,11 @@
+http.authorizeRequests()
+        .antMatchers("/", "/home").access("hasRole('USER')")
+        .antMatchers("/resources/**").permitAll()
+        //.antMatchers("/*").access("IS_AUTHENTICATED")
+        .anyRequest().authenticated()
+        .and().csrf().disable().formLogin().loginPage("/login").permitAll()
+        //.loginProcessingUrl("/Authen")
+        .usernameParameter("user").passwordParameter("passWord")
+        .defaultSuccessUrl("/Authen")
+        .failureUrl("/failedLogin")
+        .and().exceptionHandling().accessDeniedPage("/Access_Denied");

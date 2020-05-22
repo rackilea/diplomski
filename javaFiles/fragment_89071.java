@@ -1,0 +1,6 @@
+public void onCreate( Bundle savedInstanceState ) {
+    setContentView( ... );
+    ...
+    List<Bean> beans = getHistoryWords( getApplicationContext() );
+    ...
+}

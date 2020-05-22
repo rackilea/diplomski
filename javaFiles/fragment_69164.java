@@ -1,0 +1,6 @@
+if (contentEncodingValue.equals("")) {
+...
+}
+else if (contentEncodingValue.equals("gzip")) {
+...
+}

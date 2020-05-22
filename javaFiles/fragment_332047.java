@@ -1,0 +1,13 @@
+public void drawSine(double amp, double xCoef, double phase) {
+    eqValues.clear();    //this clear the ArrayList
+    ......
+    repaint();
+    ......
+}
+
+public void drawFOeq(double sc, double fc){
+    eqValues.clear();    //this clear the ArrayList
+    ......
+    repaint();
+    ......
+}

@@ -1,0 +1,6 @@
+protected void onCreate(Bundle savedInstanceState) {
+    ...
+    this.mikesButton = (Button) findViewById(R.id.mikesButton);
+    this.mikesText = (TextView) findViewById(R.id.mikesText); <-- Notice that i chaged the id so it should be changed on the activity_main layout
+    ...
+}

@@ -1,0 +1,10 @@
+double testscore = 0;
+  double GPA = 0;
+  int Student = 1;
+  ACTSATScores(1,0,console);
+  double StudentOneTestScore = testscore;
+  GPAInfo(0,console);
+  double StudentOneGPAScore = GPA;
+  Student = 2;
+  ACTSATScores(2,0,console);
+  double StudentTwoTestScore = testscore;

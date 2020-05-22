@@ -1,0 +1,7 @@
+log4j.rootLogger=ERROR,stdout
+# Logger for jackson lib
+log4j.logger.org.codehaus=TRACE
+
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern=%p\t%d{ISO8601}\t%r\t%c\t[%t]\t%m%n

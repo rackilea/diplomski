@@ -1,0 +1,6 @@
+public URIBuilder clearParameters() {
+    this.queryParams = null;
+    this.encodedQuery = null;
+    this.encodedSchemeSpecificPart = null;
+    return this;
+}

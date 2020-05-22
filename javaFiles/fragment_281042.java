@@ -1,0 +1,6 @@
+protected void doGet(HttpServletRequest request, HttpServletResponse response)
+        throws ServletException, IOException {
+     ...
+     x xx = new x();
+     ...
+    }

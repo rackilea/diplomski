@@ -1,0 +1,11 @@
+System.setProperty("webdriver.chrome.driver", "C:\\Utility\\BrowserDrivers\\chromedriver.exe");
+ChromeOptions options = new ChromeOptions();
+options.addArguments("start-maximized");
+options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+options.setExperimentalOption("useAutomationExtension", false);
+WebDriver driver =  new ChromeDriver(options);
+driver.get("https://www.spicejet.com/");
+WebElement element = driver.findElement(By.cssSelector("input[name$= 'txt_Fromdate']"));
+((JavascriptExecutor)driver).executeScript("arguments[0].removeAttribute('readonly')", element);
+WebElement newElement = driver.findElement(By.cssSelector("input[name$= 'txt_Fromdate']"));
+((JavascriptExecutor) driver).executeScript("arguments[0].setAttribute('value','28/02')", newElement);

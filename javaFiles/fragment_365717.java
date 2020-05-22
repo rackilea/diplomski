@@ -1,0 +1,6 @@
+...
+public node (T value)
+{
+    this.value = value;
+}
+...

@@ -1,0 +1,8 @@
+class SomeClass {
+
+    ...
+
+    class NestedClass {
+        ....
+    }
+}

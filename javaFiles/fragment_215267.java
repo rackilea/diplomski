@@ -1,0 +1,6 @@
+import java.sql.Driver;
+import com.microsoft.sqlserver.jdbc.SQLServerDriver;
+...
+Driver driver = new SQLServerDriver();
+driver.getMajorVersion();  // -> 4
+driver.getMinorVersion();  // -> 0, 1, 2, ...

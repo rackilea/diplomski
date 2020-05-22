@@ -1,0 +1,11 @@
+<sjg:gridColumn name="countryId"
+                index="countryId"
+                title="Id"
+                formatter="integer"
+                editable="false"
+                dataType="Long"
+                key="true"
+                sortable="true"
+                search="true"
+                sorttype="integer"
+                searchoptions="{sopt:['eq','ne','lt','gt']}"/>

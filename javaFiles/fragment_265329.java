@@ -1,0 +1,6 @@
+public void init(WebConfig webConfig) throws ServletException {
+    ...
+    if (resourceConfig == null)
+        resourceConfig = createResourceConfig(config);
+    ...
+}

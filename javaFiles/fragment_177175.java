@@ -1,0 +1,14 @@
+{
+...
+functions:person
+handler:com.serverless.handler
+event:
+  -http:
+    path:person
+    method:post
+    integration:lambda
+    request:
+      template:
+        application/json:'$input.body'
+...
+}

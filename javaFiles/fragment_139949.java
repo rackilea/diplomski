@@ -1,0 +1,11 @@
+akka.actor.deployment {
+   /statsService/singleton/workerRouter {
+       router = consistent-hashing-pool
+          cluster {
+          enabled = on
+          max-nr-of-instances-per-node = 3
+          allow-local-routees = on
+         use-role = compute
+       }
+     }
+ }

@@ -1,0 +1,13 @@
+<Resource auth="Container" 
+          name="jdbc/JtmDS"  
+          driverClassName="org.apache.derby.jdbc.EmbeddedDriver" 
+          type="javax.sql.DataSource" 
+          username="xfer"
+          password="xfer10" 
+          url="jdbc:derby:/home/${puid}/tm/control/JtmDB"                    
+          initialSize="25"
+          maxTotal="100" 
+          maxIdle="30" 
+          maxWaitMillis="10000"                                      
+          removeAbandonedOnBorrow="true"
+          removeAbandonedTimeout="20" />

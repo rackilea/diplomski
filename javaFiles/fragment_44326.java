@@ -1,0 +1,10 @@
+{
+ "proxies":
+ {
+  "default":
+  {
+    "httpProxy": "http://127.0.0.1:3001",
+    "noProxy": "*.test.example.com,.example2.com"
+  }
+ }
+}

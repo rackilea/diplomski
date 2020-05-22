@@ -1,0 +1,6 @@
+import org.jboss.seam.core.ResourceLoader;
+... 
+@In
+private ResourceLoader resourceLoader;
+...
+resourceLoader.getResource("BUNDLE_NAME");

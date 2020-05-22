@@ -1,0 +1,6 @@
+PostMethod post = new PostMethod(url);
+    // ...
+    HttpClient httpclient = new HttpClient();  
+    httpclient.getHttpConnectionManager().getConnection(HostConfiguration.ANY_HOST_CONFIGURATION);
+    // ...
+    httpclient.executeMethod(post);

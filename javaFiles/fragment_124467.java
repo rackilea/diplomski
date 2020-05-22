@@ -1,0 +1,11 @@
+int[] valuesArray = new int[] {12, 222, 31, 45, 42, 99};
+int[] rowsArray = new int[] {5, 4, 3, 2, 1, 0};
+int[] columnsArray = new int[] {5, 4, 3, 2, 1, 0};
+Grid lol = new Grid(11);    
+lol.setCells(rowsArray , columnsArray, valuesArray);
+lol.getValue(5,5);
+lol.getValue(4,4);
+lol.getValue(3,3);
+lol.getValue(2,2);
+lol.getValue(1,1);
+lol.getValue(0,0);

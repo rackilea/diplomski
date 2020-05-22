@@ -1,0 +1,8 @@
+- compute TOTAL_SUM = SUM(terms)
+- compute TARGET_SUM = TOTAL_SUM / number(terms)
+- set DELTA=0
+- loop {
+-    Try to split terms in groups where TARGET_SUM - DELTA <= SUM <= TARGET_SUM + DELTA
+-    if a solution is found, exit
+-    DELTA = DELTA + 1
+-    }

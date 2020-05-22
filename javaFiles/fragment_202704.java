@@ -1,0 +1,10 @@
+DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+        dbf.setNamespaceAware(true);
+        DocumentBuilder db = dbf.newDocumentBuilder();
+        InputStream is = post.getResponseBodyAsStream();
+        Document doc = db.parse(is);
+        DOMSource ds = new DOMSource(doc);
+        JAXBContext responseContext = JAXBContext.newInstance(SearchEnrolledFundingResponse.class);
+        Unmarshaller u = responseContext.createUnmarshaller();
+        JAXBElement<SearchEnrolledFundingResponse> jaxbResponse = (JAXBElement<SearchEnrolledFundingResponse>) u.unmarshal(ds, SearchEnrolledFundingResponse.class);
+        SearchEnrolledFundingResponse searchResponse = jaxbResponse.getValue();

@@ -1,0 +1,17 @@
+WebDriverWait wait = new WebDriverWait(driver,10);
+driver.get("http://automation.cloudaccess.host/administrator/index.php?option=com_contact&view=contacts");
+driver.findElement(By.id("mod-login-username")).sendKeys("admin");
+driver.findElement(By.id("mod-login-password")).sendKeys("admin@123");
+driver.findElement(By.id("mod-login-password")).submit();
+driver.findElement(By.xpath("//button[@onclick=\"Joomla.submitbutton('contact.add');\"]")).click();
+driver.findElement(By.id("jform_name")).sendKeys("James");
+driver.findElement(By.xpath("//div[@class='input-append']/a")).click();
+driver.switchTo().frame("field-user-modal");
+Thread.sleep(5000);
+WebElement filter = driver.findElement(By.xpath("//input[@id=\"filter_search\"]"));
+filter.click();
+filter.sendKeys("admin");
+driver.findElement(By.xpath("//button[@type='submit']")).click();
+driver.findElement(By.linkText("admin")).click();
+wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("body > div.modal-backdrop.fade.in")));
+driver.findElement(By.xpath("//*[@id='toolbar-apply']/button/span")).click();

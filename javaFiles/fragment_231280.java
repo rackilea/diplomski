@@ -1,0 +1,6 @@
+package mypackage;
+public class MyClass {
+    ...
+    public native void addRow(Object[] args);
+    ...
+}

@@ -1,0 +1,7 @@
+project(":core") {
+    ...
+    dependencies {
+        ...
+        // here
+    }
+}

@@ -1,0 +1,12 @@
+2017-03-06 17:52:27,615 [4546022]   INFO - ij.compiler.impl.CompileDriver - java.lang.NoSuchMethodError: com.android.tools.idea.gradle.util.Projects.lastGradleSyncFailed(Lcom/intellij/openapi/project/Project;)Z
+    at org.robovm.idea.components.RoboVmBuildProcessParametersProvider.getVMArguments(RoboVmBuildProcessParametersProvider.java:60)
+    at com.intellij.compiler.server.BuildManager.launchBuildProcess(BuildManager.java:1136)
+    at com.intellij.compiler.server.BuildManager.lambda$null$11(BuildManager.java:730)
+    at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+    at com.intellij.util.concurrency.BoundedTaskExecutor.runFirstTaskThenPollAndRunRest(BoundedTaskExecutor.java:178)
+    at com.intellij.util.concurrency.BoundedTaskExecutor.access$000(BoundedTaskExecutor.java:40)
+    at com.intellij.util.concurrency.BoundedTaskExecutor$2.run(BoundedTaskExecutor.java:197)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+    at java.lang.Thread.run(Thread.java:745)

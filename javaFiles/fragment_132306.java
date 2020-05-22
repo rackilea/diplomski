@@ -1,0 +1,6 @@
+public static final Object lock = new Object();
+
+// Then, inside the function...
+synchronized (Thread1.lock) {
+   // ...
+}

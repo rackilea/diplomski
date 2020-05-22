@@ -1,0 +1,11 @@
+<scm>
+   <connection>
+   scm:git:ssh://github.com/amleggett/${artifactId}.git
+   </connection>
+   <developerConnection>
+   scm:git:ssh://git@github.com/amleggett/${artifactId}.git
+   </developerConnection>
+   <url>
+   http://github.com/amleggett/${artifactId}
+   </url>
+  </scm>

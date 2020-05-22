@@ -1,0 +1,14 @@
+System.out.println("DATE  :"+ new SimpleDateFormat("dd.M.yyyy").format(d));
+    System.out.println("DATE  :"+ new SimpleDateFormat("M/dd/yyyy").format(d));
+    System.out.println("DATE  :"+ new SimpleDateFormat("M/dd/yyyy hh:mm:ss a").format(d));
+    System.out.println("DATE  :"+ new SimpleDateFormat("dd.M.yyyy hh:mm:ss a").format(d));
+    System.out.println("DATE  :"+ new SimpleDateFormat("M/dd/yyyy").format(d));
+    System.out.println("DATE  :"+ new SimpleDateFormat("dd.MMM.yyyy").format(d));
+    System.out.println("DATE  :"+ new SimpleDateFormat("dd-MMM-yyyy").format(d));
+    System.out.println("DATE  :"+ new SimpleDateFormat("EEEE, MMMM d, yyyy HH:mm z").format(d));
+    System.out.println("DATE  :"+ new SimpleDateFormat("MMMM d, yyyy HH:mm z").format(d));
+    System.out.println("DATE  :"+ new SimpleDateFormat("EEE, MMM d, yyyy HH:mm z").format(d));
+    System.out.println("DATE  :"+ new SimpleDateFormat("MMM d, yyyy HH:mm z").format(d));
+    System.out.println("DATE  :"+ new SimpleDateFormat("EEE, MM/dd/yyyy HH:mm:ss z").format(d));
+    System.out.println("DATE  :"+ new SimpleDateFormat("MM/dd/yyyy HH:mm:ss z").format(d));
+    System.out.println("DATE  :"+ new SimpleDateFormat("EEE, M/d/yy hh:mm").format(d));

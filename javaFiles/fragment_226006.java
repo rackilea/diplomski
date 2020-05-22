@@ -1,0 +1,9 @@
+BigDecimal a= new BigDecimal("99999999999.999999");
+BigDecimal b= new BigDecimal(0);
+b = a.setScale(0, BigDecimal.ROUND_UP); // 100000000000
+b = a.setScale(0, BigDecimal.ROUND_CEILING); // 100000000000
+b = a.setScale(0, BigDecimal.ROUND_DOWN); // 99999999999
+b = a.setScale(0, BigDecimal.ROUND_FLOOR); // 99999999999
+b = a.setScale(0, BigDecimal.ROUND_HALF_DOWN); // 100000000000
+b = a.setScale(0, BigDecimal.ROUND_HALF_EVEN); // 100000000000
+b = a.setScale(0, BigDecimal.ROUND_HALF_UP); // 100000000000

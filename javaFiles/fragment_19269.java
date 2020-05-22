@@ -1,0 +1,6 @@
+public class MyClass {
+  ...
+  @XmlElement (name="user")
+  List<User> users;
+  ...
+}

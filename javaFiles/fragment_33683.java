@@ -1,0 +1,9 @@
+public class RiskGame {
+   ....
+public static void main(String[] args) {
+    ...
+   P2Menu(); 
+ }
+public static void P2Menu(){
+...
+}

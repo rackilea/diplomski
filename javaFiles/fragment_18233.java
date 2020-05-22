@@ -1,0 +1,6 @@
+defaultConfig {
+    ...
+    jackOptions {
+      enabled true
+    }
+  }

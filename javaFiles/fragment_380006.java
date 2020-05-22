@@ -1,0 +1,11 @@
+// Column Numbers for each Field Name:
+public static final int COL_ROWID = 0;
+public static final int COL_NAME = 1;
+public static final int COL_EMAIL = 2;
+public static final int COL_PHONENUMBER = 3;
+public static final int COL_ADDRESS = 4;
+public static final int COL_ZIP = 5;
+public static final int COL_ARRIVAL = 6;
+public static final int COL_DEPARTURE = 7;
+public static final int COL_ROOM = 8;
+public static final int COL_NOTES = 9;

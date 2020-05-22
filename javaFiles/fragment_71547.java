@@ -1,0 +1,11 @@
+<_import-package>
+   javax.*, 
+   COM.jrockit.*;
+     COM.newmonics.*; 
+     com.google.protobuf;
+     com.informix.jdbc;
+     com.kenai.jnr.x86asm;
+     groovy.lang; 
+       resolution:=optional, 
+   *
+</_import-package>

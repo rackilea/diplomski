@@ -1,0 +1,166 @@
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Date;
+import java.util.Random;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.Timer;
+import javax.swing.border.EmptyBorder;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.axis.DateAxis;
+import org.jfree.chart.axis.NumberAxis;
+import org.jfree.chart.plot.CombinedDomainXYPlot;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.chart.plot.PlotRenderingInfo;
+import org.jfree.chart.plot.XYPlot;
+import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
+import org.jfree.data.time.Day;
+import org.jfree.data.time.TimeSeries;
+import org.jfree.data.time.TimeSeriesCollection;
+import org.jfree.data.xy.XYDataset;
+
+/**
+* @see https://stackoverflow.com/a/14894894/230513
+*/
+public class Test extends JFrame {
+
+    private JPanel panel;
+
+    public static void main(String[] args) {
+        EventQueue.invokeLater(new Runnable() {
+
+            @Override
+            public void run() {
+                Test frame = new Test();
+                frame.pack();
+                frame.setLocationRelativeTo(null);
+                frame.setVisible(true);
+            }
+        });
+    }
+
+    public Test() {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        final MyJPanel myPanel = new MyJPanel();
+        panel = new JPanel() {
+
+            @Override
+            public Dimension getPreferredSize() {
+                return myPanel.getPreferredSize();
+            }
+        };
+        panel.setBorder(new EmptyBorder(5, 5, 5, 5));
+        panel.setLayout(new BorderLayout());
+        add(panel);
+
+        myPanel.start();
+        JButton clickme = new JButton("Click me");
+        clickme.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent arg0) {
+                panel.removeAll();
+                panel.add(myPanel, BorderLayout.CENTER);
+                validate();
+                EventQueue.invokeLater(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        myPanel.methodCalledOnceDisplayed();
+                    }
+                });
+            }
+        });
+        panel.add(clickme, BorderLayout.NORTH);
+        JPanel example = new JPanel();
+        example.add(new JLabel("Example JPanel"));
+        panel.add(example, BorderLayout.CENTER);
+    }
+
+    private static class MyJPanel extends JPanel {
+
+        private static final Random r = new Random();
+        private ChartPanel chartPanel;
+        private JFreeChart chart;
+        private XYPlot subplotTop;
+        private XYPlot subplotBottom;
+        private CombinedDomainXYPlot plot;
+        private Timer timer;
+        private Day now = new Day(new Date());
+
+        public MyJPanel() {
+            this.add(new JLabel("Chart panel"));
+            createCombinedChart();
+            chartPanel = new ChartPanel(chart);
+            this.add(chartPanel);
+            timer = new Timer(1000, new ActionListener() {
+
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    update(subplotTop);
+                    update(subplotBottom);
+                }
+            });
+            timer.start();
+        }
+
+        public void start() {
+            timer.start();
+        }
+
+        private void update(XYPlot plot) {
+            TimeSeriesCollection t = (TimeSeriesCollection) plot.getDataset();
+            for (int i = 0; i < t.getSeriesCount(); i++) {
+                TimeSeries s = t.getSeries(i);
+                s.add(now, Math.abs(r.nextGaussian()));
+                now = (Day) now.next();
+            }
+        }
+
+        private void createCombinedChart() {
+            plot = new CombinedDomainXYPlot();
+            plot.setGap(30);
+            createSubplots();
+            plot.add(subplotTop, 4);
+            plot.add(subplotBottom, 1);
+            plot.setOrientation(PlotOrientation.VERTICAL);
+            chart = new JFreeChart("Title",
+                JFreeChart.DEFAULT_TITLE_FONT, plot, true);
+            plot.setDomainAxis(new DateAxis("Domain"));
+        }
+
+        private void createSubplots() {
+            subplotTop = new XYPlot();
+            subplotBottom = new XYPlot();
+            subplotTop.setDataset(emptyDataset("Set 1"));
+            subplotTop.setRenderer(new XYLineAndShapeRenderer());
+            subplotTop.setRangeAxis(new NumberAxis("Range"));
+            subplotBottom.setDataset(emptyDataset("Set 2"));
+            subplotBottom.setRenderer(new XYLineAndShapeRenderer());
+            subplotBottom.setRangeAxis(new NumberAxis("Range"));
+        }
+
+        private XYDataset emptyDataset(String title) {
+            TimeSeriesCollection tsc = new TimeSeriesCollection();
+            TimeSeries ts = new TimeSeries(title);
+            tsc.addSeries(ts);
+            return tsc;
+        }
+
+        public void methodCalledOnceDisplayed() {
+            PlotRenderingInfo plotInfo =
+                this.chartPanel.getChartRenderingInfo().getPlotInfo();
+            for (int i = 0; i < plotInfo.getSubplotCount(); i++) {
+                System.out.println(plotInfo.getSubplotInfo(i).getDataArea());
+            }
+            JOptionPane.showMessageDialog(null, "Magic!");
+        }
+    }
+}

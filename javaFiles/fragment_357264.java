@@ -1,0 +1,16 @@
+db.colname.aggregate([
+ {"$match":{"objects":{"$in":["123","321"]}}},
+ {"$project":{
+   "keyandcount":{
+     "$map":{
+       "input":["123","321"],
+       "in":{
+         "k":"$$this",
+         "v":{"$cond":[{"$in":["$$this","$objects"]},1,0]}
+       }
+     }
+   }
+ }},
+ {"$unwind":"$keyandcount"},
+ {"$group":{"_id":"$keyandcount.k","count":{"$sum":"$keyandcount.v"}}}
+])

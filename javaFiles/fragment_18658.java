@@ -1,0 +1,6 @@
+...
+if(loading_count >= 170){
+    StartMainMenu();
+    return;
+}
+...

@@ -1,0 +1,7 @@
+#{field 'user.name'}
+<p>
+  <label>&{field.name}</label>
+  <input type="text" id="${field.id}" name="${field.name}" value="${field.value}" class="${field.errorClass}">
+  <span class="error">${field.error}</span>
+</p>
+#{/}

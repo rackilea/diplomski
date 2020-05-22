@@ -1,0 +1,12 @@
+Document document = new Document(page);
+PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(dest));
+document.open();
+PdfContentByte canvas = writer.getDirectContentUnder();
+canvas.addImage(image, width, 0, 0, height, 0, -height / 2);
+document.newPage();
+canvas.addImage(image, width, 0, 0, height, 0, 0);
+document.newPage();
+canvas.addImage(image, width, 0, 0, height, -width / 2, - height / 2);
+document.newPage();
+canvas.addImage(image, width, 0, 0, height, -width / 2, 0);
+document.close();

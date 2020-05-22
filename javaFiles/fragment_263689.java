@@ -1,0 +1,9 @@
+public class TextDrawable extends Drawable {
+        ...
+
+        public TextDrawable(Context context, String text) {
+            paint.setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/Montserrat-Regular.otf"));
+            ...
+        }
+        ...
+    }

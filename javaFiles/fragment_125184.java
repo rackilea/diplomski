@@ -1,0 +1,6 @@
+@Autowired
+private EntityManagerFactory entityManagerFactory;
+
+....
+this.entityManagerFactory.getEntityManager();
+....

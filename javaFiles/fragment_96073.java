@@ -1,0 +1,11 @@
+String proxyUser = "";
+String proxyPassword = "";
+String proxyAddress = "";
+int proxyPort = 8080;
+InetSocketAddress sa = new InetSocketAddress(proxyAddress, proxyPort);
+Proxy proxy = new Proxy(Proxy.Type.HTTP, sa);
+URLConnection conn = url.openConnection(proxy);
+sun.misc.BASE64Encoder encoder = new sun.misc.BASE64Encoder();
+String encodedUserPwd = encoder.encode((proxyUser + ":" + proxyPassword).getBytes());
+conn.setRequestProperty("Accept-Charset", "UTF-8");
+conn.setRequestProperty("Proxy-Authorization", "Basic " + encodedUserPwd);

@@ -1,0 +1,16 @@
+private static final PeriodFormatter dateFormat =
+    new PeriodFormatterBuilder()
+        .appendDays()
+        .appendSuffix(" day", " days")
+        .appendSeparator(" ")
+        .printZeroIfSupported()
+        .minimumPrintedDigits(2)
+        .appendHours()
+        .appendSeparator(":")
+        .appendMinutes()
+        .printZeroIfSupported()
+        .minimumPrintedDigits(2)
+        .appendSeparator(":")
+        .appendSeconds()
+        .minimumPrintedDigits(2)
+        .toFormatter();

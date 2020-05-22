@@ -1,0 +1,6 @@
+JFrame frame = ...
+
+// ...
+
+frame.setVisible(false); // hide the GUI
+frame.dispose(); // destroy and release the GUI resources

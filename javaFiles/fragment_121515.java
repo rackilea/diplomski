@@ -1,0 +1,11 @@
+this.setUseArtwork(attributes.getBoolean(R.styleable.BFPlayer_useArtwork, true));
+        this.setDefaultArtwork(attributes.getDrawable(R.styleable.BFPlayer_defaultArtwork));
+        this.setUseController(attributes.getBoolean(R.styleable.BFPlayer_useController, true));
+        this.setControllerHideOnTouch(attributes.getBoolean(R.styleable.BFPlayer_hideOnTouch, true));
+        this.setControllerAutoShow(attributes.getBoolean(R.styleable.BFPlayer_autoShow, true));
+        this.setControllerHideDuringAds(attributes.getBoolean(R.styleable.BFPlayer_hideDuringAds, true));
+        this.setShowBuffering(attributes.getBoolean(R.styleable.BFPlayer_showBuffering, true));
+        this.setResizeMode(attributes.getInt(R.styleable.BFPlayer_resizeMode, AspectRatioFrameLayout.RESIZE_MODE_FIT));
+        this.setShutterBackgroundColor(attributes.getColor(R.styleable.BFPlayer_shutterBackgroundColor, Color.BLACK));
+        this.setKeepContentOnPlayerReset(attributes.getBoolean(R.styleable.BFPlayer_keepContentOnPlayerReset, false));
+        this.setKeepScreenOn(attributes.getBoolean(R.styleable.BFPlayer_keepScreenOn, true));

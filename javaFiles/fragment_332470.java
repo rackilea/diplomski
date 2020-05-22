@@ -1,0 +1,7 @@
+CREATE OR REPLACE TRIGGER VerHist_SeqNum_TRG
+BEFORE INSERT 
+ON VerHist
+FOR EACH ROW
+BEGIN
+  :NEW.SequenceNumber := VerHist_SeqNum.NEXTVAL;
+END;

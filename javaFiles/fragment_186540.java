@@ -1,0 +1,13 @@
+{
+    "employee":{
+        "@id":1,
+        "name":"skanda",
+        "id":"123",
+        "employee":[
+            {
+                "@id":2,
+                "id":"345"
+            }
+        ]
+    }
+}

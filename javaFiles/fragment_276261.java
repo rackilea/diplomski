@@ -1,0 +1,10 @@
+System.setProperty("webdriver.gecko.driver", "C:\\path\\to\\geckodriver.exe");
+WebDriver driver=new FirefoxDriver();
+driver.get("https://www.mail.com/int/");
+driver.findElement(By.xpath(".//*[@id='login-button']")).click();
+driver.findElement(By.xpath(".//*[@id='login-email']")).sendKeys("rahulrahulxyz@mail.com");
+driver.findElement(By.xpath(".//*[@id='login-password']")).sendKeys("bangbang");
+driver.findElement(By.xpath(".//*[@id='login-form']/button")).click();
+Thread.sleep(8000);
+driver.switchTo().frame("thirdPartyFrame_home");
+driver.findElement(By.linkText("Compose E-mail")).click();

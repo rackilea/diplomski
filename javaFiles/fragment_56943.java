@@ -1,0 +1,12 @@
+String CurrentString = "2016-02-29 18:31:51";
+    String[] separated = CurrentString.split(" ");
+    String date = separated[0];
+    String time = separated[1];
+    String[] separated_date = date.split("-");
+    String[] separated_time = time.split(":");
+    String strYear = separated_date[0];
+    String strMonth = separated_date[1];
+    String strDate = separated_date[2];
+    String strHour = separated_time[0];
+    String strMinute = separated_time[1];
+    String strSecond = separated_time[2];

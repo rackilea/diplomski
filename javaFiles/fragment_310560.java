@@ -1,0 +1,6 @@
+...
+    /* Execute your custom port-forwarding here */
+    someMethodThatDoesForwarding();
+    /* SpringBoot code continues.. */
+    SpringApplication.run(DemoApplication.class, args);
+...

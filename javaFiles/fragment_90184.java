@@ -1,0 +1,10 @@
+Temporary temp = new Temporary(); 
+  temp.setId(42);
+  temp.setName("a");
+  temp.setValue("b");
+  temp.setId(36);
+  temp.setName("c");
+  temp.setValue("d");
+  temp.setId(42);
+  temp.setName("e");
+  temp.setValue("f");

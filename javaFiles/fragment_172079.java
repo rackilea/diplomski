@@ -1,0 +1,11 @@
+while(k==false)
+        {
+            temp=sum;
+            while(temp>0)
+            {
+                sum=sum+(temp%10);
+                temp=temp/10;
+            }
+            if(sum/10==0)
+                k=true;
+        }

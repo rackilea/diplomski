@@ -1,0 +1,14 @@
+SplitPane sp = new SplitPane();
+        final StackPane sp1 = new StackPane();
+        final StackPane sp2 = new StackPane();
+        sp.getItems().addAll( sp1 , sp2 );
+        double height = Screen.getPrimary().getVisualBounds().getHeight();
+        double width = Screen.getPrimary().getVisualBounds().getWidth();
+        // Scene scene = new Scene( sp, width, height );
+        Scene scene = new Scene( sp );
+        primaryStage.setScene( scene );
+        primaryStage.setMaximized( true );
+        primaryStage.setMinHeight( height );
+        primaryStage.setMinWidth( width );
+        primaryStage.show();
+        sp.setDividerPositions( 0.3 );

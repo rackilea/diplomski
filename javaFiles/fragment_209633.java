@@ -1,0 +1,10 @@
+Optional<List<ResultParameterClass>> parameters = Optional.ofNullable(response)
+    .map(ResponseClass::getBody)
+    .map(BodyClass::getRequestInformation)
+    .map(RequestInformationClass::getRequestParameters)
+    .map(Collection::stream)
+    .flatMap(Stream::findFirst)
+    .map(RequestParameterClass::getProductInstances)
+    .map(Collection::stream)
+    .flatMap(Stream::findFirst)
+    .map(ProductInstanceClass::getResultParameters);

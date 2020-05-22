@@ -1,0 +1,13 @@
+ByteBuffer buf = ByteBuffer.allocateDirect(10 * 4);
+buf.putFloat(innerColor[0]);
+buf.putFloat(innerColor[1]);
+buf.putFloat(innerColor[2]);
+buf.putFloat(innerColor[3]);
+buf.putFloat(outerColor[0]);
+buf.putFloat(outerColor[1]);
+buf.putFloat(outerColor[2]);
+buf.putFloat(outerColor[3]);
+buf.putFloat(innerRadius);
+buf.putFloat(outerRadius);
+buf.rewind();
+glBufferData(..., buf);

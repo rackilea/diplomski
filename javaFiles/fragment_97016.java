@@ -1,0 +1,6 @@
+Integer val = map.get(c);
+if (val != null) {
+  ...
+} else {
+  ...
+}

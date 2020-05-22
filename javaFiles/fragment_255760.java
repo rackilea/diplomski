@@ -1,0 +1,6 @@
+while (subChoice != 3 && subChoice != 4) {
+    ...
+}
+while (!(subChoice == 3 || subChoice == 4)) {
+    ...
+}

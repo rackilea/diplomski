@@ -1,0 +1,276 @@
+Sat Jan 23 13:30:29 GMT 2016:
+    Booting Derby version The Apache Software Foundation 
+    - Apache Derby - 10.11.1.2 - (1629631): instancE f67740d7-0152-6ead-        1de3-00003d273097 
+
+    on database directory C:\Users\user\.netbeans-derby\sample with class loader 
+    sun.misc.Launcher$AppClassLoader@60e53b93 
+    Loaded from file:
+    /C:/Program%20Files/Java/jdk1.8.0_40/db/lib/derby.jar
+    java.vendor=Oracle Corporation
+    java.runtime.version=1.8.0_40-b25
+    user.
+    dir=C:\Program Files\Java\jdk1.8.0_40\db
+    os.name=Windows 8.1
+    os.arch=amd64
+    os.version=6.3
+    derby.system.home=C:\Users\user\.netbeans-derby
+
+    ------------  Begin Shutdown Error Stack -------------
+
+    ERROR XSLA7: Cannot redo operation null in the log.
+    at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.FileLogger.redo(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.LogToFile.recover(Unknown Source)
+    at org.apache.derby.impl.store.raw.RawStore.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)
+    at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
+    at org.apache.derby.impl.store.access.RAMAccessManager.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)
+    at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
+    at org.apache.derby.impl.db.BasicDatabase.bootStore(Unknown Source)
+    at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
+    at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
+    at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+    at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+    at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+    at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+    at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+    at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+    at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+    Caused by: ERROR XSLAM: Cannot verify database format at {1} due to IOException: C:\Users\user\.netbeans-derby\sample
+    at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.LogToFile.verifyLogFormat(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.LogToFile.getLogFileAtPosition(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.LogToFile.getLogFileAtBeginning(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.Scan.getNextRecordForward(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.Scan.getNextRecord(Unknown Source)
+    ... 36 more
+    Caused by: java.io.EOFException
+    at java.io.RandomAccessFile.readInt(RandomAccessFile.java:803)
+    ... 41 more
+    ============= begin nested exception, level (1) ===========
+    ERROR XSLAM: Cannot verify database format at {1} due to IOException: C:\Users\user\.netbeans-derby\sample
+    at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.LogToFile.verifyLogFormat(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.LogToFile.getLogFileAtPosition(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.LogToFile.getLogFileAtBeginning(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.Scan.getNextRecordForward(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.Scan.getNextRecord(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.FileLogger.redo(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.LogToFile.recover(Unknown Source)
+    at org.apache.derby.impl.store.raw.RawStore.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)
+    at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
+    at org.apache.derby.impl.store.access.RAMAccessManager.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)
+    at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
+    at org.apache.derby.impl.db.BasicDatabase.bootStore(Unknown Source)
+    at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
+    at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
+    at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+    at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+    at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+    at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+    at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+    at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+    at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+    Caused by: java.io.EOFException
+        at java.io.RandomAccessFile.readInt(RandomAccessFile.java:803)
+        ... 41 more
+    ============= end nested exception, level (1) ===========
+    ============= begin nested exception, level (2) ===========
+    java.io.EOFException
+    at java.io.RandomAccessFile.readInt(RandomAccessFile.java:803)
+    at org.apache.derby.impl.store.raw.log.LogToFile.verifyLogFormat(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.LogToFile.getLogFileAtPosition(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.LogToFile.getLogFileAtBeginning(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.Scan.getNextRecordForward(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.Scan.getNextRecord(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.FileLogger.redo(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.LogToFile.recover(Unknown Source)
+    at org.apache.derby.impl.store.raw.RawStore.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)
+    at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
+    at org.apache.derby.impl.store.access.RAMAccessManager.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)
+    at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
+    at org.apache.derby.impl.db.BasicDatabase.bootStore(Unknown Source)
+    at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
+    at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
+    at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+    at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+    at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+    at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+    at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+    at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+    at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+    ============= end nested exception, level (2) ===========
+    ------------  End Shutdown Error Stack -------------
+
+    ----------------------------------------------------------------
+    Sat Jan 23 13:30:29 GMT 2016:
+    Shutting down instance f67740d7-0152-6ead-1de3-00003d273097 on database directory C:\Users\user\.netbeans-derby\sample with class loader sun.misc.Launcher$AppClassLoader@60e53b93 
+    Sat Jan 23 13:30:29 GMT 2016 Thread[DRDAConnThread_3,5,main] Cleanup action starting
+        java.sql.SQLException: Failed to start database 'sample' with class loader sun.misc.Launcher$AppClassLoader@60e53b93, see the next exception for details.
+    at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+    at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+    at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
+    at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+    at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+    at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+    at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+    at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+    at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+    at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+    Caused by: ERROR XJ040: Failed to start database 'sample' with class loader sun.misc.Launcher$AppClassLoader@60e53b93, see the next exception for details.
+    at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+    at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+    ... 16 more
+    Caused by: ERROR XSLAM: Cannot verify database format at {1} due to IOException: C:\Users\user\.netbeans-derby\sample
+    at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.LogToFile.verifyLogFormat(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.LogToFile.getLogFileAtPosition(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.LogToFile.getLogFileAtBeginning(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.Scan.getNextRecordForward(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.Scan.getNextRecord(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.FileLogger.redo(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.LogToFile.recover(Unknown Source)
+    at org.apache.derby.impl.store.raw.RawStore.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)
+    at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
+    at org.apache.derby.impl.store.access.RAMAccessManager.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)
+    at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
+    at org.apache.derby.impl.db.BasicDatabase.bootStore(Unknown Source)
+    at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
+    at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
+    ... 13 more
+    Caused by: java.io.EOFException
+    at java.io.RandomAccessFile.readInt(RandomAccessFile.java:803)
+    ... 41 more
+    ============= begin nested exception, level (1) ===========
+    java.sql.SQLException: Cannot verify database format at {1} due to IOException: 
+    C:\Users\user\.netbeans-derby\sample
+    at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+    at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+    at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+    at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+    at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+    at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+    at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+    at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+    at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+    at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+    Caused by: ERROR XSLAM: Cannot verify database format at {1} due to IOException: 
+    C:\Users\user\.netbeans-derby\sample
+    at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.LogToFile.verifyLogFormat(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.LogToFile.getLogFileAtPosition(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.LogToFile.getLogFileAtBeginning(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.Scan.getNextRecordForward(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.Scan.getNextRecord(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.FileLogger.redo(Unknown Source)
+    at org.apache.derby.impl.store.raw.log.LogToFile.recover(Unknown Source)
+    at org.apache.derby.impl.store.raw.RawStore.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)
+    at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
+    at org.apache.derby.impl.store.access.RAMAccessManager.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.FileMonitor.startModule(Unknown Source)
+    at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
+    at org.apache.derby.impl.db.BasicDatabase.bootStore(Unknown Source)
+    at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+    at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
+    at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
+    at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
+    ... 13 more
+    Caused by: java.io.EOFException
+    at java.io.RandomAccessFile.readInt(RandomAccessFile.java:803)
+    ... 41 more
+    ============= end nested exception, level (1) ===========

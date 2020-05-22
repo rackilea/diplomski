@@ -1,0 +1,11 @@
+setTitle("Test");
+this.getContentPane().setLayout(new BoxLayout(this.getContentPane(), BoxLayout.Y_AXIS));
+JPanel data = new JPanel();
+this.getContentPane().add(textfield_where_1);
+this.getContentPane().add(data);
+data.add(button);
+JScrollPane scroll = new JScrollPane(tabellenspass);
+data.add(scroll);
+scroll.setPreferredSize(new Dimension(400, 100));
+button.setPreferredSize(new Dimension(100, 100));
+textfield_where_1.setPreferredSize(new Dimension(400, 25));

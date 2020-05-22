@@ -1,0 +1,6 @@
+String html = "<!DOCTYPE html>\n<html xmlns:og=\"http://opengraphprotocol.org/schema/\" xmlns:fb=\"http://www.facebook.com/2008/fbml\" xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\" class=\"SAF\" id=\"global-header-light\">\n<head>\n\n</head>\n<body>\n\n\n**<div style=\"background-image: url(http://aka-cdn-ns.adtech.de/rm/ads/23274/HPWomenLOFT_1381687318.jpg);background-repeat: no-repeat;-webkit-background-size: 1001px 2059px; height: 2059px; width: 1001px; text-align: center; margin: 0 auto;\">**                      \n\n<div style=\"height:2058px; padding-left:0px; padding-top:36px;\">\n\n\n<iframe style=\"height:90px; width:728px;\"/>\n\n\n\n</div>\n</div>\n\n</body>\n</html>";
+String newStyle = "background-image: url(http://aka-cdn-ns.adtech.de/rm/ads/23274/HPWomenLOFT_1381687318.jpg);background-repeat: no-repeat;-webkit-background-size: 1001px 2059px; height:720px; width:900px; text-align: center; margin: 0 auto;";
+
+Document document = Jsoup.parse(html);
+document.body().child(0).attr("style", newStyle);
+System.out.println(document.html());

@@ -1,0 +1,7 @@
+@Override
+public void setCredentials(
+        final AuthScope authscope,
+        final Credentials credentials) {
+    Args.notNull(authscope, "Authentication scope");
+    credMap.put(authscope, credentials);
+}

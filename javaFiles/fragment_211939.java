@@ -1,0 +1,14 @@
+String s1 = "http://url-example.com";
+String s2 = "http://url-example.com/anything";
+String s3 = "http://www.url-example.com";
+String s4 = "http://www.url-example.com/anything";
+String s5 = "http://url-example.com.br";
+String s6 = "http://www.url-example.com.br";
+String s7 = "http://www.url-example.com.br/anything";
+System.out.println(s1.matches("http://(www\\.)?url-example\\.com(?!.*\\.br\\b).*"));
+System.out.println(s2.matches("http://(www\\.)?url-example\\.com(?!.*\\.br\\b).*"));
+System.out.println(s3.matches("http://(www\\.)?url-example\\.com(?!.*\\.br\\b).*"));
+System.out.println(s4.matches("http://(www\\.)?url-example\\.com(?!.*\\.br\\b).*"));
+System.out.println(s5.matches("http://(www\\.)?url-example\\.com(?!.*\\.br\\b).*"));
+System.out.println(s6.matches("http://(www\\.)?url-example\\.com(?!.*\\.br\\b).*"));
+System.out.println(s7.matches("http://(www\\.)?url-example\\.com(?!.*\\.br\\b).*"));

@@ -1,0 +1,6 @@
+.subscribe(result -> {
+    // ...
+},
+error -> {
+    // ...
+});

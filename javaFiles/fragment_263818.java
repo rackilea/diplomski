@@ -1,0 +1,13 @@
+final Address targetAddress = GenericAddress.parse("X.X.X.X/80");
+final TransportMapping transport = new DefaultUdpTransportMapping();
+final Snmp snmp = new Snmp(transport);
+snmp.listen();
+final CommunityTarget target = new CommunityTarget();
+target.setCommunity(new OctetString("public"));
+target.setAddress(targetAddress);
+target.setRetries(80);
+target.setTimeout(1500);
+target.setVersion(SnmpConstants.version2c);  
+final PDUFactory pduFactory = new DefaultPDUFactory(PDU.GETBULK);
+final TableUtils utils = new TableUtils(snmp, pduFactory);
+return utils.getTable(target, new OID[]{ query }, null, null);

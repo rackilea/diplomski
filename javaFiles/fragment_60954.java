@@ -1,0 +1,6 @@
+...
+System.out.println("Enter your second number:");
+try {
+    Number1 = scanner.nextDouble();
+}
+...

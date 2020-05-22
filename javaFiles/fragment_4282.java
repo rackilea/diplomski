@@ -1,0 +1,6 @@
+....
+private JComboBox nationalityChooser;
+public NationalityMatcherEditor(JComboBox alreadyConfiguredComboBox) {
+    this.nationalityChooser = alreadyConfiguredComboBox;
+}
+....

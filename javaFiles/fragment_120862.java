@@ -1,0 +1,11 @@
+gl.glBegin(GL.GL_QUADS);
+gl.glNormal3f(0,0,1);
+gl.glTexCoord2d(0.0, 0.0);
+gl.glVertex2d(0.0, 0.0);
+gl.glTexCoord2d(1.0, 0.0);
+gl.glVertex2d(canvas.getWidth(), 0.0);
+gl.glTexCoord2d(1.0, 1.0);
+gl.glVertex2d(canvas.getWidth(), canvas.getHeight());
+gl.glTexCoord2d(0.0, 1.0);
+gl.glVertex2d(0.0, canvas.getHeight());
+gl.glEnd();

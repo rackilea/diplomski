@@ -1,0 +1,10 @@
+http
+.authorizeRequests()
+    .anyRequest().authenticated()
+    .and()
+.formLogin()
+    .loginPage("/login")
+    .permitAll()
+    .and()
+.csrf()
+    .disabled();

@@ -1,0 +1,6 @@
+...
+x=0;
+String backWordsString = new String(wordBackwards);
+System.out.println(backWordsString);
+if (answer.equals(backWordsString)) {
+...

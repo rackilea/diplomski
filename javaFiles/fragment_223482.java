@@ -1,0 +1,11 @@
+JSONObject obj = new JSONObject();
+JSONObject obj1 = new JSONObject();
+obj1.put("email",'email@gmail.com');
+obj1.put("name", "veshraj joshi");
+obj1.put("id",request.getParameter("id"));
+obj1.put("num", new Integer(100));
+obj1.put("balance", new Double(1000.21));
+obj.put("status","ok");
+obj.put("message","record has been added successfully");
+obj.put("data",obj1);
+out.println(obj);

@@ -1,0 +1,6 @@
+{"Account":"789","Date":"2013-07-31","Unique Id":"2013073101","Tran Type":"TFR OUT","Cheque Number":"","TranCode":"MB TRANSFER","ThirdPartyAccount":"123","Amount":"-20","formatedDate":"2013-07-30T12:00:00.000Z"}
+{"Account":"789","Date":"2013-07-30","Unique Id":"2013073005","Tran Type":"TFR IN","Cheque Number":"","TranCode":"MB TRANSFER","ThirdPartyAccount":"123","Amount":"20","formatedDate":"2013-07-29T12:00:00.000Z"}
+{"Account":"789","Date":"2013-07-30","Unique Id":"2013073004","Tran Type":"TFR OUT","Cheque Number":"","TranCode":"MB TRANSFER","ThirdPartyAccount":"123","Amount":"-20","formatedDate":"2013-07-29T12:00:00.000Z"}
+{"Account":"789","Date":"2013-07-30","Unique Id":"2013073003","Tran Type":"CREDIT","Cheque Number":"","TranCode":"CREDIT","ThirdPartyAccount":"123","Amount":"20","formatedDate":"2013-07-29T12:00:00.000Z"}
+{"Account":"789","Date":"2013-07-30","Unique Id":"2013073002","Tran Type":"TFR OUT","Cheque Number":"","TranCode":"MB TRANSFER","ThirdPartyAccount":"123","Amount":"-160","formatedDate":"2013-07-29T12:00:00.000Z"}
+{"Account":"789","Date":"2013-07-30","Unique Id":"2013073001","Tran Type":"CREDIT","Cheque Number":"","TranCode":"CREDIT","ThirdPartyAccount":"123","Amount":"160","formatedDate":"2013-07-29T12:00:00.000Z"}

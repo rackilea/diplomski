@@ -1,0 +1,12 @@
+String jsonString = new JSONObject()
+        .put("data", new JSONObject()
+            .put("nightclub", Json.createArrayBuilder()
+                    .add("abcbc")
+                    .add("ahdjdjdj")
+                    .add("djdjdj").build())
+            .put("restaurants", Json.createArrayBuilder()
+                    .add("abcbc")
+                    .add("ahdjdjdj")
+                    .add("djdjdj").build())
+            .put("response", "success"))
+                    .toString();

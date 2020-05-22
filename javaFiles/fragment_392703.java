@@ -1,0 +1,33 @@
+configurations {
+    gmetrics
+}
+dependencies {
+    ...
+    gmetrics 'org.gmetrics:GMetrics:0.7'
+}
+task gmetrics {
+    doLast {
+        //use GMetrics ant task - http://gmetrics.sourceforge.net/gmetrics-ant-task.html
+        ant.taskdef(name: 'gmetrics', classname: 'org.gmetrics.ant.GMetricsTask', classpath: configurations.gmetrics.asPath)
+        //ensure reporting directory created
+        ant.mkdir(dir: "${project.reporting.baseDir.path}/gmetrics")
+        ant.gmetrics() {
+            report(type: 'org.gmetrics.report.BasicHtmlReportWriter') {
+                option(name: 'outputFile', value: "${project.reporting.baseDir.path}/gmetrics/gmetrics.html")
+            }
+            report(type: 'org.gmetrics.report.XmlReportWriter') {
+                option(name: 'outputFile', value: "${project.reporting.baseDir.path}/gmetrics/gmetrics.xml")
+            }
+            fileset(dir: 'src') {
+                include(name: '**/*.groovy')
+                //exclusions to filter out any classes with inner classes - sonar doesn't support
+                exclude(name: '**/*Config*')
+            }
+            fileset(dir: 'grails-app') {
+                include(name: '**/*.groovy')
+                //exclusions to filter out any classes with inner classes - sonar doesn't support
+                exclude(name: '**/*Config*')
+            }
+        }
+    }
+}

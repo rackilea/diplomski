@@ -1,0 +1,6 @@
+...
+Element root = doc.createElement("Request");
+root.setAttributeNS("http://www.w3.org/2001/XMLSchema-instance", "xsi:noNamespaceSchemaLocation", "URL");
+root.setAttribute("Version", "1.0");
+doc.appendChild(root);
+...

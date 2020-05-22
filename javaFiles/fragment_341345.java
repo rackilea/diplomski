@@ -1,0 +1,9 @@
+public class MapsActivity extends FragmentActivity implements .... {
+...............
+Geocoder gc = new Geocoder(this, Locale.getDefault());
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+............
+      }
+............
+}

@@ -1,0 +1,12 @@
+POST /repos/:owner/:repo/issues
+
+{
+  "title": "Found a bug",
+  "body": "I'm having a problem with this.",
+  "assignee": "octocat",
+  "milestone": 1,
+  "labels": [
+    "Label1",
+    "Label2"
+  ]
+}

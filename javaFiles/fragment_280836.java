@@ -1,0 +1,6 @@
+private final Map<X, Y> sharedCache = new HashMap<>();
+
+public static getAuthTicket() {
+  if (! sharedCache.containsKey...) {
+    sharedCache.put(...
+...

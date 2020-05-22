@@ -1,0 +1,6 @@
+class FooBar {
+
+    class Foo {
+      ...
+    }
+}

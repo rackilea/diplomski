@@ -1,0 +1,13 @@
+String createOrder = "Create table Orders("
+    + "id text primary key not null,"
+    + "custid text references Category(id),"
+    + "catid text FOREIGN KEY references Customer(id),"
+    + "orderdate date not null,"
+    + "delieverdate date not null,"
+    + "description text not null,"
+    + "requirement text not null,"
+    + "price int not null,"
+    + "image text not null,"
+    + "product text not null,"
+    + "state text not null"
+    + ")";

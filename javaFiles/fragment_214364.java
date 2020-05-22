@@ -1,0 +1,12 @@
+Class<?> myInterface = new ByteBuddy()
+        .makeInterface()
+        .name("MyInterface")
+        .modifiers(Visibility.PUBLIC, TypeManifestation.ABSTRACT)
+        .defineMethod("myMethod", void.class, Visibility.PUBLIC)
+        .withParameter(String.class, "myDeprecatedParameter")
+        .annotateParameter(AnnotationDescription.Builder.ofType(Deprecated.class)
+                .build())
+        .withoutCode()
+        .make()
+        .load(this.getClass().getClassLoader())
+        .getLoaded();

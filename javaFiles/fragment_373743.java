@@ -1,0 +1,10 @@
+System.out.println("Gebäudename eingeben(egal): ");
+String buildingName = user_input.nextLine();
+Building building = new Building(buildingName);
+System.out.println("Stockname eingeben(eg): ");
+String floorName = user_input.nextLine();
+Floor floor = new Floor(floorName);
+building.newFloor(floorName);
+System.out.println("Raumname eingeben(wohnen): ");
+String roomName = user_input.nextLine();
+building.getFloor(floorName).newRoom(roomName);

@@ -1,0 +1,6 @@
+... 
+@AttributeOverrides({
+    @AttributeOverride(name="type", column=@Column(name="TYPE")),
+    @AttributeOverride(name="otherColumn", column=@Column(name="OTHER_COLUMN"))
+})
+...

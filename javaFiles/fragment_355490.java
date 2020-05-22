@@ -1,0 +1,10 @@
+jb1 = new JButton();
+jb2 = new JButton("Green");
+jb3 = new JButton("Blue");
+//g.drawString("Welcome!", 100, 100);
+ImageIcon img = new ImageIcon("next.png");
+jb1.setIcon(img);
+jb1.setToolTipText("Button 1");
+this.add(jb1);
+this.add(jb2);
+this.add(jb3);

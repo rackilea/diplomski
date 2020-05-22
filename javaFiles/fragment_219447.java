@@ -1,0 +1,26 @@
+board[1][1] = 0;
+System.out.println("");
+System.out.println("1x1 isOccupiedByPlayer 0 = " + isOccupiedByPlayer(0, 1, 1));
+System.out.println("isSurrounded = " + isSurroundedBy(1, 1, 1));
+board = new Integer[3][3];
+board[0][0] = 0;
+System.out.println("");
+System.out.println("0x0 isOccupiedByPlayer 0 = " + isOccupiedByPlayer(0, 0, 0));
+System.out.println("isSurrounded = " + isSurroundedBy(1, 0, 0));
+board[1][0] = 1;
+board[1][1] = 1;
+board[0][1] = 1;
+System.out.println("");
+System.out.println("0x0 isOccupiedByPlayer 0 = " + isOccupiedByPlayer(0, 0, 0));
+System.out.println("1x1 isOccupiedByPlayer 0 = " + isOccupiedByPlayer(0, 1, 1));
+System.out.println("isSurrounded = " + isSurroundedBy(1, 0, 0));
+
+board = new Integer[3][3];
+board[0][0] = 0;
+board[1][0] = 1;
+board[1][1] = 0;
+board[0][1] = 1;
+System.out.println("");
+System.out.println("0x0 isOccupiedByPlayer 0 = " + isOccupiedByPlayer(0, 0, 0));
+System.out.println("1x1 isOccupiedByPlayer 0 = " + isOccupiedByPlayer(0, 1, 1));
+System.out.println("isSurrounded = " + isSurroundedBy(1, 0, 0));

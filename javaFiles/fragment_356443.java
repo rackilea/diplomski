@@ -1,0 +1,6 @@
+...
+httpConn = (HttpConnection)connDesc.getConnection();    
+httpConn.setRequestMethod(HttpConnection.POST);
+httpConn.setRequestProperty("username",name);
+httpConn.setRequestProperty("password",pass);
+....

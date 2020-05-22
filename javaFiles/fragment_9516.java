@@ -1,0 +1,28 @@
+ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_dropdown_item) {
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+
+        View v = super.getView(position, convertView, parent);
+        if (position == getCount()) {
+            ((TextView)v.findViewById(android.R.id.text1)).setText("");
+            ((TextView)v.findViewById(android.R.id.text1)).setHint(getItem(getCount())); //"Hint to be displayed"
+        }
+
+        return v;
+    }       
+
+    @Override
+    public int getCount() {
+        return super.getCount()-1; // you dont display last item. It is used as hint.
+    }
+
+};
+
+adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+adapter.add("Item 1");
+adapter.add("Item 2");
+adapter.add("Hint to be displayed");
+
+spinner.setAdapter(adapter);
+spinner.setSelection(adapter.getCount()); //display hint

@@ -1,0 +1,11 @@
+String sDate = "2014-09-02 15:19:59.000";
+String format = "yyyy-MM-dd HH:mm:ss.SSS";    
+SimpleDateFormat simpleDateFormat = new SimpleDateFormat(format);
+Date date = simpleDateFormat.parse(sDate);
+Calendar calendar=Calendar.getInstance();
+calendar.setTime(date); 
+int hours = calendar.get(Calendar.HOUR_OF_DAY);
+hours--; 
+calendar.set(Calendar.HOUR_OF_DAY, hours);
+Date fixedDate=calendar.getTime(); 
+System.out.println(simpleDateFormat.format(fixedDate));

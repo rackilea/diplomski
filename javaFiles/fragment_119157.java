@@ -1,0 +1,7 @@
+a) if(a1 = a2, b1 = b2, c1 = c2) then Result = 0;  // (All equal)
+b) if(a1 > a2)                   then Result = 1;  // (Since a1 > a2, we short circuit at a)
+c) if(a1 < a2)                   then Result = -1; // (Since a1 < a2, we short circuit at a) 
+d) if(a1 = a2, b1 > b2)          then Result = 1;  // (Since b1 > b2, we short circuit at b) 
+e) if(a1 = a2, b1 < b2)          then Result = -1; // (Since b1 < b2, we short circuit at b) 
+f) if(a1 = a2, b1 = b2, c1 > c2) then Result = 1;  // (Since c1 > c2) 
+g) if(a1 = a2, b1 = b2, c1 < c2) then Result = -1; // (Since c1 < c2)

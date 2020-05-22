@@ -1,0 +1,9 @@
+if (spinnerSelection == null || spinnerSelection2 == null) {
+    ...
+} else if (spinnerSelection.equals("S1") {
+    if (spinnerSelection2.equals("20")) {
+        ...
+    } else if (spinnerSelection2.equals("30")) {
+        ...
+    }
+}

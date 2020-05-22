@@ -1,0 +1,13 @@
+class Landmark implements Location {
+    String getName() { return ...; }
+    ...other methods that apply to all different kinds of location...
+    ...other methods that only apply to Landmarks...
+}
+
+class Fort implements Location {
+    String getName() { return ...; }
+    ...other methods that apply to all different kinds of location...
+    ...other methods that only apply to Forts...
+}
+
+etc.

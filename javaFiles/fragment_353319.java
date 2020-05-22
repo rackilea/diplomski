@@ -1,0 +1,11 @@
+final File outputFile = File.createTempFile(fileName, ".pdf");
+FileOutputStream os = new FileOutputStream(outputFile);
+PDFEncryption pdfEncryption  = new PDFEncryption();
+String password= "password@123";
+pdfEncryption.setUserPassword(password.getBytes());
+ITextRenderer renderer = new ITextRenderer();
+renderer.setPDFEncryption(pdfEncryption);
+renderer.setDocumentFromString(htmlContent);
+renderer.layout();
+renderer.createPDF(os, false);
+renderer.finishPDF();

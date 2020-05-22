@@ -1,0 +1,10 @@
+Processor proc = new Processor(true);
+            SchemaManager sm = proc.getSchemaManager();
+            sm.load(new StreamSource(new StringReader(sch1)));
+            System.err.println("Schema 1 OK");
+            sm.newSchemaValidator().validate(new StreamSource(new StringReader(doc1)));
+            System.err.println("Doc 1 OK");
+            sm.load(new StreamSource(new StringReader(sch2)));
+            System.err.println("Schema 2 OK");
+            sm.newSchemaValidator().validate(new StreamSource(new StringReader(doc2)));
+            System.err.println("Doc 2 OK");

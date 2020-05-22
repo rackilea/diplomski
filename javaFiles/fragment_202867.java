@@ -1,0 +1,13 @@
+public class Sample {
+
+public void A() {
+  ...
+  your code
+  ...
+}
+public static void main(String[] args) {
+   ...
+   your code
+   ...
+  }
+}

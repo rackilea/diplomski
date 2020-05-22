@@ -1,0 +1,6 @@
+sqlite> CREATE TABLE t2 ( id INTEGER PRIMARY KEY AUTOINCREMENT, size INTEGER NOT NULL);
+sqlite> INSERT INTO t2 ( size) VALUES (123);
+sqlite> INSERT INTO t2 ( size) VALUES (456);
+sqlite> SELECT * FROM t2;
+1|123
+2|456

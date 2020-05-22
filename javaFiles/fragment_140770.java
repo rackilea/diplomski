@@ -1,0 +1,6 @@
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+// ...
+public static final Logger log=Logger.getLogger(App.class);
+// ...
+PropertyConfigurator.configure("log4j.properties");

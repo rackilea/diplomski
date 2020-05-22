@@ -1,0 +1,18 @@
+defaultConfig {
+    minSdkVersion 08
+    targetSdkVersion 19
+    versionCode 1
+    versionName "1.0"
+}
+
+buildTypes {
+    release {
+        runProguard false
+        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:support-v4:21.+'
+}

@@ -1,0 +1,6 @@
+void process(Throwable t){
+   ...
+}
+void process(Exception e){
+  ...
+}

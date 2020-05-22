@@ -1,0 +1,47 @@
+count=0;
+for(i=0;i<=4;i++)
+{
+    for(j=0;j<=25;j++)
+    {
+       if(i==0)
+       {
+            if(j>5)
+                a[i][j]=0;
+            else    
+                a[i][j]=1;
+       }
+       else if(i==1)
+       {
+            if(j<19)
+                a[i][j]=0;
+            else    
+                a[i][j]=1;
+       }
+       else if(i==2)
+       {
+            if(count==0)
+            {
+                a[i][j]=0;
+            }   
+            else    
+                a[i][j]=1;
+        if(count==4) 
+           count=0;
+         else  
+           count=count+1;
+       }
+       else if(i==3)
+       {
+            if(count==4)
+            {
+                a[i][j]=0;
+            }   
+            else    
+                a[i][j]=1;
+        if(count==4) 
+           count=0;
+         else  
+           count=count+1;
+       }
+    }
+}

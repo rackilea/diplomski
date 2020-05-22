@@ -1,0 +1,11 @@
+String charset = "UTF-8";
+String query = String.format("include=%s", URLEncoder.encode("game", charset));
+URL myURL = new URL(serviceURL+"?"+query);
+HttpURLConnection myURLConnection = (HttpURLConnection)myURL.openConnection();
+myURLConnection.setRequestMethod("GET");
+myURLConnection.setRequestProperty("X-Parse-Application-Id", "");
+myURLConnection.setRequestProperty("X-Parse-REST-API-Key", "");
+myURLConnection.setUseCaches(false);
+myURLConnection.setDoInput(true);
+myURLConnection.setDoOutput(true);
+myURLConnection.connect();

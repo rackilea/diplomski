@@ -1,0 +1,11 @@
+String sql = "select item_type as 'Item Type'"
+    + ", md_by as 'Made By'"
+    + ", model as 'Model'"
+    + ", selling_price as 'Selling Price'"
+    + ", purchase_price as 'Purchase Price'"
+    + ", purchase_date as 'Purchase Date'"
+    + ", vouch_no as 'Voucher No.'"
+    + ", vouch_date as 'Voucher Date'"
+    + ", record_no as 'Record No.'"
+    + " from purchase"
+    + " where vouch_no = ?";

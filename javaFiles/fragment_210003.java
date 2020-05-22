@@ -1,0 +1,23 @@
+public class Implementation2 extends Applet implements ActionListener {
+  private static final long serialVersionUID = -4370650602318597069L;
+  ...
+  public JButton coreButton, testButton;
+  ...
+  public void init() {
+    ...
+    testButton = new JButton("Test");
+    testButton.addActionListener(this);
+    ...
+    coreButton = new JButton("CORE");
+    coreButton.addActionListener(this);
+    coreButton.setEnabled(false);
+    ...
+  }
+  ...
+  public void actionPerformed(final ActionEvent event) {
+    if("Test".equals(event.getActionCommand())) {
+      coreButton.setEnabled(false);
+    }
+    ...
+  }
+}

@@ -1,0 +1,12 @@
+String ABC = "ABC'S URL";
+String chromeDriverPath = "C:\\selenium\\chromedriver.exe" ;
+System.out.println("start selenium");
+File file = new File(chromeDriverPath);
+System.setProperty("webdriver.chrome.driver",file.getAbsolutePath());
+ChromeOptions options = new ChromeOptions();
+options.addArguments("--start-maximized");
+DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+capabilities.setCapability("pageLoadStrategy", "none");
+webDriver driver = new ChromeDriver(capabilities);
+driver.get(ABC);

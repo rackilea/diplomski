@@ -1,0 +1,10 @@
+System.out.println(toolTip);
+String[] word1 = toolTip.split("<td>");
+String a = word1[1].split(" ")[0];
+System.out.println(a);
+String b = word1[3].split("</")[0];
+System.out.println(b);
+String c = word1[6].split("</")[0];
+System.out.println(c);
+String d = word1[4].split("<td")[1].split("<")[0];
+System.out.println(d);

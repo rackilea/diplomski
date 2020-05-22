@@ -1,0 +1,6 @@
+public interface IMsgDAO
+{
+   // ...
+   String getMsg(String name);
+   // ...
+}

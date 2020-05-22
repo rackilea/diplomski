@@ -1,0 +1,28 @@
+public void  playSong(int songIndex){
+    // Play song
+    try {
+        mp.reset();
+        mp.setDataSource(songsList.get(songIndex).get("songPath"));
+        mp.prepare();
+        mp.start();
+        // Displaying Song title
+        String songTitle = songsList.get(songIndex).get("songTitle");
+        songTitleLabel.setText(songTitle);
+
+        // Changing Button Image to pause image
+        btnPlay.setImageResource(R.drawable.btn_pause);
+
+        // set Progress bar values
+        songProgressBar.setProgress(0);
+        songProgressBar.setMax(100);
+
+        // Updating progress bar
+        updateProgressBar();
+    } catch (IllegalArgumentException e) {
+        e.printStackTrace();
+    } catch (IllegalStateException e) {
+        e.printStackTrace();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+}

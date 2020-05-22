@@ -1,0 +1,34 @@
+{
+   "items":[
+      {
+         "A":[]
+      },
+      {
+         "B":[
+            "dummy",
+            "dummy",
+            "dummy"
+         ]
+      },
+      {
+         "C":[]
+      },
+      {
+         "D":[
+            "dummy",
+            "dummy",
+            "dummy"
+         ]
+      },
+      {
+         "E":[]
+      },
+      {
+         "F":[
+            "dummy",
+            "dummy",
+            "dummy"
+         ]
+      }
+   ]
+}

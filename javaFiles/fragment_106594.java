@@ -1,0 +1,37 @@
+@Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) 
+    {
+
+
+        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) 
+        {
+            Bundle extras = data.getExtras();
+            myBitmap= (Bitmap) extras.get("data");
+
+             myImage = (ImageView) findViewById(R.id.imageView);
+
+                    myImage.setImageBitmap(myBitmap);
+        }
+
+        if (requestCode == RESULT_LOAD_IMAGE && resultCode == RESULT_OK && null != data) {
+            Uri selectedImage = data.getData();
+            String[] filePathColumn = { MediaStore.Images.Media.DATA };
+
+            Cursor cursor = getContentResolver().query(selectedImage,filePathColumn, null, null, null);
+            cursor.moveToFirst();
+
+            int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+            String picturePath = cursor.getString(columnIndex);
+            cursor.close();
+
+            myBitmap= BitmapFactory.decodeFile(picturePath);
+
+            //          photoUri = picturePath;
+
+
+
+        myImage.setImageBitmap(myBitmap);
+
+        }
+
+    }

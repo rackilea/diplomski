@@ -1,0 +1,11 @@
+String hostname = properties.getProperty("FTP_SERVER");
+        String user = properties.getProperty("FTP_USER");
+        String passwd = properties.getProperty("FTP_PASSWD");
+        FTPClient client = new FTPClient();
+        client.connect(hostname);
+        client.login(user, passwd);
+        String reply = client.getStatus();
+        System.out.println(reply);
+        client.enterRemotePassiveMode();
+        client.changeWorkingDirectory("/");
+        FTPFile[] files = client.listFiles();

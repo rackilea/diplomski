@@ -1,0 +1,11 @@
+File file = new File("fileName");
+FileInputStream in = new FileInputStream(file);
+byte[] content = new byte[(int) file.length()];
+in.read(content);
+ServletContext sc = request.getSession().getServletContext();
+String mimetype = sc.getMimeType(file.getName());
+response.reset();
+response.setContentType(mimetype);
+response.setContentLength(content.length);
+response.setHeader("Content-Disposition", "attachment; filename=\"" + file.getName() + "\"");
+org.springframework.util.FileCopyUtils.copy(content, response.getOutputStream());

@@ -1,0 +1,21 @@
+List<JournalArticle> journalArticles = JournalArticleLocalServiceUtil.search(
+    themeDisplay.getCompanyId(), 
+    themeDisplay.getScopeGroupId(), 
+    folderIds,
+    JournalArticleConstants.CLASSNAME_ID_DEFAULT,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "MY_STRUCTURE",
+    null,
+    myDate,
+    null,
+    0,
+    null, 
+    true,
+    startIndex,
+    endIndex,
+    OrderByComparatorFactoryUtil.create("JournalArticle", Field.DISPLAY_DATE, false)
+);

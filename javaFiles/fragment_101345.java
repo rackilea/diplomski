@@ -1,0 +1,14 @@
+Map<String, Object> props = new HashMap<String, Object>();
+props.put("site-id", 0);
+props.put("price-score", 0.5);
+props.put("confidence-score", 0.2);
+Map<String, String> category123 = new HashMap<String, String>();
+category123.put("price_score", "0.5");
+category123.put("confidence_score", "0.2");
+Map<String, String> category321 = new HashMap<String, String>();
+category123.put("price_score", "0.2");
+category123.put("confidence_score", "0.4");
+Map<String, Object> categories = new HashMap<String, Object>();
+categories.put("123", category123);
+categories.put("321", category321);
+props.put("categories", categories);

@@ -1,0 +1,6 @@
+if (source.getPackageName().equals("PACKAGE NAME OF APP FOR WHICH YOUR EXPECTING EVENT")) {
+    if(event.getEventType()==AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED && "COMPLETE NAME OF ACTIVITY CLASS WITH PACKAGE NAME (if you want it for some specific screen)".equals(event.getClassName())){
+        if(source.getText()!=null && source.getClassName().equals("android.widget.TextView") && source.getParent()!=null && source.getParent().getClassName().equals("android.widget.RelativeLayout")&& source.getParent().getParent()!=null && source.getParent().getParent().getClassName().equals("android.widget.ScrollView") && source.getParent().getParent().getParent()!=null && source.getParent().getParent().getParent().getClassName().equals("android.support.v4.view.ViewPager")&& source.getParent().getParent().getParent().getParent()!=null && source.getParent().getParent().getParent().getParent().getClassName().equals("android.widget.FrameLayout")&& source.getParent().getParent().getParent().getParent().getParent()==null){
+        return source.getText().toString();
+        }
+}

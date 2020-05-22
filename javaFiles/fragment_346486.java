@@ -1,0 +1,6 @@
+//...
+println(x.count); // print 3
+x.count++;
+if(count == 4) 
+  x.notify()
+//...

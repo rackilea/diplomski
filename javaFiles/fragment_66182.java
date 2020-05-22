@@ -1,0 +1,6 @@
+if(line.startsWith("case"))
+{
+    ...
+}
+else if(isNumeric(line))
+    ...

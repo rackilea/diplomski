@@ -1,0 +1,6 @@
+//red:
+int redGx = (-A.getRed() + (-2*D.getRed()) + -G.getRed() + C.getRed() + (2*F.getRed())+ I.getRed());
+int redGy = ...
+
+//green:
+int greenGx = (-A.getGreen()...

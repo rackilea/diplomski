@@ -1,0 +1,12 @@
+Map<Supplier<Boolean>, String> conditions = new LinkedHashMap<> ();
+conditions.put(() -> CONDITION1, "ERROR_CODE_1");
+conditions.put(() -> CONDITION2, "ERROR_CODE_2");
+conditions.put(() -> CONDITION3, "ERROR_CODE_3");
+conditions.put(() -> CONDITION4 && CONDITION5, "ERROR_CODE_4");
+conditions.put(() -> CONDITION4 && CONDITION6, "ERROR_CODE_5");
+conditions.put(() -> CONDITION4 && CONDITION7, "ERROR_CODE_6");
+conditions.put(() -> CONDITION4, "ERROR_CODE_7");
+conditions.put(() -> CONDITION8, "ERROR_CODE_8");
+conditions.put(() -> CONDITION9, "ERROR_CODE_9");
+conditions.put(() -> CONDITION10, "ERROR_CODE_10");
+conditions.put(() -> CONDITION11, "ERROR_CODE_11");

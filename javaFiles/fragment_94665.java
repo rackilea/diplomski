@@ -1,0 +1,9 @@
+CmisBindingFactory factory = CmisBindingFactory.newInstance();
+CmisBinding binding = factory.createCmisLocalBinding(parameters); // LocalBinding !!
+fFactory = binding.getObjectFactory();
+fRepSvc = binding.getRepositoryService();
+fObjSvc = binding.getObjectService();
+fNavSvc = binding.getNavigationService();
+fVerSvc = binding.getVersioningService();
+fMultiSvc = binding.getMultiFilingService();
+fDiscSvc = binding.getDiscoveryService();

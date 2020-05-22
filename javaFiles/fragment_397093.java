@@ -1,0 +1,9 @@
+Collection <Object> objsToRemove = // ...
+for( Object o : objCollection )
+{
+    // ...
+    if ( satisfiesSomeProperty ( o ) )
+       objsToRemove.add (o);
+    // ...
+}
+objCollection.removeAll ( objsToRemove );

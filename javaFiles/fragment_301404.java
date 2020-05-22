@@ -1,0 +1,6 @@
+private UIScrollableDataTable table;private Selection selection; 
+... 
+   public String reset(){ 
+       table.setSelection(new SimpleSelection());
+   } 
+...

@@ -1,0 +1,9 @@
+buildscript {
+    repositories {
+        google()
+        //...
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.2'
+    }
+}

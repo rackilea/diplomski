@@ -1,0 +1,12 @@
+A: {"name":"Ram","gender":"male","designation":"engineer"}
+name: "Ram"
+gender: "male"
+designation: "engineer"
+B: {"name":"Shyam","gender":"male","designation":"student"}
+name: "Shyam"
+gender: "male"
+designation: "student"
+C: {"name":"Mohan","gender":"male","designation":"manager"}
+name: "Mohan"
+gender: "male"
+designation: "manager"

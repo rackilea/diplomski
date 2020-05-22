@@ -1,0 +1,10 @@
+System.out.println(new StringBuilder("I like")
+                   .append(cake)
+                   .append(" and I eat ")
+                   .append(cakeNumber)
+                   .append(" blah blah     prolonging this string because ")
+                   .append(whyNot)
+                   .append(" and so on ")
+                   .append(number)
+                   .append(".")
+                   .toString());

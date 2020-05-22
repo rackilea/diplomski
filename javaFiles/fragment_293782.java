@@ -1,0 +1,12 @@
+WebDriver driver = new FirefoxDriver();
+driver.get("file://<Path>/div.html");
+long starttime = System.currentTimeMillis();
+//driver.findElement(By.cssSelector(".class"));
+//driver.findElement(By.className("class"));
+//driver.findElement(By.cssSelector("#id"));
+//driver.findElement(By.id("id"));
+//driver.findElement(By.cssSelector("div"));
+//driver.findElement(By.tagName("div"));
+long stoptime = System.currentTimeMillis();
+System.out.println(stoptime-starttime + " milliseconds");
+driver.quit();

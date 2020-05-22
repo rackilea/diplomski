@@ -1,0 +1,11 @@
+test("Foo &amp; Bar", "Foo & Bar");
+    test("&amp;&amp;&amp;", "&&&");
+    test("&amp;&amp;&amp; ", "&&& ");
+    test(" &amp;&amp;&amp;", " &&&");
+    test("&amp;", "&");
+    test("&amp;", "&amp;");
+    test("&amp;&amp;", "&amp;&amp;");
+    test("&amp;&amp;&amp;", "&amp;&&amp;");
+    test("test", "test");
+    test("", "");
+    test("testtesttest&amp;", "testtesttest&");

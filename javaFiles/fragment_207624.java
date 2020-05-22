@@ -1,0 +1,20 @@
+{  
+   {  
+      "name":"name1",
+      "value":"11",
+      "beanList":[
+      ]
+   },
+   {  
+      "name":"name2",
+      "value":"22",
+      "beanList":[  
+         {  
+            "name":"name1",
+            "value":"11",
+            "beanList":[  
+            ]
+         }
+      ]
+   }
+}

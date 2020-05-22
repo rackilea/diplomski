@@ -1,0 +1,6 @@
+FXMLLoader loader = new FXMLLoader(getClass().getResource("<path to FXML>"));
+...
+primaryStage.show();
+...
+Controller controller = loader.getController();
+controller.disableRipple();

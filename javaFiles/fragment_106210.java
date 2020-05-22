@@ -1,0 +1,13 @@
+if($current.next().size==0){ 
+            $nextDiv=$('.comment>.single').first(); 
+          } 
+          if(!isFirst){
+          $nextDiv=$current.next(); 
+          $current.css('background-color',''); 
+          $nextDiv.css('background-color','yellow'); 
+          $current=$nextDiv; 
+          }
+          else
+          {
+          $current.css('background-color','yellow'); 
+          }

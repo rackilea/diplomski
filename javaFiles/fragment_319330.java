@@ -1,0 +1,10 @@
+String EMPTY_FILE_NAME_IN_LIST_TEMPLATE = "One or more null/empty filename(s) found";
+String FILE_DOESNT_EXIST_TEMPLATE = "[ %s ] does not exist";
+String FILE_LIST_IS_NULL_TEMPLATE = "File list is null/empty";
+String FILENAME_NOT_ABSOLUTE_TEMPLATE = "[ %s ] is not absolute";
+String MUST_BE_DIR_TEMPLATE = "[ %s ] must be a directory";
+String MUST_BE_FILE_TEMPLATE = "[ %s ] must be a file";
+String NULL_OR_EMPTY_TEMPLATE = "[ %s ] is null/empty";
+String OUTPUT_FILE_ALREADY_EXISTS_TEMPLATE = "[ %s ] already exists";
+String OUTPUT_FILENAME_EMPTY_TEMPLATE = "Output filename is null/empty";
+String OUTPUT_PATH_EMPTY_TEMPLATE = "Output path is null/empty";

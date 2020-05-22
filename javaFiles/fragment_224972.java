@@ -1,0 +1,6 @@
+List<Object[]> rowList = new ArrayList<Object[]>(25);
+
+// Process the resultset...
+// Create the column array from above...
+
+rowList.add(rowData);

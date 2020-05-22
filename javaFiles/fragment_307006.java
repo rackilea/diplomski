@@ -1,0 +1,6 @@
+JScrollPane consoleScrollPane = new JScrollPane(console);
+//...
+// Add the scroll pane...
+getContentPane().add(consoleScrollPane);
+// Add the console, which WAS on the scrollpane to the content pane
+getContentPane().add(console);

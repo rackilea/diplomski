@@ -1,0 +1,6 @@
+while (ret1.next()) { 
+  get id from ret1, 
+  query  info from another database;
+  bla,bla,...
+}
+....

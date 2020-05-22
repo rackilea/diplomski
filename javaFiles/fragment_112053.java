@@ -1,0 +1,6 @@
+...
+    plus.addActionListener(this);
+    // missing: multiplication.addActionListener(this);
+    // missing: divide.addActionListener(this);
+    minus.addActionListener(this);
+    ...

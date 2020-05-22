@@ -1,0 +1,6 @@
+FileType fileType = FileTypeDetector.detectFileType(myStream);
+
+if (fileType == FileType.Jpeg) {
+    // ...
+} else if (fileType == FileType.Png) {
+    // ...

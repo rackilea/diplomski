@@ -1,0 +1,6 @@
+byte[] results = new byte[input.length() / groupLength];
+...
+    //inside the loop
+    results[i / groupLength] = (byte) Integer.parseInt(hex, 16);
+...
+return results;

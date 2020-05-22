@@ -1,0 +1,6 @@
+long interval = ...
+  FileAlterationMonitor monitor = new FileAlterationMonitor(interval);
+  monitor.addObserver(observer);
+  monitor.start();
+  ...
+  monitor.stop();

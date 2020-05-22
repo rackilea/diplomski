@@ -1,0 +1,9 @@
+<dependency>
+   <groupId>${myproject.group}</groupId>
+   <artifactId>component1</artifactId>
+</dependency>
+<dependency>
+   <groupId>${myproject.group}</groupId>
+   <artifactId>comp3module1</artifactId>
+   <type>ejb-client</type>
+</dependency>

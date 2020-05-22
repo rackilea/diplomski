@@ -1,0 +1,7 @@
+signing request: https://www.googleapis.com/calendar/v3/calendars/abc%xyz.com/events/quickAdd?text=Test+Data&sendNotifications=true&key=28284284224.apps.googleusercontent.com
+setting token to: Token[1/bhhuujnin , d7ispjnkjnkSUsX8ckIdVOIH0bLXQa]
+generating signature...
+base string is: POST&https%3A%2F%2Fwww.googleapis.com%2Fcalendar%2Fv3%2Fcalendars%2Fabc%2540xyz.com%2Fevents%2FquickAdd&key%3D28284284224.apps.googleusercontent.com%26oauth_consumer_key%3D28284284224.apps.googleusercontent.com%26oauth_nonce%3D28284284224%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1381555963%26oauth_token%3D1%252Fifa0cTEhk6VRmU_YAQ61pX9Nsvdvsdg8BN7fbAyTKmBlBcIZ7A%26oauth_version%3D1.0%26scope%3Dhttps%253A%252F%252Fwww.googleapis.com%252Fauth%252Fcalendar%26sendNotifications%3Dtrue%26text%3DTest%2520Data
+signature is: TmuhOi8ockEPKdjhjiK5fPMyVJ2wfU=
+appended additional OAuth parameters: { oauth_signature -> TmuhOi8ockEPkhkKdiK5fPMyVJ2wfU= , scope -> https://www.googleapis.com/auth/calendar , oauth_version -> 1.0 , oauth_nonce -> 3332489143 , oauth_signature_method -> HMAC-SHA1 , oauth_consumer_key -> 28284284224.apps.googleusercontent.com , oauth_token -> 1/ifa0cTEhk6VRmU_YAQsfgeg_61pX9N8BN7fbAyTKmBlBcIZ7A , oauth_timestamp -> 1381555963 }
+using Http Header signature

@@ -1,0 +1,12 @@
+query.setParameter("emp_id", emp_id);
+    query.setParameter("new_emp_id", new_emp_id);
+    query.setParameter("emp_name", emp_name);
+    query.setParameter("emp_designation_id", emp_designation_id);
+    query.setParameter("emp_skills", emp_skills);
+    query.setParameter("emp_department_id", emp_department_id);
+    query.setParameter("emp_notes", emp_notes);
+    query.setParameter("emp_email", emp_email);
+    query.setParameter("emp_username", emp_username);
+    query.setParameter("emp_password", emp_password);
+    query.setParameter("emp_phone", emp_phone);
+    int result = query.executeUpdate();

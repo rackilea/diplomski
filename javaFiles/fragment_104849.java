@@ -1,0 +1,33 @@
+<dependencyManagement>
+   <dependencies>
+      <dependency>
+         <groupId>${myproject.group}</groupId>
+         <artifactId>component1</artifactId>
+         <version>${component1.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${myproject.group}</groupId>
+         <artifactId>component2</artifactId>
+         <version>${component2.version}</version>
+         <type>war</type>
+      </dependency>
+      <dependency>
+         <groupId>${myproject.group}</groupId>
+         <artifactId>comp3module1</artifactId>
+         <version>${component3.version}</version>
+        <type>ejb</type>
+      </dependency>
+      <dependency>
+         <groupId>${myproject.group}</groupId>
+         <artifactId>comp3module1</artifactId>
+         <version>${component3.version}</version>
+        <type>ejb-client</type>
+      </dependency>
+      <dependency>
+         <groupId>${myproject.group}</groupId>
+         <artifactId>comp3module2</artifactId>
+         <version>${component3.version}</version>
+        <type>war</version>
+      </dependency>
+   </dependencies>
+</dependencyManagement>

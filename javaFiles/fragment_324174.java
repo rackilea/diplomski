@@ -1,0 +1,7 @@
+<target name="distribute" depends="compile">
+  <jar destfile="${distributionDir}/myjar.jar" >
+    <fileset dir="${outputDir}"/>
+    <fileset dir="${sourceDir}"/>
+    <fileset file="readthis.txt" />
+  </jar>
+</target>

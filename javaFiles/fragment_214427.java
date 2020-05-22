@@ -1,0 +1,10 @@
+<TextView
+    android:id="@+id/text_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:hint="@string/app_name"
+    android:padding="8dp"
+    app:name_text="@{name}"
+    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>

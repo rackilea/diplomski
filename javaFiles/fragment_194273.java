@@ -1,0 +1,13 @@
+byte[] compressed = compress(string); //In the main method
+
+public static byte[] compress(String str) throws Exception {
+    ...
+    ...
+    return obj.toByteArray();
+}
+
+public static String decompress(byte[] bytes) throws Exception {
+    ...
+    GZIPInputStream gis = new GZIPInputStream(new ByteArrayInputStream(bytes));
+    ...
+}

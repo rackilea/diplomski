@@ -1,0 +1,12 @@
+Map<Integer, Integer> map = new HashMap<>();
+    Random random = new Random();
+    random.ints(1000000).forEach(n -> map.put(n, n));
+    long time1 = System.currentTimeMillis();
+    Set<Integer> set = new TreeSet<>(map.keySet());
+    List<Integer> list1 = new ArrayList<>(set);
+    long time2 = System.currentTimeMillis();
+    List<Integer> list2 = new ArrayList<>(map.keySet());
+    Collections.sort(list2);
+    long time3 = System.currentTimeMillis();
+    System.out.println("Set approach " + (time2 - time1));
+    System.out.println("Sort approach " + (time3 - time2));

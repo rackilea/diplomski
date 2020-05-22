@@ -1,0 +1,6 @@
+String response = sc.next();
+
+if(response.equalsIgnoreCase("w"))
+...
+else if(response.equalsIgnoreCase("d"))
+...

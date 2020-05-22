@@ -1,0 +1,6 @@
+for(;;) {
+  ...
+  Source source = new MemoryImageSource(200, 200, pixels, 0, 50);
+  Image image  = createImage(source);
+  ...
+}

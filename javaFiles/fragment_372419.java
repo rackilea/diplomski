@@ -1,0 +1,33 @@
+String BOUNDARY_STRING="A300x";
+        String urlString="https://apis.live.net/v5.0/"+folderPath+"/files?state="+getSkydriveClientId()+"&redirect_uri="+baseURL+"&access_token="+getAcessToken();
+        URL connectURL = new URL(urlString);        
+        HttpURLConnection conn = (HttpURLConnection) connectURL.openConnection(); 
+        conn.setRequestMethod("POST");
+        conn.setRequestProperty("Content-Type","multipart/form-data; boundary=" + BOUNDARY_STRING);
+        conn.setDoInput(true);
+        conn.setDoOutput(true);
+        conn.setUseCaches(false);
+        conn.setRequestProperty("Connection", "Keep-Alive");
+        conn.connect();
+        DataOutputStream dos = new DataOutputStream(conn.getOutputStream());
+        dos.writeBytes("--" + BOUNDARY_STRING + "\r\n"); 
+        dos.writeBytes("Content-Disposition: form-data; name=\"file\"; filename=\"" + fileName + "\"\r\n");
+        dos.writeBytes("Content-Type: application/octet-stream\r\n");
+        dos.writeBytes("\r\n");
+        File fileToUpload=Util.getFile(fileName);
+        FileInputStream fileInputStream = new FileInputStream(fileToUpload);
+        int fileSize = fileInputStream.available();
+        int maxBufferSize = 8192;
+        int bufferSize = Math.min(fileSize, maxBufferSize);
+        byte[] buffer = new byte[bufferSize];
+        int bytesRead = fileInputStream.read(buffer, 0, bufferSize);
+        while (bytesRead > 0) {           
+        dos.write(buffer, 0, bytesRead);  
+        int bytesAvailable = fileInputStream.available();
+        bufferSize = Math.min(bytesAvailable, buffer.length);
+        bytesRead = fileInputStream.read(buffer, 0, bufferSize);
+        }
+        fileInputStream.close();         
+        dos.writeBytes("\r\n");
+        dos.writeBytes("--" + BOUNDARY_STRING + "--\r\n");
+        dos.flush();

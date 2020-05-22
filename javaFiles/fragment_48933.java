@@ -1,0 +1,6 @@
+int upperInt = ...
+int lowerInt = ...
+long hi = upperInt & 0xFFFFFFFFL;
+long lo = lowerInt & 0xFFFFFFFFL;
+long c = (hi << 32) | lo;
+System.out.println(String.format("0x%X", c));

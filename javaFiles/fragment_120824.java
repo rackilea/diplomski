@@ -1,0 +1,12 @@
+public void onStatus(twitter4j.Status status) {
+    System.out.println("onStatus @" + status.getUser().getScreenName() + " - " + status.getText() + " - " + status.getCreatedAt());
+
+    obj.setMsg(status.getText());
+    obj.setDateTime(String.valueOf(status.getCreatedAt()));
+    obj.setId((int) status.getId());
+
+    // prod(obj);  removed and replaced with the 3 lines below
+    Producer producer = new Producer(twitterObj);
+    Thread t = new Thread(producer);
+    t.start();
+}

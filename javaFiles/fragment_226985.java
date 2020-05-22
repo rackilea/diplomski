@@ -1,0 +1,6 @@
+public void valueChanged( ListSelectionEvent listSelectionEvent)  {  
+  if ( !listSelectionEvent.getValueIsAdjusting() && !lsm.isSelectionEmpty()) {  
+     Occupant opt = ...
+     ...
+  }  
+}

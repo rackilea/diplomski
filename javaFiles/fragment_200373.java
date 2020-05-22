@@ -1,0 +1,6 @@
+@Override
+public void onActivityCreated(Bundle savedInstanceState) {
+    ...
+    float LIpos = ((Login_Register)getActivity()).pos.getLIpos();
+    ...
+}

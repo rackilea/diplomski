@@ -1,0 +1,6 @@
+Transaction tx = session.beginTransaction();
+...
+for (DocSimilar doc : relateNews) {
+    ...
+    tx.commit();
+}

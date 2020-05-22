@@ -1,0 +1,11 @@
+spark.read()
+    .format("com.crealytics.spark.excel")
+    .option("location",path)
+    .option("sheetName", sheetName)
+    .option("dataAddress", "'"+sheetName+"'!A1")
+    .option("header","true")
+    .option("useHeader", "true")
+    .option("treatEmptyValuesAsNulls", "true")
+    .option("inferSchema", "true")
+    .option("addColorColumns", "False")
+    .load(path);

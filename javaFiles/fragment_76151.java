@@ -1,0 +1,16 @@
+layout.setHorizontalGroup(
+   layout.createSequentialGroup()
+      .addComponent(c1)
+      .addComponent(c2)
+      .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+           .addComponent(c3)
+           .addComponent(c4))
+);
+layout.setVerticalGroup(
+   layout.createSequentialGroup()
+      .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+           .addComponent(c1)
+           .addComponent(c2)
+           .addComponent(c3))
+      .addComponent(c4)
+);

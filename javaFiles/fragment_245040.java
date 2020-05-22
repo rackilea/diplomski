@@ -1,0 +1,11 @@
+IndexResponse response = client.prepareIndex("facebook", "Lance", "1")
+        .setSource(jsonBuilder()
+                    .startObject()
+                        .field("title", "Posting")
+                        .field("postDate", new Date())
+                        .field("content", "today's weather is hot")
+                        .field("tags", Lists.newArrayList("hashtag"))
+                    .endObject()
+                  )
+        .execute()
+        .actionGet();

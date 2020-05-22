@@ -1,0 +1,6 @@
+...
+if (!listOfIncomes.contains(incomesList.get(i))) 
+{
+    listOfIncomes.add(incomesList.get(i));
+} 
+...

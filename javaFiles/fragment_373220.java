@@ -1,0 +1,34 @@
+import java.awt.*;
+import java.awt.datatransfer.*;
+public class LoadToClipboard {
+    public static void main( String [] args ) {
+        Toolkit tolkit = Toolkit.getDefaultToolkit();
+        Clipboard clip = tolkit.getSystemClipboard();        
+        clip.setContents( new ImageSelection( tolkit.getImage("StackOverflowLogo.png")) , null );
+    }
+}
+class ImageSelection implements Transferable {
+        private Image image;
+
+        public ImageSelection(Image image) {
+            this.image = image;
+        }
+
+        // Returns supported flavors
+        public DataFlavor[] getTransferDataFlavors() {
+            return new DataFlavor[]{DataFlavor.imageFlavor};
+        }
+
+        // Returns true if flavor is supported
+        public boolean isDataFlavorSupported(DataFlavor flavor) {
+            return DataFlavor.imageFlavor.equals(flavor);
+        }
+
+        // Returns image
+        public Object getTransferData(DataFlavor flavor) throws UnsupportedFlavorException {
+            if (!DataFlavor.imageFlavor.equals(flavor)) {
+                throw new UnsupportedFlavorException(flavor);
+            }
+            return image;
+        }
+    }

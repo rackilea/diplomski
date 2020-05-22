@@ -1,0 +1,19 @@
+org.apache.axis2.transport.http.AbstractHTTPSender
+...
+...
+...
+protected void setAuthenticationInfo(HttpClient agent, MessageContext msgCtx, HostConfiguration config)
+    throws AxisFault, UnknownHostException
+  {
+String localhost = InetAddress.getLocalHost().getHostName().toUpperCase();
+...
+...
+if (domain != null) {
+
+    creds = new NTCredentials(username, password, localhost, domain);
+} else {
+    creds = new UsernamePasswordCredentials(username, password);
+}
+    tmpHttpState.setCredentials(new AuthScope(host, port, realm), creds);
+}
+...

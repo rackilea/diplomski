@@ -1,0 +1,10 @@
+em.clear();
+tx.begin();
+p = new Parent();
+Child c1 = new Child(); 
+Child c2 = new Child(); 
+c1.setParent(p);
+c2.setParent(p);
+em.persist(c1);
+em.persist(c2);
+tx.commit();

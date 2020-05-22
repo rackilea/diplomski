@@ -1,0 +1,10 @@
+<Resource 
+auth="Container" 
+driverClassName="org.apache.derby.jdbc.EmbeddedDriver" 
+maxActive="20" 
+maxIdle="10" 
+maxWait="-1" 
+name="ds/flexeraDS" 
+type="javax.sql.DataSource" 
+url="jdbc:derby:flexeraDB;create=true" 
+  />

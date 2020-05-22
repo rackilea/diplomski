@@ -1,0 +1,12 @@
+{
+      "ListeCar":[
+       {
+           "id":"R",
+           "size":"2",
+           "Orientation":"Horizontal",
+           "Position":{
+                "Row":"2",
+                "Column":"0"
+            }
+      }]
+}

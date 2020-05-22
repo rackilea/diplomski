@@ -1,0 +1,6 @@
+[ivy:resolve]   found org.slf4j#slf4j-api;1.6.4 in central
+[ivy:resolve]   found org.mycompany#my-module;1.0 in my-repo
+..
+[ivy:resolve] downloading http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.jar ...
+..
+[ivy:resolve] downloading http://myserver/myrepo/org.mycompany/my-module/1.0/my-module.jar ...

@@ -1,0 +1,11 @@
+RestAssured.given()
+.auth()
+.preemptive()
+.basic(theUsername, thePassword)
+.contentType(theContentType)
+.header("Accept",theContentType)
+.body(theXMLBody)
+.when()
+.post(theURL)
+.then()
+.body("ValidationResponse.errors.error.field", contains("id","amount"));

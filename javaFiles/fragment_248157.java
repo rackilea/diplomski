@@ -1,0 +1,9 @@
+if (ch == JOptionPane.NO_OPTION) {
+    ...
+}
+else if (ch == JOptionPane.CANCEL_OPTION) {
+    ...
+}
+else {
+    ...
+}

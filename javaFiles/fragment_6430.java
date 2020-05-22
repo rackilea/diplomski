@@ -1,0 +1,6 @@
+selectionDisplayList = glGenLists(1);
+glNewList(selectionDisplayList, GL_COMPILE);
+glBegin(GL_LINES);
+...
+glLineWidth(3);//This is what caused the issue
+...

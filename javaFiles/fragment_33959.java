@@ -1,0 +1,12 @@
+DROP PROCEDURE IF EXISTS execSql;
+DELIMITER //
+CREATE PROCEDURE execSql () 
+BEGIN
+
+  SET @sql = CONCAT( ...
+
+  PREPARE stmt FROM @sql;
+  EXECUTE stmt;
+  DEALLOCATE PREPARE stmt;
+END //
+DELIMITER ;

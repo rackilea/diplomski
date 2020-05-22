@@ -1,0 +1,6 @@
+List<Person> persons = new ArrayList<>();
+Person personOne = ...
+Person personTwo = ...
+persons.add(personOne);
+persons.add(personTwo);
+Collections.sort(persons);

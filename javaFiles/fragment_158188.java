@@ -1,0 +1,10 @@
+if(input2.equals("x"))
+               {
+                   i1.setText("x");
+                   i1.setEnabled(false);
+               }
+               else
+               {
+                   i1.setText("o"); 
+                   i1.setEnabled(false);
+               }

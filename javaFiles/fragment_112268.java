@@ -1,0 +1,6 @@
+public static Result getFromLocation(StringBuilder additionalInformation) {
+    ...
+    // Method modifies the mutable object
+    additionalInformation.append("Some additional text");
+    ...
+}

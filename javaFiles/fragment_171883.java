@@ -1,0 +1,9 @@
+int fanta = 1;
+int crisps = 1;
+...
+int totalCost = 0;
+...
+if(btnFanta.isSelected()) totalCost += fanta;
+if(btnCrisps.isSelected()) totalCost += crisps;
+...
+rs.updateInt("TotalCost", totalCost);

@@ -1,0 +1,9 @@
+private void readInput() {
+    ......
+     try {
+         n = source.read(buf);
+     } catch (IOException ioe) {
+    .....
+     }
+    .....
+ }

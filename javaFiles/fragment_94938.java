@@ -1,0 +1,13 @@
+@AReport
+public class AReport implements IReport {
+...
+@Inject
+...
+}
+
+@BReport
+public class BReport implements IReport {
+...
+@Inject
+...
+}

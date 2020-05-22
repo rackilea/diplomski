@@ -1,0 +1,6 @@
+// ...
+double angle = entry[0];
+double length = entry[1];
+double x = Math.cos(angle) * length;
+double y = Math.sin(angle) * length;
+// ...

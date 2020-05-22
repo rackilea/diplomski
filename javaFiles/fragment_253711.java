@@ -1,0 +1,6 @@
+...
+    } else {
+        System.out.println("Program initializing.. Try again!");
+        new TCPClient(client, portNumber);
+    }
+...

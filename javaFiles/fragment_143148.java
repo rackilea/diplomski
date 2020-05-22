@@ -1,0 +1,15 @@
+Schema schema = SchemaBuilder
+            .record("TimeDot")
+            .namespace("TestUnion")
+            .fields()
+            .name("lat")
+                .type().doubleType()
+                .noDefault()
+            .name("lon")
+                .type().doubleType()
+                .noDefault()
+            .name("props")
+                .type().map()
+                    .values(SchemaBuilder.unionOf().intType().and().stringType().endUnion())
+                .noDefault()
+            .endRecord();

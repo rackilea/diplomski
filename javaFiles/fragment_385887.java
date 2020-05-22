@@ -1,0 +1,9 @@
+public class Collections {
+    ...
+    public static final List EMPTY_LIST = new EmptyList<Object>();
+    ...
+    public static final <T> List<T> emptyList() {
+        return (List<T>) EMPTY_LIST;
+    }
+    ...
+}

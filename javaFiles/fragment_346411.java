@@ -1,0 +1,10 @@
+System.out.println (theNum);
+System.out.println (theNum);
+System.out.println (theNum);
+System.out.println (theNum);
+System.out.println (theNum);
+System.out.println (theNum);
+System.out.println (theNum);
+System.out.println (theNum);
+System.out.println (theNum);
+System.out.println (theNum);

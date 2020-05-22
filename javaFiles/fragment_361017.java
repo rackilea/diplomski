@@ -1,0 +1,12 @@
+bool EnableResourceManagementTLABCache         = true         {product}
+ bool EnableSharedLookupCache                   = true         {product}
+ bool FlightRecorder                            = false        {commercial}
+ccstr FlightRecorderOptions                     =              {product}
+ bool LogCommercialFeatures                     = false        {product}
+ccstr MemoryRestriction                         = none         {commercial}
+ bool ResourceManagement                        = false        {commercial}
+ intx ResourceManagementSampleInterval          = -1           {commercial}
+ccstr StartFlightRecording                      =              {commercial}
+ bool TraceSharedLookupCache                    = false        {product}
+ bool UnlockCommercialFeatures                 := true         {commercial}
+ bool UseAppCDS                                 = false        {commercial}

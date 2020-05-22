@@ -1,0 +1,9 @@
+...
+private double speed;
+private double angle; // in radians - makes math easier
+
+public void move(long dt) {
+    ...
+    double dx = speed * dt_s * Math.sin(angle);
+    double dy = speed * dt_s * Math.cos(angle);
+    ...

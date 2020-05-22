@@ -1,0 +1,13 @@
+// Create the action...
+NumberAction number1Action = new NumberAction(1);
+// Create the button for number 1...
+JButton number1Button = new JButton(number1Action);
+
+InputMap im = getInputMap(WHEN_IN_FOCUSED_WINDOW);
+// Create a key mapping for number 1...
+im.put(KeyStroke.getKeyStroke(KeyEvent.VK_1, 0), "number1");
+im.put(KeyStroke.getKeyStroke(KeyEvent.VK_NUMPAD1, 0), "number1");
+
+ActionMap am = getActionMap();
+// Make the input key to the action...
+am.put("number1", number1Action);

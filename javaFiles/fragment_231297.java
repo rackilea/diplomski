@@ -1,0 +1,6 @@
+private MediaPlayer mp,mp2;
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    mp = new MediaPlayer.create(...
+    mp2 = new MediaPlayer.create(...

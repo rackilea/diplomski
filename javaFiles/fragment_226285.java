@@ -1,0 +1,6 @@
+byte[] message = ...
+Socket socket = ...
+DataOutputStream out = new DataOutputStream(socket.getOutputStream());
+
+out.writeInt(message.length); // write length of the message
+out.write(message);           // write the message

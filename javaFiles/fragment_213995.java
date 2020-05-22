@@ -1,0 +1,13 @@
+client.prepareSearch("myindex").
+                setTypes("mytype").
+                setQuery(
+                        QueryBuilders.filteredQuery(QueryBuilders.matchAllQuery(),
+                                FilterBuilders.andFilter(FilterBuilders.termFilter("server","x"),
+                                        FilterBuilders.rangeFilter("date_time").from("fdate").to("tdate")))).
+                addAggregation(
+                        AggregationBuilders.dateHistogram("dateagg").field("date_time").interval(DateHistogram.Interval.DAY)
+                                .subAggregation(
+                                AggregationBuilders.avg("cpu_agg").field("cpu_time")
+                        )
+                )
+                .get();

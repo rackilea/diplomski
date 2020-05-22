@@ -1,0 +1,10 @@
+String response=response.getBody(); 
+  JSONObject res = new JSONObject();
+  System.out.println(res);
+  int len=res.size();
+  System.out.println(len);
+  JSONParser parser=new JSONParser();
+    Object obj = parser.parse(response);
+    JSONArray array = (JSONArray)obj;
+    res=(JSONObject)array.get(0);
+    System.out.println(res.get("bId"));

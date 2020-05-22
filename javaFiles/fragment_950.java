@@ -1,0 +1,12 @@
+EditText pek=(EditText)findViewById(R.id.editText1);
+String value=pek.getText().toString();
+final int pekerja=Integer.parseInt(value);
+EditText lam=(EditText)findViewById(R.id.editText2);
+String value1=lam.getText().toString();
+final int lama=Integer.parseInt(value1);
+EditText up=(EditText)findViewById(R.id.editText3);
+String value2=up.getText().toString();
+final int upah=Integer.parseInt(value2);
+EditText jum=(EditText)findViewById(R.id.editText4);
+String value3=jum.getText().toString();
+final int jumlah=Integer.parseInt(value3);

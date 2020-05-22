@@ -1,0 +1,10 @@
+KeyPair pair = generateRSAKeyPair();
+    X509Certificate cert = generateV3Certificate(pair); 
+    KeyStore ks = KeyStore.getInstance("PKCS12", "BC");   
+    char[] password = "abc".toCharArray();
+    ks.load(null,null);
+    ks.setCertificateEntry(cert.getSerialNumber().toString(), cert);
+    ks.setKeyEntry(cert.getSerialNumber().toString(), pair.getPrivate(), password, new Certificate[]{cert,cert});
+    FileOutputStream fos = new FileOutputStream("keystore.pfx");
+    ks.store(fos, password);
+    fos.close();

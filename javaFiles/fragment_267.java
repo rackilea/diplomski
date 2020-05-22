@@ -1,0 +1,9 @@
+output.format("%-10s%-20s%-20s%-20s%-20s%-20s%-20s%-20s%n",
+                                    year_n,
+                                    months[month_n],                        
+                                    df.format(record.getIncome()),
+                                    df.format(record.getAtv()),
+                                    df.format(record.getSumAtv()),
+                                    df.format(iedz),
+                                    df.format(soc_apd),
+                                    df.format(netto));

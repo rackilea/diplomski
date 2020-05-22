@@ -1,0 +1,9 @@
+String in position 0: (
+String in position 1: ;
+String in position 2: world
+String in position 3: 2013
+String in position 4: /
+String in position 5: 05
+String in position 6: /
+String in position 7: /
+String in position 8: end

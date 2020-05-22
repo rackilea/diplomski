@@ -1,0 +1,9 @@
+if (balance1 >= betamount1) {
+    ....
+}
+if (balance1 <= 0.00000000) {
+    ....
+}
+if (balance1 < betamount1) {
+    ....
+}

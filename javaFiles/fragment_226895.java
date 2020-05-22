@@ -1,0 +1,7 @@
+CREATE TRIGGER IO_Trig_DEL 
+  ON  [dbo].[OrganizationUserView]
+  INSTEAD OF DELETE
+AS BEGIN
+  SET NOCOUNT ON;
+END
+GO

@@ -1,0 +1,6 @@
+public  static void AgreeAllow( TouchAction t,WebDriverWait w,AndroidDriver d,PageObjectOne p) throws InterruptedException{
+
+...
+...
+
+}

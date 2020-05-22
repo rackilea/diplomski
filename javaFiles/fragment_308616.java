@@ -1,0 +1,9 @@
+http.csrf().disable().authorizeRequests()
+        .antMatchers("/api/registration/**").permitAll()
+        .antMatchers("/api/dictionary/**").permitAll()
+        .antMatchers("/api/common/**").permitAll()
+        .antMatchers("/api/advert_public/**").permitAll()
+        .antMatchers("/api/company_public/**").permitAll()
+        .anyRequest().hasRole(DEFAULT_ROLE)
+        .and().httpBasic()
+        .authenticationEntryPoint(authEntryPoint);

@@ -1,0 +1,17 @@
+mainPanel.add(SelectData);
+    mainPanel.add(START);
+    mainPanel.add(startDay);
+    mainPanel.add(sDay);
+    mainPanel.add(startMonth);
+    mainPanel.add(sMonth);
+    mainPanel.add(startYear);
+    mainPanel.add(sYear);
+    mainPanel.add(END);
+    mainPanel.add(new JLabel());
+    mainPanel.add(endDay);
+    mainPanel.add(eDay);
+    mainPanel.add(endMonth);
+    mainPanel.add(eMonth);
+    mainPanel.add(endYear);
+    mainPanel.add(eYear);
+    mainPanel.add(checkDate);

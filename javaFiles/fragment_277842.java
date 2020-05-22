@@ -1,0 +1,18 @@
+<configuration>
+    <outputDirectory>${basedir}/target/classes</outputDirectory>
+    <includeEmptyDirs>true</includeEmptyDirs>
+    <resources>
+        <resource>
+            <directory>${basedir}/src/main/java/com/test/customize</directory>
+            <filtering>false</filtering>
+        </resource>
+        <resource>
+            <directory>${basedir}/src/main/java/com/test/resources</directory>
+            <filtering>false</filtering>
+        </resource>
+        <resource>
+            <directory>${basedir}/src/main/java/com/test/xml</directory>
+            <filtering>false</filtering>
+        </resource>
+    </resources>
+</configuration>

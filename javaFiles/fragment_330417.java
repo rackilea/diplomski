@@ -1,0 +1,10 @@
+{
+  ElapsedTime:"",
+  TotalBusinessImpressionKeywordFailed:"",
+  TotalKeywordStatsFailed:"",
+  TotalRecentSearchesFailed="",
+  .
+  .
+  .
+  error:""
+}

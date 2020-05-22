@@ -1,0 +1,6 @@
+AtomicBoolean stop = new AtomicBoolean();
+  ...
+  while(! stop.get()) {
+      ...
+      stop.compareAndSet(false, foo());
+  }

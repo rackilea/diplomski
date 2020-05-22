@@ -1,0 +1,11 @@
+FormBody.Builder formBuilder = new FormBody.Builder() 
+        .add("ID",ID)
+        .add("Name",name)
+        .add("email",email)
+        .add("password",password)
+        .add("age",age)
+        .add("number",number)
+        .add("bloodgroup",bloodgroup)
+        .add("lat",latitude+"")
+        .add("longi",longitude+"")
+        .add("image",encodedPhotoString);

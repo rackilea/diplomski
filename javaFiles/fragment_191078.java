@@ -1,0 +1,6 @@
+return array(
+      ...
+      "euro"=>array("symbol"=>"&euro;","symbol_unicode"=>"20AC")
+                                                   -------^
+      ...
+   );

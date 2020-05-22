@@ -1,0 +1,6 @@
+String next = input.replace(rule.getFrom(), rule.getTo());
+if (!input.equals(next)) {
+  ...
+  input = next;
+  ...
+}

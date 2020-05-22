@@ -1,0 +1,6 @@
+private void initializeFileData(){
+    try {
+        Scanner reader = new Scanner(openedPath).useDelimiter("\\n");
+        ...
+        while(reader.hasNext("\\w+\\s\\w+\\s\\d*\\.\\d{1,2}\\s[0-5]")){
+        ...

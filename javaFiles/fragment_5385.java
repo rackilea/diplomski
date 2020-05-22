@@ -1,0 +1,13 @@
+private ImageView imv;
+
+public void start(Stage primaryStage) throws Exception {
+    ...
+    this.imv = new ImageView();
+    ...
+}
+
+public void setPaneImage(Pane p, String img) {
+    ...
+    imv.setImage(paneVide);
+    ...
+}

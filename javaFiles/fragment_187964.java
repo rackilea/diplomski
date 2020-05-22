@@ -1,0 +1,16 @@
+ArrayList<Employee> finalarraylist = null;
+//...
+// finalarraylist still null...
+try
+{
+    //...
+    // finalarraylist still null
+    while(it.hasNext())
+    {
+        //...
+        // finalarraylist still null
+        if(emp.getId() == searchVal1 || (emp.getFname()).equals(searchVal2) || (emp.getLname()).equals(searchVal3))
+        {
+            //...
+            // finalarraylist still null
+            finalarraylist.add(new Employee(intval, stringf, stringl));

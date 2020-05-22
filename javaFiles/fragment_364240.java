@@ -1,0 +1,9 @@
+Caused by: java.lang.VerifyError: (class: org/springframework/web/servlet/mvc/condition/ProducesRequestCondition, method: compareMatchingMediaTypes signature: (Lorg/springframework/web/servlet/mvc/condition/ProducesRequestCondition;ILorg/springframework/web/servlet/mvc/condition/ProducesRequestCondition;I)I) Incompatible argument to function
+    at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.createRequestMappingInfo(RequestMappingHandlerMapping.java:242) [spring-webmvc-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+    at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getMappingForMethod(RequestMappingHandlerMapping.java:191) [spring-webmvc-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+    at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.getMappingForMethod(RequestMappingHandlerMapping.java:51) [spring-webmvc-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+    at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$1.matches(AbstractHandlerMethodMapping.java:152) [spring-webmvc-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+    at org.springframework.web.method.HandlerMethodSelector$1.doWith(HandlerMethodSelector.java:62) [spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+    at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:495) [spring-core-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+    at org.springframework.web.method.HandlerMethodSelector.selectMethods(HandlerMethodSelector.java:58) [spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+    at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:149) [spring-webmvc-4.0.6.RELEASE.jar:4.0.6.RELEASE]

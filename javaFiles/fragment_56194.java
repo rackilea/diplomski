@@ -1,0 +1,6 @@
+...lock()
+try {
+    ...
+} finally {
+    ...unlock();
+}

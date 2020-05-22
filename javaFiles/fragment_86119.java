@@ -1,0 +1,10 @@
+/**
+ * Returns an iterator over the elements in this set.  The elements
+ * are returned in no particular order.
+ *
+ * @return an Iterator over the elements in this set
+ * @see ConcurrentModificationException
+ */
+public Iterator<E> iterator() {
+    return map.keySet().iterator();
+}

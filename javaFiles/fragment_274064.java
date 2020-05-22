@@ -1,0 +1,6 @@
+public Connection connect()...
+     ....
+     Connection conn = DriverManager.getConnection(connectionUrl, user, password);
+    System.out.println("Connection established");
+    return conn;
+}

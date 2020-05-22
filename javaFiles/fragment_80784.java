@@ -1,0 +1,13 @@
+Criteria crit = sessionFactory.getCurrentSession().createCriteria(Project.class);
+    ProjectionList projList = Projections.projectionList();
+    projList.add(Projections.groupProperty("createdBy").as("createdBy"));
+    projList.add(Projections.count("id").as("created_by_count"));
+    projList.add(Projections.sqlProjection( "EXTRACT(YEAR FROM createdon) as year", new String[] {"year"}, new Type[] {StandardBasicTypes.INTEGER} ));
+    projList.add(Projections.sqlProjection( "to_char(createdon, 'Month') as month", new String[] {"month"}, new Type[] {StandardBasicTypes.STRING} ));
+    crit.setProjection(projList);
+    Criterion cn = Restrictions.between("createdOn",fromDate,todate);
+    crit.add(cn);
+    crit.addOrder(Order.asc("createdBy"));
+    crit.setResultTransformer(Criteria.ALIAS_TO_ENTITY_MAP);
+    List projectCount = crit.list();
+    return projectCount;

@@ -1,0 +1,6 @@
+class Square
+{
+    Color myColour;
+
+    // ...
+}

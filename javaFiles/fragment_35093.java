@@ -1,0 +1,28 @@
+public static String getManifestInfo() {
+        Enumeration resEnum;
+        try {
+            resEnum = Thread.currentThread().getContextClassLoader().getResources(JarFile.MANIFEST_NAME);
+            while (resEnum.hasMoreElements()) {
+                try {
+                    URL url = (URL)resEnum.nextElement();
+                    InputStream is = url.openStream();
+                    if (is != null ) {
+                        Manifest manifest = new Manifest(is);
+                        Attributes mainAttribs = manifest.getMainAttributes();
+                        String version = mainAttribs.getValue("Implementation-Version");
+                        String name = mainAttribs.getValue("Implementation-Title");
+                        if (version != null && name != null) {
+                            if ("packagetitle".equals(name))
+                                return version;
+                        }
+                    }
+                }
+                catch (Exception e) {
+                    // Silently ignore wrong manifests on classpath?
+                }
+            }
+        } catch (IOException e1) {
+            // Silently ignore wrong manifests on classpath?
+        }
+        return null;
+    }

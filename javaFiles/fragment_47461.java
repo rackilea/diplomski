@@ -1,0 +1,6 @@
+InputStream in = p.getErrorStream();
+BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+...
+String error = reader.readLine();
+...
+reader.close();

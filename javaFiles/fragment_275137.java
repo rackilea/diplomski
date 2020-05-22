@@ -1,0 +1,58 @@
+import java.util.concurrent.*;
+
+public class ConcurrentTimer {
+
+    public static void main(String[] args) {
+
+
+        try {
+            Runnable action = new Runnable() {
+                    public void run() {
+
+                        System.out.println("Thread Running");
+
+                    }
+                };
+
+            time (3, action);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    private ConcurrentTimer() { } // Noninstantiable
+
+    public static long time(int concurrency,
+            final Runnable action) throws InterruptedException {
+
+        Executor executor = Executors.newFixedThreadPool(concurrency);
+
+
+        final CountDownLatch ready = new CountDownLatch(concurrency);
+        final CountDownLatch start = new CountDownLatch(1);
+        final CountDownLatch done = new CountDownLatch(concurrency);
+
+        for (int i = 0; i < concurrency; i++) {
+            executor.execute(new Runnable() {
+                public void run() {
+                    ready.countDown(); // Tell timer we're ready
+                    try {
+                        start.await(); // Wait till peers are ready
+                        action.run();
+                    } catch (InterruptedException e) {
+                        Thread.currentThread().interrupt();
+                    } finally {
+                        done.countDown();  // Tell timer we're done
+                    }
+                }
+            });
+        }
+
+        ready.await();     // Wait for all workers to be ready
+        long startNanos = System.nanoTime();
+        start.countDown(); // And they're off!
+        done.await();      // Wait for all workers to finish
+        return System.nanoTime() - startNanos;
+    }
+}

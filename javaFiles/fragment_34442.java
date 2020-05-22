@@ -1,0 +1,6 @@
+if(x instanceof String) {
+  String s = (String) x;
+  // ...
+} else {
+  // ...
+}

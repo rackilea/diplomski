@@ -1,0 +1,9 @@
+try {
+    ReturnType ret = ...
+    // Compute ret
+    return ret;
+} catch {
+    ...
+} finally {
+    ...
+}

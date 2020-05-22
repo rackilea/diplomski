@@ -1,0 +1,9 @@
+package com.web_server.webserver;
+
+// lots of imports...
+// ...
+import com.myproject.R;
+
+public class MainActivity extends ActionBarActivity {
+...
+}

@@ -1,0 +1,27 @@
+Connection connection = null;
+        try {
+            //Loading the JDBC driver for MySql
+            Class.forName("com.mysql.jdbc.Driver");
+
+            //Getting a connection to the database. Change the URL parameters
+            connection = DriverManager.getConnection("jdbc:mysql://Server/Schema", "username", "password");
+
+            //Creating a statement object
+            Statement stmt = connection.createStatement();
+
+            //Executing the query and getting the result set
+            ResultSet rs = stmt.executeQuery("select * from item");
+
+            //Iterating the resultset and printing the 3rd column
+            while (rs.next()) {
+                System.out.println(rs.getString(3));
+            }
+            //close the resultset, statement and connection.
+            rs.close();
+            stmt.close();
+            connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }

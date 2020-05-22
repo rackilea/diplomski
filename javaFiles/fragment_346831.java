@@ -1,0 +1,6 @@
+//...
+BigFivePsychokinesisTest[] ResultsArray = new BigFivePsychokinesisTest[5];
+for (int i = 0; i < ResultsArray.length; i++) {
+    ResultsArray[i] = new BigFivePsychokinesisTest();
+}
+//...

@@ -1,0 +1,6 @@
+httppost.setHeader("X-PAYPAL-SECURITY-USERID", "parth_1325956186_biz_api1.bcod.co.in");
+httppost.setHeader("X-PAYPAL-SECURITY-PASSWORD", "334367211");
+httppost.setHeader("X-PAYPAL-SECURITY-SIGNATURE", "An5ns1Kso7MUDHR4ErQKJJJ4qi4-AI0T5BBCHc3gWzBV9Q81jcP6LFD6");
+httppost.setHeader("X-PAYPAL-APPLICATION-ID", "APP-80W284485P519543T");
+httppost.setHeader("X-PAYPAL-REQUEST-DATA-FORMAT", "NV");
+httppost.setHeader("X-PAYPAL-RESPONSE-DATA-FORMAT", "NV");

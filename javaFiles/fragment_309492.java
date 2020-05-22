@@ -1,0 +1,21 @@
+DSL.using(configuration)
+   .insertInto(DATA)
+   .columns(
+       DATA.TICKER, 
+       DATA.OPEN,
+       DATA.HIGH,
+       DATA.LOW,
+       DATA.CLOSE,
+       DATA.DATE)
+   .values(
+       dailyData.getTicker(),
+       dailyData.getOpen(),
+       dailyData.getHigh(),
+       dailyData.getLow(),
+       dailyData.getClose(),
+       dailyData.getDate())
+   .onConflict()
+   .doUpdate()
+   .set(DATA.CLOSE, inline(false))
+   .where(DATA.CLOSE)
+   .execute();

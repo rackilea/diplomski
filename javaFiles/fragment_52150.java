@@ -1,0 +1,11 @@
+List<NameValuePair> list = new ArrayList<NameValuePair>();
+        list.add(new BasicNameValuePair("username",username));
+        list.add(new BasicNameValuePair("deviceId",regId));
+        list.add(new BasicNameValuePair("deviceType","AndroidPhone"));
+        DefaultHttpClient client = new DefaultHttpClient();
+        HttpPost post = new HttpPost("example.url.com");
+        post.setEntity(new UrlEncodedFormEntity(list));
+        ResponseHandler<String> handler = new BasicResponseHandler();
+        HttpResponse response = client.execute(post);
+        String responseString = handler.handleResponse(response);
+        JSONObject jsonResponse = new JSONObject(responseString);

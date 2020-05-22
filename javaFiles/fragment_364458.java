@@ -1,0 +1,16 @@
+Document document = new Document();
+PdfWriter.getInstance(document, new FileOutputStream("datamatrix.pdf"));
+document.open();
+PdfPTable table = new PdfPTable(2);
+table.setHorizontalAlignment(Element.ALIGN_LEFT);
+table.setTotalWidth(100);
+table.setLockedWidth(true);
+table.addCell("1");
+BarcodeDatamatrix dm = new BarcodeDatamatrix();
+dm.generate("1234567890");
+Image img = dm.createImage();
+PdfPCell cell = new PdfPCell(img, false);
+cell.setPadding(2);
+table.addCell(cell);;
+document.add(table);
+document.close();

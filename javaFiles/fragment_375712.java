@@ -1,0 +1,13 @@
+String account = properties.get("oauthAccount");
+String clientId = properties.get("oauthClientId");
+String secret = properties.get("oauthSecret");
+File privateKey = getCertficateFile();
+GoogleCredential.Builder builder = new GoogleCredential.Builder();
+builder.setTransport(new NetHttpTransport());
+builder.setServiceAccountId(account);
+builder.setJsonFactory(new GsonFactory());
+builder.setClientSecrets(clientId, secret);            
+builder.setServiceAccountScopes(Arrays.asList("https://www.googleapis.com/auth/bigquery"));
+builder.setServiceAccountPrivateKeyFromP12File(privateKey);
+GoogleCredential googleBigQueryCredential = builder.build();
+Bigquery bigquery = new Bigquery.Builder(new NetHttpTransport(), new GsonFactory(), googleBigQueryCredential).setApplicationName("myAppName")                                                                                                                     .build();

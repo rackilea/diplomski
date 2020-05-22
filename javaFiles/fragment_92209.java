@@ -1,0 +1,29 @@
+socket.io().on(Manager.EVENT_TRANSPORT, new Emitter.Listener() 
+{
+    @Override
+    public void call(Object... args) 
+    {
+        Transport transport = (Transport)args[0];
+        transport.on(Transport.EVENT_REQUEST_HEADERS, new Emitter.Listener() 
+        {
+            @Override
+            public void call(Object... args) 
+            {
+                @SuppressWarnings("unchecked")
+                Map<String, String> headers = (Map<String, String>)args[0];
+                // set header
+                headers.put("X-SocketIO", "hi");
+            }
+        }).on(Transport.EVENT_RESPONSE_HEADERS, new Emitter.Listener() 
+        {
+            @Override
+            public void call(Object... args) 
+            {
+                @SuppressWarnings("unchecked")
+                Map<String, String> headers = (Map<String, String>)args[0];
+               // get header
+                String value = headers.get("X-SocketIO");
+            }
+        });
+    }
+});

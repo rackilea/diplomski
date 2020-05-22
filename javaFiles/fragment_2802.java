@@ -1,0 +1,6 @@
+List<String> listOfTags = Arrays.asList(tags);
+if (listOfTags.contains("tag") {
+    ....
+} else if (listOfTags.containsAll(Arrays.asList({"tag", "test_3"})) {
+    ....
+}

@@ -1,0 +1,12 @@
+.antMatchers("/restricted_area/*")
+        .access("hasRole('ADMIN')")
+        .and()
+        .formLogin()
+        .loginPage("/login")
+        .usernameParameter("username")
+        .passwordParameter("password")
+        .successHandler(authenticationSuccessHandler)
+        .permitAll()
+        .and()
+        .logout()
+        .permitAll();

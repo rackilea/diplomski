@@ -1,0 +1,11 @@
+jpanel.add(Box.createVerticalGlue());
+jpanel.add(label1);
+jpanel.add(Box.createRigidArea(new Dimension(0, 10)));
+jpanel.add(label2);
+jpanel.add(Box.createRigidArea(new Dimension(0, 10)));
+jpanel.add(label3);
+jpanel.add(Box.createRigidArea(new Dimension(0, 10)));
+jpanel.add(label4);
+jpanel.add(Box.createRigidArea(new Dimension(0, 10)));
+jpanel.add(label5);
+jpanel.add(Box.createVerticalGlue());

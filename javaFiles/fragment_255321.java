@@ -1,0 +1,16 @@
+{
+    "type":"LOGIN",
+    "username":"someuser",
+    "password":"somepass"
+}
+////////////////////////////////
+{
+    "type":"SOMEREQUEST",
+    "param1":"someValue",
+    "param2":"someValue"
+}
+////////////////////////////////
+{
+    "type":"OTHERREQUEST",
+    "param3":"someValue"
+}

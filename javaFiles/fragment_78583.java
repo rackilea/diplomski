@@ -1,0 +1,6 @@
+Object content = message.getContent();  
+if(content instanceof String) {  
+   ...
+} else if(content instanceof Multipart) {  
+    ...  
+}

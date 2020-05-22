@@ -1,0 +1,13 @@
+{
+   "kind":"tm:ltm:virtual:virtualcollectionstate",
+   "selfLink":"https://localhost/mgmt/tm/ltm/virtual?expandSubcollections=true&ver=13.1.1.2",
+   "items":[
+      {
+        "kind":"tm:ltm:virtual:virtualstate",
+        "name":"some_name_with:80",
+        "partition":"part",
+        "fullPath":"/part/name",
+        ...
+      }
+   ]
+}

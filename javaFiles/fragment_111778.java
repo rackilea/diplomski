@@ -1,0 +1,6 @@
+if (getArguments().getInt(ARG_SECTION_NUMBER) == 1) {
+    ...
+}
+else if (getArguments().getInt(ARG_SECTION_NUMBER) == 2) {
+    ...
+}

@@ -1,0 +1,12 @@
+requestBuilder = Glide.with(mActivity)
+    .using(Glide.buildStreamModelLoader(Uri.class, mActivity), InputStream.class)
+    .from(Uri.class)
+    .as(SVG.class)
+    .transcode(new SvgDrawableTranscoder(), PictureDrawable.class)
+    .sourceEncoder(new StreamEncoder())
+    .cacheDecoder(new FileToStreamDecoder<SVG>(new SvgDecoder()))
+    .decoder(new SvgDecoder())
+    .placeholder(R.drawable.ic_facebook)
+    .error(R.drawable.ic_web)
+    .animate(android.R.anim.fade_in)
+    .listener(new SvgSoftwareLayerSetter<Uri>());

@@ -1,0 +1,13 @@
+stmt.execute ("INSERT INTO my_blob_table VALUES ('row1', empty_blob())");
+BLOB blob;
+cmd = "SELECT * FROM my_blob_table WHERE X='row1' FOR UPDATE";
+ResultSet rset = stmt.executeQuery(cmd);
+rset.next();
+BLOB blob = ((OracleResultSet)rset).getBLOB(2);
+File binaryFile = new File("john.gif");
+System.out.println("john.gif length = " + binaryFile.length());
+FileInputStream instream = new FileInputStream(binaryFile);
+OutputStream outstream = blob.setBinaryStream(1L);
+int size = blob.getBufferSize();
+byte[] buffer = new byte[size];
+int length = -1;

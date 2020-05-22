@@ -1,0 +1,10 @@
+String s = "2823893a2f91c7507831f140dd7aa75e420477b0 - #0023922: Fixed the message for defaulted bonds ; Thu Oct 25 12:08:25 2012 +0000";
+System.out.println("s = " + s);
+String dateAsString = s.replaceAll(".*;\\s+","");
+System.out.println("dateAsString = " + dateAsString);
+DateFormat parser = new SimpleDateFormat("EEE MMM dd HH:mm:ss yyyy X", Locale.ENGLISH);
+Date date = parser.parse(dateAsString);
+System.out.println("date = " + date);
+DateFormat formatter = new SimpleDateFormat("dd/MMM/yyyy hh:mm a", Locale.ENGLISH);
+formatter.setTimeZone(TimeZone.getTimeZone("UTC"));
+System.out.println(formatter.format(date));

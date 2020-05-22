@@ -1,0 +1,40 @@
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+
+
+    b1.setOnClickListener(this); 
+    b2.setOnClickListener(this); 
+    b3.setOnClickListener(this); 
+    b4.setOnClickListener(this);   
+    b5.setOnClickListener(this);
+}
+
+
+
+@Override
+public void onClick(View v) {
+    switch(v.getId()){
+    case R.id.button1:
+        startActivity(new Intent(MainActivity.this, Chicago.class));
+        break;
+
+    case R.id.button02:
+        startActivity(new Intent(MainActivity.this, SanJose.class));
+        break;
+
+    case R.id.button03:
+        startActivity(new Intent(MainActivity.this, Baltimore.class));
+        break;
+
+    case R.id.button01:
+        startActivity(new Intent(MainActivity.this, WestPalmBeach.class));
+        break;
+
+    case R.id.button04:
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse ("http://www.google.com/")));
+        break;  
+
+    }
+}

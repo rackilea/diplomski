@@ -1,0 +1,12 @@
+JPanel menupn;
+ButtonGroup group;
+JRadioButton square;
+JRadioButton rect;
+JRadioButton circle;
+JFrame frame;
+JPanel sqpn;
+JPanel crpn;
+JPanel rtpn;
+Circle Circle;
+Rect Rect;
+Square Square;

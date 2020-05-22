@@ -1,0 +1,12 @@
+iswin=!(g.num==p1.num);
+        p1.won=!iswin;
+        if(!iswin){break;}
+        iswin=!(g.num==p2.num);
+        p2.won=!iswin;
+        if(!iswin){break;}
+        iswin=!(g.num==p3.num);
+        p3.won=!iswin;
+        if(!iswin){break;}
+        iswin=!(g.num==p4.num);
+        p4.won=!iswin;
+        counter++;

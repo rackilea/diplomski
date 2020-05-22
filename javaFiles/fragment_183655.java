@@ -1,0 +1,6 @@
+native static long processImage(String svgData);
+native static int porocessMapData(long mapPtr);
+...
+long mapPtr = processImage(svgData);
+...
+int result = processMapData(mapPtr);

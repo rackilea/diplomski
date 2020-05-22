@@ -1,0 +1,6 @@
+public static <T> List<T> readJsonFile(
+    final String filePath, final TypeToken<List<T>> typeToken) {
+  // ...
+  objectsFromFile = gson.fromJson(br, typeToken.getType());
+  // ...
+}

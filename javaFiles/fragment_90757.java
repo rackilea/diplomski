@@ -1,0 +1,13 @@
+public class CustomComparator implements Comparator<StudentList> {
+    private final String sortBy;
+    private final boolean ascending;
+
+    public CustomComparator() {
+        this(COLUMN_LAST_NAME, true);
+    }
+
+    public CustomComparator(String sortBy, boolean ascending) {
+        this.sortBy = sortBy;
+        this.ascending = ascending;
+    }
+}

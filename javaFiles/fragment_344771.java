@@ -1,0 +1,9 @@
+public class PutController
+{ 
+...
+    public void methodToCall ()
+    {
+        ....
+    }
+...
+}

@@ -1,0 +1,17 @@
+db.execSQL("INSERT INTO " 
+            + TABLE_NAME + " (" 
+                + COLUMN_ID + ", " 
+                + COLUMN_FIRST_NAME + ", " 
+                + COLUMN_LAST_NAME + ", " 
+                + COLUMN_AGE + ", " 
+                + COLUMN_GENDER + ", " 
+                + COLUMN_EVENT + ", " 
+                + COLUMN_TIER + ")" +
+            " VALUES " + "(" 
+                + athlete.getID() + ", " 
+                + athlete.getFirstName() + ", " 
+                + athlete.getLastName() + ", " 
+                + athlete.getAge() + ", " 
+                + athlete.getGender() + ", " 
+                + "'" + athlete.getEvent() + "'" + ", " 
+                + athlete.getTier() + ");");

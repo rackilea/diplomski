@@ -1,0 +1,6 @@
+...
+@DatabaseField(
+    foreign = true
+)
+private Conversation conversation_id;
+...

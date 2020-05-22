@@ -1,0 +1,6 @@
+public class MyResponse extends JsonResponse {
+  private String token;
+  private String expired;
+  //getters...
+  //setters...
+}

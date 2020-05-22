@@ -1,0 +1,6 @@
+android {
+
+    ....
+
+    useLibrary 'org.apache.http.legacy'
+}

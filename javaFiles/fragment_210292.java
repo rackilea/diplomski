@@ -1,0 +1,10 @@
+Instant now = Instant.now() ;  // Capture current moment in UTC.
+ZonedDateTime zdtLosAngeles = now.atZone( ZoneId.of( "America/Los_Angeles" ) ) ;
+ZonedDateTime zdtChicago = now.atZone( ZoneId.of( "America/Chicago" ) ) ;
+ZonedDateTime zdtNewYork = now.atZone( ZoneId.of( "America/New_York" ) ) ;
+ZonedDateTime zdtGuam = now.atZone( ZoneId.of( "America/Guam" ) ) ;
+ZonedDateTime zdtHonolulu = now.atZone( ZoneId.of(  "America/Los_Angeles" ) ) ;
+ZonedDateTime zdtAnchorage = now.atZone( ZoneId.of( "America/Anchorage" ) ) ;
+ZonedDateTime zdtIndianapolis = now.atZone( ZoneId.of( "America/Indiana/Indianapolis" ) ) ;
+ZonedDateTime zdtPortOfSpain = now.atZone( ZoneId.of( "America/Port_of_Spain" ) ) ;
+ZonedDateTime zdtPhoenix = now.atZone( ZoneId.of( "America/Phoenix" ) ) ;

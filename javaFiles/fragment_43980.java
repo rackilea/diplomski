@@ -1,0 +1,11 @@
+DesiredCapabilities cap = new DesiredCapabilities();
+    cap.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+    cap.setCapability(InternetExplorerDriver.ELEMENT_SCROLL_BEHAVIOR, true);
+    cap.internetExplorer().setCapability("ignoreProtectedModeSettings", true);
+    cap.setCapability("IE.binary", "C:/Program Files (x86)/Internet Explorer/iexplore.exe");
+    cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+    cap.setJavascriptEnabled(true);
+    cap.setCapability("requireWindowFocus", true);
+    cap.setCapability("enablePersistentHover", false);
+    System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"\\webdriver\\iedriverserver.exe");
+    WebDriver driver = new InternetExplorerDriver(cap);

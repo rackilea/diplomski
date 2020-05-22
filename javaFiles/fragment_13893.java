@@ -1,0 +1,9 @@
+int b = table.getRowCount();
+for (int i = 0; i < b; i++) {
+    ...
+    if (!(str1 == null)) {
+        ((DefaultTableModel)table.getModel()).removeRow(i);
+        ...
+    }
+    ...
+}

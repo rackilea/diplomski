@@ -1,0 +1,6 @@
+@Override
+public void paintComponent(Graphics g) {
+    // ^--- Need this...
+    super.paintComponent(g);
+                      // ^--- Don't need Graphics, just an instance of it...
+}

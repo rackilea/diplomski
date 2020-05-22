@@ -1,0 +1,6 @@
+double result;
+{
+   result = …
+   …
+}
+return result; //cannot find symbol

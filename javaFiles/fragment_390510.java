@@ -1,0 +1,6 @@
+if (input.equals("Hi") { 
+... 
+}
+else if (input.equals("Hi") { 
+...
+}

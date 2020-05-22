@@ -1,0 +1,8 @@
+CONDITION_LEVEL
+  :  ATOM ((AND | OR) ATOM)*
+  ;
+
+ATOM 
+  :  NUMBER 
+  |  '(' CONDITION_LEVEL ')'
+  ;

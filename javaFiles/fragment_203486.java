@@ -1,0 +1,6 @@
+@ManagedBean(name="someBean")
+@RequestScoped
+public class SomeBean {
+    ....
+    ....
+}

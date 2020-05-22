@@ -1,0 +1,11 @@
+fNameTf.setName("fntf");
+    fNameTf.setInputVerifier(new MyVerifier());
+    lNameTf = new JTextField(10);
+    lNameTf.setName("lntf");
+    lNameTf.setInputVerifier(new MyVerifier());
+    maleRb = new JRadioButton("Male");
+    maleRb.setInputVerifier(new MyVerifier());
+    maleRb.setName("male");
+    femaleRb = new JRadioButton("Female");
+    femaleRb.setName("Female");
+    femaleRb.setInputVerifier(new MyVerifier());

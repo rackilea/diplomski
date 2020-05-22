@@ -1,0 +1,13 @@
+StringBuilder builder = new StringBuilder();
+builder.append(first);
+builder.append(second);
+builder.append(' ');
+builder.append(third);
+builder.append(fourth);
+builder.append(firth);
+builder.append(sixth);
+builder.append(seventh);
+builder.append(' ');
+builder.append(eighth);
+builder.append(ninth);
+String output = builder.toString();

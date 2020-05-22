@@ -1,0 +1,11 @@
+package com.bharat;
+
+class Test2{
+
+public static void main(String[] args)
+{
+
+    System.out.println(Test.x+" "+"Class Test2");
+}
+
+}

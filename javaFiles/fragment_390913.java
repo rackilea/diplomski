@@ -1,0 +1,11 @@
+Integer[] array = { 1, 5, 10, 15 };
+invokeOnPreviousAndNext(array, 1, s -> System.out.printf("%s ", s));
+System.out.println("//");
+invokeOnPreviousAndNext(array, 5, s -> System.out.printf("%s ", s));
+System.out.println("//");
+invokeOnPreviousAndNext(array, 10, s -> System.out.printf("%s ", s));
+System.out.println("//");
+invokeOnPreviousAndNext(array, 15, s -> System.out.printf("%s ", s));
+System.out.println("//");
+invokeOnPreviousAndNext(array, 0, s -> System.out.printf("%s ", s));
+System.out.println("//");

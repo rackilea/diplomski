@@ -1,0 +1,6 @@
+Pattern p = Pattern.compile("Group: Security ID: (\\w+)\\\\([^ ]+) Account Name: ([^ ]+) Account Domain: \\1");
+Matcher m = p.matcher("Jan 09 12:33:50 SRVDC0 AgentDevice=WindowsLog AgentLogFile=Security PluginVersion=7.2.4.86 Source=Microsoft-Windows-Security-Auditing Computer=SRVDC0.corp.teslab.ca OriginatingComputer=SRVDC0 User= Domain= EventID=4756 EventIDCode=4756 EventType=8 EventCategory=13826 RecordNumber=1244048131 TimeGenerated=1483983229 TimeWritten=1483983229 Level=0 Keywords=0 Task=0 Opcode=0 Message=A member was added to a security-enabled universal group. Subject: Security ID: CORPbforeman Account Name: bforeman Account Domain: CORP Logon ID: 0x220f7a57 Member: Security ID: CORP\\jsmith Account Name: CN=jsmith, Dan,OU=Exchange Users,DC=corp,DC=testlab,DC=ca Group: Security ID: CORP\\IT-TESTGRP Account Name: IT-TESTGRP Account Domain: CORP Additional Information: Privileges:");
+
+while(m.find()){
+ System.out.println("domain: "+m.group(1) +", security id: "+m.group(2)+", account Name: "+m.group(3)); 
+}

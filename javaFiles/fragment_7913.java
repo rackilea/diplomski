@@ -1,0 +1,6 @@
+public int[] myMethod() {
+ //...
+ int[] res = new int[7];
+ //... set values ...
+ return res;
+}

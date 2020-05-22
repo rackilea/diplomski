@@ -1,0 +1,12 @@
+String urlString = "http://localhost:8983/solr/jcg";
+SolrClient client = new HttpSolrClient(urlString);
+SolrInputDocument doc1 = new SolrInputDocument();
+Map<String, String> operations = new HashMap<String, String>();
+operations.put("set", "abc");
+doc1.addField("id", "978-0641723445");
+doc1.addField("apple_t", operations);
+Collection<SolrInputDocument> docs = new ArrayList<SolrInputDocument>();
+docs.add( doc1 );
+client.add( docs );
+client.commit();
+client.close();

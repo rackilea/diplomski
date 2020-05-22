@@ -1,0 +1,6 @@
+new Handler().postDelayed(
+    new Runnable() {
+        //...
+        fragmentManager.commitAllowingStateLoss();// or fragmentManager.commit();
+        //...
+    }, 50);

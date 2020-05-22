@@ -1,0 +1,51 @@
+class User{
+    String nume, parola,email;
+    public User(String numi ,String pari , String emai){
+        this.nume=numi;
+        this.parola = pari;
+        this.email = emai;
+    }
+    public String toString(){
+        return this.nume +" "+ this.email + " "+this.email+" ";
+    }
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((this.nume == null) ? 0 : this.nume.hashCode());
+        result = prime * result + ((this.parola == null) ? 0 : this.parola.hashCode());
+        result = prime * result + ((this.email == null) ? 0 : this.email.hashCode());
+        return result;
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (this.getClass() != obj.getClass())
+            return false;
+
+        User other = (User) obj;
+
+        if (this.nume == null) {
+            if (other.nume != null)
+                return false;
+        } else if (!this.nume.equals(other.nume))
+            return false;
+
+        if (this.parola == null) {
+            if (other.parola != null)
+                return false;
+        } else if (!this.parola.equals(other.parola))
+            return false;
+
+        if (this.email == null) {
+            if (other.email != null)
+                return false;
+        } else if (!this.email.equals(other.email))
+            return false;
+
+        return true;
+    }
+}

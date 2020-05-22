@@ -1,0 +1,12 @@
+Multipart m = new Multipart.Builder()
+        .type(Multipart.Type.FORM)
+        .addPart(new Part.Builder()
+                .body("value")
+                .contentDisposition("form-data; name=\"non_file_field\"")
+                .build())
+        .addPart(new Part.Builder()
+                .contentType("text/csv")
+                .body(aFile)
+                .contentDisposition("form-data; name=\"file_field\"; filename=\"file1\"")
+                .build())
+        .build();

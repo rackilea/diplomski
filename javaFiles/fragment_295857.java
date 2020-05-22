@@ -1,0 +1,6 @@
+try {
+        //...
+        String DATA_URL = "http://dev.sprikiwiki-lab.com/?request=get&uid=1";
+    }catch (Exception e) {
+      //...
+    }

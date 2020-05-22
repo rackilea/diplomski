@@ -1,0 +1,10 @@
+System.out.println ((int) (Math.random () * 10 - 0) + 0);
+System.out.println ((int) (Math.random () * 10 - 0) + 0);
+System.out.println ((int) (Math.random () * 10 - 0) + 0);
+System.out.println ((int) (Math.random () * 10 - 0) + 0);
+System.out.println ((int) (Math.random () * 10 - 0) + 0);
+System.out.println ((int) (Math.random () * 10 - 0) + 0);
+System.out.println ((int) (Math.random () * 10 - 0) + 0);
+System.out.println ((int) (Math.random () * 10 - 0) + 0);
+System.out.println ((int) (Math.random () * 10 - 0) + 0);
+System.out.println ((int) (Math.random () * 10 - 0) + 0);

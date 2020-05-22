@@ -1,0 +1,6 @@
+if (size.getCheckedRadioButtonId() == small.getId()){
+ ....
+}
+else if(size.getCheckedRadioButtonId() == medium.getId()){
+ ....
+}

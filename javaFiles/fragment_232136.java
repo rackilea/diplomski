@@ -1,0 +1,6 @@
+if (...)
+   // ...
+else if (...)
+   // ...
+else
+   result = Integer.parseInt(Str);

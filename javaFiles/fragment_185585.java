@@ -1,0 +1,11 @@
+static final DateTimeFormatter DF = new DateTimeFormatterBuilder()
+    .append(DateTimeFormatter.ofPattern("E MMM dd yyyy HH:mm:ss"))
+    .appendLiteral(" GMT")
+    .appendOffset("+HHmm", "+0000")
+    .optionalStart()
+    .appendLiteral(" (")
+    .appendZoneId()
+    .appendLiteral(')')
+    .optionalEnd()
+    .toFormatter()
+    .withLocale(Locale.US);

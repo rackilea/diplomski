@@ -1,0 +1,16 @@
+<configuration>
+    <home>${project.build.directory}/cargo/configurations/glassfish</home>
+    <configfiles>
+        <configfile>
+            <file>${project.build.directory}/filtered-serverresources/domain.xml</file>
+            <todir>cargo-domain/config</todir>
+        </configfile>
+    </configfiles>
+    <deployables>
+        <deployable>
+            <groupId>de.tecis.tecisplus</groupId>
+            <artifactId>tecisplus-ear</artifactId>
+            <type>ear</type>
+        </deployable>
+    </deployables>
+</configuration>

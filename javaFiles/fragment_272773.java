@@ -1,0 +1,13 @@
+String query = "UPDATE User SET" 
+                    + "fName = ?"
+                    + "lName = ?"
+                    + "password = ?"
+                    + "dateOfBirth = ?"
+                    + "phone = ?"
+                    + "address = ?"
+                    + "city = ?"
+                    + "state_or_Region = ?"
+                    + "country = ?"
+                    + "zip = ?"
+                    + ""
+                    + "WHERE email_address= ?";

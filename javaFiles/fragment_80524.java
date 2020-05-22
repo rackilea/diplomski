@@ -1,0 +1,6 @@
+Supplier<MyAmazingClass> shorter = MyAmazingClass::MyEvenBetterMethod;
+
+int myVar = shorter.get();
+// ...
+int myOtherVar = shorter.get();
+// And so on...

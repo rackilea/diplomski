@@ -1,0 +1,6 @@
+String[] wordArray = new String[10];
+int index = 0;
+String word = null; // word to be read from file...
+// Use buffered reader to read each line...
+    wordArray[index] = word;
+    index++;

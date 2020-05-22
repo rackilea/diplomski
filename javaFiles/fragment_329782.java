@@ -1,0 +1,79 @@
+//Class FileCopy with a main method
+package java10;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileNotFoundException;
+
+class FileCopy extends Thread {
+
+   public static void main(String[] args){
+      FileCopy fileCopy = new FileCopy();
+      Ascending ascending = new Ascending();
+      fileCopy.start();
+      ascending.start();
+      ascending.join();
+      fileCopy.join();
+   }
+
+   @Override
+   public void run() {
+      try {
+
+         File fileIn  = new File("C:/Users/dis_YO_boi/Documents/Abhishek.txt");
+         File fileOut = new File("C:/Users/dis_YO_boi/Documents/Mallela.txt");
+
+         FileInputStream streamIn   = new FileInputStream(fileIn);
+         FileOutputStream streamOut = new FileOutputStream(fileOut);
+
+         int c;
+         while ((c = streamIn.read()) != -1) 
+         {
+            streamOut.write(c);
+         }
+
+         streamIn.close();
+         streamOut.close();
+      }
+      catch (FileNotFoundException e) 
+      {
+         System.out.println("FileCopy: " + e);
+      } 
+      catch (IOException e) 
+      {
+         System.out.println("FileCopy: " + e);
+      }
+   }
+}
+
+//Class Ascending
+
+package java10;
+
+public class Ascending extends Thread {
+    @Override
+    public void run(){
+        int nums[]={-1,23,50,-100,34};
+            //print the values before ordering
+            for (int i=0;i<nums.length;i++)
+                System.out.println(nums[i]);
+
+            for(int i=0;i<nums.length-1;i++){
+                for(int j=i+1;j<nums.length;j++){
+                    if(nums[i]>nums[j]){
+                        int temp=nums[i];
+                        nums[i]=nums[j];
+                        nums[j]=temp;
+
+                    }
+                }
+            }
+
+       System.out.println("___________________________");
+       for (int i=0;i<nums.length;i++)
+          System.out.println(nums[i]);
+    }
+
+}

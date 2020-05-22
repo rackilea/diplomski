@@ -1,0 +1,11 @@
+{
+"name":"Name",
+"age":12,
+"gender":"male",
+"interest":
+    {
+        "books":"books",
+        "music":"Music",
+        "movie":"Movie"
+    }
+}

@@ -1,0 +1,9 @@
+try {
+   ...
+} catch (InvocationTargetException ite) {
+   if (ite.getCause() instanceof SomeExceptionType) {
+      ...
+   } else {
+      ...
+   }
+}

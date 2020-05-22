@@ -1,0 +1,10 @@
+Studente x=new Studente();
+x.setCognome("Doe");
+x.setNome("Jhon");
+x.setMatricola("0512");
+x.setDataNascita("14/10/1991");
+Gson gson=new Gson();
+StudentWrapper studentWrapper = new StudentWrapper();
+studentWrapper.addStudent(x);
+String toJson=gson.toJson(studentWrapper, StudentWrapper.class);
+System.out.println("ToJSON "+toJson);

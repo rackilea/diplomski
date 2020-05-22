@@ -1,0 +1,6 @@
+import java.io.InputStreamReader;//Add these two imports
+import java.io.BufferedReader;
+...
+BufferedReader br = new BufferedReader(new InputStreamReader(bis));//Use BufferedReader as suggested by the doc instead of DataInputStream
+...
+String s = br.readLine();//Read with the non-deprecated readLine of BufferedReader

@@ -1,0 +1,10 @@
+setLayout(new BorderLayout());
+add(new JProgressBar(), BorderLayout.NORTH);
+JPanel panel = new GridLayout(1, 6);
+panel.add(new JLabel("Step 1"));
+panel.add(new JLabel("Step 2"));
+panel.add(new JLabel("Step 3"));
+panel.add(new JLabel("Step 4"));
+panel.add(new JLabel("Step 5"));
+panel.add(new JLabel("Step 6"));
+add(panel, BorderLayout.CENTER);

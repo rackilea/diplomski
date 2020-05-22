@@ -1,0 +1,6 @@
+int bytesReadCounter;
+while((bytesReadCounter = fIn.read(buff, 0, chunk_size)) > 0){
+    .................................. 
+    fOut.write(buff, 0, bytesReadCounter);
+    ..................................
+}

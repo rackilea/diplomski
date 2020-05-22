@@ -1,0 +1,11 @@
+ps.setString(1, user.getfName());
+         ps.setString(2, user.getlName());
+         ps.setString(3, user.getPassword());
+         ps.setString(4, user.getDateOfBirth());
+         ps.setString(5, user.getPhone());
+         ps.setString(6, user.getAddress());
+         ps.setString(7, user.getCity());
+         ps.setString(8, user.getState());
+         ps.setString(9, user.getCountry());
+         ps.setString(10, user.getZipcode());
+         ps.setString(11, user.getEmailAddress());

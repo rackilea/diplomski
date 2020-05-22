@@ -1,0 +1,10 @@
+JLabel lblFoodPicUrl = new JLabel();
+    lblFoodPicUrl.setPreferredSize(new Dimension(50, 50));
+    lblFoodPicUrl.setIcon(new ImageIcon(getClass().getResource("your path")));
+    lblFoodPicUrl.setHorizontalAlignment(SwingConstants.CENTER);
+    BufferedImage img = new BufferedImage(lblFoodPicUrl.getIcon().getIconWidth(), lblFoodPicUrl.getIcon().getIconHeight(), BufferedImage.TYPE_INT_RGB);
+    Graphics g = img.createGraphics();
+    lblFoodPicUrl.getIcon().paintIcon(null, g, 0, 0);
+    g.dispose();
+    Image newing = img.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
+    lblFoodPicUrl.setIcon(new ImageIcon(newing));

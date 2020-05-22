@@ -1,0 +1,19 @@
+<dependencies>
+    <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>A</artifactId>
+        <version>${project.version}</version>
+        <exclusions>
+            <exclusion>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>B</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+    <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>B</artifactId>
+        <version>${project.version}</version>
+        <scope>runtime</scope>
+    </dependency>
+</dependencies>

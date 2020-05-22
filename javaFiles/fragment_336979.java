@@ -1,0 +1,23 @@
+[...]$ strings Main.class
+<init>
+Code
+LineNumberTable
+LocalVariableTable
+this
+LMain;
+main
+([Ljava/lang/String;)V
+args
+[Ljava/lang/String;
+StackMapTable
+SourceFile
+        Main.java
+/bin/ls
+java/io/IOException
+Main
+java/lang/Object
+java/lang/Runtime
+getRuntime
+()Ljava/lang/Runtime;
+exec
+'(Ljava/lang/String;)Ljava/lang/Process;

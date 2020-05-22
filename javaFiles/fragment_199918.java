@@ -1,0 +1,10 @@
+PdfDocument pdfDoc = new PdfDocument(new PdfWriter(DEST));
+Document doc = new Document(pdfDoc);
+doc.add(new Paragraph("This text is not underlined"));
+Text text1 = new Text("This text is underlined with a solid line");
+text1.setUnderline(1, -3);
+doc.add(new Paragraph(text1));
+Text text2 = new Text("This text is underlined with a dashed line");
+text2.setNextRenderer(new DashedLineTextRenderer(text2));
+doc.add(new Paragraph(text2));
+doc.close();

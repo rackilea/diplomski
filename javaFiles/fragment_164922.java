@@ -1,0 +1,6 @@
+ERROR: Bundle org.apache.felix.http.jetty [72]: Error starting slinginstall:org.apache.felix.http.jetty-2.3.0.jar (org.osgi.framework.BundleException: Unresolved constraint in bundle org.apache.felix.http.jetty [72]: Unable to resolve 72.0: missing requirement [72.0] package; (&(package=javax.servlet)(version>=3.0.0)(!(version>=4.0.0)))) org.osgi.framework.BundleException: Unresolved constraint in bundle org.apache.felix.http.jetty [72]: Unable to resolve 72.0: missing requirement [72.0] package; (&(package=javax.servlet)(version>=3.0.0)(!(version>=4.0.0)))
+    at org.apache.felix.framework.Felix.resolveBundle(Felix.java:3443)
+    at org.apache.felix.framework.Felix.startBundle(Felix.java:1727)
+    at org.apache.felix.framework.Felix.setActiveStartLevel(Felix.java:1156)
+    at org.apache.felix.framework.StartLevelImpl.run(StartLevelImpl.java:264)
+    at java.lang.Thread.run(Thread.java:744)

@@ -1,0 +1,25 @@
+db.collection.aggregate([
+    {
+        $unwind:"$playlists"
+    },
+    {
+        $match:{
+            "playlists.guild_ids":{
+                $in:["7575"]
+            }
+        }
+    },
+    {
+        $group:{
+            "_id":null,
+            "playlists":{
+               $push: "$playlists"
+            }
+        }
+    },
+    {
+        $project:{
+            "_id":0
+        }
+    }
+]).pretty()

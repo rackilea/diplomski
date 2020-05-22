@@ -1,0 +1,6 @@
+int[] a = new int[20];
+...
+int left = a[0];
+int right = a[19];
+...
+quickSort(a, left, right);

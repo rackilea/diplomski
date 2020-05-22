@@ -1,0 +1,9 @@
+{
+  "_id":"20121005_siteKey_page",
+  "hits":512,
+  "users":[
+   {
+     "uid":5, 
+     "hits":512,
+   }
+}

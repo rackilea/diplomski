@@ -1,0 +1,6 @@
+ArrayList<Game> games = new ArrayList<Game>();
+while(...) {
+   ...
+   games.add(...);
+   ...
+}

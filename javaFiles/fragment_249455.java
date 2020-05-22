@@ -1,0 +1,16 @@
+CellStyle styleX = wb.createCellStyle();
+styleX.setFillPattern(HSSFCellStyle.SOLID_FOREGROUND);
+styleX.setFillForegroundColor(HSSFColor.RED.index);
+styleX.setFillBackgroundColor(HSSFColor.RED.index);
+CellStyle styleY = wb.createCellStyle();
+styleY.setFillPattern(HSSFCellStyle.SOLID_FOREGROUND);
+styleY.setFillForegroundColor(HSSFColor.LIGHT_BLUE.index);
+styleY.setFillBackgroundColor(HSSFColor.LIGHT_BLUE.index);
+CellStyle styleZ = wb.createCellStyle();
+styleZ.setFillPattern(HSSFCellStyle.SOLID_FOREGROUND);
+styleZ.setFillForegroundColor(HSSFColor.YELLOW.index);
+styleZ.setFillBackgroundColor(HSSFColor.YELLOW.index);
+CellStyle styleOther = wb.createCellStyle();
+styleOther .setFillPattern(HSSFCellStyle.SOLID_FOREGROUND);
+styleOther .setFillForegroundColor(HSSFColor.BROWN.index);
+styleOther .setFillBackgroundColor(HSSFColor.BROWN.index);

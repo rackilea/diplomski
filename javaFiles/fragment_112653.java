@@ -1,0 +1,14 @@
+WRONG:
+        found = true;
+        for (int i = 0; i < values1.length; i++) {
+            found = false;
+            for (int k = 0; k < values2.length; k++) {
+                if (values1[i] == values2[k]) {
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
+                break;
+            }
+        }

@@ -1,0 +1,6 @@
+///////////////USE ONLY ONE OPTION AT A TIME/////////////////////////
+/////////////////////// Headless Viewer ///////////////////////////// 
+//viewer = new Autodesk.Viewing.Viewer3D(viewerDiv);
+
+//////////////////Viewer with Autodesk Toolbar///////////////////////
+//viewer = new Autodesk.Viewing.Private.GuiViewer3D(viewerDiv);

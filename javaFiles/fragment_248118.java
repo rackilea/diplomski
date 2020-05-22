@@ -1,0 +1,23 @@
+{
+   "complete":1,
+   "list":{
+      "217345740":{
+         "item_id":"217345740",
+         "state":"0",
+         "time_added":"1346790700",
+         "time_updated":"1346790837",
+         "title":"",
+         "url":"http://t.co/dCvNwtrK"
+      },
+      "218888771":{
+         "item_id":"218888771",
+         "state":"0",
+         "time_added":"1347094862",
+         "time_updated":"1347094862",
+         "title":"twitter",
+         "url":"http://t.co/oFYGY7z0"
+      }
+   },
+   "since":1347094862,
+   "status":1
+}

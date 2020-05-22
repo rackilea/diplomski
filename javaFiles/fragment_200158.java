@@ -1,0 +1,7 @@
+SELECT * FROM FirstTable
+UNION 
+SELECT * FROM SecondTable
+EXCEPT 
+SELECT * FROM FirstTable
+INTERSECT
+SELECT * FROM SecondTable;

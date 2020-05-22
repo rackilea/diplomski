@@ -1,0 +1,7 @@
+project(":android") {
+    ...
+    dependencies {
+        ...
+        // here
+    }
+}

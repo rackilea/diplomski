@@ -1,0 +1,11 @@
+<build>        
+<resources>
+                        <resource>
+                            <directory>${project.basedir}/src/main/java</directory>
+                            <filtering>true</filtering>
+                            <includes>
+                                <include>**/*.properties</include>
+                            </includes>
+                        </resource>
+     </resources>
+</build>

@@ -1,0 +1,10 @@
+byte[] message = new String("Hi Server\n").getBytes();
+byte[] fullMessage = new byte[message.length + 4];
+fullMessage[0] = (byte)(message.length >> 24);
+fullMessage[1] = (byte)(message.length >> 16);
+fullMessage[2] = (byte)(message.length >> 8);
+fullMessage[3] = (byte)message.length;
+System.arraycopy(message, 0, messageFull, 4, message.length);
+ByteBuffer buffer = ByteBuffer.wrap(fullMessage);
+client.write(buffer);
+buffer.clear();

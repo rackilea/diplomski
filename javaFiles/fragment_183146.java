@@ -1,0 +1,12 @@
+panel2.setLayout(new GridBagLayout());
+GridBagConstraints gbc = new GridBagConstraints();
+gbc.gridwidth = GridBagConstraints.REMAINDER;
+gbc.insets = new Insets(0, 0, 4, 0);
+gbc.weightx = 1;
+gbc.weighty = 1;
+gbc.fill = GridBagConstraints.BOTH;
+panel2.add(b1, gbc);
+panel2.add(b2, gbc);
+panel2.add(b3, gbc);
+gbc.insets = new Insets(0, 0, 0, 0);
+panel2.add(b4, gbc);

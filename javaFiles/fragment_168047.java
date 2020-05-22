@@ -1,0 +1,9 @@
+TGL.jLbl_Hole1.setText("10");
+TGL.jLbl_Hole2.setText("11");
+TGL.jLbl_Hole3.setText("12");
+TGL.jLbl_Hole4.setText("13");
+TGL.jLbl_Hole5.setText("14");
+TGL.jLbl_Hole6.setText("15");
+TGL.jLbl_Hole7.setText("16");
+TGL.jLbl_Hole8.setText("17");
+TGL.jLbl_Hole9.setText("18");

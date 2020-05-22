@@ -1,0 +1,11 @@
+public String nombre;
+public String apellidos;
+public String telefono;
+public String email;
+public Boolean tieneWhatsapp;
+public Boolean tieneTelegram;
+public Boolean tieneHangouts;
+public Long formaPago;
+public Double ratioHora;
+public Double precioHora;
+public Double horasCompensadas;

@@ -1,0 +1,8 @@
+[# th:each="ssList, iterStat: ${listOfSubSectionLists}"]
+    Title: Sub-Section [( ${iterStat.count} )]
+    [# th:each="subSection: ${ssList}"] 
+        Name: [( ${subSection.name} )]
+        Address: [( ${subSection.address} )]
+        Phone: [( ${subSection.phone} )]
+    [/]
+[/]

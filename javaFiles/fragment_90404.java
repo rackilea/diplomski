@@ -1,0 +1,6 @@
+public void writeFancyData(File file, Data data){
+    File localFile = new File(file.getPath());
+    ... 
+    // process data from file
+    ...
+}

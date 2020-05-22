@@ -1,0 +1,10 @@
+PdfPTable table = new PdfPTable(new float[] { 1, 1, 1, 1, 1 });
+table.getDefaultCell().setBorder(PdfPCell.NO_BORDER);
+Font tfont = new Font(Font.FontFamily.UNDEFINED, 10, Font.BOLD);
+table.setWidthPercentage(100);
+table.addCell(new Phrase("Menge", tfont));
+table.addCell(new Phrase("Beschreibung", tfont));
+table.addCell(new Phrase("Einzelpreis", tfont));
+table.addCell(new Phrase("Gesamtpreis", tfont));
+table.addCell(new Phrase("MwSt", tfont));
+document.add(table);

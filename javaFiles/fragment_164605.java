@@ -1,0 +1,12 @@
+DELIMITER EOF
+
+CREATE FUNCTION throwIfReadOnly() RETURNS INTEGER
+BEGIN
+    IF @@innodb_read_only THEN
+        SIGNAL SQLSTATE 'ERR0R' SET MESSAGE_TEXT = 'database is read_only';
+    END IF;
+    RETURN 0;
+END;
+EOF
+
+DELIMITER ;

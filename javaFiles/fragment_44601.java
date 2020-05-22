@@ -1,0 +1,13 @@
+Address {
+    User user
+    ...
+    ....
+
+}
+
+
+Adress {
+    Integer userid
+    ....
+    ....
+}

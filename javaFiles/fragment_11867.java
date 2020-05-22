@@ -1,0 +1,9 @@
+String []dateTime= editText.getText().toString().split(" ");
+String [] dates=dateTime[0].split("-");
+int year=dates[0];
+int month=dates[1];
+int day=dates[2];
+String[]times=dateTime[1].split(":");
+int hour=times[0];
+int min=times[1];
+int sec=times[2];

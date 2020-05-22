@@ -1,0 +1,9 @@
+public boolean hasNextInt() {
+    ...
+    boolean condition = false;
+    while(!condition) {
+        ...
+    }
+    ...
+    return stuff;
+}

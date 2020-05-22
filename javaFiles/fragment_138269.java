@@ -1,0 +1,6 @@
+@WebService()
+public class ETL_WS {
+    // ...
+    private static ConcurrentHashMap myMap;
+    // ...
+}

@@ -1,0 +1,7 @@
+Outer(){
+  createInner()
+}
+
+Inner(){
+   createOuter()
+}

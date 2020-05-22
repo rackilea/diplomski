@@ -1,0 +1,9 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.5.0'
+        classpath 'com.android.databinding:dataBinder:1.0-rc4'
+    }
+}

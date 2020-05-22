@@ -1,0 +1,11 @@
+Student[] studentList = new Student[8]; // change to 10
+studentList[0] = new Student();
+studentList[1] = new Student();
+studentList[2] = new Student();
+studentList[3] = new Student();
+studentList[4] = new Student();
+studentList[5] = new Student();
+studentList[6] = new Student();
+studentList[7] = new Student();
+studentList[8] = new Student(); // 8 is an invalid index for an array of length 8
+studentList[9] = new Student(); // 9 is an invalid index for an array of length 8

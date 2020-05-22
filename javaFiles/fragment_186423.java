@@ -1,0 +1,9 @@
+OutputStream outputStream = ....
+CharSequence charSequence = ....
+Charset charset = ....
+
+Writer writer = new OutputStreamWriter(outputStream, charset);
+
+for (int i = 0; i < charSequence.length(); i++) {
+    writer.write(charSequence.charAt(i));
+}

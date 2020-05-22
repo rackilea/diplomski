@@ -1,0 +1,12 @@
+List<Integer> ints = Arrays.asList(0,1,2,3,4,5,6,7,8,9,10)
+   .stream()
+   .peek(i -> System.out.println("Peek 1: " + i))
+   .filter( i -> i  < 10)
+   .peek(i -> System.out.println("Peek 2: " + i))
+   .map (i -> String.valueOf(i))
+   .peek(i -> System.out.println("Peek 3: " + i))
+   .map (i -> Integer.parseInt(i))
+   .peek(i -> System.out.println("Peek 4: " + i))
+   .filter( i -> i < 10)
+   .peek(i -> System.out.println("Peek 5: " + i))
+   .collect(Collectors.toList());

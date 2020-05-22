@@ -1,0 +1,9 @@
+public class Anything {
+    public static void main ... {
+         ...
+         printPyramid (numLines);
+         ...
+    }
+
+    public static void printPyramid ...
+}

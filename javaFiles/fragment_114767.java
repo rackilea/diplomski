@@ -1,0 +1,11 @@
+WebElement element = driver.findElement(By.id("upload-resume-button"));
+ element.click();
+StringSelection stringSelection = new StringSelection("path to File");
+Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+ Robot robot = new Robot();
+ robot.keyPress(KeyEvent.VK_CONTROL);
+ robot.keyPress(KeyEvent.VK_V);
+ robot.keyRelease(KeyEvent.VK_V);
+ robot.keyRelease(KeyEvent.VK_CONTROL);
+ robot.keyPress(KeyEvent.VK_ENTER);
+ robot.keyRelease(KeyEvent.VK_ENTER);

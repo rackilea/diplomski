@@ -1,0 +1,41 @@
+ArrayList<Entry> lineEntries = new ArrayList<Entry>();
+    lineEntries.add(new Entry(0, 1));
+    lineEntries.add(new Entry(1, 2));
+    lineEntries.add(new Entry(2, 3));
+    lineEntries.add(new Entry(3, 4));
+    lineEntries.add(new Entry(4, 2));
+    lineEntries.add(new Entry(5, 3));
+    lineEntries.add(new Entry(6, 1));
+    lineEntries.add(new Entry(7, 5));
+    lineEntries.add(new Entry(8, 7));
+    lineEntries.add(new Entry(9, 6));
+    lineEntries.add(new Entry(10, 4));
+    lineEntries.add(new Entry(11, 5));
+
+    LineDataSet lineDataSet = new LineDataSet(lineEntries, "Oil Price");
+    lineDataSet.setAxisDependency(YAxis.AxisDependency.LEFT);
+    lineDataSet.setHighlightEnabled(true);
+    lineDataSet.setLineWidth(2);
+    lineDataSet.setColor(getColor("defaultBlue"));
+    lineDataSet.setCircleColor(getColor("defaultOrange"));
+    lineDataSet.setCircleRadius(6);
+    lineDataSet.setCircleHoleRadius(3);
+    lineDataSet.setDrawHighlightIndicators(true);
+    lineDataSet.setHighLightColor(Color.RED);
+    lineDataSet.setValueTextSize(12);
+    lineDataSet.setValueTextColor(getColor("primaryDark"));
+
+    LineData lineData = new LineData(lineDataSet);
+
+    lineChart.getDescription().setText("Price in last 12 days");
+    lineChart.getDescription().setTextSize(12);
+    lineChart.setDrawMarkers(true);
+    lineChart.setMarker(markerView(context));
+    lineChart.getAxisLeft().addLimitLine(lowerLimitLine(2,"Lower Limit",2,12,getColor("defaultOrange"),getColor("defaultOrange")));
+    lineChart.getAxisLeft().addLimitLine(upperLimitLine(5,"Upper Limit",2,12,getColor("defaultGreen"),getColor("defaultGreen")));
+    lineChart.getXAxis().setPosition(XAxis.XAxisPosition.BOTH_SIDED);
+    lineChart.animateY(1000);
+    lineChart.getXAxis().setGranularityEnabled(true);
+    lineChart.getXAxis().setGranularity(1.0f);
+    lineChart.getXAxis().setLabelCount(lineDataSet.getEntryCount());
+    lineChart.setData(lineData);

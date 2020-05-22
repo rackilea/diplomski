@@ -1,0 +1,7 @@
+-keep class com.quickblox.chat.**
+-keep class com.quickblox.chat.** { *; }
+-keepnames class com.quickblox.chat.**
+-keepnames class com.quickblox.chat.** { *; }
+-keepclassmembers class com.quickblox.chat.** {*;}
+-keepclassmembers enum com.quickblox.chat.** {*;}
+-keepclassmembers interface com.quickblox.chat.** {*;}

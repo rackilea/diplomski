@@ -1,0 +1,17 @@
+this.add(mainPanel);
+mainPanel.setLayout(new GridBagLayout());
+mainPanel.setBackground(Color.BLACK);
+GridBagConstraints c = new GridBagConstraints();
+c.fill = GridBagConstraints.HORIZONTAL;
+c.weightx = 1;
+c.insets = new Insets(5, 5, 5, 5);
+c.gridy = 1;
+mainPanel.add(headerPanel,c);
+c.gridy++;
+mainPanel.add(namePanel,c);
+c.gridy++;
+mainPanel.add(infoPanel,c);
+c.gridy++;
+mainPanel.add(orderPanel,c);
+c.gridy++;
+mainPanel.add(buttonPanel,c);

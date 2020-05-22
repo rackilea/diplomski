@@ -1,0 +1,35 @@
+public static Drawable GetDrawable(String newFileName)
+{
+    File f;
+    BitmapFactory.Options o2;
+    Bitmap drawImage = null;
+    Drawable d = null;
+    try
+    {           
+        f = new File(newFileName);          
+        //decodes image and scales it to reduce memory consumption
+        //Decode image size
+        BitmapFactory.Options o = new BitmapFactory.Options();
+        o.inJustDecodeBounds = true;            
+        o.inTempStorage = new byte[16 * 1024];          
+        BitmapFactory.decodeStream(new FileInputStream(f), null, o);            
+        //The new size we want to scale to
+        final int REQUIRED_SIZE = 150;          
+        //Find the correct scale value. It should be the power of 2.
+        int scale = 1;
+        while ((o.outWidth / scale / 2 >= REQUIRED_SIZE) && (o.outHeight / scale / 2 >= REQUIRED_SIZE))
+            scale *= 2;         
+        //Decode with inSampleSize
+        o2 = new BitmapFactory.Options();
+        o2.inSampleSize = scale;            
+        drawImage = BitmapFactory.decodeStream(new FileInputStream(f), null, o2);
+        //Bitmap bmp = pictureDrawableToBitmap((PictureDrawable) drawable);         
+        d = new BitmapDrawable(drawImage);
+        //drawImage.recycle();
+        //new BitmapWorkerTask          
+    }
+    catch (FileNotFoundException e)
+    {
+    }
+    return d;
+}

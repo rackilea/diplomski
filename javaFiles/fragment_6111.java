@@ -1,0 +1,6 @@
+File file = new File("/foo.txt");
+Reader reader = new InputStreamReader(new FileInputStream(file), "UTF-8");
+// ...
+
+Writer writer = new OutputStreamWriter(new FileOutputStream(file), "UTF-8");
+// ...

@@ -1,0 +1,6 @@
+while(true) {
+    count++;
+...
+}
+...
+System.out.println(input+" is a Fibonacci number whose order in the sequence is "+count);

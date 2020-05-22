@@ -1,0 +1,12 @@
+final AlarmManager alarmManager = (AlarmManager)getSystemService(Context.ALARM_SERVICE);
+final Intent intentAlarm = new Intent(MainActivity.this, AlarmReceiver.class);
+Calendar calendar =  Calendar.getInstance();   
+calendar.set(Calendar.SECOND, 0);
+calendar.set(Calendar.MINUTE, 22);
+calendar.set(Calendar.HOUR, 5);
+calendar.set(Calendar.AM_PM, Calendar.PM);
+calendar.set(Calendar.MONTH, 0);
+calendar.set(Calendar.DAY_OF_MONTH, 6);
+calendar.set(Calendar.YEAR,2015);
+long when = calendar.getTimeInMillis();
+alarmManager.set(AlarmManager.RTC_WAKEUP,when, PendingIntent.getBroadcast(MainActivity.this,1,  intentAlarm, PendingIntent.FLAG_UPDATE_CURRENT));

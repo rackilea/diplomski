@@ -1,0 +1,35 @@
+{
+  "mutation":{
+    "insert":[
+      {
+        "key":{
+          "path":[
+            {
+              "kind":"Foo",
+              "name":"id"
+            }
+          ]
+        },
+        "properties":{
+          "bar":{
+            "entityValue":{
+              "properties": {
+                "name":{
+                  "stringValue":"Jack"
+                },
+                "pass":{
+                  "stringValue":"1234"
+                }
+              }
+            },
+            "indexed":false
+          },
+          "id":{
+            "stringValue":"id"
+          }
+        }
+      }
+    ]
+  },
+  "mode": "NON_TRANSACTIONAL"
+}

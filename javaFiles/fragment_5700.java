@@ -1,0 +1,6 @@
+Pageable page1 = PageRequest.of(0, 10);  //Page 1 , offset=0  , limit=10
+Pageable page2 = PageRequest.of(10, 10);  //Page 2 , offset=10 , limit=10
+Pageable page3 = PageRequest.of(20, 10);  //Page 3 , offset=20 , limit=10
+....
+......
+Pageable pageN = PageRequest.of((n-1)*10, 10);  //Page N , offset=(N-1)*10 , limit=10

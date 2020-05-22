@@ -1,0 +1,12 @@
+bind(IRecordValidationService.class)
+  .annotatedWith(Names.named("json"))
+  .to(JsonValidationService.class);
+bind(IRecordValidationService.class)
+  .annotatedWith(Names.named("avro"))
+  .to(AvroSchemaValidationService.class);
+bind(IRecordValidationService.class)
+  .annotatedWith(Names.named("clientlogging"))
+  .to(ClientLoggingValidationService.class);
+bind(IRecordValidationService.class)
+  .annotatedWith(Names.named("servicelogs"))
+  .to(ServiceLoggingValidationService.class);

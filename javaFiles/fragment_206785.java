@@ -1,0 +1,42 @@
+13:17:40.644241 IP r1.batoto.net.http > random.example.org.33779: Flags [P.],
+  seq 1:604, ack 183, win 122,
+  options [nop,nop,TS val 344850394 ecr 15945878], length 603
+    // Some lines of headers removed
+    0x0030:  0000 0000 4854 5450 2f31 2e31 2032 3030  ....HTTP/1.1.200
+    0x0040:  204f 4b0d 0a53 6572 7665 723a 206e 6769  .OK..Server:.ngi
+    0x0050:  6e78 2f31 2e32 2e37 0d0a 4461 7465 3a20  nx/1.2.7..Date:.
+    0x0060:  4672 692c 2032 3920 4e6f 7620 3230 3133  Fri,.29.Nov.2013
+    0x0070:  2030 323a 3437 3a33 3820 474d 540d 0a43  .02:47:38.GMT..C
+    0x0080:  6f6e 7465 6e74 2d54 7970 653a 2074 6578  ontent-Type:.tex
+    0x0090:  742f 6874 6d6c 3b63 6861 7273 6574 3d55  t/html;charset=U
+    0x00a0:  5446 2d38 0d0a 5472 616e 7366 6572 2d45  TF-8..Transfer-E
+    0x00b0:  6e63 6f64 696e 673a 2063 6875 6e6b 6564  ncoding:.chunked
+    0x00c0:  0d0a 436f 6e6e 6563 7469 6f6e 3a20 6b65  ..Connection:.ke
+    0x00d0:  6570 2d61 6c69 7665 0d0a 582d 506f 7765  ep-alive..X-Powe
+    0x00e0:  7265 642d 4279 3a20 5048 502f 352e 342e  red-By:.PHP/5.4.
+    0x00f0:  3135 0d0a 5365 742d 436f 6f6b 6965 3a20  15..Set-Cookie:.
+    0x0100:  7365 7373 696f 6e5f 6964 3d32 3230 3433  session_id=22043
+    0x0110:  3838 3431 3235 3739 3735 6566 6361 3333  8841257975efca33
+    0x0120:  6462 3261 3264 6635 6665 643b 2070 6174  db2a2df5fed;.pat
+    0x0130:  683d 2f3b 2064 6f6d 6169 6e3d 2e62 6174  h=/;.domain=.bat
+    0x0140:  6f74 6f2e 6e65 743b 2068 7474 706f 6e6c  oto.net;.httponl
+    0x0150:  790d 0a53 6574 2d43 6f6f 6b69 653a 2075  y..Set-Cookie:.u
+    0x0160:  6167 656e 745f 6279 7061 7373 3d31 3b20  agent_bypass=1;.
+    0x0170:  7061 7468 3d2f 3b20 646f 6d61 696e 3d2e  path=/;.domain=.
+    0x0180:  6261 746f 746f 2e6e 6574 0d0a 5365 742d  batoto.net..Set-
+    0x0190:  436f 6f6b 6965 3a20 636f 6d6d 656e 746d  Cookie:.commentm
+    0x01a0:  6f64 7069 6473 3d64 656c 6574 6564 3b20  odpids=deleted;.
+    0x01b0:  6578 7069 7265 733d 5468 752c 2030 312d  expires=Thu,.01-
+    0x01c0:  4a61 6e2d 3139 3730 2030 303a 3030 3a30  Jan-1970.00:00:0
+    0x01d0:  3120 474d 543b 2070 6174 683d 2f3b 2064  1.GMT;.path=/;.d
+    0x01e0:  6f6d 6169 6e3d 2e62 6174 6f74 6f2e 6e65  omain=.batoto.ne
+    0x01f0:  740d 0a43 6163 6865 2d43 6f6e 7472 6f6c  t..Cache-Control
+    0x0200:  3a20 6d61 782d 6167 653d 3336 3030 0d0a  :.max-age=3600..
+    0x0210:  4578 7069 7265 733a 2046 7269 2c20 3239  Expires:.Fri,.29
+    0x0220:  204e 6f76 2032 3031 3320 3033 3a34 373a  .Nov.2013.03:47:
+    0x0230:  3338 2047 4d54 0d0a 5072 6167 6d61 3a20  38.GMT..Pragma:.
+    0x0240:  6e6f 2d63 6163 6865 0d0a 436f 6e74 656e  no-cache..Conten
+    0x0250:  742d 456e 636f 6469 6e67 3a20 677a 6970  t-Encoding:.gzip
+    0x0260:  0d0a 5661 7279 3a20 4163 6365 7074 2d45  ..Vary:.Accept-E
+    0x0270:  6e63 6f64 696e 670d 0a58 2d43 6163 6865  ncoding..X-Cache
+    0x0280:  3a20 4849 540d 0a0d 0a37 6639 360d 0a    :.HIT....7f96..

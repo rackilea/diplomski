@@ -1,0 +1,9 @@
+UIManager.put("TabbedPane.borderColor", Color.RED);
+UIManager.put("TabbedPane.darkShadow", ColorUIResource.RED);
+UIManager.put("TabbedPane.light", ColorUIResource.RED);
+UIManager.put("TabbedPane.highlight", ColorUIResource.RED);
+UIManager.put("TabbedPane.focus", ColorUIResource.RED);
+UIManager.put("TabbedPane.unselectedBackground", ColorUIResource.RED);
+UIManager.put("TabbedPane.selectHighlight", ColorUIResource.RED);
+UIManager.put("TabbedPane.tabAreaBackground", ColorUIResource.RED);
+UIManager.put("TabbedPane.borderHightlightColor", ColorUIResource.RED);

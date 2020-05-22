@@ -1,0 +1,12 @@
+List<Response> list = new ArrayList<Response>();
+Response rr = new Response();
+rr.setHash("hash1");
+rr.setName("name1");
+rr.setCount(1);
+list.add(rr);
+Response rr2 = new Response();
+rr2.setHash("hash2");
+rr2.setName("name2");
+rr2.setCount(2);
+list.add(rr2);
+req.setAttribute("data", list);

@@ -1,0 +1,13 @@
+....
+import javafx.scene.input.MouseEvent;
+....
+....
+EventHandler click = new EventHandler<MouseEvent>() {
+@Override
+    public void handle(MouseEvent t) {
+        if(t.getClickCount()>1) {
+        System.out.println("DOUBLE CLICK");
+        }
+    }
+};
+....

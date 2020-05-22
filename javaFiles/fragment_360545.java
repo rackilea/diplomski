@@ -1,0 +1,9 @@
+BufferedWriter theBufferedWriter = null;
+try{
+    theBufferedWriter = ...
+    ...
+} catch (IOException anException) {
+    ...
+} finally {
+    IOUtils.closeQuietly(theBufferedWriter);
+}

@@ -1,0 +1,43 @@
+private static void add(File source, JarOutputStream target) throws IOException
+    {
+      BufferedInputStream in = null;
+      try
+      {
+        if (source.isDirectory())
+        {
+          String name = source.getPath().replace("\\", File.separator);
+          if (!name.isEmpty())
+          {
+            if (!name.endsWith(File.separator))
+              name += File.separator;
+            JarEntry entry = new JarEntry(name);
+            entry.setTime(source.lastModified());
+            target.putNextEntry(entry);
+            //target.closeEntry();
+          }
+          for (File nestedFile: source.listFiles())
+            try{add(nestedFile, target);}catch(IOException e){System.out.println(e);}
+          return;
+        }
+
+        JarEntry entry = new JarEntry(source.getPath().replace("tmp\\","").replace("\\", "/"));
+        entry.setTime(source.lastModified());
+        target.putNextEntry(entry);
+        in = new BufferedInputStream(new FileInputStream(source));
+
+        byte[] buffer = new byte[1024];
+        while (true)
+        {
+          int count = in.read(buffer);
+          if (count == -1)
+            break;
+          target.write(buffer, 0, count);
+        }
+        target.closeEntry();
+      }
+      finally
+      {
+        if (in != null)
+          in.close();
+      }
+    }

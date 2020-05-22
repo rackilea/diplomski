@@ -1,0 +1,13 @@
+@Bean
+MessageProducerSupport mqttInbound() {
+   ...
+   adapter.setOutputChannelName("mainMessageChannel");
+   ...
+}
+
+@Bean
+MessageProducerSupport testInbound() {
+   ...
+   adapter.setOutputChannelName("mainMessageChannel");
+   ...
+}

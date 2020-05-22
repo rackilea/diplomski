@@ -1,0 +1,6 @@
+...
+catch(IndexOutOfBoundsException e){
+    String h = "Array index " + e.getMessage() + " out of bounds!";
+    return h;
+}
+...

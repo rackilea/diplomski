@@ -1,0 +1,11 @@
+StringBuilder sb = new StringBuilder();
+sb.append("hey");
+sb.append("\n");
+sb.append("I can't believe that mark is ");
+sb.append(mark);
+sb.append(" years old.. thank god alex and david are  ");
+sb.appendt(alex);
+sb.append(" and ");
+sb.append(david);
+sb.append("...");
+System.out.println(sb.toString());

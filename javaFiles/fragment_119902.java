@@ -1,0 +1,9 @@
+<build>
+        <directory>${basedir}/target</directory>
+        <resources>
+            <resource>
+                <targetPath>${basedir}/target/resources</targetPath>
+                <directory>${basedir}/src/main/resources</directory>
+            </resource>
+        </resources>
+</build>

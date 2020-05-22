@@ -1,0 +1,6 @@
+mov ebx, [ebp+8]   ; ebx = env
+mov eax, [ebx]     ; eax = *env
+...
+mov eax, [ebx]     ; eax = (*env)->GetVersion
+...
+call [eax]         ; call *((*env)->GetVersion)

@@ -1,0 +1,6 @@
+InputStream in = new RandomAccessFileInputStream(raf);
+DataInputStream dataIn = new DataInputStream(in))
+
+ ...
+  if ((line = dataIn.readLine()) == null) 
+  ...

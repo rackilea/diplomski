@@ -1,0 +1,14 @@
+case 1: countA++;
+break;
+case 2: countB++;
+break;
+case 3: countC++;
+break;
+case 4: countD++;
+break;
+case 5: countE++;
+break;
+case 6: countF++;
+break;
+case 7: countG++;
+break;

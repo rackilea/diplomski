@@ -1,0 +1,6 @@
+# --- !Ups
+ALTER TABLE USER ADD COLUMN last_ip varchar(30) DEFAULT NULL;
+
+# --- !Downs
+
+ALTER TABLE USER DELETE COLUMN last_ip;

@@ -1,0 +1,16 @@
+{
+   "data":{
+      "detections":[
+         {
+            "isReliable":false,
+            "confidence":0.45171339563862928,
+            "language":"es"
+         },
+         {
+            "isReliable":false,
+            "confidence":0.083565459610027856,
+            "language":"pt"
+         }
+      ]
+   }
+}

@@ -1,0 +1,7 @@
+try {
+    if(search.equals("Category")){
+        //do operation
+    }
+} catch (Exception e) {
+    e.printStackTrace();
+}

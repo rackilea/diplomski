@@ -1,0 +1,6 @@
+public Drawing(ShapeLibrary shapeLib, File oneShape) throws FileNotFoundException {
+    //...
+    Scanner in = new Scanner(oneShape);
+    this.canvasI = CanvasInstruction.readFromFile(in);
+    //...
+}

@@ -1,0 +1,6 @@
+public class Config implements IHoldConfiguration {
+    ...
+    public static final int DEFAULT_CONCURRENCY = 1;
+
+    ...
+    private Integer concurrency = Integer.valueOf(DEFAULT_CONCURRENCY);

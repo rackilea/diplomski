@@ -1,0 +1,9 @@
+f.add(new Test("CPU",  new DefaultValueDataset(23D), 60D, 90D, 100D, 0));
+f.add(new Test("DISK",  new DefaultValueDataset(23D), 60D, 90D, 100D, 1));
+f.add(new Test("MEMORY",  new DefaultValueDataset(23D), 60D, 90D, 100D, 2));
+f.add(new Test("CPU",  new DefaultValueDataset(23D), 60D, 90D, 100D, 3));
+f.add(new Test("DISK",  new DefaultValueDataset(23D), 60D, 90D, 100D, 4));
+f.add(new Test("MEMORY",  new DefaultValueDataset(23D), 60D, 90D, 100D, 5));
+f.add(new Test("CPU",  new DefaultValueDataset(23D), 60D, 90D, 100D, 6));
+f.add(new Test("DISK",  new DefaultValueDataset(23D), 60D, 90D, 100D, 7));
+f.add(new Test("MEMORY",  new DefaultValueDataset(23D), 60D, 90D, 100D, 8));

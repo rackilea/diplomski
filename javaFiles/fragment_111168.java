@@ -1,0 +1,9 @@
+class CursorLoaderListFragment extends ListFragment with OnQueryTextListener with OnCloseListener with LoaderManager.LoaderCallbacks[Cursor] {
+...
+    def onQueryTextChange(newText: String): Boolean = {
+    ...
+        getLoaderManager.restartLoader(0, null, CursorLoaderListFragment.this)
+    ...
+    true
+    }
+}

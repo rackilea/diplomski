@@ -1,0 +1,13 @@
+DateTimeFormatter formatter = new DateTimeFormatterBuilder()
+                .parseCaseInsensitive()
+                .append(DateTimeFormatter.ISO_LOCAL_DATE_TIME)
+                .optionalStart()
+                .appendPattern(".SSS")
+                .optionalEnd()
+                .optionalStart()
+                .appendZoneOrOffsetId()
+                .optionalEnd()
+                .optionalStart()
+                .appendOffset("+HHMM", "0000")
+                .optionalEnd()
+                .toFormatter();

@@ -1,0 +1,6 @@
+...
+rs.next();
+// comment this: 
+// System.out.println(rs.getInt(1) + "\t" + rs.getInt(2) + "\t" + rs.getInt(3) + "\t" + rs.getInt(4) + "\t" + rs.getInt(5) + "\t" + rs.getInt(6));
+for (i = 2; i < 7; i++)
+...

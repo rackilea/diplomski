@@ -1,0 +1,10 @@
+<testResource>
+                <directory>${basedir}/src/test/resources</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.properties</include>
+                    <include>**/*.sql</include>
+                    <include>**/*.xls</include>
+                </includes>
+                <filtering>true</filtering>
+            </testResource>

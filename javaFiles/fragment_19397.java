@@ -1,0 +1,12 @@
+WebDriver driver=null;
+            System.setProperty("webdriver.chrome.driver","./src//lib//chromedriver");
+            DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("test-type");
+            options.addArgument("--start-maximized");
+            options.addArguments("--disable-web-security");
+            options.addArguments("--allow-running-insecure-content");
+            capabilities.setCapability("chrome.binary","./src//lib//chromedriver");
+            capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+            driver = new ChromeDriver(capabilities);
+            driver.get("https://www.google.com/");

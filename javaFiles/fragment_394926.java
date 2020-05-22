@@ -1,0 +1,10 @@
+<build>
+    <resources>
+        <resource>
+            <directory>${project.build.sourceDirectory}</directory>
+        </resource>
+        <resource>
+            <directory>src/main/resources</directory>
+        </resource>
+    </resources>
+</build>

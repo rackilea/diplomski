@@ -1,0 +1,20 @@
+{
+   "shipping_profiles":{
+      "563":{
+         "name":"name563",
+         "value":"value563"
+      },
+      "564":{
+         "name":"name564",
+         "value":"value564"
+      },
+      "565":{
+         "name":"name565",
+         "value":"value565"
+      },
+      "566":{
+         "name":"name566",
+         "value":"value566"
+      }
+   }
+}

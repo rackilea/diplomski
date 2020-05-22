@@ -1,0 +1,6 @@
+apply plugin: 'kotlin-android'
+
+dependencies {
+  ...
+  compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}

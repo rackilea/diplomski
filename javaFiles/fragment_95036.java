@@ -1,0 +1,10 @@
+newBut = new Button(this);  
+newBut.setFocusable(true);
+newBut.setFocusableInTouchMode(true);
+newBut.requestFocus();
+newBut.setText("("SOME REAL LONG TEXT SOME REAL LONG TEXT");
+newBut.setTextColor(Color.parseColor("#FFFFFF"));
+newBut.setEllipsize(TruncateAt.MARQUEE);
+newBut.setSingleLine();
+newBut.setMarqueeRepeatLimit(50);
+newBut.setSelected(true);

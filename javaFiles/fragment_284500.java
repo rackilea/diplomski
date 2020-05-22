@@ -1,0 +1,6 @@
+private void populateEachVehicleDetail(String datasetId, Integer vehicleId, List<VehicleResponse> vehiclesList, CountDownLatch latch) throws ApiException {
+....
+    VehiclesApi vehiclesApi = new VehiclesApi();
+    vehiclesApi.vehiclesGetVehicleAsync(datasetId,vehicleId,vehicleResponseApiCallback);
+...
+}

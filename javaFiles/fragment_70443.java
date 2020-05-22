@@ -1,0 +1,15 @@
+PerfMonCollector perfMonCollector = new PerfMonCollector();
+perfMonCollector.setName("PerfMon Metrics Collector");
+perfMonCollector.setProperty("filename","perfmon.jtl");
+CollectionProperty metricConnections = new CollectionProperty();
+metricConnections.setName("metricConnections");
+CollectionProperty cpu = new CollectionProperty();
+cpu.setName("cpu");
+cpu.addProperty(new StringProperty("host","localhost"));
+cpu.addProperty(new StringProperty("port","4444"));
+cpu.addProperty(new StringProperty("metric","CPU"));
+cpu.addProperty(new StringProperty("metricParam",""));
+metricConnections.addProperty(cpu);
+perfMonCollector.setProperty(metricConnections);
+perfMonCollector.setProperty(TestElement.TEST_CLASS, PerfMonCollector.class.getName());
+perfMonCollector.setProperty(TestElement.GUI_CLASS, PerfMonGui.class.getName());

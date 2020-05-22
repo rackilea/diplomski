@@ -1,0 +1,10 @@
+DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();      
+Document document = factory.newDocumentBuilder().newDocument();             
+Element element = document.createElement("tag");                            
+document.appendChild(element);                                              
+TransformerFactory transformerFactory = TransformerFactory.newInstance();   
+Transformer transformer = transformerFactory.newTransformer();              
+transformer.setOutputProperty(OutputKeys.METHOD, "html");                   
+DOMSource source = new DOMSource(document);                                 
+StreamResult result = new StreamResult(System.out);                         
+transformer.transform(source, result);

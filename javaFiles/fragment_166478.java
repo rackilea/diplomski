@@ -1,0 +1,6 @@
+int index = 0;
+    while (x >= 2 && x <= d) {
+    ...
+        if (y == 0) {
+            dvr[index++] = x;
+    ...

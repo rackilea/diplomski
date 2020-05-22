@@ -1,0 +1,25 @@
+String html = "<body><div id=\"ibm-pcon\"><div id=\"ibm-content\"><div id=\"ibm-leadspace-head\" class=\"ibm-alternate\"><div id=\"ibm-leadspace-body\"><br></br><script type=\"text/javascript\">currentDate();</script><br></br><!--BEGIN OPTIONAL BREADCRUMBING--> <span style=\"font-size: small;\"><a href=\"/pc/entitle/pg2/Service.wss/display/MachineHome\">Machine Lookup</a> &gt; <a href=\"/pc/entitle/pg2/Service.wss/mts/Lookup\">Warranty Information</a> &gt; </span><!--END OPTIONAL BREADCRUMBING--><br></br><h1>PEW | Warranty Information</h1> </div></div><!-- CONTENT_BODY --><div id=\"ibm-content-body\"><div id=\"ibm-content-main\"><table class=\"ibm-results-table\" summary=\"output table\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tbody xmlns=\"www.w3.org/TR/xhtml1/\"><thead> <tr><th scope=\"col\" class=\"pg2OutputTableSectionTitle\">Results of Machine Type/Serial Number Query</th> </tr></thead><tr> <td><table class=\"ibm-data-table ibm-alternating\" summary=\"output table\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"> <tbody> <thead><tr> <th scope=\"col\" colspan=\"3\" class=\"pg2TableSectionTitle\">General Machine Information:</th></tr> </thead> <tr><td> Type: <span>1746</span></td><td> Model: <span>C4A</span></td><td> Serial: <span>13D06MK</span></td> </tr> <tr><td> Status: <span>Proof Of Purchase Rcvd</span></td><td> Build Date: <span>&nbsp;</span></td><td> Build to Model: <span> </span></td> </tr> <tr><td> Geography: <span>EMEA</span></td><td> Country: <span>GREECE</span></td><td> Configuration Id: <span>&nbsp;</span></td> </tr> <tr><td> OES Order Number: <span>2076804957</span></td><td> Customer Number: <span>108401</span></td><td> Delivery Number: <span>8519501492</span></td> </tr> <tr><td colspan=\"2\"> Service Status: <span>This machine is currently out of warranty.</span></td><td colspan=\"1\"> UAR End Date: <span>2012-08-02</span></td> </tr> </tbody></table> </td></tr><tr> <td><table class=\"ibm-data-table ibm-alternating\" summary=\"output table\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"> <tbody> <thead><tr> <th scope=\"col\" colspan=\"3\" class=\"pg2TableSectionTitle\">Warranty and Service Information:</th></tr> </thead> <tr><th scope=\"col\">Start Date</th><th scope=\"col\">End Date</th><th scope=\"col\">SDF</th> </tr> <tr><td>2012-07-04</td><td>2015-07-03</td><td>3XL</td> </tr> <tr><td colspan=\"3\"> SDF Description: <span>This product has a 3 year limited warranty and is entitled to CRU (customer replaceable unit) and On-site service. Tier 1 CRUs are customer responsibility, see announcement for details. On-site Service is available Monday - Friday, except holidays, with a next business day response objective.</span></td> </tr> </tbody></table> </td></tr><tr> <td><table class=\"ibm-data-table ibm-alternating\" summary=\"output table\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"> <tbody> <thead><tr> <th scope=\"col\" colspan=\"3\" class=\"pg2TableSectionTitle\">Upgrade Warranty and Service Information:</th></tr> </thead> <tr><th scope=\"col\">Start Date</th><th scope=\"col\">End Date</th><th scope=\"col\">SDF</th> </tr> <tr><td>2012-07-04</td><td>2015-07-03</td><td>SP4</td> </tr> <tr><td colspan=\"3\"> SDF Description: <span>This product has a three year limited warranty which includes a warranty upgrade. This product is entitled to parts and labor and includes on-site repair service.Service is available 7X24 with an 4 hour response objective.</span></td> </tr> </tbody></table> </td></tr><tr> <td><table class=\"ibm-data-table\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"> <thead><tr> <th scope=\"col\" class=\"pg2MessageHead\">Messages</th></tr> </thead> <tbody><tr> <td class=\"pg2MessagePanel\" align=\"left\">&nbsp;</td></tr> </tbody></table> </td></tr></tbody> </table></div> </body>";
+    Document doc = Jsoup.parse(html, "", Parser.xmlParser());
+    Elements tables = doc.select("table.ibm-data-table.ibm-alternating"); // Get table which has classes = ibm-data-table, ibm-alternating
+
+    System.out.println(tables.size()); // tables.size = 3
+
+    for (Element ele: tables) {
+        // Get table header
+        Elements thElements = ele.select("tr > th.pg2TableSectionTitle"); // Get tableheader has classes = pg2TableSectionTitle
+
+        if (thElements != null && thElements.size() > 0) {
+            String tableTitle = thElements.get(0).text();
+            System.out.println(tableTitle);
+
+            if (tableTitle.contains("General Machine Information:")) {
+                // Apply your logic accordingly for table #General Machine
+            }
+            else if (tableTitle.contains("Warranty and Service Information:")) {
+                // Apply your logic accordingly for table #Warranty and Service
+            }
+            else if (tableTitle.contains("Upgrade Warranty and Service Information:")) {
+                // Apply your logic accordingly for table #Upgrade Warranty
+            }
+        }
+    }

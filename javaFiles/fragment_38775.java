@@ -1,0 +1,6 @@
+cc_library_shared {
+    name: "libandroid_runtime",
+...
+srcs: [
+...
+   "android_media_AudioTrack.cpp",

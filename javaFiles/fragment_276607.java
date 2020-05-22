@@ -1,0 +1,6 @@
+...
+if (top == null) {
+   throw new IllegalStateException("Can't pop from an empty stack");
+} 
+belowTop = top.link;
+...

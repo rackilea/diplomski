@@ -1,0 +1,17 @@
+driver.get("chrome://settings/content/cookies");
+WebElement root1 = driver.findElement(By.tagName("settings-ui"));
+WebElement shadowRoot1 = expandRootElement(root1);
+WebElement root2 = shadowRoot1.findElement(getByIdentifier("id=container"));
+WebElement main = root2.findElement(getByIdentifier("id=main"));
+WebElement shadowRoot3 = expandRootElement(main);
+WebElement shadowRoot4 = shadowRoot3.findElement(getByIdentifier("class=showing-subpage"));
+WebElement shadowRoot5 = expandRootElement(shadowRoot4);
+WebElement shadowRoot6 = shadowRoot5.findElement(getByIdentifier("id=advancedPage"));
+WebElement shadowRoot7 = shadowRoot6.findElement(By.tagName("settings-privacy-page"));
+WebElement shadowRoot8 = expandRootElement(shadowRoot7);
+WebElement shadowRoot9 = shadowRoot8.findElement(getByIdentifier("id=pages"));
+WebElement shadowRoot10 = shadowRoot9.findElement(By.tagName("settings-subpage"));
+WebElement shadowRoot11 = shadowRoot10.findElement(By.tagName("category-default-setting"));
+WebElement shadowRoot12 = expandRootElement(shadowRoot11);
+WebElement shadowRoot13 = shadowRoot12.findElement(By.id("toggle"));
+shadowRoot13.click();

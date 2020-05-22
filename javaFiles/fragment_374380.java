@@ -1,0 +1,9 @@
+if(resultAvailable)
+{
+    holder.colView.setImageResource(R.drawable.icon_yes);
+    yesImagesCount++;
+}
+else
+{
+    holder.colView.setImageResource(R.drawable.icon_no);
+}

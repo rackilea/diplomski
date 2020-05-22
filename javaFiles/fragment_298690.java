@@ -1,0 +1,10 @@
+ImageView iv = (ImageView) findViewById(R.id.splashImageView);
+Drawable d = iv.getBackground();
+BitmapDrawable bitDw = ((BitmapDrawable) d);
+Bitmap bitmap = bitDw.getBitmap();
+System.out.println(".....d....."+d);
+System.out.println("...bitDw...."+bitDw);
+System.out.println("....bitmap...."+bitmap);
+ByteArrayOutputStream stream = new ByteArrayOutputStream();
+bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+byte[] imageInByte = stream.toByteArray();

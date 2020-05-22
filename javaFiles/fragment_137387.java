@@ -1,0 +1,15 @@
+db.scrips.aggregate([
+    {
+        $group:{
+            "_id":null,
+            "scrips":{
+                $addToSet:"$scrip"
+            }
+        }
+    },
+    {
+        $project:{
+            "_id":0
+        }
+    }
+])

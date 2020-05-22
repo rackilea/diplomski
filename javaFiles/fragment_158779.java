@@ -1,0 +1,9 @@
+<assembly>
+...
+<files>
+ <file>
+  <source>target/${artifactId}.${packaging}</source
+  <outputDirectory>war</outputDirectory>
+  <destName>${artifactId}.${packaging}</destName>
+ </file>
+</files>

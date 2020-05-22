@@ -1,0 +1,12 @@
+<build>
+<...>
+<resources>
+ <resource>
+    <directory>${basedir}/src/main/resources</directory>
+ </resource>
+ <resource>
+    <directory>${basedir}/src/main/java</directory>
+ </resource>
+</resources>
+<...>
+</build>

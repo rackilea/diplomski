@@ -1,0 +1,6 @@
+class CacheClient {
+     ...
+     public Object getSynchronizationObject() { return m_syncObj; }
+     ...
+     private Object m_syncObj = new Object(); // For synchronised access to the cache.
+}

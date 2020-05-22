@@ -1,0 +1,12 @@
+Selenium selenium = new DefaultSelenium("localhost", 4444, "*firefox", BASE_URL);
+selenium.start();
+selenium.open(BASE_URL);    
+selenium.type("j_idt8:inputName", "Robot");         
+selenium.click("j_idt8:_t12");
+selenium.waitForCondiditon("selenium.isElementPresent('j_idt17:input')", MAX_WAIT_TIME_IN_MS);
+selenium.type("j_idt17:input", "Selenium testing in proggress....");  
+selenium.click("j_idt17:_t20");
+selenium.waitForCondiditon("selenium.isElementPresent('j_idt17:input')", MAX_WAIT_TIME_IN_MS);
+selenium.type("j_idt17:input", "Test over!");  
+selenium.click("j_idt17:_t20");
+selenium.stop();

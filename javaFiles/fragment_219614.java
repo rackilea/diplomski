@@ -1,0 +1,12 @@
+if(App.SubPosition==0){
+    if(custList.size()>0)
+        custList1.addAll(custList);
+}
+if(App.SubPosition==1){
+    if(custList.size()>0)
+        custList2.addAll(custList);
+}
+if(App.SubPosition==2){
+    if(custList.size()>0)
+        custList3.addAll(custList);
+}

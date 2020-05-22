@@ -1,0 +1,20 @@
+{
+   "literatures":[
+      {
+         "id":10,
+         "name":"abc"
+      }
+   ],
+   "recycleFacilities":[
+      {
+         "id":20,
+         "name":"testFaculty"
+      }
+   ],
+   "assents":[
+      {
+         "id":30,
+         "name":"Test"
+      }
+   ]
+}

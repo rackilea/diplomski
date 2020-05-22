@@ -1,0 +1,21 @@
+{  
+   "query":{  
+      "query_string":{  
+         "query":"api:\"smsmessaging\" AND operatorid:\"ROBI\""
+      }
+   },
+   "aggs":{  
+      "total":{  
+         "terms":{  
+            "field":"userid"
+         },
+         "aggs":{  
+            "grades_count":{  
+               "value_count":{  
+                  "script":"doc['userid'].value"
+               }
+            }
+         }
+      }
+   }
+}

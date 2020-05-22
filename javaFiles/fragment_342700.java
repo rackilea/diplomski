@@ -1,0 +1,17 @@
+float rot = 2.0; // angle in radians
+float x = 100.0; // space ship center at 100,100
+float y = 100.0; 
+Point2D.Float p1 = new Point2D.Float(10.0,10.0);
+Point2D.Float p2 = new Point2D.Float(-10.0,10.0);
+Point2D.Float p3 = new Point2D.Float(0.0,-10.0);
+Point2D.Float p1R = new Point2D.Float(0,0);
+Point2D.Float p2R = new Point2D.Float(0,0);
+Point2D.Float p3R = new Point2D.Float(0,0);
+float dx = Math.cos(rot);
+float dy = Math.sin(rot);
+p1R.x = p1.x * dx + p1.y * -dy + x;
+p1R.y = p1.x * dy + p1.y *  dx + y;
+p2R.x = p2.x * dx + p2.y * -dy + x;
+p2R.y = p2.x * dy + p2.y *  dx + y;
+p3R.x = p3.x * dx + p3.y * -dy + x;
+p3R.y = p3.x * dy + p3.y *  dx + y;

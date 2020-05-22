@@ -1,0 +1,6 @@
+...
+public class A implements Serializable
+    @Id
+    @GeneratedValue(strategy = ...) // assuming you are generating values for personId
+    private long personId;
+...

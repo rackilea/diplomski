@@ -1,0 +1,6 @@
+protected String getMessageInternal(String code, Object[] args, Locale locale) {
+    ...
+    if (locale == null) {
+        locale = Locale.getDefault();
+    }
+    ...

@@ -1,0 +1,16 @@
+float timeRemaining = 0f; // in seconds
+public void render() {
+    ...
+    batch.begin();
+    ...
+    if(isKeyJustPressed...) {
+        timeRemaining = 5; // will show the texture for 5 seconds
+    }
+    if (timeRemaining>0) {
+        timeRemaining -= Gdx.graphics.getDeltaTime();
+        texture.draw()...
+    }
+    ...
+    batch.end();
+    ...
+}

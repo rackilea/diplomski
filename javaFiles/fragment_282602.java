@@ -1,0 +1,29 @@
+@Override
+     public View getView(int position, View convertView, ViewGroup parent) {
+
+         ViewHolder holder;
+            if(convertView==null)
+            {
+                inflater = (LayoutInflater) context
+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+                holder = new ViewHolder();
+                convertView = inflater.inflate(R.layout.messagelistrow, null);
+
+                holder.icon = (ImageView) convertView.findViewById(R.id.icon);
+                holder.messageSnippet = (TextView) convertView.findViewById(R.id.messageSnippet);
+                holder.messageDate = (TextView) convertView.findViewById(R.id.messageDate);
+
+                convertView.setTag(holder);
+            }
+            else
+                holder=(ViewHolder)convertView.getTag();
+
+            MessageListItem ml = (MessageListItem) rowItems.get(position);
+
+            holder.icon.setImageResource(ml.getIconId());
+            holder.messageSnippet.setText(ml.getMessageSnippet());
+            holder.messageDate.setText(ml.getMessageDate());
+
+            return convertView;
+        }

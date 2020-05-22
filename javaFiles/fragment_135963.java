@@ -1,0 +1,11 @@
+assertThat(getNumberOfDecimalPlaces(new BigDecimal("0.001")), equalTo(3));
+assertThat(getNumberOfDecimalPlaces(new BigDecimal("0.01")), equalTo(2));
+assertThat(getNumberOfDecimalPlaces(new BigDecimal("0.1")), equalTo(1));
+assertThat(getNumberOfDecimalPlaces(new BigDecimal("1.000")), equalTo(0));
+assertThat(getNumberOfDecimalPlaces(new BigDecimal("1.00")), equalTo(0));
+assertThat(getNumberOfDecimalPlaces(new BigDecimal("1.0")), equalTo(0));
+assertThat(getNumberOfDecimalPlaces(new BigDecimal("1")), equalTo(0));
+assertThat(getNumberOfDecimalPlaces(new BigDecimal("10")), equalTo(0));
+assertThat(getNumberOfDecimalPlaces(new BigDecimal("10.1")), equalTo(1));
+assertThat(getNumberOfDecimalPlaces(new BigDecimal("10.01")), equalTo(2));
+assertThat(getNumberOfDecimalPlaces(new BigDecimal("10.001")), equalTo(3));

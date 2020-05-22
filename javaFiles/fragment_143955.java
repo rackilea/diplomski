@@ -1,0 +1,19 @@
+configurations {
+    buildJSword
+}
+
+task doBuildJSword (type: GradleBuild) {
+buildFile = 'jsword-stub.gradle'
+tasks = ['clean', 'ivy.check', 'ivy.download', 'ivy.task', 'ivy',
+    'init', 'mergeCode', 'compile', 'jar'] //, 'copyJarsToMinimalBible']
+    ext.outputJar = file('distribution/jsword.jar')
+    outputs.upToDateWhen {
+        ext.outputJar.exists()
+    }
+}
+
+artifacts {
+    buildJSword(doBuildJSword.ext.outputJar) {
+        builtBy doBuildJSword
+    }
+}

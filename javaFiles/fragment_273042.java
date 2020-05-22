@@ -1,0 +1,9 @@
+// Note: more idiomatic names would be consultancyNames and
+ // projectNames. It's also unclear why you're subtracting one from the count...
+ consultancynames = new String[(int) db.getConsultancyCount() - 1];
+ projectnames = new String[consultancynames.length][];
+ for (int i = 0;i< consultancenames.length; i++) {
+     ...
+     projectnames[i] = new String[project_namecur.getCount())];
+     ...
+ }

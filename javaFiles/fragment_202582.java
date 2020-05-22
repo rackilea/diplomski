@@ -1,0 +1,6 @@
+if(!guard)
+{
+    while(true)
+    {
+    }
+}

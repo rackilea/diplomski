@@ -1,0 +1,6 @@
+ActionListener al= new ActionListener() {
+    ....
+};
+button1.addActionListener(al);
+....
+button5.addActionListener(al);

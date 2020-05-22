@@ -1,0 +1,24 @@
+L0
+    LINENUMBER 11 L0
+    ICONST_1
+    ISTORE 0
+   L1
+    LINENUMBER 12 L1
+    ILOAD 0
+    IFEQ L2
+   L3
+    LINENUMBER 13 L3
+    GETSTATIC p/A.something : Ljava/lang/Object;
+    ARETURN
+   L2
+    LINENUMBER 15 L2
+   FRAME APPEND [I]
+    INVOKESTATIC p/A.dosomething()V
+   L4
+    LINENUMBER 17 L4
+    ACONST_NULL
+    ARETURN
+   L5
+    LOCALVARIABLE condition Z L1 L5 0
+    MAXSTACK = 1
+    MAXLOCALS = 1

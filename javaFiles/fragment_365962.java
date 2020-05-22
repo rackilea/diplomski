@@ -1,0 +1,11 @@
+StringBuilder sb= new StringBuilder();
+sb.append("aapt package -f -M");
+sb.append(getApplicationContext().getCacheDir());
+sb.append("/tmp/AndroidManifest.xml -S ");
+sb.append(getApplicationContext().getCacheDir());
+sb.append("/tmp/res -I ");
+sb.append(getApplicationContext().getCacheDir());
+sb.append("/tmp/android.jar -F ");
+sb.append(getApplicationContext().getCacheDir());
+sb.append("/apk/MyProject.apk.unaligned");
+sb = Runtime.getRuntime().exec(sb.toString());

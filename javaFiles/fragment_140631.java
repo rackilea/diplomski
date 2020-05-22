@@ -1,0 +1,30 @@
+<properties>
+    <standalone.binary.root.folder>${project.basedir}/selenium_standalone_binaries</standalone.binary.root.folder>
+</properties>
+
+<profiles>
+    <profile>
+        <id>selenium-tests</id>
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>com.lazerycode.selenium</groupId>
+                    <artifactId>driver-binary-downloader-maven-plugin</artifactId>
+                    <version>0.9.2</version>
+                    <configuration>
+                        <rootStandaloneServerDirectory>${standalone.binary.root.folder}</rootStandaloneServerDirectory>
+                        <downloadedZipFileDirectory>${project.basedir}/selenium_standalone_zips</downloadedZipFileDirectory>
+                        <customRepositoryMap>${project.basedir}/RepositoryMap.xml</customRepositoryMap>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>selenium</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </build>
+    </profile>
+</profiles>

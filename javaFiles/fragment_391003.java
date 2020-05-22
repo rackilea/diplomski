@@ -1,0 +1,52 @@
+public class ProcessOutput {
+    private final InputStream inputStream;
+    final CountDownLatch latch = new CountDownLatch(1);
+
+    public ProcessOutput(InputStream inputStream) {
+        this.inputStream = inputStream;
+    }
+
+    public String getRequestString(final long timeoutMilliSeconds) throws InterruptedException {
+        StreamReader reader = new StreamReader();
+        new Thread(reader).start();
+        latch.await(timeoutMilliSeconds,TimeUnit.MILLISECONDS);
+        //You can check if requestString not yet set or null after waiting for timeout throw some application exception to tell the client that its taking too long.
+        return reader.getRequestString();
+    }
+
+    private class StreamReader implements Runnable {
+
+        String requestString;
+        @Override
+        public void run() {
+            BufferedReader br = null;
+            StringBuilder sb = new StringBuilder();
+
+            String line;
+            try {
+
+                br = new BufferedReader(new InputStreamReader(inputStream));
+                while ((line = br.readLine()) != null) {
+                    sb.append(line);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                if (br != null) {
+                    try {
+                        br.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+            requestString = sb.toString();
+            //Work done now
+            latch.countDown();
+        }
+
+        public String getRequestString() {
+            return requestString;
+        } ;
+    }
+}

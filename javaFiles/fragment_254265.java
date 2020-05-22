@@ -1,0 +1,6 @@
+Object reply = new JSONTokener(resp).nextValue();
+if (reply instanceof String) {
+   ...
+} else if (reply instanceof JSONObject) {
+   ...
+}

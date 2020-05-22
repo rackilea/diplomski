@@ -1,0 +1,12 @@
+JSONObject jsonObj = new JSONObject();
+        JSONArray array = new JSONArray();
+        JSONObject Array_item = new JSONObject();
+        JSONObject NextArray_item = new JSONObject();
+        jsonObj.put("dlrurl", "url");
+        NextArray_item.put("to","XXXX");
+        Array_item.put("to", "XXX");
+        array.add(Array_item);
+        array.add(NextArray_item);
+        jsonObj.put("lookup", array);
+        CreatedJson = jsonObj.toString();
+        System.out.println(CreatedJson);

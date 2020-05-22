@@ -1,0 +1,6 @@
+if(Response1.toLowerCase().equals("oui") || Response1.toLowerCase().equals("yes")){
+       //Statements when true...
+
+ }else{
+      // Statements when false...
+}

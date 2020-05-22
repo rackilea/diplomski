@@ -1,0 +1,15 @@
+JSONObject account = new JSONObject();
+JSONArray users = new JSONArray();
+JSONObject userassoc = new JSONObject();
+JSONObject user = new JSONObject();
+JSONObject mainObj = new JSONObject();
+account.put("users", users);
+users.put(userassoc);
+userassoc.put("user", user);
+user.put("username", "Zogbi");
+user.put("password", "password1");
+user.put("firstName", "Tim");
+user.put("lastName", "Smith");
+user.put("middleName", "S");
+user.put("alias", "Gibbus");
+mainObj.put("account", account);

@@ -1,0 +1,6 @@
+Scanner input = new Scanner(System.in);
+for ...
+    System.out.println("Enter a first name:");
+    String firstname = input.nextLine();
+    ...
+    students.add(new Student(firstname, lastname, grade));

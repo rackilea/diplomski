@@ -1,0 +1,6 @@
+public static ExpectedCondition<Boolean> textToBePresentInElement(final WebElement element, final String text) {
+    //...
+    String elementText = element.getText();
+    return elementText.contains(text);
+    //...
+}

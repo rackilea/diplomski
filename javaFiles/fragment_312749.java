@@ -1,0 +1,9 @@
+Specifications.where(
+    Specifications.where(JitOrderItemSpecification.findAll())
+        .and(
+            Specifications.where(JitOrderItemSpecification.findAll())
+                .or(JitOrderItemSpecification.filterByJitOrderQuantityGreaterThan(0))
+                .or(Specifications.where(JitOrderItemSpecification.findAll()).and(JitOrderItemSpecification.filterByProductVerified(false)))
+        )
+)
+.and(JitOrderItemSpecification.filterBySku(sku));

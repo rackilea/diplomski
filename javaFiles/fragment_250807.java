@@ -1,0 +1,6 @@
+...
+// Shift of one row all the rows starting from the 3th row
+sheet.shiftRows(2, sheet.getLastRowNum(), 1, true, true);
+// Create my new 3th row
+Row row = sheet.createRow(2);
+...

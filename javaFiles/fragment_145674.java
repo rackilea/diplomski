@@ -1,0 +1,6 @@
+float spriteSpeed = 60000;
+...
+world = new World(new Vector2(0, 9.8F), true);
+...
+fixtureDef.density = 1;
+fixtureDef2.density = 1;

@@ -1,0 +1,6 @@
+@RequestMapping(value = "", method = RequestMethod.POST)
+public ModelAndView changeRoles(@RequestParam("username") String username,@RequestParam("rolesss") List<String> rolesss) {
+     ..........
+     .........
+    return null;
+}

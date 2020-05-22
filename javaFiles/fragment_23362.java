@@ -1,0 +1,21 @@
+implementation 'com.google.firebase:firebase-core:16.0.1'
+implementation 'com.google.firebase:firebase-messaging:17.1.0'
+implementation 'com.crashlytics.sdk.android:crashlytics:2.9.4'
+implementation 'com.google.firebase:firebase-appindexing:16.0.1'
+implementation 'com.google.firebase:firebase-invites:16.0.1'
+implementation fileTree(include: ['*.jar'], dir: 'libs')
+androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+    exclude group: 'com.android.support', module: 'support-annotations'
+})
+implementation 'com.google.firebase:firebase-firestore:17.0.2'
+implementation 'com.firebaseui:firebase-ui-auth:4.0.0'
+implementation 'com.android.support:appcompat-v7:28.0.0'
+implementation 'com.android.support:customtabs:28.0.0'
+implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+implementation 'com.android.support:design:28.0.0'
+implementation 'com.android.support:support-v4:28.0.0'
+implementation 'com.android.support:support-vector-drawable:28.0.0'
+implementation 'com.android.support:recyclerview-v7:28.0.0'
+implementation 'com.android.support:cardview-v7:28.0.0'
+implementation 'com.google.code.gson:gson:2.8.2'
+testImplementation 'junit:junit:4.12'

@@ -1,0 +1,6 @@
+<form ...>
+    <c:foreach var = "user" items = "${users}">
+        <input type = "checkbox" name = "userIds" value = "${user.id}" checked = "checked" /> <c:out value = "${user.firstName}" /> ...
+    </c:foreach>
+    ...
+</form>

@@ -1,0 +1,10 @@
+Configuration conf = new Configuration();
+Job job = new Job(conf);
+job.setJarByClass(YOUR_MAPPER.class);
+job.setMapperClass(YOUR_MAPPER.class);
+job.setReducerClass(YOUR_REDUCER.class);
+job.setOutputKeyClass(YOUR_OUTPUT_KEY.class);
+job.setOutputValueClass(YOUR_OUTPUT_VALUE.class);
+FileInputFormat.addInputPath(job, new Path("YOUR_INPUT_PATH"));
+FileOutputFormat.setOutputPath(job, new Path("YOUR_OUTPUT_PATH"));
+System.exit(job.waitForCompletion(true) ? 0 : 1);

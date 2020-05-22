@@ -1,0 +1,6 @@
+@Inject
+ private TransitionTo<MyPage> myPageTransition;
+
+ ...
+ myPageTransition.go(); // load MyPage
+ ...

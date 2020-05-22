@@ -1,0 +1,13 @@
+<project>
+ ...
+ <build>
+   ...
+   <resources>
+     <resource>
+       <directory>${project.build.directory}/generated/schema</directory>
+     </resource>
+   </resources>
+   ...
+ </build>
+ ...
+</project>

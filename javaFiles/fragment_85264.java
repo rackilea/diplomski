@@ -1,0 +1,10 @@
+SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+df.setLenient(false);
+df.setTimeZone(TimeZone.getTimeZone("Asia/Shanghai"));
+Date d = df.parse("1927-12-11 11:22:38");
+System.out.println(d);
+long offset = TimeZone.getTimeZone("Asia/Shanghai").getOffset(d.getTime()) / 1000;
+System.out.println(offset);
+int offsetHours = (int) (offset / 3600);
+long minutes = (offset % 3600);
+System.out.println(offsetHours + ":0" + minutes / 60 + ":" + (minutes % 60));

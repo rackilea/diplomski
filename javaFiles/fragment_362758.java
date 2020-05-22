@@ -1,0 +1,10 @@
+XMLEventFactory events = XMLEventFactory.newInstance();
+QName bar = new QName("urn:bar", "bar");
+XMLOutputFactory factory = XMLOutputFactory.newInstance();
+factory.setProperty(XMLOutputFactory.IS_REPAIRING_NAMESPACES, true);
+XMLEventWriter writer = factory.createXMLEventWriter(System.out);
+writer.add(events.createStartDocument());
+writer.setDefaultNamespace("urn:bar");
+writer.add(events.createStartElement(bar, null, null));
+writer.add(events.createEndDocument());
+writer.flush();

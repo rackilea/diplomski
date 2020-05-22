@@ -1,0 +1,17 @@
+{
+    "id":1,
+    "name":"Gold",
+    "description":"Shiny!",
+    "spriteId":1,
+    "consumable":true,
+    "effectsId":[1]
+},
+...
+{
+    "id":999,
+    "name":"Silver",
+    "description":"Whatever!",
+    "spriteId":808,
+    "consumable":true,
+    "effectsId":[2]
+},

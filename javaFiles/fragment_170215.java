@@ -1,0 +1,12 @@
+Node node = nodeBuilder().client(true).settings(ImmutableSettings.settingsBuilder().loadFromSource(jsonBuilder()
+            .startObject()
+            .startObject("analysis")
+            .startObject("analyzer")
+            .startObject("steak")
+            .field("type", "custom")
+            .field("tokenizer", "standard")
+            .field("filter", new String[]{"snowball", "standard", "lowercase"})
+            .endObject()
+            .endObject()
+            .endObject()
+            .endObject().string())).clusterName("elasticsearch").node();

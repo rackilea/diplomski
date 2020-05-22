@@ -1,0 +1,6 @@
+byte[] parserI = ParserI.and0xFFArray("포토".getBytes("UTF-8"));
+
+while (true) {
+  ...
+  if (isBeforeTerminator(htmlInput, parserI, '<'))
+  ...

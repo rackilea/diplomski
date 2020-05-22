@@ -1,0 +1,6 @@
+...
+ContactsContract.Contacts.HAS_PHONE_NUMBER + "=? LIMIT 5" //This is selection string, were looking for records that HAS_PHONE_NUMER is 1 AND 
+// the result set is limited to 5 rows
+new String[]{"1"},
+null);
+...

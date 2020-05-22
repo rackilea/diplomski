@@ -1,0 +1,18 @@
+r(3){
+  good
+  r(2){
+    good
+    r(1){
+      hello
+      r(10){
+        good
+        r(9){
+          bye
+        }
+        bad
+      }
+    }
+    bad
+  }
+  bad
+}

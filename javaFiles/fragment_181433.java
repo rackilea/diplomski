@@ -1,0 +1,13 @@
+String[] teams = new String[100];
+int actualSize = 0;
+...
+for (int i = 0; i < 100; i++) {       
+   ...
+
+   teams[i] = str;
+   actualSize++;
+   ...
+}
+   ...
+String[] actualTeams = new String[actualSize];
+System.arraycopy(array, 0, actualTeams, 0, actualSize);

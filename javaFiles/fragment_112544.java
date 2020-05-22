@@ -1,0 +1,12 @@
+01:08:03.824   [qtp723059574-46] TRACE org.apache.camel.processor.Pipeline - Processing complete for exchangeId: ID-NB0629-50370-1395170917014-0-2 >>> Exchange[Message: [Body is instance of java.io.InputStream]]
+01:08:03.825   [qtp723059574-46] TRACE o.a.c.p.CamelInternalProcessor - Exchange processed and is continued routed asynchronously for exchangeId: ID-NB0629-50370-1395170917014-0-2 -> Exchange[Message: [Body is instance of java.io.InputStream]]
+01:08:03.831   [qtp723059574-46] TRACE org.apache.camel.processor.Pipeline - Processing exchangeId: ID-NB0629-50370-1395170917014-0-2 is continued being processed asynchronously
+01:08:03.832   [qtp723059574-46] TRACE o.a.c.p.CamelInternalProcessor - **Exchange processed and is continued routed asynchronously for exchangeId**: ID-NB0629-50370-1395170917014-0-2 -> Exchange[Message: [Body is instance of java.io.InputStream]]
+01:08:03.834   [qtp723059574-46] DEBUG o.a.c.c.r.DefaultRestletBinding - Populate Restlet response from exchange body: org.restlet.engine.io.UnclosableInputStream@c107903
+Mar 19, 2014 1:08:03 AM org.restlet.engine.log.LogFilter afterHandle
+INFO: 2014-03-19        01:08:03        0:0:0:0:0:0:0:1 -       0:0:0:0:0:0:0:1 8082    POST    /context/endpoint        -       200     -       66      221     http://localhost:8082   Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36   -
+01:08:06.251   [Restlet-1502737852] DEBUG o.a.c.c.restlet.RestletProducer - Received response: HTTP/1.1 - OK (200) - OK for exchangeId: ID-NB0629-50370-1395170917014-0-2
+01:08:06.253   [Restlet-1502737852] DEBUG o.a.c.c.r.DefaultRestletBinding - Populate exchange from Restlet response header: org.restlet.virtualHost value: 344880096
+01:08:06.254   [Restlet-1502737852] DEBUG o.a.c.c.r.DefaultRestletBinding - Populate exchange from Restlet response header: org.restlet.context value: org.restlet.Context@6675e3e5
+01:08:06.254   [Restlet-1502737852] DEBUG o.a.c.c.r.DefaultRestletBinding - Populate exchange from Restlet response header: org.restlet.http.headers value: [[Set-Cookie: JSESSIONID=s5bnkehrfq2d1hd9mc2jz93rf;Path=/finnone-webapp], [Expires: Thu, 01 Jan 1970 00:00:00 GMT], [Content-Type: application/json;charset=UTF-8], [Transfer-Encoding: chunked], [Server: Jetty(8.1.12.v20130726)]]
+01:08:06.307   [Restlet-1502737852] DEBUG o.a.c.c.r.DefaultRestletBinding - Populate exchange from Restlet response: { Your expected JSON response comes here}

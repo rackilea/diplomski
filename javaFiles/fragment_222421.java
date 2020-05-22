@@ -1,0 +1,6 @@
+...
+Account Whose Credentials Were Used:
+    Account Name:       Guest
+    Account Domain:     MS
+    Logon GUID:     {00000000-0000-0000-0000-000000000000}
+...

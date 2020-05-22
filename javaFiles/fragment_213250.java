@@ -1,0 +1,44 @@
+public class RowAdapter extends ArrayAdapter<Row> {
+
+    private final Activity _context;
+    private final ArrayList<Row> rows;
+
+    public class ViewHolder
+    {
+        EditText RowNo;
+        EditText RowText;
+    }
+
+    public RowAdapter(Activity context, ArrayList<Row> rows)
+    {
+        super(context,R.layout.row_layout, R.id.row_id ,rows);
+        this._context = context;
+        this.rows = rows;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent){
+        ViewHolder holder = null;
+
+        if(convertView == null)
+        {
+            LayoutInflater inflater = _context.getLayoutInflater();
+            convertView = inflater.inflate(R.layout.row_layout,parent,false);
+
+            holder = new ViewHolder();
+            holder.RowNo = (EditText)convertView.findViewById(R.id.row_no);
+            holder.RowText = (EditText)convertView.findViewById(R.id.row_text);
+
+            convertView.setTag(holder);
+        }
+        else
+        {
+            holder = (ViewHolder) convertView.getTag();
+        }
+
+        holder.RowNo.setText(""+rows.get(position).RowNo);
+        holder.RowText.setText(rows.get(position).RowText);
+
+        return convertView;
+    }
+}

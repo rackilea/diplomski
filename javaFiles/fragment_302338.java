@@ -1,0 +1,20 @@
+{
+  "postalStreetName":"",
+  "postalHouseNumer":"",
+  "postalHouseLetter":"",
+  "postalHouseNumberAddition":"",
+  "postalCity":"",
+  "postalCountry":"",
+  "visitorStreetName":"",
+  "visitorHouseNumer":"",
+  "visitorHouseLetter":"",
+  "visitorHouseNumberAddition":"",
+  "visitorCity":"",
+  "visitorCountry":"",
+  "establishmentStreetName":"",
+  "establishmentHouseNumer":"",
+  "establishmentHouseLetter":"",
+  "establishmentHouseNumberAddition":"",
+  "establishmentCity":"",
+  "establishmentCountry":""
+}

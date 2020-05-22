@@ -1,0 +1,9 @@
+public class ChristmasBonusRule implements BonusRule {
+...
+  @Override
+  public float compute(Income income){
+       float bonus = ...
+       return bonus;  
+  }      
+...
+}

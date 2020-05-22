@@ -1,0 +1,9 @@
+System.setProperty("webdriver.gecko.driver", "C:\\your_directory\\geckodriver.exe");
+    ProfilesIni profile = new ProfilesIni();
+    FirefoxProfile testprofile = profile.getProfile("debanjan");
+    testprofile.setPreference("security.insecure_field_warning.contextual.enabled", false);
+    DesiredCapabilities dc = DesiredCapabilities.firefox();
+    dc.setCapability(FirefoxDriver.PROFILE, testprofile);
+    dc.setCapability("marionette", true);
+    WebDriver driver =  new FirefoxDriver(dc);
+    driver.manage().window().maximize();

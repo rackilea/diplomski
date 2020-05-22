@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "codes": {
+      ".indexOn": "status"
+    }
+  }
+}

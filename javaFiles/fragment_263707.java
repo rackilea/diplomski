@@ -1,0 +1,15 @@
+import ....MimeMultipartEntityHC4;
+import org.apache.http.client.methods.HttpDeleteHC4;
+import org.apache.http.client.methods.HttpGetHC4;
+import org.apache.http.client.methods.HttpPostHC4;
+import org.apache.http.client.methods.HttpPutHC4;
+import org.apache.http.client.protocol.HttpClientContext;
+import org.apache.http.entity.BufferedHttpEntityHC4;
+import org.apache.http.entity.ByteArrayEntityHC4;
+import org.apache.http.entity.ContentType;
+import org.apache.http.entity.StringEntityHC4;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.impl.conn.DefaultManagedHttpClientConnection;
+import org.apache.http.protocol.HttpContext;
+import org.apache.http.util.EntityUtilsHC4;

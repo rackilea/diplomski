@@ -1,0 +1,6 @@
+...
+stmt = conn.createStatement();
+stmt.executeUpdate("CREATE DATABASE Employess");
+stmt.executeUpdate("USE Employess");
+stmt.executeUpdate(EMPLOYEE_TABLE);
+...

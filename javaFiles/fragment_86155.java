@@ -1,0 +1,6 @@
+class Entry {
+    long[] values;
+}
+
+//...
+if ( entry.values[key_index] == key ) { //...

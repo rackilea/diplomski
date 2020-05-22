@@ -1,0 +1,6 @@
+public class HomePanel extends JPanel{
+    //...
+    class inputFrame extends JPanel {
+        //...
+  }
+}

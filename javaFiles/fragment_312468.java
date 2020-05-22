@@ -1,0 +1,13 @@
+project(":core") {
+   ...
+   compile fileTree(dir: '../libs', include: '*.jar')
+   ...
+}
+
+// And also
+
+project(":android") {
+   ...
+   compile fileTree(dir: '../libs', include: '*.jar')
+   ...
+}

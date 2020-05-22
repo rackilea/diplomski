@@ -1,0 +1,35 @@
+service: frontend
+runtime: python37
+
+handlers:
+# Routing for bundles to serve directly
+- url: /((?:(?:(?:inline|main|runtime|common|polyfills|styles|vendor)\.[a-z0-9]+\.js)|(?:[0-9]+\.[a-z0-9]+\.js)))
+  secure: always
+  redirect_http_response_code: 301
+  static_files: dist/\1
+  upload: dist/.*
+
+# Routing for a prod styles.bundle.css to serve directly
+- url: /(styles\.[a-z0-9]+\.css)
+  secure: always
+  redirect_http_response_code: 301
+  static_files: dist/\1
+  upload: dist/.*
+
+# Routing for typedoc, assets and favicon.ico to serve directly
+- url: /((?:assets|docs)/.*|favicon\.ico)
+  secure: always
+  redirect_http_response_code: 301
+  static_files: dist/\1
+  upload: dist/.*
+
+# Any other requests are routed to index.html for angular to handle so we don't need hash URLs
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  static_files: dist/index.html
+  upload: dist/index\.html
+  expiration: 0s
+  http_headers:
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
+    X-Frame-Options: DENY

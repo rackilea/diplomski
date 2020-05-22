@@ -1,0 +1,6 @@
+public static <K, V> List<Diff<K, V>> MapComparison(Map<K, V> map1, Map<K, V> map2) {
+    // ...
+    V exp = map1.get(key);
+    V act = map2.get(key);
+    Diff<K, V> d = Diff.check(key, act, exp);
+    // ...

@@ -1,0 +1,7 @@
+{
+    "champions" : [
+        "Annie",
+        "Olaf",
+        // ...
+    ]
+}

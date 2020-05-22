@@ -1,0 +1,6 @@
+@Entity
+@Polymorphism(type = PolymorphismType.IMPLICIT)
+// ...
+public class Car implements Vehicle {
+    // ...
+}

@@ -1,0 +1,6 @@
+...
+String s = "10000000";
+int val = Integer.parseInt(s, 2);
+byte b = (byte) val;
+System.err.println(b);
+...

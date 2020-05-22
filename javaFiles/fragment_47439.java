@@ -1,0 +1,6 @@
+...
+Query query = session.createQuery("from Prefixes where :parameter like Prefixes.prefix || '%' order by Prefixes.prefix desc");
+query.setParameter("parameter", 1234567);
+query.setMaxResults(1);
+Prefixes p = (Prefixes)query.uniqueResult();
+...

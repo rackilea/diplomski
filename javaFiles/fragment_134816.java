@@ -1,0 +1,12 @@
+import net.minecraft.block.Block;
+   import net.minecraft.block.material.Material;
+   import net.minecraft.creativetab.CreativeTabs;
+   import net.minecraft.entity.boss.EntityWither;
+   import net.minecraft.entity.item.EntityItem;
+   import net.minecraft.init.Items;
+   import net.minecraft.item.Item;
+   import net.minecraft.item.ItemStack;
+   import net.minecraft.util.WeightedRandomChestContent;
+   import net.minecraftforge.common.ChestGenHooks;
+   import net.minecraftforge.common.util.EnumHelper;
+   import net.minecraftforge.event.entity.living.LivingDropsEvent;

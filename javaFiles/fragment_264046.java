@@ -1,0 +1,10 @@
+PDDocument document = PDDocument.load(resource);
+PDPage page = document.getDocumentCatalog().getPages().get(0);
+PDPageContentStream cs = new PDPageContentStream(document, page, PDPageContentStream.AppendMode.PREPEND, false, false); 
+PDRectangle cropBox = page.getCropBox();
+float tx = (cropBox.getLowerLeftX() + cropBox.getUpperRightX()) / 2;
+float ty = (cropBox.getLowerLeftY() + cropBox.getUpperRightY()) / 2;
+cs.transform(Matrix.getTranslateInstance(tx, ty));
+cs.transform(Matrix.getRotateInstance(Math.toRadians(45), 0, 0));
+cs.transform(Matrix.getTranslateInstance(-tx, -ty));
+cs.close();

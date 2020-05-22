@@ -1,0 +1,6 @@
+interface IMap extends Iterable<@KeyFor("this") Object> {
+...
+    default IMap remove(@KeyFor("this") Object key) {
+...
+    @SuppressWarnings("keyfor") // a key for `contents` is a key for this object
+    public java.util.Iterator<@KeyFor("this") Object> iterator() {

@@ -1,0 +1,9 @@
+<s:select theme = "simple" 
+           list = "%{#request.packageList}" 
+        listKey = "packageId + ',' + price" 
+      listValue = "packageName" 
+      headerKey = "0" 
+    headerValue = "--Select--"
+           name = "myNewCustomKey" 
+       cssClass = "dropdowm" 
+             id = "packageID" />

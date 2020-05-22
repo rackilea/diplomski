@@ -1,0 +1,10 @@
+new DateTimeFormatterBuilder()
+    .appendValue(ChronoField.MONTH_OF_YEAR, 1, 2, SignStyle.NEVER)
+    .appendLiteral('/')
+    .appendValue(ChronoField.DAY_OF_MONTH, 1, 2, SignStyle.NEVER)
+    .appendLiteral('/')
+    .appendValueReduced(ChronoField.YEAR, 2, 4, yearMonth.getYear())
+    .appendPattern("[ HH:mm]")
+    .parseDefaulting(ChronoField.HOUR_OF_DAY, 0)
+    .parseDefaulting(ChronoField.MINUTE_OF_HOUR, 0)
+    .toFormatter();

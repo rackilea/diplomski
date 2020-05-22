@@ -1,0 +1,6 @@
+for (int i = 0; i < newPlayer.length; i++){
+         // create objects of SoccerPlayers and store them in array
+         newPlayer[i] = new SoccerPlayers(); 
+         newPlayer[i].PlayerCountry();
+         .........
+         .........

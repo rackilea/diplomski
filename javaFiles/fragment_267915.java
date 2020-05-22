@@ -1,0 +1,11 @@
+-65536; java.awt.Color[r=255,g=0,b=0]
+-16711936; java.awt.Color[r=0,g=255,b=0]
+-16776961; java.awt.Color[r=0,g=0,b=255]
+-16777216; java.awt.Color[r=0,g=0,b=0]
+-1; java.awt.Color[r=255,g=255,b=255]
+After
+-16777216; java.awt.Color[r=0,g=0,b=0]
+-16776961; java.awt.Color[r=0,g=0,b=255]
+-16711936; java.awt.Color[r=0,g=255,b=0]
+-65536; java.awt.Color[r=255,g=0,b=0]
+-1; java.awt.Color[r=255,g=255,b=255]

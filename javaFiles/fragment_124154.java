@@ -1,0 +1,6 @@
+MongoClient mongoClient = ...
+MongoDatabase database = mongoClient.getDatabase("myDB");
+MongoCollection<Document> tweets = db.getCollection("tweets");
+...
+Document tweet = (Document) currentDocument.get("tweet");
+tweets.replaceOne(tweet, tweet, new UpdateOptions().upsert(true));

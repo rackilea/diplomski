@@ -1,0 +1,13 @@
+private ReentrantLock lock;
+
+public void foo() {
+  ...
+  lock.lock();
+  ...
+}
+
+public void bar() {
+  ...
+  lock.unlock();
+  ...
+}

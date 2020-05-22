@@ -1,0 +1,18 @@
+x = new ArrayList<Entry>();
+    y = new ArrayList<String>();
+    mChart = (LineChart) view.findViewById(R.id.chart1);
+    mChart.setDrawGridBackground(false);
+    mChart.setDescription("");
+    mChart.setTouchEnabled(true);
+    mChart.setDragEnabled(true);
+    mChart.setScaleEnabled(true);
+    mChart.setPinchZoom(true);
+    mChart.setMarkerView(mv);
+    XAxis xl = mChart.getXAxis();
+    xl.setAvoidFirstLastClipping(true);
+    YAxis leftAxis = mChart.getAxisLeft();
+    leftAxis.setInverted(true);
+    YAxis rightAxis = mChart.getAxisRight();
+    rightAxis.setEnabled(false);
+    Legend l = mChart.getLegend();
+    l.setForm(Legend.LegendForm.LINE);

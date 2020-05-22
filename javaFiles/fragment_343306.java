@@ -1,0 +1,10 @@
+String hat = "hat";
+String dress = "dress";
+String paths = "paths";
+String scarf = "scarf";
+String cloth = "cloth";
+HashMap h = new HashMap();
+h.put(hat,cloth);
+h.put(paths,cloth);
+h.put(dress,cloth);
+h.put(scarf,cloth);

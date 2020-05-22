@@ -1,0 +1,36 @@
+<properties>
+   <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
+</properties>
+
+<dependency>
+    <groupId>javax</groupId>
+    <artifactId>javaee-api</artifactId>
+    <version>7.0</version>
+    <scope>provided</scope>
+</dependency>
+
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-dependency-plugin</artifactId>
+    <version>2.1</version>
+    <executions>
+        <execution>
+            <phase>validate</phase>
+            <goals>
+                <goal>copy</goal>
+            </goals>
+            <configuration>
+                <outputDirectory>${endorsed.dir}</outputDirectory>
+                <silent>true</silent>
+                <artifactItems>
+                    <artifactItem>
+                        <groupId>javax</groupId>
+                        <artifactId>javaee-endorsed-api</artifactId>
+                        <version>7.0</version>
+                        <type>jar</type>
+                    </artifactItem>
+                </artifactItems>
+            </configuration>
+        </execution>
+    </executions>
+</plugin>

@@ -1,0 +1,6 @@
+String sql = "SELECT * FROM drawings WHERE name LIKE ?";
+// ...
+preparedStatement = connection.prepareStatement(sql);
+preparedStatement.setString(1, "%" + DT + "%");
+resultSet = preparedStatement.executeQuery();
+// ...

@@ -1,0 +1,12 @@
+JPanel innerSelectPanel = new JPanel(new GridLayout(0, 1, 0, 5));
+    // innerSelectPanel.setPreferredSize(new Dimension(50, 0));
+    innerSelectPanel.add(selectAllButton);
+    innerSelectPanel.add(selectButton);
+    innerSelectPanel.add(deselectButton);
+    innerSelectPanel.add(deselectAllButton);
+    innerSelectPanel.setOpaque(false);
+    innerSelectPanel.setBorder(BorderFactory.createEmptyBorder(0, 2, 0, 2));
+    selectButtonsPanel.setLayout(new BoxLayout(selectButtonsPanel, BoxLayout.PAGE_AXIS));
+    selectButtonsPanel.add(Box.createVerticalGlue());
+    selectButtonsPanel.add(innerSelectPanel);
+    selectButtonsPanel.add(Box.createVerticalGlue());

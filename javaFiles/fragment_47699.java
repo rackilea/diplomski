@@ -1,0 +1,14 @@
+int num = 8; 
+System.out.println("Value is now " + (num));
+num += 2;
+System.out.println("Value is now " + (num));
+num -= 4;
+System.out.println("Value is now " + (num));
+num *= 5;
+System.out.println("Value is now " + (num));
+num /= 3;
+System.out.println("Value is now " + (num));
+num++;
+System.out.println("Value is now " + (num));
+num--;
+System.out.println("Value is now " + (num));

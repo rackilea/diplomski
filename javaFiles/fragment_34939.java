@@ -1,0 +1,6 @@
+class TimeStamp3 extends Date2{
+...
+   private Time3 timeThree; 
+...
+
+}

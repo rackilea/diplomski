@@ -1,0 +1,18 @@
+List<Map<Object, Object>> users = new ArrayList<>();
+    Map<Object, Object> map = new HashMap<>();
+    map.put("Name", "Amrith Taj");
+    map.put("UserId", "at1234");
+    map.put("count", "0");
+    users.add(map);
+    map = new HashMap<>();
+    map.put("Name", "Anaga R");
+    map.put("UserId", "AR1234");
+    map.put("count", "1");
+    users.add(map);
+    map = new HashMap<>();
+    map.put("Name", "Anaga R");
+    map.put("UserId", "MS1234");
+    map.put("count", "4");
+    users.add(map);
+    when(Reportee_List.getReportees(54591)).thenReturn(users);
+    assertEquals(3 ,Reportee_Service.getList("vb256121").size());

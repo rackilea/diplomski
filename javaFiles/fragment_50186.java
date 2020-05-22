@@ -1,0 +1,12 @@
+log4j.rootLogger=INFO, a, email
+log4j.appender.a=org.apache.log4j.ConsoleAppender
+log4j.appender.a.layout=org.apache.log4j.PatternLayout
+log4j.appender.a.layout.ConversionPattern=%d{HH:mm:ss} %-5p [%c{1}]: %m%n
+log4j.appender.email=org.apache.log4j.net.SMTPAppender
+log4j.appender.email.BufferSize=10
+log4j.appender.email.SMTPHost=mysmtp.mailserver.net
+log4j.appender.email.From=admin@mycompany.com
+log4j.appender.email.To=me@mycompany.com
+log4j.appender.email.Subject=My Module Error
+log4j.appender.email.layout=org.apache.log4j.PatternLayout
+log4j.appender.email.layout.ConversionPattern=%d [%t] %-5p %c %x - %m%n

@@ -1,0 +1,12 @@
+Case ca = new Case(object.getString("ID")
+                        , object.getString("Serial")
+                        , object.getString("Name")
+                        , object.getString("gender")
+                        , object.getString("Age")
+                        , object.getString("NatioanlityID")
+                        , object.getString("HealthProblem")
+                        , object.getString("CityID")
+                        , object.getString("Problem")
+                        , object.getString("Date")
+                        , object.getString("Status")
+                        , spe);

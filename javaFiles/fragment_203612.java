@@ -1,0 +1,9 @@
+CREATE TABlE IF NOT EXISTS login_attempt_
+(
+    uuid_ UUID DEFAULT RANDOM_UUID() PRIMARY KEY,
+    when_written_ TIMESTAMP DEFAULT NOW() NOT NULL,
+    username_ VARCHAR_IGNORECASE(255) NOT NULL,
+    when_attempted_ TIMESTAMP NOT NULL,
+    success_ BOOLEAN NOT NULL
+)
+;

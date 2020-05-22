@@ -1,0 +1,6 @@
+int topLeft = mSqr[0][0];
+int topMid = mSqr[0][1];
+...
+int sumLeft = topLeft + midLeft + bottomLeft;
+int sumRight = topRight = midRight + bottomRight;
+...

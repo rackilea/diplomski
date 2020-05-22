@@ -1,0 +1,10 @@
+Properties props = new Properties();
+    props.put("mail.smtp.user", username);
+    props.put("mail.smtp.host", "smtp.live.com");
+    props.put("mail.smtp.port", "25");
+    props.put("mail.debug", "true");
+    props.put("mail.smtp.auth", "true");
+    props.put("mail.smtp.starttls.enable", "true");
+    props.put("mail.smtp.EnableSSL.enable", "true");
+    props.setProperty("mail.smtp.port", "587");
+    props.setProperty("mail.smtp.socketFactory.port", "587");

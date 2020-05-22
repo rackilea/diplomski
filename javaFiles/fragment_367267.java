@@ -1,0 +1,6 @@
+"build": {
+  "options": {
+    ...
+    "assets": [
+      "src/main/webapp/assets",
+      ...

@@ -1,0 +1,6 @@
+public static Void calculateVoidInBackground(final Callable<Void> func) {
+    ...
+}    
+public static String calculateStringInBackground(final Callable<String> func) {
+    ...
+}

@@ -1,0 +1,12 @@
+from("file:/excelfilelocation?fileName=inputexcel.xls")
+    .bean(new ExcelConverter(), "processExcel")
+    .split(body())
+    .aggregate(constant(true), new GroupedBodyAggregationStrategy())
+      .completionSize(100)
+      .completionTimeout(1000)
+      .marshal().json(JsonLibrary.Jackson)
+      .setHeader("Authorization", simple(apiKEY))
+      .setHeader(Exchange.HTTP_METHOD, constant("POST"))
+      .setHeader(Exchange.HTTP_URI, simple(API_URL))
+      .setHeader(Exchange.CONTENT_TYPE, constant("application/json"))
+      .to(API_URL);

@@ -1,0 +1,7 @@
+jfx {
+// ...
+    bundleArguments = [
+        'installdirChooser': true
+    ]
+// ...
+}

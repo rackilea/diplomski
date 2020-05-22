@@ -1,0 +1,6 @@
+SessionFactory factory = SessionFactoryImpl.newInstance();
+Map<String, String> parameter = new HashMap<String, String>();
+..........
+parameter.put(SessionParameter.LOCAL_FACTORY, "my.local.factory");
+..........
+Session session = factory.createSession(parameter);

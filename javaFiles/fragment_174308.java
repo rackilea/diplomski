@@ -1,0 +1,11 @@
+System.out.println(doParallel());
+System.out.println(doThreadPoolParallel());
+System.out.println(doSequence());
+System.out.println("-------");
+System.out.println(doParallel());
+System.out.println(doThreadPoolParallel());
+System.out.println(doSequence());
+System.out.println("-------");
+System.out.println(doParallel());
+System.out.println(doThreadPoolParallel());
+System.out.println(doSequence());

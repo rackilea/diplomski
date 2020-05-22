@@ -1,0 +1,6 @@
+String str = "<13>Jan 09 12:33:50 TESTSRV1 AgentDevice=WindowsLog    AgentLogFile=Security    PluginVersion=7.2.4.86    Source=Microsoft-Windows-Security-Auditing    Computer=corp.devnet.com    OriginatingComputer=TESTSRV1    User=    Domain=    EventID=4755    EventIDCode=4755    EventType=8    EventCategory=13826    RecordNumber=1244048130    TimeGenerated=1483983229    TimeWritten=1483983229    Level=0    Keywords=0    Task=0    Opcode=0    Message=A security-enabled universal group was changed.  Subject:  Security ID:  CORP\\TESTUSR1  Account Name:  TESTUSR1  Account Domain:  CORP  Logon ID:  0x220f7a57  Group:  Security ID:  CORP\\Virtual Users  Group Name:  VirtualUsers  Group Domain:  CORP  Changed Attributes:  SAM Account Name: -  SID History:  -  Additional Information:  Privileges:  -";
+Pattern ptrn = Pattern.compile("Group:\\s+Security\\s+ID:\\s+[^\\\\]*\\\\(.+?)\\s+(?:Account|Group)\\s+Name:");
+Matcher matcher = ptrn.matcher(str);
+while (matcher.find()) {
+    System.out.println(matcher.group(1));
+}

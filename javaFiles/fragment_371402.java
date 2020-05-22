@@ -1,0 +1,9 @@
+{"in":[
+            {"id":4,"ip":"192.168.0.20","pinSysNo":4,"pinSysName":"pg6","folderName":"gpio4_pg6","alias":"d","direction":"digital_in"},
+            {"id":3,"ip":"192.168.0.20","pinSysNo":3,"pinSysName":"pb18","folderName":"gpio3_pb18","alias":"c","direction":"digital_out"}
+            ],
+      "out":[
+            {"id":1,"ip":"192.168.0.20","pinSysNo":1,"pinSysName":"pg3","folderName":"gpio1_pg3","alias":"a","direction":"digital_in"}
+            ,{"id":2,"ip":"192.168.0.20","pinSysNo":2,"pinSysName":"pb16","folderName":"gpio2_pb16","alias":"b","direction":"digital_in"}
+            ]
+}

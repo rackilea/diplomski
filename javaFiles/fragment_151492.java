@@ -1,0 +1,10 @@
+CircularLinkedList a = new CircularLinkedList();
+System.out.println(a.toString());
+a.insert(1);
+a.insert(2);
+a.insert(3);
+System.out.println(a.toString());
+a.insert(4);
+a.insert(5);
+a.insert(6);
+System.out.println(a.toString());

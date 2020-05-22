@@ -1,0 +1,9 @@
+public static void numeravimas(int[] q, int n) {
+   ...
+        for (int i = 0; i < N; i++) {
+            ...
+            System.out.println("n -> " + n);
+             ...
+                numeravimas(q, n + 1);
+        }
+}

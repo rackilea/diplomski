@@ -1,0 +1,10 @@
+db.users.aggregate([
+   {$unwind:"$linkedaccounts"},
+   {$match:{"linkedaccounts.virtualid":"ranik@xyz"}},
+   {$project:{
+       _id:0,
+       linkedaccounts:
+            {accountnumber:"$linkedaccounts.accountnumber",
+                      ifsc:"$linkedaccounts.ifsc"}       
+       }}
+   ])

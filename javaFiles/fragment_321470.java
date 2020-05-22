@@ -1,0 +1,10 @@
+p1.setOpaque(false);
+JFrame ar = new JFrame();
+ar.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+JLabel background = new JLabel(new ImageIcon("/Users/rizins/Desktop/PacManTestBackGround.jpg"));
+ar.setTitle("Runner Maze");
+ar.setContentPane(background);
+ar.setLayout(new BorderLayout());
+ar.add(p1);
+ar.pack(); 
+ar.setVisible(true);

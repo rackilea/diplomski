@@ -1,0 +1,10 @@
+Tcp tcp = packet.getHeader(new Tcp());  
+tcp.source(sourcePort);  
+tcp.destination(destinationPort); 
+tcp.seq(sequenceNum);
+tcp.ack(ackNum);
+tcp.hlen(dataOffset);
+tcp.flags(controlFlags);
+tcp.window(windowSize);       
+tcp.checksum(tcp.calculateChecksum()); 
+tcp.urgent(urgent);

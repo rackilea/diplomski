@@ -1,0 +1,6 @@
+@ResponseBody 
+@RequestMapping(value = "/create", method = RequestMethod.POST) 
+    public Status createNewUserAccount(UserAccount userAccount) {
+...
+...
+}

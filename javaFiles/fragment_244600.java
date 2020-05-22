@@ -1,0 +1,6 @@
+if (Serial.currPortId == null) {  <--if this is true  
+        ...
+} else {  
+    ... 
+}
+if (Serial.currPortId.getName()...))) { <-- this is a null pointer null.getName()

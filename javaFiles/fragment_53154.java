@@ -1,0 +1,7 @@
+android {
+
+      defaultConfig {
+
+          multidexEnabled true
+       }
+    }

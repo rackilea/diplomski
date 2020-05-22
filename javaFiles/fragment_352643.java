@@ -1,0 +1,12 @@
+{
+    anotherMap={
+        favoriteDay=wednesday, 
+        favoriteColor=green,
+        favoriteSeason=winter, 
+        favoriteFruit=orange
+       },
+   map={
+       favoriteDay=today, 
+       favoriteSeason=summer, 
+       favoriteFruit=pomegranate}
+    }

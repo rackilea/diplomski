@@ -1,0 +1,11 @@
+Path2D path = new Path2D.Double();
+AffineTransform at = new AffineTransform();
+path.moveTo(p1p2a.x, p1p2a.y);
+path.lineTo(p1p2b.x, p1p2b.y);
+path.append(c1.getPathIterator(at), true);
+path.lineTo(p2p3b.x, p2p3b.y);
+path.append(c2.getPathIterator(at), true);
+path.lineTo(p3p1b.x, p3p1b.y);
+path.append(c3.getPathIterator(at), true);
+path.closePath();
+g.fill(path);

@@ -1,0 +1,6 @@
+public boolean insert_new_line_after_annotation_on_type;
+public boolean insert_new_line_after_annotation_on_field;
+public boolean insert_new_line_after_annotation_on_method;
+public boolean insert_new_line_after_annotation_on_package;
+public boolean insert_new_line_after_annotation_on_parameter;
+public boolean insert_new_line_after_annotation_on_local_variable;

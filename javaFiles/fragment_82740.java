@@ -1,0 +1,10 @@
+String first = "$SEBGI is there";
+String second = "there is $SE.";
+String third = "there is SE again";
+Pattern pattern = Pattern.compile("\\W\\$SE\\W", Pattern.CASE_INSENSITIVE);
+Matcher matcher = pattern.matcher(first);
+System.out.println(matcher.find());
+matcher = pattern.matcher(second);
+System.out.println(matcher.find());
+matcher = pattern.matcher(third);
+System.out.println(matcher.find());

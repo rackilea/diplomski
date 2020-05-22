@@ -1,0 +1,15 @@
+System.setProperty("webdriver.ie.driver", "C:\\Utility\\BrowserDrivers\\IEDriverServer.exe");
+DesiredCapabilities capabilities = new DesiredCapabilities();
+capabilities.setCapability("INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS", true);
+capabilities.setCapability("ACCEPT_SSL_CERTS", true);
+capabilities.setCapability("SUPPORTS_ALERTS", true);
+capabilities.setCapability("UNEXPECTED_ALERT_BEHAVIOR", true);
+capabilities.setCapability("IE_ENSURE_CLEAN_SESSION", true);
+capabilities.setCapability("ENABLE_ELEMENT_CACHE_CLEANUP", true);
+capabilities.setCapability("nativeEvents", false);
+capabilities.setCapability("requireWindowFocus", false);
+capabilities.setJavascriptEnabled(true);
+capabilities.setCapability("ignoreProtectedModeSettings", true);
+InternetExplorerOptions opt = new InternetExplorerOptions();
+opt.merge(capabilities);
+WebDriver driver = new InternetExplorerDriver(opt);

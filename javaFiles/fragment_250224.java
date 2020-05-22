@@ -1,0 +1,11 @@
+ServerArguments serverArguments = new ServerArguments();
+            serverArguments.setArgument("--address","127.0.0.1");
+            serverArguments.setArgument("--chromedriver-port", 9516);
+            serverArguments.setArgument("--bootstrap-port", 4724);
+            serverArguments.setArgument("--browser-name", "Chrome");
+            serverArguments.setArgument("--no-reset", true);
+            serverArguments.setArgument("--local-timezone", true);
+            AppiumServer appiumServer = new AppiumServer(appium_folder, serverArguments);
+            appiumServer.startServer();
+driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+driver.get("test.com");

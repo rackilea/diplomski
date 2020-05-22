@@ -1,0 +1,6 @@
+android {
+// ...
+aaptOptions.cruncherEnabled = false
+aaptOptions.useNewCruncher = false
+// ...
+}

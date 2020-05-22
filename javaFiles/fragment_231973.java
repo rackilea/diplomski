@@ -1,0 +1,6 @@
+Thread stdoutThread = new Thread(new StreamConsumer(procOut, output)).start();
+Thread stderrThread = ...
+...
+int ret = exec.waitFor();
+stdoutThread.join();
+stderrThread.join();

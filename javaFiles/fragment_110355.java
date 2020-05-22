@@ -1,0 +1,11 @@
+StringBuilder sb = new StringBuilder();
+addToStringBuilder(sb, 3, 'Q');
+System.out.println(sb);
+addToStringBuilder(sb, 3, 'W');
+System.out.println(sb);
+addToStringBuilder(sb, 3, 'W');
+System.out.println(sb);
+addToStringBuilder(sb, 3, 'E');
+System.out.println(sb);
+addToStringBuilder(sb, 3, 'W');
+System.out.println(sb);

@@ -1,0 +1,9 @@
+...
+if (card.action.equals("money") {
+    // Update user's money with card.value
+} else if (card.action.equals("move") {
+    // Update user's position with card.value
+} else if (card.action.equals("...") {
+    // and so on...
+}
+...

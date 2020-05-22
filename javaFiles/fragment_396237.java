@@ -1,0 +1,11 @@
+Criteria criteria=session.createCriteria(BizTerm.class);
+            criteria.add(Restrictions.ilike("bizTermName", searchString,MatchMode.ANYWHERE));
+            criteria.addOrder(Order.asc("bizTermName"));
+            ProjectionList projList=Projections.projectionList();
+            projList.add(Projections.max("bizTermversion"));
+            projList.add(Projections.groupProperty("bizTermId"));
+            projList.add(Projections.groupProperty("bizTermName"));
+            projList.add(Projections.max("status"));
+            projList.add(Projections.max("levels"));
+            projList.add(Projections.max("createDate"));
+            projList.add(Projections.max("modifyDate"));

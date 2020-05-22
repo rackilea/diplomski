@@ -1,0 +1,10 @@
+ImageButton button1;
+ImageView topbar2;
+ImageButton button2;
+ImageButton button3;
+LinearLayout bcfield;
+ImageButton arrowup;
+ImageButton arrowdown;
+ImageView navbar;
+TextView dynamictext;
+TextView dynamicheader;

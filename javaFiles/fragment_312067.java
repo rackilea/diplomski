@@ -1,0 +1,10 @@
+m_notificationBuilder = new NotificationCompat.Builder(this)
+                .setContentTitle(title)
+                .setContentText(textMessage)
+                .setSubText(subTextMessage)
+                .setSmallIcon(R.drawable.ic_launcher_notification)
+                .setColor(Color.RED)
+                .setAutoCancel(true)
+                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setSound(Settings.System.DEFAULT_NOTIFICATION_URI)
+                .setVibrate(new long[]{1000, 100});

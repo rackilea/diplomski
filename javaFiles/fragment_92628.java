@@ -1,0 +1,6 @@
+private List<Router> routers;
+...
+private static class Router {
+    private String name;
+    ...
+}

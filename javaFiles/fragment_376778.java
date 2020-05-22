@@ -1,0 +1,6 @@
+...
+options.inSampleSize = 1/2;
+bmo = BitmapFactory.decodeFile(file.getAbsolutePath(), options);
+
+...
+ = Bitmap.createScaledBitmap(bmo, dW, dH, false);

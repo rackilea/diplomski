@@ -1,0 +1,7 @@
+<!-- gridme.xhtml -->
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html">
+  <h:outputText value="#{foo}" />
+  <h:outputText value="#{bar}" />
+</ui:composition>

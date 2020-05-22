@@ -1,0 +1,16 @@
+public abstract class SocketClient
+{
+    ...
+    protected void _connectAction_() throws IOException
+    {
+        ...
+        _socket_.setSoTimeout(_timeout_);
+        ...
+    }
+    ...
+    public void  setDefaultTimeout(int timeout)
+    {
+        _timeout_ = timeout;
+    }
+    ...
+}

@@ -1,0 +1,11 @@
+List<Integer> myList = new ArrayList<>();
+myList.add(100);
+myList.add(200);
+myList.add(100);
+myList.add(100);
+myList.add(100);
+myList.add(100);
+myList.add(100);
+myList.add(100);
+removeSpecfiedNumber(100,2,myList);
+System.out.println(myList);

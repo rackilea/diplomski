@@ -1,0 +1,9 @@
+...
+private User user;
+...
+@ManyToOne(fetch = FetchType.EAGER)
+@JoinColumn(name="USER_ID", nullable=false)
+public User getUser() {
+    return this.user;
+}
+...

@@ -1,0 +1,6 @@
+for (int i = 0; i < 7; i++) {
+    canvas.drawLine(mSideRectWidth + boxWidth * i, 0, mSideRectWidth + boxWidth * i, getHeight(), mBackPaint);
+    float x = ...
+    float y = ...
+    canvas.drawText(Integer.toString(i + 1), x, y, mBlackPaint);
+}

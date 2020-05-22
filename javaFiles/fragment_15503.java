@@ -1,0 +1,12 @@
+QueryBuilders.multiMatchQuery("physics",
+                "document.title^10",
+                "document.title.shingles^2",
+                "document.title.ngrams",
+                "person.name^10",
+                "person.name.shingles^2",
+                "person.name.ngrams",
+                "document.topics.name^10",
+                "document.topics.name.shingles^2",
+                "document.topics.name.ngrams")
+                .operator(MatchQueryBuilder.Operator.AND)
+                .type(MultiMatchQueryBuilder.Type.MOST_FIELDS);

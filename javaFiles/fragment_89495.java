@@ -1,0 +1,6 @@
+List<Map<Integer,Result>> data = new ArrayList<Map<Integer,Result>>();
+...
+Map<String,Result> elem = new...
+elem.put(columnIndex, new Result(..));
+
+data.add(elem);

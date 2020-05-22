@@ -1,0 +1,10 @@
+List<AnimalVO> list = herd.stream()
+    .filter(Objects::nonNull)
+    .map(a -> Optional.ofNullable(a.getGoat())
+        .map(Goat::getGoatField)
+        .<AnimalVO>map(GoatVO::new)
+        .orElseGet(() -> Optional.ofNullable(a.getSheep())
+            .map(Sheep::getSheepField)
+            .<AnimalVO>map(SheepVO::new)
+            .orElseGet(() -> new CowVO(a.getCow().getCowField()))))
+    .collect(Collectors.toList());

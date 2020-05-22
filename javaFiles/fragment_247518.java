@@ -1,0 +1,9 @@
+public static final String WS_WIN32 = "win32";
+public static final String WS_WPF = "wpf"; 
+public static final String WS_MOTIF = "motif";
+public static final String WS_GTK = "gtk";
+public static final String WS_PHOTON = "photon";
+public static final String WS_CARBON = "carbon";
+public static final String WS_COCOA = "cocoa";
+public static final String WS_S60 = "s60";
+public static final String WS_UNKNOWN = "unknown";

@@ -1,0 +1,14 @@
+{
+   "test":[
+      {
+         "sub":"event1",
+         "content":"https://i1.wp.com/www.downloadinformer.com/wp-content/uploads/2017/03/AMPFB.jpg?w=1366",
+         "param":"1.php"
+      },
+      {
+         "sub":"event2",
+         "content":"myimageurl",
+         "param":"myphpfilenamewithextension"
+      }
+   ]
+}

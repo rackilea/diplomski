@@ -1,0 +1,23 @@
+BigInteger N = new BigInteger("16260595201356777876687102055392856230368799478725437225418970788404092751540966827614883675066492383688147288741223234174448378892794567789551235835087027626536919406320142455677084743499141155821894102610573207343199194327005172833989486958434982393556326206485954223151805798621294965926069728816780985683043030371485847746616146554612001066554175545753760388987584593091716701780398711910886679925612838955858736102229719042291682456480437908426849734556856917891628730543729446245974891735371991588505429152639045721840213451875487038496578525189542369448895368117152818687795094021869963915318643663536132393791");
+double delta = 0.26;
+
+// this scale is sufficient to get the exact integer part
+// it is roughly equal to the number of digits in the result's integer part
+final int SCALE = 170;
+BigDecimal x = new BigDecimal(N);
+BigDecimal y = BigDecimal.valueOf(delta);
+
+int maxIntDigits = 1;
+int intDigits = x.precision() - x.scale();
+int rescale = Math.max(intDigits - maxIntDigits, 0);
+BigDecimal rescaledX = x.scaleByPowerOfTen(-rescale);
+
+BigDecimal z = BigFunctions.exp(
+        BigFunctions.ln(rescaledX, SCALE)
+                .add(BigFunctions.ln(BigDecimal.TEN, SCALE).multiply(BigDecimal.valueOf(rescale)))
+                .multiply(y),
+        SCALE)
+        .setScale(0, BigDecimal.ROUND_FLOOR)
+        .multiply(BigDecimal.valueOf(2));
+
+System.out.println(z);

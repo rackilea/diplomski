@@ -1,0 +1,8 @@
+try
+{
+  ...
+}
+catch
+{
+  throw;
+}

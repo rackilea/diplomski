@@ -1,0 +1,12 @@
+Stream<String> s = Stream.of("foo", "bar", "baz").parallel();
+System.out.println("started with "+(s.isParallel()? "parallel": "sequential")+" stream");
+s = s.peek(x -> System.out.println("upstream "+x+": "+Thread.currentThread()));
+s = myMethod(s.map(String::toUpperCase));
+System.out.println("chaining another ops");
+s = s.peek(x -> System.out.println("downstream "+x+": "+Thread.currentThread()));
+s = s.filter(str -> str.startsWith("B"));
+System.out.println("turning to sequential");
+s = s.sequential();
+System.out.println("commencing terminal operation");
+List<String> l = s.collect(Collectors.toList());
+System.out.println("result: "+l);

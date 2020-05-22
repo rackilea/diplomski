@@ -1,0 +1,9 @@
+if(t==(a[i]))
+    {
+        if(t1==(a[i+1]))
+            {
+                count++;
+                continue;
+            }
+        continue;
+    }

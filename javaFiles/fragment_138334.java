@@ -1,0 +1,13 @@
+{"book":
+    [ 
+      {"person":
+          {"last":"Pai","age":22,"first":"Kiran"}
+      },
+      {"person":
+          {"last":"Gates","age":46,"first":"Bill"}
+      },
+      {"person":
+          {"last":"Jobs","age":40,"first":"Steve"}
+      }
+    ]
+}

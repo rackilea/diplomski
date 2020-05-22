@@ -1,0 +1,6 @@
+File outfp = new File("decoded.txt");
+PrintWriter out = new PrintWriter(new FileWriter(outfp));
+...
+   out.println( sb.toString() );
+...
+out.close();

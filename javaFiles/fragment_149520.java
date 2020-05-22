@@ -1,0 +1,6 @@
+public class LabCourse extends CollegeCourse
+{
+  ...
+  public void computetotal(String name, double fee)
+  ...
+}

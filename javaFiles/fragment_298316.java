@@ -1,0 +1,9 @@
+boolean enableSSL = true;
+boolean enableTLS = false;
+String host = "smtp.gmail.com";
+int port = 465;
+String user = "<gmail_account_username>";
+String password = "<gmail_account_password>";
+ServerConfig serverConfig = new ServerConfig(host, port, user, password);
+TransportStrategy transportStrategy = TransportStrategy.SMTP_SSL;
+Mailer mailer = new Mailer(serverConfig, transportStrategy);

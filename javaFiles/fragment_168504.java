@@ -1,0 +1,10 @@
+HeadlessNativesLoader.load();
+MockGraphics mockGraphics = new MockGraphics();
+Gdx.graphics = mockGraphics;
+HeadlessNet headlessNet = new HeadlessNet();
+Gdx.net = headlessNet;
+HeadlessFiles headlessFiles = new HeadlessFiles();
+Gdx.files = headlessFiles;
+Gdx.gl = mock(GL20.class);
+HeadlessApplicationConfiguration config = new HeadlessApplicationConfiguration();
+ApplicationListener myGdxGame = EntryPoint.getHeadlessMyGdxGame(config);

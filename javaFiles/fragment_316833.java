@@ -1,0 +1,22 @@
+<build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>com.alexkasko.maven</groupId>
+                <artifactId>jni-headers-maven-plugin</artifactId>
+                <version>1.0.6</version>
+                <executions>
+                    <!-- generate header for native methods -->
+                    <execution>
+                        <id>javah</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>javah</goal>
+                        </goals>
+                        <configuration>
+                            <javahClass>com.foo.NativeClass</javahClass>
+                            <javahOutputFilePath>${project.build.directory}/classes/com/foo/NativeClass.h</javahOutputFilePath>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>

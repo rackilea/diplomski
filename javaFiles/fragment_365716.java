@@ -1,0 +1,6 @@
+class Node<T>
+{
+    ...
+    private T value;
+    ...
+}

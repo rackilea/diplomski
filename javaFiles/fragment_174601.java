@@ -1,0 +1,6 @@
+String another = "y";
+...
+while (another.equalsIgnoreCase("y")) {
+    ...
+}
+another = scan.nextLine();

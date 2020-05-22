@@ -1,0 +1,6 @@
+@RunWith( SpringJUnit4ClassRunner.class )  
+@ContextConfiguration( "classpath:appTest-context.xml" )
+public class AppServiceTest{
+   ...
+   ...
+}

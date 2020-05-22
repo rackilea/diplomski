@@ -1,0 +1,16 @@
+private String url;
+private Boolean timing;
+private Long connectEnd;
+private Long connectStart;
+private Long dnsEnd;
+private Long dnsStart;
+private Long receiveHeadersEnd;
+private Long sslStart;
+private Long sslEnd;
+private Long proxyStart;
+private Long proxyEnd;
+private Long sendStart;
+private Long sendEnd;
+private String mimeType;
+private String requestStatus;
+private String method;

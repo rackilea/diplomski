@@ -1,0 +1,6 @@
+String CREATE_LOGS_TABLE = "CREATE TABLE " + TABLE_LOGS + "(" +
+            KEY_ID + "INTEGER PRIMARY KEY AUTOINCREMENT," +
+            KEY_TITLE + "TEXT," + KEY_PLATE_NUMBER + "TEXT," +
+            KEY_SORTID + "TEXT," + KEY_GRADE + "TEXT," +
+            KEY_DIAMETER + "TEXT," + KEY_LENGTH + "TEXT," +
+            KEY_SURVEYID + "INTEGER AUTOINCREMENT" +");";

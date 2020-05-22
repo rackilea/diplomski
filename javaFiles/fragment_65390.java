@@ -1,0 +1,6 @@
+public static void main(String[] args) {
+    ...
+    mainFrame.add(new GraphicGen());
+    ...
+    ButtonPrompt buttonPrompter = new ButtonPrompt();
+}

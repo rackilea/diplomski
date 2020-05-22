@@ -1,0 +1,6 @@
+@InterceptorBinding
+@Target({TYPE, METHOD})
+@Retention(RUNTIME)
+public @interface ExceptionHandler {
+
+}

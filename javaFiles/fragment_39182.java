@@ -1,0 +1,10 @@
+col1 = input.nextLine();
+col2 = input.nextLine();
+col3 = input.nextLine();
+col4 = input.nextLine();
+col5 = input.nextLine();
+col6 = input.nextLine();
+col7 = input.nextLine();
+col8 = input.nextLine();
+col9 = input.nextLine();
+col10 = input.nextLine();

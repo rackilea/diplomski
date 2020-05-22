@@ -1,0 +1,13 @@
+SimpleDateFormat dt = new SimpleDateFormat("dd/MM/yyyy"); 
+     String start ="";
+     String end ="";
+     int week = 38;
+     int year = 2016;
+     Calendar calendar = Calendar.getInstance();
+     calendar.set(Calendar.YEAR, year); 
+     calendar.set(Calendar.DAY_OF_WEEK,Calendar.SUNDAY);
+     calendar.set(Calendar.WEEK_OF_YEAR, week);
+      start = dt.format(calendar.getTime());
+     calendar.set(Calendar.DAY_OF_WEEK,Calendar.SATURDAY);
+       end = dt.format(calendar.getTime());
+     System.out.println(start+" |"+end);

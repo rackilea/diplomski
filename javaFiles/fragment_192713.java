@@ -1,0 +1,16 @@
+public class MainActivity extends AndroidApplication implements IActivityRequestHandler{
+    ...
+    ApplicationListener game;
+    ....
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        ...
+        game = new AndroidMyGame(this);
+        ...
+    }
+        public String getUniqueId(){
+            return uniqueId;
+        }
+    ...
+}

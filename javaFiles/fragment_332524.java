@@ -1,0 +1,6 @@
+@PreAuthorize("hasPermission(#your_object, 'YOUR_OBJECT_WRITE')")
+@RequestMapping("/yourobject/{identifier}", headers="context=<context_name>", method = RequestMethod.POST)
+public String postYourObject(@PathVariable(value = "identifier") YourObject yourObject) {
+    // Do something here...
+    ...
+}

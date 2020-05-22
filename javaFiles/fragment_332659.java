@@ -1,0 +1,9 @@
+public class Database {
+  .....
+
+  public Student getStudentById(String id) {
+    ....
+  }
+
+  ....
+}

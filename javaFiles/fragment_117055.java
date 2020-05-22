@@ -1,0 +1,11 @@
+Response Headers:
+-Cache-Control: private, no-store
+-Content-Type: text/html; charset=utf-8
+-Server: Microsoft-IIS/7.0
+-X-AspNet-Version: 2.0.50727
+-Set-Cookie: USER=3D907C0EB817FD7...92F79616E6E96026E24; domain=.mysite.com; expires=Thu, 10-Jan-2013 20:22:16 GMT; path=/
+-Set-Cookie: LOGIN=7B7028DC2DA82...5CA6FB6CD6C2B1; domain=.mysite.com; path=/
+-Date: Wed, 11 Jan 2012 20:22:16 GMT
+-Content-Length: 165
+-Cookie::   [version: 0][name: USER][value: 3D907C0E...E26E24][domain: .mysite.com][path: /][expiry: Thu Jan 10 20:22:16 GMT 2013]
+-Cookie::   [version: 0][name: LOGIN][value: 7B7028D...D6C2B1][domain: .mysite.com][path: /][expiry: null]

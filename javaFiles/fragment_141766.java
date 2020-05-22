@@ -1,0 +1,11 @@
+RowLayout rowLayout = new RowLayout();
+ rowLayout.wrap = false;
+ rowLayout.pack = false;
+ rowLayout.justify = true;
+ rowLayout.type = SWT.VERTICAL;
+ rowLayout.marginLeft = 0;
+ rowLayout.marginTop = 0;
+ rowLayout.marginRight = 0;
+ rowLayout.marginBottom = 0;
+ rowLayout.spacing = 0;
+ shell.setLayout(rowLayout);

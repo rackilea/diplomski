@@ -1,0 +1,10 @@
+JTextField word1;
+JTextField word2;
+JTextField word3;
+JTextField word4;
+JTextField word5;
+JTextField word6;
+JTextField word7;
+JTextField word8;
+JTextField word9;
+JTextField word10;

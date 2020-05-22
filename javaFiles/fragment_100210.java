@@ -1,0 +1,11 @@
+button2.setOnClickListener(new OnClickListener() {
+        public void onClick(View v) {
+                if (editText19.getText() != null || editText18.getText() != null || editText17.getText() != null || editText16.getText() != null || editText15.getText() != null || editText14.getText() != null || editText13.getText() != null || editText12.getText() != null || editText11.getText() != null || editText10.getText() != null || editText9.getText() != null || editText8.getText() != null || editText7.getText() != null || editText6.getText() != null || editText5.getText() != null || editText4.getText() != null || editText3.getText() != null) {
+                    // Create a big decimal with your value
+                    BigDecimal bd = new BigDecimal(1.2 * ((11.67 * (Double.parseDouble(editText16.getText().toString())) + ((15.83 * (Double.parseDouble(editText17.getText().toString())) + ((18.33 * (Double.parseDouble(editText18.getText().toString())) + ((18.33 * (Double.parseDouble(editText18.getText().toString())) + ((24.17 * (Double.parseDouble(editText19.getText().toString())) + ((22.36 * (Double.parseDouble(editText15.getText().toString())) + ((4.17 * (Double.parseDouble(editText14.getText().toString())) + ((26.66 * (Double.parseDouble(editText13.getText().toString())) + ((4.17 * (Double.parseDouble(editText12.getText().toString())) + ((30.96 * (Double.parseDouble(editText11.getText().toString())) + ((4.17 * (Double.parseDouble(editText10.getText().toString())) + ((35.26 * (Double.parseDouble(editText9.getText().toString())) + ((4.17 * (Double.parseDouble(editText8.getText().toString())) + ((39.56 * (Double.parseDouble(editText7.getText().toString())) + ((4.17 * (Double.parseDouble(editText6.getText().toString())) + ((9.17 * (Double.parseDouble(editText5.getText().toString())) + ((13.33 * (Double.parseDouble(editText4.getText().toString())) + ((17.20 * (Double.parseDouble(editText3.getText().toString())))))))))))))))))))))))))))))))))))))));
+                    // Round value to 2 decimal
+                    bd = bd.setScale(2, RoundingMode.HALF_UP);
+                    editText1.setText(bd.toString());
+                 }
+            }
+        });

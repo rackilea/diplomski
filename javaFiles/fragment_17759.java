@@ -1,0 +1,11 @@
+PdfPTable table = new PdfPTable(1);
+Paragraph wrong = new Paragraph("This is wrong, because an object that was originally a paragraph is reduced to a phrase due to the fact that it's put into a cell that uses text mode.");
+wrong.setIndentationLeft(20);
+PdfPCell wrongCell = new PdfPCell(wrong);
+table.addCell(wrongCell);
+Paragraph right = new Paragraph("This is right, because we create a paragraph with an indentation to the left and as we are adding the paragraph in composite mode, all the properties of the paragraph are preserved.");
+right.setIndentationLeft(20);
+PdfPCell rightCell = new PdfPCell();
+rightCell.addElement(right);
+table.addCell(rightCell);
+document.add(table);

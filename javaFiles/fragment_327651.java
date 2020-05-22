@@ -1,0 +1,17 @@
+$soapqry = '<?xml version="1.0" encoding="utf-8"?><SOAP-ENV:Envelope xmlns:SOAP-ENV="' . $soapenv . '">';
+        $soapqry .= '<SOAP-ENV:Body>';
+        $soapqry .= '<saba:' . $soapcommand . ' xmlns:saba="' . $soapurl . '">';
+        $soapqry .= '<certificate>' . $soapcert . '</certificate>';
+        $soapqry .= '<query>';
+        $soapqry .= '<id>' . $soapqryid . '</id>';
+        $soapqry .= '<action>' . $soapqryact . '</action>';
+        $soapqry .= '<newPass>' . $soapqrynewp . '</newPass>';
+        $soapqry .= '<oldPass>' . $soapqryoldp . '</oldPass>';
+        $soapqry .= '<isOldPasswordHashed>' . $soapqryphash . '</isOldPasswordHashed>';
+        $soapqry .= '<secretQuestion>' . $soapqrysecq . '</secretQuestion>';
+        $soapqry .= '<secretAnswer>' . $soapqryseca . '</secretAnswer>';
+        $soapqry .= '<sendMail>' . $soapqrymail . '</sendMail>';
+        $soapqry .= '</query>';
+        $soapqry .= '</saba:' . $soapcommand . '>';
+        $soapqry .= '</SOAP-ENV:Body>';
+        $soapqry .= '</SOAP-ENV:Envelope>';

@@ -1,0 +1,9 @@
+if(condition1){
+   block1;
+   return;
+}
+if(condition2){
+   block2;
+}else{
+   block3;
+}

@@ -1,0 +1,6 @@
+//...
+//Maybe @NotNull
+@Future(groups = GroupFuture.class)
+private Date from;
+
+//...

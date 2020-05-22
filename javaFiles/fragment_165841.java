@@ -1,0 +1,8 @@
+-author - generated documentation will include a author section
+-classpath [path] - specifies path to search for referenced .class files.
+-classpathlist [path];[path];...;[path] - specifies a list locations (separated by ";") to search for referenced .class files.
+-d [path] - specifies where generated documentation will be saved.
+-private - generated documentation will include private fields and methods (only public and protected ones are included by default).
+-sourcepath [path] - specifies path to search for .java files to generate documentation form.
+-sourcepathlist [path];[path];...;[path] - specifies a list locations (separated by ";") to search for .java files to generate documentation form.
+-version - generated documentation will include a version section

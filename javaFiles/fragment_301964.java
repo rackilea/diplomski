@@ -1,0 +1,47 @@
+public class DecodeExample {
+
+public static class Address {
+    final String street;
+    final String zip;
+
+    public Address(String street, String zip) {
+        this.street = street;
+        this.zip = zip;
+    }
+}
+
+static class User {
+    final String                name;
+    final Address address;
+
+    User(String name, Address address) {
+        this.name = name;
+        this.address = address;
+    }
+}
+
+public static void main(String[] args) {
+
+    final JsonDecoder<Address> adressDecoder =
+      obj(
+        field("street", stringDecoder),
+        field("zip", stringDecoder.ensure(z -> z.length() < 5)), //You can add constraints right here in the converter
+        Address::new
+      );
+
+
+    JsonResult<JsonValue> json =
+      JsonParser.parse(jsonString);
+
+    Address address =
+      json.field("model").field("leader").field("address").decode(adressDecoder).orThrow(RuntimeException::new);
+
+    System.out.println(address);
+
+    JsonResult<Address> userAddress =
+      json.field("model").field("users").index(0).field("address").decode(adressDecoder);
+
+    System.out.println(userAddress);
+}
+
+}

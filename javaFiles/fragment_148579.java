@@ -1,0 +1,11 @@
+Spacedock spacedock = new Spacedock();
+spacedock.addSpaceship(new Spaceship(1, "Name1"));
+System.out.println(spacedock);
+spacedock.addSpaceship(new Spaceship(2, "Name2"));
+System.out.println(spacedock);
+spacedock.addSpaceship(new Spaceship(1, "Name2"));
+System.out.println(spacedock);
+spacedock.addSpaceship(new Spaceship(2, "Name2"));
+System.out.println(spacedock);
+spacedock.addSpaceship(new Spaceship(2, "Name1"));
+System.out.println(spacedock);

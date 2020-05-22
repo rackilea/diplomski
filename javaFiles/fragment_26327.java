@@ -1,0 +1,6 @@
+class MainClass {
+    ...
+    static class InnerClass {
+        ...   
+    }
+}

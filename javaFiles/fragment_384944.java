@@ -1,0 +1,6 @@
+if(input == randNum){
+
+
+ReLaunchGame();
+
+}

@@ -1,0 +1,10 @@
+String s1 = "1234";
+String s2 = s1.substring(0, 3);
+Field field = String.class.getDeclaredField("value");
+field.setAccessible(true);
+char[] value1 = (char[]) field.get(s1);
+char[] value2 = (char[]) field.get(s2);
+System.out.println(value1 == value2);
+s2 = s2.intern();
+value2 = (char[]) field.get(s2);
+System.out.println(value1 == value2);

@@ -1,0 +1,11 @@
+List<List<Integer>> intersect = processList2.stream()
+        .map(HashSet::new)
+        .flatMap(set -> processList1.stream()
+                .map(list -> list.stream()
+                        .filter(set::contains)
+                        .collect(toList())
+                )
+        )
+        .filter(x -> !x.isEmpty())
+        .distinct()
+        .collect(toList());

@@ -1,0 +1,15 @@
+Field gate = Class.forName("javax.crypto.JceSecurity").getDeclaredField("isRestricted");
+gate.setAccessible(true);
+gate.setBoolean(null, false);
+Field allPerm = Class.forName("javax.crypto.CryptoAllPermission").getDeclaredField("INSTANCE");
+allPerm.setAccessible(true);
+Object accessAllAreasCard = allPerm.get(null);
+final Constructor<?> constructor = Class.forName("javax.crypto.CryptoPermissions").getDeclaredConstructor();
+constructor.setAccessible(true);
+Object coll = constructor.newInstance();
+Method addPerm = Class.forName("javax.crypto.CryptoPermissions").getDeclaredMethod("add", java.security.Permission.class);
+addPerm.setAccessible(true);
+addPerm.invoke(coll, accessAllAreasCard);
+Field defaultPolicy = Class.forName("javax.crypto.JceSecurity").getDeclaredField("defaultPolicy");
+defaultPolicy.setAccessible(true);
+defaultPolicy.set(null, coll);

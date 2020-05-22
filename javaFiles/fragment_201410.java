@@ -1,0 +1,31 @@
+{
+   "multicast_id":xxxxx,
+   "success":7,
+   "failure":0,
+   "canonical_ids":2,
+   "results":[
+      {
+         "message_id":"0:xxx%xxxxx"
+      },
+      {
+         "message_id":"0:xxx%xxxxx"
+      },
+      {
+         "registration_id":"MY_REG_ID_1",
+         "message_id":"0:xxx%xxxxx"
+      },
+      {
+         "message_id":"0:xxx%xxxxx"
+      },
+      {
+         "message_id":"0:xxx%xxxxx"
+      },
+      {
+         "registration_id":"MY_REG_ID_2",
+         "message_id":"0:xxx%xxxxx"
+      },
+      {
+         "message_id":"0:xxx%xxxxx"
+      }
+   ]
+}

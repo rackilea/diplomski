@@ -1,0 +1,6 @@
+// ...
+LogEntry logEntry = new LogEntry();
+logEntry.setServingId(null);
+// ...
+
+db.logEntryDao().add(logEntry);

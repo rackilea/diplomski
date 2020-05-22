@@ -1,0 +1,13 @@
+...
+    @HystrixCommand
+    public Future<Product> findProduct(String id) {
+        return new AsyncResult<Product>() {
+
+            @Override
+            public Product invoke() {
+                ...
+                return productService.find ...
+            }
+        };
+    }
+...

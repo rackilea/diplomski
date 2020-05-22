@@ -1,0 +1,13 @@
+DataSourceElement jdbcDataSource = new DataSourceElement();
+jdbcDataSource.setName("JDBC Connection Configuration");
+jdbcDataSource.setProperty("dataSource", "foo");
+jdbcDataSource.setProperty("dbUrl", "jdbc:mysql://192.168.99.100:3306/mysql");
+jdbcDataSource.setProperty("driver", "com.mysql.jdbc.Driver");
+jdbcDataSource.setProperty("username", "root");
+jdbcDataSource.setProperty("password", "secret");
+jdbcDataSource.setProperty("poolMax", "0");
+jdbcDataSource.setProperty("connectionAge", "5000");
+jdbcDataSource.setProperty("timeout", "10000");
+jdbcDataSource.setProperty("trimInterval", "60000");
+jdbcDataSource.setProperty(TestElement.TEST_CLASS, DataSourceElement.class.getName());
+jdbcDataSource.setProperty(TestElement.GUI_CLASS, TestBeanGUI.class.getName());

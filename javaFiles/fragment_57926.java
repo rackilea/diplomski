@@ -1,0 +1,10 @@
+http.httpBasic()
+        .and()
+        .authorizeRequests()
+        .anyRequest()
+        .authenticated()
+        .and()
+        .csrf()
+        .csrfTokenRepository(csrfTokenRepository())
+        .and()
+        .addFilterAfter(csrfHeaderFilter(), CsrfFilter.class);

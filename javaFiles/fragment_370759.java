@@ -1,0 +1,11 @@
+matrix = new float[3][3];
+float x2 = q.x*q.x, y2 = q.y*q.y, z2 = q.z*q.z;
+matrix[0][0] = (1-2*z2-2*y2); 
+matrix[0][1] = (2*q.x*q.y+2*q.w*q.z); 
+matrix[0][2] = (2*q.x*q.z-2*q.w*q.y);
+matrix[1][0] = (2*q.x*q.y-2*q.w*q.z); 
+matrix[1][1] = (1-2*z2-2*x2); 
+matrix[1][2] = (2*q.y*q.z+2*q.w*q.x);
+matrix[2][0] = (2*q.x*q.z+2*q.w*q.y); 
+matrix[2][1] = (2*q.y*q.z-2*q.w*q.x); 
+matrix[2][2] = (1-2*y2-2*x2);

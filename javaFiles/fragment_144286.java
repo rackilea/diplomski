@@ -1,0 +1,10 @@
+<wsdlOptions>
+ <wsdlOption>
+  <wsdl>${project.basedir}/src/main/resources/Animal.wsdl</wsdl>
+  <wsdlLocation>classpath:Animal.wsdl</wsdlLocation>
+  <extraargs>
+   <extraarg>-nexclude</extraarg>
+   <extraarg>http://xmlns.common/age=common.xmlns.age</extraarg>
+  </extraargs>
+ </wsdlOption>
+</wsdlOptions>

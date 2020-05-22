@@ -1,0 +1,28 @@
+mPager.setOnPageChangeListener(new OnPageChangeListener() {
+
+        @Override
+        public void onPageSelected(int arg0) {
+
+            PhotoViewerFragment currentFragment = mAdapter
+                    .getFragment(arg0);
+            if (currentFragment != null) {
+
+                if (mRunningSlideshow) {
+                    currentFragment.addImageTransition();
+                }
+
+            }
+
+        }
+
+        @Override
+        public void onPageScrollStateChanged(int arg0) {
+            // TODO Auto-generated method stub
+        }
+
+        @Override
+        public void onPageScrolled(int arg0, float arg1, int arg2) {
+            // TODO Auto-generated method stub
+        }
+
+    });

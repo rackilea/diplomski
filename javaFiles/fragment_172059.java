@@ -1,0 +1,10 @@
+ArrayList<BankLogic> obj = new ArrayList<BankLogic>();
+        BankLogic a = new BankLogic();
+        a.addCustomer("JEAN", 66);
+        obj.add(a);
+        a = new BankLogic();
+        a.addCustomer("JEN", 67);
+        obj.add(a);
+        a = new BankLogic();
+        a.addCustomer("ANNA", 70);
+        obj.add(a);

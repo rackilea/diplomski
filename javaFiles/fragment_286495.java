@@ -1,0 +1,13 @@
+if (TextUtils.isDigitsOnly(o1)) {
+    if (TextUtils.isDigitsOnly(o2)) {
+        ...
+    } else {
+        ...
+    }
+} else {
+    if (TextUtils.isDigitsOnly(o2)) {
+        ...
+    } else {
+        ...
+    }
+}

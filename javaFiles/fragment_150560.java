@@ -1,0 +1,18 @@
+[{
+  "$project":{
+    "_id":0,
+    "className":1, 
+    "deviceStatus":{
+      "$map":{
+        "input":"$deviceStatus",
+        "as":"result",
+        "in":{
+          "deviceName":"$$result.deviceName",
+          "errorCode":"$$result.errorCode"
+        }
+      }
+    }
+   }
+ },
+ {"$unwind":"$deviceStatus"}
+]

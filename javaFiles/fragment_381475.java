@@ -1,0 +1,13 @@
+Object lock = new Object();
+...
+synchronized (lock) {
+    ...
+    doSomething(lock, ...)
+    ...
+}
+
+public void doSomething(Object lock, ...) {
+    synchronized (lock) {
+        ...
+    }
+}

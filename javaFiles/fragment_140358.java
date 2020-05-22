@@ -1,0 +1,10 @@
+DateFormat dateFormat = new SimpleDateFormat("yyyy");
+        Calendar cal = Calendar.getInstance();
+        cal.add(Calendar.YEAR,-5);
+        Date today = new Date();
+        String start = dateFormat.format(cal.getTime()).toString();
+        String end = dateFormat.format(today).toString();
+        int start_doub = Integer.parseInt(start);
+        int end_doub = Integer.parseInt(end);
+        System.out.println(start_doub);
+        System.out.println(end_doub);

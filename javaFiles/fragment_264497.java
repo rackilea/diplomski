@@ -1,0 +1,85 @@
+{
+   "eventType":"Bounce",
+   "bounce":{
+      "bounceType":"Permanent",
+      "bounceSubType":"General",
+      "bouncedRecipients":[
+         {
+            "emailAddress":"recipient@example.com",
+            "action":"failed",
+            "status":"5.1.1",
+            "diagnosticCode":"smtp; 550 5.1.1 user unknown"
+         }
+      ],
+      "timestamp":"2016-10-14T05:02:52.574Z",
+      "feedbackId":"EXAMPLE7c1923f27-ab0c24cb-5d9f-4e77-99b8-85e4cb3a33bb-000000",
+      "reportingMTA":"dsn; ses-example.com"
+   },
+   "mail":{
+      "timestamp":"2016-10-14T05:02:16.645Z",
+      "source":"sender@example.com",
+      "sourceArn":"arn:aws:ses:us-east-1:123456789012:identity/sender@example.com",
+      "sendingAccountId":"123456789012",
+      "messageId":"EXAMPLE7c191be45-e9aedb9a-02f9-4d12-a87d-dd0099a07f8a-000000",
+      "destination":[
+         "recipient@example.com"
+      ],
+      "headersTruncated":false,
+      "headers":[
+         {
+            "name":"From",
+            "value":"sender@example.com"
+         },
+         {
+            "name":"To",
+            "value":"recipient@example.com"
+         },
+         {
+            "name":"Subject",
+            "value":"Email Subject"
+         },
+         {
+            "name":"MIME-Version",
+            "value":"1.0"
+         },
+         {
+            "name":"Content-Type",
+            "value":"multipart/mixed;  boundary=\"----=_Part_0_716996660.1476421336341\""
+         },
+         {
+            "name":"X-SES-MESSAGE-TAGS",
+            "value":"myCustomTag1=myCustomTagValue1, myCustomTag2=myCustomTagValue2"
+         }
+      ],
+      "commonHeaders":{
+         "from":[
+            "sender@example.com"
+         ],
+         "to":[
+            "recipient@example.com"
+         ],
+         "messageId":"EXAMPLE7c191be45-e9aedb9a-02f9-4d12-a87d-dd0099a07f8a-000000",
+         "subject":"Email Subject"
+      },
+      "tags":{
+         "ses:configuration-set":[
+            "my-configuration-set"
+         ],
+         "ses:source-ip":[
+            "192.0.2.0"
+         ],
+         "ses:from-domain":[
+            "example.com"
+         ],
+         "ses:caller-identity":[
+            "ses_user"
+         ],
+         "myCustomTag1":[
+            "myCustomTagValue1"
+         ],
+         "myCustomTag2":[
+            "myCustomTagValue2"
+         ]
+      }
+   }
+}

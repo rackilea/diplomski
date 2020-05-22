@@ -1,0 +1,10 @@
+DetachedCriteria dCriteria = DetachedCriteria.forClass(FinancialYearQuater.class, "FinancialYearQuater");
+        dCriteria.add(Restrictions.eq("FinancialYearQuater.finYear", year));
+        ProjectionList projList = Projections.projectionList();
+        projList.add(Projections.property("FinancialYearQuater.finYear"), "finYear");
+        projList.add(Projections.property("FinancialYearQuater.finYearName"), "finYearName");
+        projList.add(Projections.property("FinancialYearQuater.qtrNo"), "qtrNo");
+        projList.add(Projections.property("FinancialYearQuater.qtrPeriod"), "qtrPeriod");
+        dCriteria.setProjection(Projections.distinct(projList));
+        dCriteria.addOrder(Order.asc("finYear"));
+        List<FinancialYearQuater> list = (List<FinancialYearQuater>) findAll(dCriteria);

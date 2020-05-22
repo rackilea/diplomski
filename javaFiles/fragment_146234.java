@@ -1,0 +1,19 @@
+$ jcmd 12345 VM.flags -all | grep manageable
+     intx CMSAbortablePrecleanWaitMillis            = 100                                 {manageable}
+     intx CMSTriggerInterval                        = -1                                  {manageable}
+     intx CMSWaitDuration                           = 2000                                {manageable}
+     bool HeapDumpAfterFullGC                       = false                               {manageable}
+     bool HeapDumpBeforeFullGC                      = false                               {manageable}
+     bool HeapDumpOnOutOfMemoryError                = false                               {manageable}
+    ccstr HeapDumpPath                              =                                     {manageable}
+    uintx MaxHeapFreeRatio                          = 100                                 {manageable}
+    uintx MinHeapFreeRatio                          = 0                                   {manageable}
+     bool PrintClassHistogram                       = false                               {manageable}
+     bool PrintClassHistogramAfterFullGC            = false                               {manageable}
+     bool PrintClassHistogramBeforeFullGC           = false                               {manageable}
+     bool PrintConcurrentLocks                      = false                               {manageable}
+     bool PrintGC                                   = false                               {manageable}
+     bool PrintGCDateStamps                         = false                               {manageable}
+     bool PrintGCDetails                            = false                               {manageable}
+     bool PrintGCID                                 = false                               {manageable}
+     bool PrintGCTimeStamps                         = false                               {manageable}

@@ -1,0 +1,11 @@
+JPanel panel1 = new JPanel();
+JPanel panel2 = new JPanel();
+JButton b1 = new JButton("b1");
+JButton b2 = new JButton("b2");
+panel1.add(b1);
+panel2.add(b2);
+JFrame frame = new JFrame();
+frame.getContentPane().add(panel2, BorderLayout.PAGE_END);
+frame.getContentPane().add(panel1, BorderLayout.PAGE_START);
+frame.pack();
+frame.setVisible(true);

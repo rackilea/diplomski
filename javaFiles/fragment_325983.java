@@ -1,0 +1,11 @@
+List<Tuple> tuples2 = processes.stream()
+        .collect(Collectors.groupingBy(Process::getProcessName))
+        .values().stream()
+        .filter(list -> list.size() > 1)
+        .flatMap(list -> list.stream()
+                .flatMap(p0 -> list.stream()
+                        .filter(p1 -> p0.getPid() != p1.getPid())
+                        .map(p1 -> new Tuple(p0, p1))
+                )
+        )
+        .collect(Collectors.toList());

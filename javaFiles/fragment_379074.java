@@ -1,0 +1,9 @@
+i=1;
+    j=2;
+    while(j<=n)
+    {
+        sum=sum+(i/j);
+        i++;
+        j++;
+        System.out.println(sum);
+    }

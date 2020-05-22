@@ -1,0 +1,6 @@
+class TestPojo{
+private List<String> schemas;
+...
+...
+// and Getter & Setters
+}

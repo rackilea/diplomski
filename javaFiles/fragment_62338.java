@@ -1,0 +1,10 @@
+panLeft.setBackground(new Color(1, 0, 0, 0));
+panLeft.setLayout(null);
+panLeft.setPreferredSize(null);
+panLeft.addMouseWheelListener(new MouseWheelListenerPanLeft());
+scrollPaneLeft.setBounds(10, 35, 250, 525);
+scrollPaneLeft.setBackground(new Color(1, 0, 0, 0));
+scrollPaneLeft.getVerticalScrollBar().setPreferredSize(new Dimension(0, 0));
+scrollPaneLeft.getViewport().setBorder(null);
+scrollPaneLeft.setViewportBorder(null);
+scrollPaneLeft.setBorder(null);

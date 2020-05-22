@@ -1,0 +1,30 @@
+{
+  "enabled":true,
+  "contentMetadataPartial":
+  {
+     "customTags":
+     {
+        "tag1":"value1"
+     }
+  },
+  "simulatedChanges":
+  [
+     3000,
+     2500,
+     400
+  ],
+  "simulatedUpdateMetadata":
+  [
+     {
+        "customTags":
+        {
+           "tag1":"value1"
+        },
+        "assetName":"asset1234"
+     },
+     {
+        "duration":1111,
+        "encodedRate":3333
+     }
+  ]
+}

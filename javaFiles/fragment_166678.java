@@ -1,0 +1,16 @@
+URL url = new URL("your_url");
+HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+httpURLConnection.setReadTimeout(10000);
+httpURLConnection.setConnectTimeout(15000);
+httpURLConnection.setRequestMethod("POST");
+httpURLConnection.setDoInput(true);
+httpURLConnection.setDoOutput(true);
+setupDataToDB();
+OutputStream outputStream = httpURLConnection.getOutputStream();
+BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream));
+bufferedWriter.write(StringGenerator.queryResults(nameValuePairs));
+bufferedWriter.flush();
+bufferedWriter.close();
+outputStream.close();
+httpURLConnection.connect();
+InputStream inputStream = new BufferedInputStream(httpURLConnection.getInputStream());

@@ -1,0 +1,33 @@
+JsonWriter jsonWriter = null;
+try {
+    jsonWriter = new JsonWriter(new FileWriter("test.json"));
+    jsonWriter.beginObject();
+    jsonWriter.name("resource");
+    jsonWriter.beginArray();
+    jsonWriter.beginObject();
+    jsonWriter.name("name");
+    jsonWriter.value("Node1");
+    jsonWriter.endObject();
+    jsonWriter.endArray();
+    jsonWriter.name("literals");
+    jsonWriter.beginArray();
+    jsonWriter.beginObject();
+    jsonWriter.name("literal");
+    jsonWriter.beginArray();
+    jsonWriter.value("A");
+    jsonWriter.value("B");
+    jsonWriter.value("C");
+    jsonWriter.value("D");
+    jsonWriter.endArray();
+    jsonWriter.endObject();
+    jsonWriter.endArray();
+    jsonWriter.endObject();
+} catch (IOException e) {
+    ...
+}finally{
+    try {
+        jsonWriter.close();
+    } catch (IOException e) {
+        ...
+    }
+}

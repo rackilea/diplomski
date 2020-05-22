@@ -1,0 +1,9 @@
+public String next() {
+    ....
+    while (true) {
+     .....
+     if (needInput)
+         readInput();
+     ...
+    }
+}

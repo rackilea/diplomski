@@ -1,0 +1,19 @@
+public class Animal { // implicitly extends Object
+    // ...
+}
+public class Dog extends Animal {
+    // ...
+}
+public class Cat extends Animal {
+    // ...
+}
+public class Hamster extends Animal {
+    // ...
+}
+public class Hamster extends Animal {
+    // ...
+}
+Labrador extends Dog {
+    // ...
+}
+// etc.

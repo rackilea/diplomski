@@ -1,0 +1,19 @@
+{
+    "data":{
+        "type":"listing",
+        "children":[
+            {
+                    "data":{
+                    "type":"t3",
+                    "author":"JohnDoe"
+                }
+            },
+            {
+                "data":{
+                    "type":"t3",
+                    "author":"MaryJane"
+                }
+            }
+        ]
+    }
+}

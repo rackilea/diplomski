@@ -1,0 +1,10 @@
+LinearLayout row= new LinearLayout(context);
+    EditText input = new EditText(context);
+    Button submit = new Button(context);
+    submit.setText("Submit");
+    LayoutParams inputParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+    inputParams.weight = 1;
+    row.addView(input,inputParams);
+    LayoutParams buttonParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+    buttonParams.weight = 0;
+    row.addView(submit, buttonParams);

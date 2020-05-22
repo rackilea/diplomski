@@ -1,0 +1,7 @@
+Observable.from(new Integer[]{4, 5, 6, 6, 7, 3})
+                .doOnNext(debug("Init"))
+                .flatMap(i -> Observable.defer(() -> toRandomList(i))
+                      .doOnNext(debug("defer"))
+                      .flatMap(this::chooseString)
+                      .subscribeOn(Schedulers.io())
+                )

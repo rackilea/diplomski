@@ -1,0 +1,6 @@
+if (scanner.hasNext()) {
+  Student student = new Student();
+  student.setStudentNumber(scanner.next());
+  ... fill in the other properties ...
+  studentList[counter] = student;
+  ...

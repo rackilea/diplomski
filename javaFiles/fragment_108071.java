@@ -1,0 +1,12 @@
+http
+        .httpBasic()
+            .and()
+        .authorizeRequests()
+            .antMatchers("/rest/**").permitAll()
+            .and()
+        .authorizeRequests()
+            .antMatchers("/secure/**").hasAnyRole("ADMIN")
+            .anyRequest().authenticated()
+            .and()
+        .formLogin()
+            .permitAll();

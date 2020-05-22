@@ -1,0 +1,12 @@
+GL11.glColor3f(0, 1, 1);
+GL11.glBindTexture(GL11.GL_TEXTURE_2D, 1);
+GL11.glBegin(GL11.GL_QUADS);
+    GL11.glTexCoord2f(0, 0);
+    GL11.glVertex2i(1, 1);
+    GL11.glTexCoord2f(1, 0);
+    GL11.glVertex2i(w - 1, 1);
+    GL11.glTexCoord2f(1, 1);
+    GL11.glVertex2i(w - 1, h - 1);
+    GL11.glTexCoord2f(0, 1);
+    GL11.glVertex2i(1, h - 1);
+GL11.glEnd();

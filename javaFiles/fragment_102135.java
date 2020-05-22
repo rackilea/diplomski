@@ -1,0 +1,7 @@
+{
+   String myvar = "";
+}
+
+{
+   String myvar = "";
+}

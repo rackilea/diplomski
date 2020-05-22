@@ -1,0 +1,6 @@
+//...    
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "userDTO")
+    public Set<ProjectDTO> getProjectDTOs() {
+        return projects;
+    }
+    //...

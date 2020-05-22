@@ -1,0 +1,6 @@
+-dontwarn com.caverock.androidsvg.**
+-keep class com.caverock.** { *; }
+-dontwarn org.xmlpull.v1.**
+-keep class org.xmlpull.v1.** { *; }
+-dontwarn com.caverock.androidsvg.R
+-dontwarn com.caverock.androidsvg.R$styleable

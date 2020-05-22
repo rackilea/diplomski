@@ -1,0 +1,8 @@
+update()
+ {
+    if(!isPaused)
+    {
+       animateBall();
+     }
+     ...
+ }

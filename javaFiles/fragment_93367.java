@@ -1,0 +1,6 @@
+public class ObjectTwo
+{
+    private ObjectOne obj = new ObjectOne();
+    ...
+    ...
+}

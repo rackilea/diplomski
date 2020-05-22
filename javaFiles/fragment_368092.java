@@ -1,0 +1,11 @@
+JSONObject obj2 = new JSONObject();
+JSONObject paymentMethod = new JSONObject();
+paymentMethod.put("type", "neteller");
+paymentMethod.put("value", "netellertest_GBP@neteller.com");
+obj2.put("paymentMethod", paymentMethod);
+JSONObject transaction = new JSONObject();
+transaction.put("merchantRefId", "20140203122501");
+transaction.put("amount",  (5000));
+transaction.put("currency", "USD");
+obj2.put("transaction", transaction);
+obj2.put("verificationCode", "411392");

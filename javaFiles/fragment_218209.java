@@ -1,0 +1,10 @@
+{
+    "age":12,
+    "gender":"male",
+    "name-ext":"Name",
+    "interest-ext":
+    {
+        "name-ext":"name",
+        "interest-ext":null
+    }
+}

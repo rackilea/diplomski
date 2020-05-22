@@ -1,0 +1,6 @@
+student = studentService(indexNumber);
+if (student == null) {
+   ...
+} else {
+    ...
+}

@@ -1,0 +1,6 @@
+public void setDataTypeProperty(String resourceURI, String propertyName, String propertyValue) //create new data type property. Accept four arguments: URI of resource as string, property name (i.e #hasPath), old value as string and new value as string.
+{
+    if (resourceURI==null)
+    return;
+...
+...

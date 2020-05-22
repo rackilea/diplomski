@@ -1,0 +1,6 @@
+<% 
+    String relativePath = getServletContext().getRealPath("/");
+    String Source = relativePath +"Resource/text.pdf";
+    ...
+    ...
+%>

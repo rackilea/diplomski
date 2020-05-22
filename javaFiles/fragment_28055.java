@@ -1,0 +1,13 @@
+list.add(new Student("Tim", 2333, 23));
+list.add(new Student("John", 423, 23));
+
+...
+
+for (Student student : studentList) {
+    ...
+    name.appendChild(doc.createTextNode(student.getName()));
+    ...
+    id.appendChild(doc.createTextNode(Integer.toString(student.getId())));
+    ...
+    age.appendChild(doc.createTextNode(Integer.toString(student.getAge())));
+}

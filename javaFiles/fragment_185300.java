@@ -1,0 +1,31 @@
+public boolean isConnected() {
+    try {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+
+        if (netInfo != null && netInfo.isConnected()) {
+            // Network is available but check if we can get access from the
+            // network.
+            URL url = new URL("www.google.com");
+            HttpURLConnection urlc = (HttpURLConnection) url
+                    .openConnection();
+            urlc.setRequestProperty("Connection", "close");
+            urlc.setConnectTimeout(2000); // Timeout 2 seconds.
+            urlc.connect();
+
+            if (urlc.getResponseCode() == 200) // Successful response.
+            {
+                return true;
+            } else {
+                Log.d("NO INTERNET", "NO INTERNET");
+                showToast("URL down");
+                return false;
+            }
+        } else {
+            showToast("No Internet Connection");
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    return false;
+}

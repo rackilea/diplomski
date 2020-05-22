@@ -1,0 +1,6 @@
+public class fbMain {
+    //...
+    public class pcb {
+    }
+    //...
+}

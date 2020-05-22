@@ -1,0 +1,13 @@
+public static final String NAME = "Name";
+public static final String PHONE = "Phone";
+public static final String EMAIL = "Email";
+public static final String ADDRESS_1 = "Address1";
+public static final String ADDRESS_2 = "Address2";
+public static final String ADDRESS_3 = "Address3";
+public static final String ICO = "Ico";
+public static final String DIC = "Dic";
+public static final String ADMIN_LOGIN = "AdminLogin";
+public static final String ADMIN_PASSWORD = "AdminPassword";
+public static final String LANGUAGE = "Language";
+public static final String CODE = "CODE";
+public static final String MONTHLY_PAYMENT = "MonthlyPayment";

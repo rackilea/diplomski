@@ -1,0 +1,10 @@
+GridBagConstraints c = new GridBagConstraints();
+c.gridx = positionx;
+c.gridy = positiony;
+c.insets = new Insets(2, 2, 2, 2);
+c.gridwidth = width == 0 ? 2 : width;
+c.gridheight = height == 0 ? 2 : height;
+c.weightx = 1;
+c.weighty = 1;
+c.anchor = GridBagConstraints.FIRST_LINE_START;
+contentPane.add(myPanel, c);

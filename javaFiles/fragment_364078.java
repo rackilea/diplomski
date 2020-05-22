@@ -1,0 +1,6 @@
+PartialViewContext pvc = facesContext.getPartialViewContext();
+if(pvc.isAjaxRequest()) {
+// ...
+} else {
+// ...
+}

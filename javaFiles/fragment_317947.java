@@ -1,0 +1,12 @@
+table.getColumn(1).setCellRenderer(new DefaultTableRenderer(
+        // custom wrappingProvider which guarantees the reset of visible
+        // property of the wrapped component
+        new WrappingProvider(IconValues.NONE, new ButtonProvider(), false) {
+            @Override
+            protected void configureState(CellContext context) {
+                super.configureState(context);
+                rendererComponent.getComponent().setVisible(true);
+            }
+
+        }
+));

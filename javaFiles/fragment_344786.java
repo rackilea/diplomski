@@ -1,0 +1,9 @@
+{0={color=black, size=32}
+1={color=black, size=33}
+2={color=black, size=34}
+3={color=red, size=32}
+4={color=red, size=33}
+5={color=red, size=34}
+6={color=white, size=32}
+7={color=white, size=33}
+8={color=white, size=34}}

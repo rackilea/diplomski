@@ -1,0 +1,11 @@
+ResourceOwnerPasswordAccessTokenProvider provider = new ResourceOwnerPasswordAccessTokenProvider();
+ResourceOwnerPasswordResourceDetails resource = new ResourceOwnerPasswordResourceDetails();
+resource.setClientAuthenticationScheme(AuthenticationScheme.form);
+resource.setAccessTokenUri("accessTokenURI");
+resource.setClientId("clientId");
+resource.setGrantType("password");
+resource.setClientSecret("clientSecret");
+resource.setUsername("userName");
+resource.setPassword("password");
+OAuth2AccessToken accessToken = provider.obtainAccessToken(getResource(), new DefaultAccessTokenRequest());
+OAuth2RestTemplate restTemplate = new OAuth2RestTemplate(getResource(), new DefaultOAuth2ClientContext(accessToken));

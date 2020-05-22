@@ -1,0 +1,8 @@
+while (!cancel) {
+    if (!suspended) {
+        for (int i = 1; i <= 10; i++) {
+                Thread.sleep(1000);
+                publish(i);
+        }
+    }
+}

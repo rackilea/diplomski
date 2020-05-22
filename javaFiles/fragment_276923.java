@@ -1,0 +1,10 @@
+float val1 = Float.parseFloat(fat.getText().toString());
+float vals1 = 3.89f;
+float val2 = Float.parseFloat(carbs.getText().toString());
+float vals2 = 9.17f;
+float val3 = Float.parseFloat(fiber.getText().toString()); 
+float vals3 = 12.49f;
+float val4= Float.parseFloat(protein.getText().toString());
+float vals4 = 10.94f;
+float answer = (((val4 / vals4) + (val2 / vals2) + (val1 / vals1)) - (val3 / vals3));
+points.setText(String.valueOf(Math.round(answer)));

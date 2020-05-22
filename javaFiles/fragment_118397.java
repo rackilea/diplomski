@@ -1,0 +1,6 @@
+BufferedReader br = new BufferedReader(new FileReader(path));     
+if (br.readLine() == null) {
+    // handle empty file...
+} else {
+    //do something...
+}

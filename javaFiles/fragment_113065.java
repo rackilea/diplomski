@@ -1,0 +1,10 @@
+button1 = (ImageButton) findViewById(R.id.motbut_unpressed);
+    topbar2 = (ImageView) findViewById(R.id.topbarmain);
+    button2 = (ImageButton) findViewById(R.id.posbut_unpressed);
+    button3 = (ImageButton) findViewById(R.id.envbut_unpressed);
+    bcfield = (LinearLayout) findViewById(R.id.babcocklayout);
+    arrowup = (ImageButton) findViewById(R.id.uparrow);
+    arrowdown = (ImageButton) findViewById(R.id.downarrow);
+    navbar = (ImageView) findViewById(R.id.infospace);
+    dynamictext = (TextView) findViewById(R.id.dynamictxt);
+    dynamicheader = (TextView) findViewById(R.id.dynamiched);

@@ -1,0 +1,10 @@
+Test response = new Test();
+response.setNum(1);
+Stub s = new Stub();
+s.setAge("12");
+s.setName("Colin");
+response.setS(s);
+final CsvMapper mapper = new CsvMapper();
+final CsvSchema schema = mapper.schemaFor(Test.class);
+final String csv = mapper.writer(schema.withUseHeader(true)).writeValueAsString(response);
+System.out.println(csv);

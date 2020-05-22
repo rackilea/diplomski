@@ -1,0 +1,14 @@
+setPreferredSize(new java.awt.Dimension(250, 50));
+setLayout(new GridBagLayout());
+    GridBagConstraints constraints = new GridBagConstraints();
+    constraints.gridx = 0;
+    constraints.gridy = 0;
+    constraints.gridheight = 1;
+    constraints.gridwidth = 1;
+    constraints.weightx = 1.0;
+    constraints.weighty = 1.0;
+    constraints.fill = GridBagConstraints.HORIZONTAL;
+    constraints.anchor = GridBagConstraints.LINE_START;
+    constraints.insets = new Insets(0, 5, 5, 0);
+    add(summaryTextField, constraints);
+    setBorder(BorderFactory.createTitledBorder("Details"));

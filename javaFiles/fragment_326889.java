@@ -1,0 +1,10 @@
+System.out.println(books.stream()
+                .collect(
+                        groupingBy(Book::getID,
+                                maxBy(comparingInt(Book::getRevison))
+                        )
+                ).values()
+                .stream()
+                .map(Optional::get)
+                .collect(Collectors.toList())
+);

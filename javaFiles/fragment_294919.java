@@ -1,0 +1,9 @@
+try
+{
+    obj.changeState(...);
+    obj.use();
+}
+finally
+{
+    obj.loadState();
+}

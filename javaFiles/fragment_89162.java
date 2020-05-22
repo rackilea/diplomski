@@ -1,0 +1,9 @@
+for(a=0;a<4;a++)
+    {
+        for(b=0;b<4;b++){
+        if(c>ar[a][b])
+        c=ar[a][b];
+        if(d<ar[a][b])         
+        d=ar[a][b];
+        }
+    }

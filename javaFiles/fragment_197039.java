@@ -1,0 +1,6 @@
+if(birthYear == 2013 || birthYear == 2001 || birthYear == 1989 || birthYear == 1977 || birthYear == 1965 || birthYear == 1953 || birthYear == 1941){
+    ....
+}
+else if(birthYear != 2013 || birthYear != 2001 ||...){
+....
+}

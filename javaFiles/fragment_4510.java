@@ -1,0 +1,6 @@
+from("file:/inbox")
+ .split(body())
+ .unmarshal(dataFormat)
+ .setHeader("fileName",simple("${body.identifier}"))
+ .marshal(dataFormat)
+ .to("file:/outbox/?fileName=${header.fileName}.txt&fileExist=Append")

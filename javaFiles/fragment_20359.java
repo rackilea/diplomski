@@ -1,0 +1,19 @@
+<tbody>
+@for(element <- currentPage) {
+                <tr>
+                    <td>@element.ID</td>
+                    <td>@element.EmployeeID</td>
+                    <td>@element.RoleID</td>
+                    <td>@element.Task</td>
+                    <td>@element.TimeSheetDate</td>
+                    <td>@element.CreateDate</td>
+                    <td>@element.UpdateDate</td>
+                    <td>@element.TaskHour</td>
+                    <td>@element.IsBilled</td>
+                    <td>@element.ProjectID</td>
+                    <td>@element.ClientID</td>
+                    <td>@element.atHome</td>
+                    <td>@element.atClientSite</td>
+                </tr>
+            }
+    </tbody>

@@ -1,0 +1,11 @@
+log4j.rootCategory=INFO, base
+log4j.appender.base=org.apache.log4j.rolling.RollingFileAppender
+log4j.appender.base.File=/tmp/logger.log
+log4j.appender.base.rollingPolicy=org.apache.log4j.rolling.FixedWindowRollingPolicy
+log4j.appender.base.rollingPolicy.maxIndex=5
+log4j.appender.base.triggeringPolicy=org.apache.log4j.rolling.SizeBasedTriggeringPolicy
+log4j.appender.base.triggeringPolicy.maxFileSize=100
+log4j.appender.base.rollingPolicy.ActiveFileName=/tmp/logger-%i.log
+log4j.appender.base.rollingPolicy.FileNamePattern=/tmp/test/logger-%i.log.gz
+log4j.appender.base.layout = org.apache.log4j.PatternLayout
+log4j.appender.base.layout.ConversionPattern=%d{ABSOLUTE} %5p %c{1}:%L - %m%n

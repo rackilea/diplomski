@@ -1,0 +1,9 @@
+/subsystem=elytron/http-authentication-factory=demo-http-auth:add(\
+   http-server-mechanism-factory=global,\
+   security-domain=DemoDomain,\
+   mechanism-configurations=[{\
+     mechanism-name=BASIC,\
+     mechanism-realm-configurations=[{\
+       realm-name=DemoApplicationDomain\
+     }]\
+   }])

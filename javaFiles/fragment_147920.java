@@ -1,0 +1,28 @@
+{  
+  "wrapper":{  
+    "general":{
+        "value":10
+    },
+    "items":[  
+        "item":{      
+            "name":"DOG",  
+            "0":78,  
+            "1":125
+            "name":"Lucky",
+            "features":{
+                "color":"brown",
+                "sex":"male"
+            }
+        },
+        "item":{
+            "name":"CAT",
+            "0":123,
+            "1":94
+            "name":"Fluffy",
+            "features":{
+                "color":"black",
+                "sex":"female"
+            }
+        }
+    ]
+}

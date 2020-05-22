@@ -1,0 +1,6 @@
+public class MyClass {
+  ...
+  Classification classification = new Classification();
+  boolean result = classification.tryPattern(somePatternString);
+  ...
+}

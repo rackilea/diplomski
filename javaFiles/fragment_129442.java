@@ -1,0 +1,6 @@
+private  DefaultComboBoxModel hBoyModel= new DefaultComboBoxModel();
+private  DefaultComboBoxModel hGirlModel= new DefaultComboBoxModel();
+//....
+ComboHBoy.setModel(hBoyModel);
+ComboHGirl.setModel(hGrilModel);
+//....

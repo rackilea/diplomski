@@ -1,0 +1,35 @@
+{
+   "type":"record",
+   "name":"Pojo",
+   "namespace":"com.xx.test",
+   "fields":[
+      {
+         "name":"id",
+         "type":[
+            "int",
+            "null"
+         ]
+      },
+      {
+         "name":"age",
+         "type":[
+            "int",
+            "null"
+         ]
+      },
+      {
+         "name":"name",
+         "type":[
+            "string",
+            "null"
+         ]
+      },
+      {
+         "name":"place",
+         "type":[
+            "string",
+            "null"
+         ]
+      }
+   ]
+}

@@ -1,0 +1,13 @@
+ControlFragment fragment = new ControlFragment();
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        Bundle bundle = new Bundle();
+        bundle.putString("ip", o.get("ip"));
+        bundle.putString("port", o.get("port"));
+        bundle.putString("uname", o.get("uname"));
+        bundle.putString("password", o.get("password"));
+        Log.e("ip: ", "> " +  o.get("ip"));
+        Log.e("port: ", "> " +  o.get("port"));
+        Log.e("uname: ", "> " +  o.get("uname"));
+        Log.e("password: ", "> " +  o.get("password"));
+        fragment.setArguments(bundle);
+        transaction.replace(R.id.mainFrame, fragment  );

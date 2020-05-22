@@ -1,0 +1,6 @@
+// you create a page prop
+PagePropsType pageProps = ...
+
+// then you feed it to a shape sheet
+ShapeSheetType shapeSheet = ...
+shapeSheet.getTextOrXFormOrLine().add(pageProps);

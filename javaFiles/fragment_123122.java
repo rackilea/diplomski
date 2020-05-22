@@ -1,0 +1,13 @@
+0x0000000002a40b28: mov    0xb0(%rdi),%r10d   ;*getfield i1
+0x0000000002a40b2f: mov    0xb4(%rdi),%r8d    ;*getfield i2
+0x0000000002a40b36: test   %r10d,%r10d
+0x0000000002a40b39: setne  %r10b
+0x0000000002a40b3d: movzbl %r10b,%r10d
+0x0000000002a40b41: test   %r8d,%r8d
+0x0000000002a40b44: setne  %r11b
+0x0000000002a40b48: movzbl %r11b,%r11d
+0x0000000002a40b4c: xor    $0x1,%r10d
+0x0000000002a40b50: xor    $0x1,%r11d
+0x0000000002a40b54: and    %r11d,%r10d
+0x0000000002a40b57: test   %r10d,%r10d
+0x0000000002a40b5a: jne    0x0000000002a40c15  ;*return

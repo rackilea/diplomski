@@ -1,0 +1,6 @@
+...
+@Override
+public void onBindViewHolder(GalleryHolder holder, int position) {
+    holder.imageView.setBitmap(null);
+}
+...

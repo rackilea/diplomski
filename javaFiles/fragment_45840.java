@@ -1,0 +1,10 @@
+counter=0;
+for(i=2;i<j;i++){
+    if(j%i==0){
+        counter=1;
+        break;
+    }
+}
+if(counter==0){
+    System.out.println(j);
+}

@@ -1,0 +1,10 @@
+String nsURI = "http://example.com/";
+XMLOutputFactory outF = XMLOutputFactory.newFactory();
+outF.setProperty(XMLOutputFactory.IS_REPAIRING_NAMESPACES, true);
+XMLStreamWriter out = outF.createXMLStreamWriter(System.out);
+out.setDefaultNamespace(nsURI);
+out.writeStartElement(nsURI, "element");
+out.writeAttribute("attribute", "value");
+out.writeAttribute("attribute2", "value");
+out.writeEndElement();
+out.close();

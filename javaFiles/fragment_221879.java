@@ -1,0 +1,13 @@
+AlarmManager manager = (AlarmManager)getSystemService(Context.ALARM_SERVICE);
+Intent alarmIntent = new Intent(this, AlarmReceiver.class);
+alarmIntent.putExtra("Activity",1);
+pendingIntent = PendingIntent.getBroadcast(this, 0, alarmIntent, 0);
+manager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + 1000, pendingIntent);
+alarmIntent = new Intent(this, AlarmReceiver.class);
+alarmIntent.putExtra("Activity",2);
+pendingIntent = PendingIntent.getBroadcast(this, 0, alarmIntent, 0);
+manager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + 2000, pendingIntent);
+alarmIntent = new Intent(this, AlarmReceiver.class);
+alarmIntent.putExtra("Activity",3);
+pendingIntent = PendingIntent.getBroadcast(this, 0, alarmIntent, 0);
+manager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + 3000, pendingIntent);

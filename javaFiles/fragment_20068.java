@@ -1,0 +1,9 @@
+// ...
+
+FileInputStream fis = new FileInputStream("E:/workbench j2ee/cPEP_UI/WebContent/engine.xml");
+
+// ...
+
+client.storeFile("engine.xml", fis);
+
+// ...

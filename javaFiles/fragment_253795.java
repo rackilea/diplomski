@@ -1,0 +1,6 @@
+...
+    neighborBoard[k][initialLocation] = 0;
+    neighborBoard[k][initialLocation - 1] = 1;
+
+    neighborQueenLocations.put(k, initialLocation - 1);
+    ...

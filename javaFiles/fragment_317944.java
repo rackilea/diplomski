@@ -1,0 +1,19 @@
+company
+My Company
+num_users
+3
+user
+{
+  name="John"
+  age=24
+}
+user
+{
+  name="Anna"
+  age=27
+}
+user
+{
+  name="Jack"
+  age=22
+}

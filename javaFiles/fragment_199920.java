@@ -1,0 +1,24 @@
+PdfDocument pdfDoc = new PdfDocument(new PdfWriter(dest));
+Document doc = new Document(pdfDoc);
+doc.add(new Paragraph("Table event"));
+Table table = new Table(UnitValue.createPercentArray(3)).useAllAvailableWidth();
+table.setNextRenderer(new DottedLineTableRenderer(table, new Table.RowRange(0, 2)));
+table.addCell(new Cell().add(new Paragraph("A1")).setBorder(Border.NO_BORDER));
+table.addCell(new Cell().add(new Paragraph("A2")).setBorder(Border.NO_BORDER));
+table.addCell(new Cell().add(new Paragraph("A3")).setBorder(Border.NO_BORDER));
+table.addCell(new Cell().add(new Paragraph("B1")).setBorder(Border.NO_BORDER));
+table.addCell(new Cell().add(new Paragraph("B2")).setBorder(Border.NO_BORDER));
+table.addCell(new Cell().add(new Paragraph("B3")).setBorder(Border.NO_BORDER));
+table.addCell(new Cell().add(new Paragraph("C1")).setBorder(Border.NO_BORDER));
+table.addCell(new Cell().add(new Paragraph("C2")).setBorder(Border.NO_BORDER));
+table.addCell(new Cell().add(new Paragraph("C3")).setBorder(Border.NO_BORDER));
+doc.add(table);
+doc.add(new Paragraph("Cell event"));
+table = new Table(UnitValue.createPercentArray(1)).useAllAvailableWidth();
+Cell cell = new Cell().add(new Paragraph("Test"));
+cell.setNextRenderer(new DottedLineCellRenderer(cell));
+cell.setBorder(Border.NO_BORDER);
+table.addCell(cell.setBorder(Border.NO_BORDER));
+doc.add(table);
+
+doc.close();

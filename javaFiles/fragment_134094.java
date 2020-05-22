@@ -1,0 +1,13 @@
+Map<String, String> map = new HashMap<>();
+map.put("<h1>", "<big><big><big><b>");
+map.put("</h1>", "</b></big></big></big>");
+map.put("<h2>", "<big><big>");
+map.put("</h2>", "</big></big>");
+map.put("<h3>", "<big>");
+map.put("</h3>", "</big>");
+map.put("<h4>", "<b>");
+map.put("</h4>", "</b>");
+map.put("<h5>", "<small><b>");
+map.put("</h5>", "</b></small>");
+map.put("<h6>", "<small>");
+map.put("</h6>", "</small>");

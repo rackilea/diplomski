@@ -1,0 +1,9 @@
+final Object monitor = ...
+
+ ...
+
+ synchronized (monitor) {
+
+     while (!condition) monitor.wait();
+     ... do something ...
+ }

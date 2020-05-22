@@ -1,0 +1,11 @@
+HikariConfig config = new HikariConfig();
+config.setMinimumIdle(1);
+config.setMaximumPoolSize(2);
+config.setInitializationFailFast(true);
+config.setConnectionTestQuery("VALUES 1");
+config.setDataSourceClassName("com.mysql.jdbc.jdbc2.optional.MysqlDataSource");
+config.addDataSourceProperty("serverName", "localhost");
+config.addDataSourceProperty("port", "3306");
+config.addDataSourceProperty("databaseName", "webapp");
+config.addDataSourceProperty("user", "webapp");
+config.addDataSourceProperty("password", "password");

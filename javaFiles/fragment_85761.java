@@ -1,0 +1,10 @@
+HttpClient client = new DefaultHttpClient();
+HttpPost post = new HttpPost(serverURL);
+MultipartEntity postEntity = new MultipartEntity();
+File file = new File("Your File path on SD card");
+postEntity.addPart("fileupload", new FileBody(file, "image/jpeg"));
+postEntity.addPart("loginKey", new StringBody(""+loginKey));
+postEntity.addPart("message", new StringBody(message));
+postEntity.addPart("token", new StringBody(token));
+post.setEntity(postEntity);
+response = client.execute(post);

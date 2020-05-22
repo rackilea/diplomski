@@ -1,0 +1,6 @@
+if(contacts.equals(tableName)){
+   ...
+   .withKeyType("S"));
+   .withKeyType("N"));
+   ...
+}

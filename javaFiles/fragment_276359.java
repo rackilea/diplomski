@@ -1,0 +1,40 @@
+{
+  "ssid": "test1",
+  "psk": "154695",
+  "key_mgmt": "WPA-PSK",
+  "sim_slot": "-1",
+  "imsi": "none",
+  "priority": "1"
+},
+{
+  "ssid": "test1",
+  "psk": "154695",
+  "key_mgmt": "WPA-PSK",
+  "sim_slot": "-1",
+  "imsi": "none",
+  "priority": "1"
+},
+{
+  "ssid": "test1",
+  "psk": "154695",
+  "key_mgmt": "WPA-PSK",
+  "sim_slot": "-1",
+  "imsi": "none",
+  "priority": "1"
+},
+{
+  "ssid": "test1",
+  "psk": "154695",
+  "key_mgmt": "WPA-PSK",
+  "sim_slot": "-1",
+  "imsi": "none",
+  "priority": "1"
+},
+{
+  "ssid": "SSID2",
+  "psk": "test123456",
+  "key_mgmt": "WPA-PSK",
+  "sim_slot": "-1",
+  "imsi": "none",
+  "priority": "19"
+}

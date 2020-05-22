@@ -1,0 +1,13 @@
+...
+if (response.isSuccessful) {
+    val jsonObject = JSONObject(response.body() as Map<*, *>)
+    val jsonString = jsonObject.toString()
+    if (jsonObject.has("id")) {
+        val myclass1Object = Gson().fromJson(jsonString, MyClass1::class.java)
+        ...
+    } else {
+        val myclass2Object = Gson().fromJson(jsonString, MyClass2::class.java)
+        ...
+    }
+}
+...

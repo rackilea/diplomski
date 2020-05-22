@@ -1,0 +1,31 @@
+<repository>
+  <id>${project-repository}</id>
+  <url>http://${company-repo-manager}/${project-repository}</url>
+</repository>
+<repository>
+  <id>central</id>
+  <name>Maven Central</name>
+  <url>http://repo1.maven.org/maven2</url>
+  <releases>
+     <enabled>false</enabled>
+  </releases>
+  <snapshots>
+    <enabled>false</enabled>
+  </snapshots>
+</repository>
+...
+<pluginRepository>
+  <id>maven-plugins-repo</id>
+  <url>http://${company-repo-manager}/${plugin-repository}</url>
+</pluginRepository>
+<pluginRepository>
+  <id>central</id>
+  <name>Maven Central</name>
+  <url>http://repo1.maven.org/maven2</url>
+  <releases>
+     <enabled>false</enabled>
+  </releases>
+  <snapshots>
+    <enabled>false</enabled>
+  </snapshots>
+</pluginRepository>

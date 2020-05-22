@@ -1,0 +1,12 @@
+em.clear();
+CriteriaBuilder cb = em.getCriteriaBuilder();
+CriteriaQuery<Person> query = cb.createQuery(Person.class);
+Root<Person> person = query.from(Person.class);
+Join<Person, PersonName> names = person.join("names");
+Predicate[] findNames = new Predicate[3]; 
+findNames[0] = cb.equal(names.get("firstName"), "F1");
+findNames[1] = cb.equal(names.get("middleName"), "M1");
+findNames[2] = cb.equal(names.get("lastName"), "L1");
+query.where(findNames);
+List<Person> persons = em.createQuery(query).getResultList();
+System.out.println(persons);

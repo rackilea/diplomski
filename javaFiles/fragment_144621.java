@@ -1,0 +1,23 @@
+Scanner sc = new Scanner(System.in);
+do {
+        System.out.println("Date : ");
+        String Date = sc.next();
+        System.out.println("Meal Time: ");
+        String FoodTime = sc.next();
+        System.out.println("Food Item : ");
+        String FoodItem = sc.next();
+        System.out.println("Calories : ");
+        String Calories = sc.next();
+        sb.append(Date);
+        sb.append(',');
+        sb.append(FoodTime);
+        sb.append(',');
+        sb.append(FoodItem);
+        sb.append(',');
+        sb.append(Calories);
+        sb.append('\n');
+        pw.write(sb.toString());
+        System.out.println("Please enter 0 to exit, 1 to continue : ");
+        exit = sc.nextInt();
+    } while (exit != 0);
+sc.close();

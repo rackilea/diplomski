@@ -1,0 +1,7 @@
+PRIVATE
+ : 'public' 
+ |
+ | 'private' 
+ |
+ | 'protected'
+ ;

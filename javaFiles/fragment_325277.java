@@ -1,0 +1,6 @@
+if (requestCode == CropImage.PICK_IMAGE_CHOOSER_REQUEST_CODE /* && ... */) {
+  // ...
+  if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
+    // ...
+  }
+}

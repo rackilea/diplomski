@@ -1,0 +1,12 @@
+Graph graph = new Graph();
+graph.addEdge("0", "1", 4, "A");
+graph.addEdge("0", "2", 3, "B");
+graph.addEdge("1", "3", 2, "C");
+graph.addEdge("1", "2", 5, "D");
+graph.addEdge("2", "3", 7, "E");
+graph.addEdge("3", "4", 2, "F");
+graph.addEdge("4", "0", 4, "G");
+graph.addEdge("4", "1", 4, "H");
+graph.addEdge("4", "5", 6, "I");
+graph.startAt("0");
+System.out.println(graph.getPath("5"));

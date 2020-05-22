@@ -1,0 +1,30 @@
+final DecimalFormat format = (DecimalFormat) NumberFormat.getInstance();
+String pattern = "##0.0000000000;-#0.0000000000";
+format.applyPattern(pattern);
+
+System.out.println("Using pattern: " + pattern);
+System.out.println("8.7829214389 = " + format.format(-8.7829214389));
+System.out.println("8.7829214 = " + format.format(-8.7829214));
+System.out.println("8.7829 = " + format.format(-8.7829));
+System.out.println("8.123456789012 = " + format.format(-8.123456789012));
+System.out.printf("%n");
+System.out.println("-8.7829214389 = " + format.format(-8.7829214389));
+System.out.println("-8.7829214 = " + format.format(-8.7829214));
+System.out.println("-8.7829 = " + format.format(-8.7829));
+System.out.println("-8.123456789012 = " + format.format(-8.123456789012));
+System.out.printf("==========%n%n");
+
+final DecimalFormat format2 = (DecimalFormat) NumberFormat.getInstance();
+pattern = "##0.##########;-#0.##########";
+format2.applyPattern(pattern);
+System.out.println("Using pattern: " + pattern);
+System.out.println("8.7829214389 = " + format2.format(8.7829214389));
+System.out.println("8.7829214 = " + format2.format(8.7829214));
+System.out.println("8.7829 = " + format2.format(8.7829));
+System.out.println("8.123456789012 = " + format2.format(8.123456789012));
+System.out.printf("%n");
+System.out.println("-8.7829214389 = " + format2.format(-8.7829214389));
+System.out.println("-8.7829214 = " + format2.format(-8.7829214));
+System.out.println("-8.7829 = " + format2.format(-8.7829));
+System.out.println("-8.123456789012 = " + format2.format(-8.123456789012));
+System.out.printf("==========%n%n");

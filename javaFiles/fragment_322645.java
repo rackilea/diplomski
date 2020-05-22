@@ -1,0 +1,14 @@
+Context ctx = new Context();
+    List<String> rowList = new ArrayList<>();
+    rowList.add("row--1");
+    rowList.add("row--2");
+    rowList.add("row--3");
+    List<String> seatList = new ArrayList<>();
+    seatList.add("A");
+    seatList.add("B");
+    seatList.add("C");
+    seatList.add("D");
+    seatList.add("E");
+    seatList.add("F");
+    ctx.setVariable("rows", rowList);
+    ctx.setVariable("seats", seatList);

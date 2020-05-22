@@ -1,0 +1,6 @@
+private JLabel[] holes;
+//...//
+// Some where after initComponents is called...
+holes = new JLabel[9];
+holes[0] = jLbl_Hole1;
+// There other 8 holes...

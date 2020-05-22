@@ -1,0 +1,19 @@
+{
+  "data":"some data",
+  "problem":
+  {
+    "cause":null,
+    "message":"Ack!",
+    "localizedMessage":"Ack!",
+    "stackTrace":
+    [
+      {
+        "className":"com.stackoverflow.q8151082.JacksonFoo",
+        "fileName":"JacksonFoo.java",
+        "lineNumber":11,
+        "methodName":"main",
+        "nativeMethod":false
+      }
+    ]
+  }
+}

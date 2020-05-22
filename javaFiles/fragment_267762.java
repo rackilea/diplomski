@@ -1,0 +1,7 @@
+buildscript {
+    ...
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.3.1'
+    }
+}
+...

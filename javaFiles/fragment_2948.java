@@ -1,0 +1,10 @@
+# name : getter/setter property ... { ... }
+# key: prop
+# --
+private ${1:Type} _${2:Name};
+public ${1:Type} get$2 {
+    ${3://get impl}
+}
+public void set$2($1 value) {
+    ${4://set impl}
+}

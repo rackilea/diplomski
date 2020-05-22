@@ -1,0 +1,10 @@
+<s:select cssClass="dropbox" 
+              name="campaign" 
+                id="campaign" 
+          onchange="getCampaignQuestion();"
+         headerKey=""
+       headerValue="- Please Select -"
+              list="campaignList"
+           listKey="campaignId"
+         listValue="campaignName"
+             value="campaignId" /> <!-- no iteration, no need to differentiate it here -->

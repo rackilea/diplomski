@@ -1,0 +1,9 @@
+Square a = ...
+ColorSquare b = ...
+ColorSquare c = ...
+
+assert a.compareTo(b) == 0;  // assume this and the other asserts succeed
+assert a.compareTo(c) == 0;
+// transitivity implies that b.compareTo(c) is also 0, but maybe
+// they have the same lengths but different color!
+assert b.compareTo(c) == 1; // contract is broken!

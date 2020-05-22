@@ -1,0 +1,6 @@
+if(messages.equals(tableName)){
+   ...
+   .withKeyType("S"));
+   .withKeyType("N"));
+   ...
+}

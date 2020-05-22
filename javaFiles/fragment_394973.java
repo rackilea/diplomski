@@ -1,0 +1,6 @@
+...
+FXMLLoader loader = new FXMLLoader(getClass().getResource("Confirmation.fxml"));
+confirmation = loader.load();
+ConfirmationController controller = (ConfirmationController)loader.getController();
+controller.setTextToLabel("Your Text"); // Call the method we wrote before
+...

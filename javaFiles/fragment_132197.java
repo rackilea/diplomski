@@ -1,0 +1,6 @@
+for(i=0;i<5;i++)
+{
+    ...
+    URL url = new URL("http://www.google.co.id/search?q=" + newEntry + "&hl=en&num=10&lr=&ft=i&cr=&safe=images&tbs=&start="+(i*10));
+    ...
+}

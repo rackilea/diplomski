@@ -1,0 +1,9 @@
+public class Timer {
+    ...
+    private TimerListener listener;
+    ...
+    public setTimerListener(TimerListener listener){
+        this.listener = listener;
+    }
+    ...
+}

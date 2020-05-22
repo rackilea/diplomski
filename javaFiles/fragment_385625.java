@@ -1,0 +1,11 @@
+pluginManagement {
+    repositories {
+        maven {
+            url '../maven-repo'
+        }
+        gradlePluginPortal()
+        ivy {
+            url '../ivy-repo'
+        }
+    }
+}

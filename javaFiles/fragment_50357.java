@@ -1,0 +1,12 @@
+Byte data[] = { (byte)0x80, (byte)0x1e, (byte)0x19, (byte)0x1e, (byte)0x06,(byte)0x1f,
+                (byte)0x35,(byte)0x22,(byte)0x02,(byte)0x20,(byte)0x14,(byte)0x1e,(byte)0x37,
+                (byte)0x1d,(byte)0x02,(byte)0x20,(byte)0x2e,(byte)0x1f,(byte)0x15,(byte)0x1e,
+                (byte)0x38,(byte)0x00,(byte)0xff,(byte)0xfb,(byte)0xf8,(byte)0x00,(byte)0x01};
+
+        int[] integers = new int[data.length];
+
+        for(int i = 0;i < data.length ;i++){
+
+            integers[i] = data[i];
+
+        }

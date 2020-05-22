@@ -1,0 +1,10 @@
+frame = new JFrame(nameA);
+frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+frame.setLayout(null);
+this.setSize(getPreferredSize());
+frame.add(this);
+frame.pack();
+frame.setSize(getPreferredSize());
+frame.setResizable(false);
+frame.setLocationRelativeTo(null);
+frame.setVisible(true);

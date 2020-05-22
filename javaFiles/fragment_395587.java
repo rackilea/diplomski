@@ -1,0 +1,6 @@
+.....
+.....
+ else if (ObjectOne.length() == ObjectTwo.length()) 
+    {
+        System.out.println("ObjectOne and ObjectTwo are equal");
+    }

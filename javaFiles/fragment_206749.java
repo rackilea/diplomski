@@ -1,0 +1,9 @@
+public <T extends AbstractBase> T getById(long id, Class<T> typeKey) {
+    if (typeKey == ClassA.class) {
+        // ...
+    } else if (typeKey == ClassB.class) {
+        // ...
+    } else {
+        // ...
+    }
+}

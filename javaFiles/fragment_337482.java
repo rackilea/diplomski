@@ -1,0 +1,17 @@
+PDDocument doc = new PDDocument();
+PDPage page = new PDPage();
+doc.addPage(page);
+PDPageContentStream cos = new PDPageContentStream(doc, page);
+cos.transform(Matrix.getRotateInstance(-Math.PI / 6, 100, 650));
+cos.moveTo(0, 0);
+cos.lineTo(125, 0);
+cos.stroke();
+cos.beginText();
+String text = "0.72";
+cos.newLineAtOffset(50, 5);
+cos.setFont(PDType1Font.HELVETICA_BOLD, 12);
+cos.showText(text);
+cos.endText();
+cos.close();
+doc.save("TextOnLine.pdf");
+doc.close();

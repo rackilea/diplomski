@@ -1,0 +1,70 @@
+public class MainActivity extends Activity {
+
+EditText dollar;
+EditText euro;
+
+private static final int EURO = 0;
+private static final int DOLLAR = 1;
+
+private int lastUpdated = DOLLAR;
+
+@Override
+public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    dollar = findViewById(R.id.dollar);
+    euro = findViewById(R.id.euro);
+
+    dollar.addTextChangedListener(new TextWatcher() {
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+            lastUpdated = DOLLAR;
+
+        }
+
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+
+        }
+    });
+
+    euro.addTextChangedListener(new TextWatcher() {
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+            lastUpdated = EURO;
+
+        }
+
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+
+        }
+    });
+
+}
+
+public void convert(View view) {
+    switch (lastUpdated) {
+    case EURO:
+        //Do work for euro to dollar
+        break;
+    case DOLLAR:
+        //Do work for dollar to euro
+        break;
+    default:
+        break;
+    }
+}
+}

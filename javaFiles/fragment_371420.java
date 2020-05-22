@@ -1,0 +1,6 @@
+while (player2_name.equals("Computer")) {
+   CountDownTimer computer_player;
+   ...
+   computer_player = new CountDownTimer(5000, 1000) {}
+   ...
+}

@@ -1,0 +1,10 @@
+Stack stack = new Stack();
+stack.push(1);
+stack.push(4);
+stack.push(9);
+System.out.println("stack: " + stack);
+Deque<Integer> deque = new ArrayDeque<>();
+deque.addFirst(1);
+deque.addFirst(4);
+deque.addFirst(9);
+System.out.println("deque: " + deque);

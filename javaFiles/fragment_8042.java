@@ -1,0 +1,6 @@
+try {
+    Future<R> future = // ... 
+} catch (TimeoutException e) {
+    // ...
+    future.cancel(true); // try to interrupt
+}

@@ -1,0 +1,10 @@
+float border = 10.0f;
+glColor3f(0, 0, 0);
+glTranslatef(x, y, 0);
+glBegin(GL_TRIANGLE_STRIP);
+glVertex2f(    0,      0); glVertex2f(      - border,        - border);
+glVertex2f(width,      0); glVertex2f(width + border,        - border);
+glVertex2f(width, height); glVertex2f(width + border, height + border);
+glVertex2f(    0, height); glVertex2f(      - border, height + border);
+glVertex2f(    0,      0); glVertex2f(      - border,        - border);
+glEnd();

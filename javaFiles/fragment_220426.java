@@ -1,0 +1,6 @@
+imports groovy.util.Expando;
+    ....
+    Expando session
+    int counter = 0;
+    ....
+    session.counter = counter;

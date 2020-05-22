@@ -1,0 +1,6 @@
+import java.util.zip.GZIPInputStream;
+
+...
+InputStream content = response.getEntity().getContent();
+content = new GZIPInputStream(content);
+...

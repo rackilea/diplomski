@@ -1,0 +1,15 @@
+ps = connection.prepareStatement(query);
+         ps.setString(1, user.getfName());
+         ps.setString(2, user.getlName());
+         ps.setString(3, user.getEmailAddress());
+         ps.setString(4, user.getPassword());
+         // ps.setString(5, user.getDateOfBirth());
+         // ps.setString(5, user.getPhone());
+         ps.setString(5, user.getDateOfBirth());
+         ps.setString(6, user.getPhone());
+         ps.setString(7, user.getAddress());
+         ps.setString(8, user.getCity());
+         ps.setString(9, user.getState());
+         ps.setString(10, user.getCountry());
+         ps.setString(11, user.getZipcode());
+         ps.setString(12, user.getAccountType());

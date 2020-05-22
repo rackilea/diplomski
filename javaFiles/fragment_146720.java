@@ -1,0 +1,7 @@
+<head>
+    <c:if test="${condition}">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </c:if>
+    ...
+</head>

@@ -1,0 +1,10 @@
+PdfReader cover = new PdfReader("hero.pdf");
+PdfReader reader = new PdfReader("pages.pdf");
+Document document = new Document();
+PdfCopy copy = new PdfCopy(document, new FileOutputStream("pages_with_cover.pdf"));
+document.open();
+copy.addDocument(cover);
+copy.addDocument(reader);
+document.close();
+cover.close();
+reader.close();

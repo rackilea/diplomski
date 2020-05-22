@@ -1,0 +1,10 @@
+<resources>
+    <resource>
+         <directory>${basedir}/src/main/resources/META-INF</directory>
+         <targetPath>META-INF</targetPath>
+         <filtering>true</filtering>
+         <includes>
+             <include>customtag.tld</include>
+         </includes>
+     </resource>
+<resources>

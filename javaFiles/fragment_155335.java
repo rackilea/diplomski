@@ -1,0 +1,7 @@
+listview.setOnItemClickListener(new OnItemClickListener() {
+   @Override
+   public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+       //---> arg2 <-- will give you row number
+       // your code goes here
+    }
+});

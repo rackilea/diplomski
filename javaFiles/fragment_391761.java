@@ -1,0 +1,9 @@
+mapDet.put("col1", getContents(rowData[0]));
+mapDet.put("col2", getContents(rowData[1]));
+mapDet.put("col3", getContents(rowData[2]));
+mapDet.put("col4", getContents(rowData[3]));
+mapDet.put("col5", getContents(rowData[4]));
+mapDet.put("col6", getContents(rowData[5]));
+mapDet.put("col7", getContents(rowData[6]));
+mapDet.put("col8", getContents(rowData[7]));
+mapDet.put("col9", getContents(rowData[8]));

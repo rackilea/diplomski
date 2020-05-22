@@ -1,0 +1,17 @@
+PackageDescr pkg = DescrFactory.newPackage()
+  .name("org.drools.example")
+    .newRule().name("Rule 1")
+      .attribute("ruleflow-grou","bla")
+      .lhs()
+        .and()
+          .pattern("Foo").id( "$foo", false).constraint("bar==baz").constraint("x>y")
+          .end()
+          .not().pattern("Bar").constraint("a+b==c")
+          .end().end()
+        .end()
+      .end()
+    .rhs( "System.out.println();" ).end()
+    .newRule().name("Rule 2")              // <--- Here starts the new rule
+      .lhs()...end()
+      .rhs()...end()
+.getDescr();

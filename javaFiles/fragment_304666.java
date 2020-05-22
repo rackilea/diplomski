@@ -1,0 +1,11 @@
+Ghostscript gs = Ghostscript.getInstance();
+String[] gsArgs = new String[8];
+gsArgs[1] = "-sDEVICE=pdfwrite";
+gsArgs[2] = "-dCompatibilityLevel=1.4";
+gsArgs[3] = "-dNOPAUSE";
+gsArgs[4] = "-dBATCH";
+gsArgs[5] = "-r150";
+gsArgs[6] = "-sOutputFile=qw3.pdf";
+gsArgs[7] = "input.pdf";
+gs.initialize(gsArgs);
+gs.exit();

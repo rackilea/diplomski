@@ -1,0 +1,6 @@
+for(int i=0;i<longLat.size();i++) {
+     final int valueThisIteration = i;
+     ....
+        parameters.put("POILongLat", longLat.get(valueThisIteration));
+     ...
+ }

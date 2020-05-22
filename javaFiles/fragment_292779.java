@@ -1,0 +1,9 @@
+> System.out.println(specialWelcome1 
+>               +"\n"+joinLogin1
+>               +"\n"+joinLogin2
+>               +"\n"+joinLogin3
+>               +"\n"+joinLogin4
+>               +"\n"+joinLogin5
+>               +"\n"+joinLogin6
+>               +"\n"+joinLogin7
+>               );

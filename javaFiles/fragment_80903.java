@@ -1,0 +1,6 @@
+public class RuleForm {
+    ...
+    @Getter @Setter    //here use lombok, but you could create your getters-setters methods 
+    private Rule rule;
+    ...
+}

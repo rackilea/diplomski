@@ -1,0 +1,14 @@
+{  
+ "state":"RT",
+ "testMethod":"electronic", 
+ "testElements":[  
+  {  
+     "testId":[  
+        "UT_ITXref",
+        "Fed_ITXref"
+     ]
+  }],
+  "testStartDate":"01-01-2017",
+  "testEndDate":"01-02-2017",
+  "testDueDate":"01-03-2017"
+}

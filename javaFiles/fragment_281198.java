@@ -1,0 +1,6 @@
+try {
+    somethingThatMayThrowAnException();
+    somethingElseAfterwards();
+} catch (...) {
+    ...
+}

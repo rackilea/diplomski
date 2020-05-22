@@ -1,0 +1,9 @@
+class Calender extends JFrame {
+    ...
+    private IUpdateText updateText;
+    ...
+    public void setIUpdateText(IUpdateText ut) {
+        this.updateText = ut;
+    }
+    ...
+}

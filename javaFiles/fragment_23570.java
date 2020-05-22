@@ -1,0 +1,9 @@
+addCharacter(demoniac, demoniacAmount, characters);
+addCharacter(guard, guardAmount, characters);
+addCharacter(medium, mediumAmount, characters);
+addCharacter(mythomaniac, mythomaniacAmount, characters);
+addCharacter(owl, owlAmount, characters);
+addCharacter(werehamster, werehamsterAmount, characters);
+addCharacter(getVillagerBundle(), villagerAmount, characters);
+addCharacter(masonOne, 1, characters);
+addCharacter(masonTwo, 1, characters);

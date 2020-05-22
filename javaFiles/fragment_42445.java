@@ -1,0 +1,6 @@
+public String(String original) {
+    int size = original.count;
+
+    ........ 
+    .........
+   }

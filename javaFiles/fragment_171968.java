@@ -1,0 +1,11 @@
+URL url = new URL("https://api.github.com/repos/anandchakru/private_repo/releases/assets/<asset_id>?access_token=<token>");
+HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+connection.setRequestProperty("Accept", "application/octet-stream");
+ReadableByteChannel uChannel = Channels.newChannel(connection.getInputStream());
+FileOutputStream foStream = new FileOutputStream("C:/Users/username/artif-3.0.jar");
+FileChannel fChannel = foStream.getChannel();
+fChannel.transferFrom(uChannel, 0, Long.MAX_VALUE);
+uChannel.close();
+foStream.close();
+fChannel.close();
+System.out.println(connection.getResponseCode());

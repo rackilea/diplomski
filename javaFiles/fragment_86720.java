@@ -1,0 +1,6 @@
+public <G> G methodName(G g, A a) {
+    // G is defined as "any" object, thus only object methods can be accessed:
+    // g.toString(); g.hashCode(); ... but g.someMethod(); would not compile...
+    // do-something with g and a...
+    return g;
+}

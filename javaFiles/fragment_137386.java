@@ -1,0 +1,20 @@
+db.scrips.aggregate([
+    {
+        $group:{
+            "_id":"$scrip"
+        }
+    },
+    {
+        $group:{
+            "_id":null,
+            "scrips":{
+                $push:"$_id"
+            }
+        }
+    },
+    {
+        $project:{
+            "_id":0
+        }
+    }
+])

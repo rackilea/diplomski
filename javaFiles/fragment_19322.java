@@ -1,0 +1,6 @@
+// we can test for shutdown only at "appropriate" points in the thread
+ while (!ThreadUtils.isShutdown()) {
+     ...
+     // we are not ready to be killed here
+     ...
+ }

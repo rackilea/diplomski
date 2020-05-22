@@ -1,0 +1,11 @@
+Button myButton = new Button(context);
+LinearLayout.LayoutParams lparms = new LinearLayout.LayoutParams(0,LayoutParams.FILL_PARENT);
+lparms.weight = 1;
+lparms.gravity = Gravity.CENTER;
+myButton.setLayoutParams(lparms);
+myButton.setBackground(getResources().getDrawable(R.drawable.android_btn_md));
+myButton.setOnClickListener(btnMMClick);
+myButton.setText("M-");
+myButton.setTextColor(Color.parseColor("#000000"));
+myButton.setTextSize(25);
+myButton.setTypeface(null, Typeface.BOLD);

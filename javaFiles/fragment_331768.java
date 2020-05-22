@@ -1,0 +1,6 @@
+...
+            } catch (InterruptedException e) {
+                System.out.println(i + " interrupted");
+                Thread.currentThread().interrupt();
+            }
+...

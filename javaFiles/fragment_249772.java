@@ -1,0 +1,7 @@
+CREATE TABLE Orders (
+    ID PRIMARY KEY
+);
+CREATE TABLE Formats (
+    ID PRIMARY KEY,
+    OrderID REFERENCES Orders(ID)
+);

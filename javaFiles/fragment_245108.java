@@ -1,0 +1,10 @@
+TextField firstNameFld = new TextField();
+        firstNameFld.setPrefColumnCount(8);
+        TextField lastNameFld = new TextField();
+        lastNameFld.setPrefColumnCount(8);
+        GridPane grid = new GridPane();
+        grid.addRow(0, new Label("First Name:"), firstNameFld);
+        grid.addRow(1, new Label("Last Name:"), lastNameFld); 
+        tp1.setContent(grid);
+        tp2.setContent(new Label("tp2............."));
+        tp3.setContent(new Label("tp3.............."));

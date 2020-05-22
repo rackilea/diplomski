@@ -1,0 +1,10 @@
+InitialContext initialContext new InitialContext();
+Queue queue = (Queue) initialContext.lookup("myQueue");
+QueueConnectionFactory cf = (QueueConnectionFactory) initialContext.lookup("ConnectionFactory");
+QueueConnection connection = cf.createQueueConnection();
+connection.start();
+QueueSession session = connection.createQueueSession(false, Session.AUTO_ACKNOWLEDGE);
+QueueRequestor queueRequestor = new QueueRequestor(session, queue);
+TextMessage request = session.createTextMessage("Hello, World!");
+TextMessage reply = (TextMessage) queueRequestor.request(request);
+queueRequestor.close();

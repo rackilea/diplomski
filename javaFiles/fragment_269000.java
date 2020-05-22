@@ -1,0 +1,6 @@
+public TexyListActivity extends BaseListActivity<String> {
+    protected List<String> readAllFromXML() {
+        ....
+    }
+    ...
+}

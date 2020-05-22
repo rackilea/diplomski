@@ -1,0 +1,10 @@
+<entry>
+        <key>{{key}}</key>
+        <value>
+            <resource>{{resource}}</resource>
+            <size>{{size}}</size>
+            <timestamp>{{timestamp}}</timestamp>
+            <type>{{type}}</type>
+            <visibility>{{visibility}}</visibility>
+        </value>
+    </entry>

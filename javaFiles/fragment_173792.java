@@ -1,0 +1,9 @@
+try {
+        ...
+        ...
+        ...
+    } catch (EOFException e) {
+        // User typed "exit"
+        System.out.println("Bye!");
+    }
+} // End of main.

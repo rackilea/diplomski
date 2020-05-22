@@ -1,0 +1,27 @@
+List<WebElement> allEle = driver.findElements(By.cssSelector("[id^='s']" + 
+    ":not([id^='sA']," + 
+    "[id^='sB']," + 
+    "[id^='sC']," + 
+    "[id^='sD']," + 
+    "[id^='sE']," + 
+    "[id^='sF']," + 
+    "[id^='sG']," + 
+    "[id^='sH']," + 
+    "[id^='sI']," + 
+    "[id^='sJ']," + 
+    "[id^='sK']," + 
+    "[id^='sL']," + 
+    "[id^='sM']," + 
+    "[id^='sN']," + 
+    "[id^='sO']," + 
+    "[id^='sP']," + 
+    "[id^='sQ']," + 
+    "[id^='sR']," + 
+    "[id^='sS']," + 
+    "[id^='sT']," + 
+    "[id^='sU']," + 
+    "[id^='sV']," + 
+    "[id^='sW']," + 
+    "[id^='sX']," + 
+    "[id^='sY']," + 
+    "[id^='sZ']")));

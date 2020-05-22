@@ -1,0 +1,10 @@
+driver.findElement(By.linkText("Create a New Test")).click();
+driver.findElement(By.id("testing_name")).clear();
+driver.findElement(By.id("testing_name")).sendKeys("automated test26");
+driver.findElement(By.id("start_url")).clear();
+driver.findElement(By.id("start_url")).sendKeys("https://sqa.stackexchange.com/questions/2696/selenium-how-to-identify-the-button-webelement");
+driver.findElement(By.id("test_type_save_selection")).click();
+WebDriverWait wait = new WebDriverWait(driver, 15);   
+wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(@title, 'Run Test')] ")));
+driver.findElement(By.xpath("//*[contains(@title, 'Run Test')]")).click();   
+driver.findElement(By.linkText("logout")).click();

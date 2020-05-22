@@ -1,0 +1,18 @@
+db.collection.aggregate([
+{$unwind:"$Entities"},
+{$group:{"_id":"$_id",
+         "Date":{$first:"$Date"},
+         "Topics":{$first:"$Topics"},
+         "EntitiesSum":{$sum:"$Entities.Sentiment.Value"}}},
+{$unwind:"$Topics"},
+{$group:{"_id":"$_id",
+         "Date":{$first:"$Date"},
+         "EntitiesSum":{$first:"$EntitiesSum"},
+         "TopicsSum":{$sum:"$Topics.Sentiment.Value"}}},
+{$project:{"_id":0,"Date":1,"EntitiesSum":1,"TopicsSum":1,
+           "indSum":{$add:["$EntitiesSum","$TopicsSum"]}}},
+{$group:{"_id":"$Date",
+         "EntitiesSentimentSum":{$sum:"$EntitiesSum"},
+         "TopicsSentimentSum":{$sum:"$TopicsSum"},
+         "netSentimentSum":{$sum:"$indSum"}}}
+])

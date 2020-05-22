@@ -1,0 +1,30 @@
+slot1 = txtSlot.getText();
+            slot2 = textField_1.getText();
+            slot3 = textField_2.getText();;
+            slot4 = textField_3.getText();;
+            slot5 = textField_4.getText();;
+            slot6 = textField_5.getText();;
+            slot7 = textField_6.getText();;
+            slot8 = textField_7.getText();;
+            slot9 = textField_8.getText();;
+            output = textField_9.getText();
+            List<String> slots = new ArrayList<String>();
+            slots.add(slot1);
+            slots.add(slot2);
+            slots.add(slot3);
+            slots.add(slot4);
+            slots.add(slot5);
+            slots.add(slot6);
+            slots.add(slot7);
+            slots.add(slot8);
+            slots.add(slot9);
+            slots.add(output);
+            slots.add(output_count);
+            slots.add(file_num);
+            output_count = textField_11.getText();
+            file_num = textField_10.getText();
+            TestLabel.setText(textField_10.getText());     
+
+            print name = new print();
+
+            name.Print(slots);

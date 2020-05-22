@@ -1,0 +1,11 @@
+<testResources>
+            <testResource>
+                <directory>${basedir}/src/main/WEB-INF/test/file</directory>
+            </testResource>
+            <testResource>
+                <directory>${basedir}/src/main/WEB-INF/test/java</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </testResource>
+        </testResources>

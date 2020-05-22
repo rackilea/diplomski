@@ -1,0 +1,11 @@
+<build>
+    <resources>
+        <resource>
+            <directory>${basedir}/src/main/resources</directory>
+        </resource>
+        <resource>
+            <directory>${project.build.directory}/generated-resources</directory>
+        </resource>
+    </resources>
+    ...
+</build>

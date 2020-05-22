@@ -1,0 +1,10 @@
+{  
+   "someArray":[  
+      {  
+         "someProperty":"someValue"
+      },
+      {  
+         "someProperty":"someOtherValue"
+      }
+   ]
+}

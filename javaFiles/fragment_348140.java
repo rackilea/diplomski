@@ -1,0 +1,17 @@
+String rx =
+          "(?= ^ \\p{Lu} [_\\pL\\pM\\d\\-] + \$)\n"
+        . "   # next is a big can't-have set    \n"
+        . "(?! ^ .*                             \n"
+        . "    (?: ^     \\d+              $    \n"
+        . "      | ^ \\p{Lu} - \\p{Lu}     $    \n"
+        . "      | Invitrogen                   \n"
+        . "      | Clontech                     \n"
+        . "      | L-L-X-X    # dashes ok       \n"
+        . "      | Sarstedt                     \n"
+        . "      | Roche                        \n"
+        . "      | Beckman                      \n"
+        . "      | Bayer                        \n"
+        . "    )      # end alternatives        \n"
+        . "    \\b    # only on a word boundary \n"
+        . ")          # end negated lookahead   \n"
+        ;

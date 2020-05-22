@@ -1,0 +1,9 @@
+List<String> ingredients = new ArrayList<>(),
+em = new ArrayList<>(),
+bi = new ArrayList<>(),
+ws = new ArrayList<>(),
+ca = new ArrayList<>(),
+fs = new ArrayList<>(),
+na = new ArrayList<>(),
+L = new ArrayList<>(),
+M = new ArrayList<>();

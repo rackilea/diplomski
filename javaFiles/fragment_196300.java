@@ -1,0 +1,11 @@
+Workbook wb = new HSSFWorkbook();
+Sheet sheet = wb.createSheet("Ageing Report");
+Row row = sheet.createRow(1);
+Cell cell = row.createCell(3);
+cell.setCellValue("Aging Report on UN-acted (DETAILED)");
+CellRangeAddress region = new CellRangeAddress(1, 1, 3, 4);
+RegionUtil.setBorderBottom(CellStyle.BORDER_MEDIUM, region, sheet, wb);
+RegionUtil.setBorderTop(CellStyle.BORDER_MEDIUM, region, sheet, wb);
+RegionUtil.setBorderRight(CellStyle.BORDER_MEDIUM, region, sheet, wb);
+RegionUtil.setBorderLeft(CellStyle.BORDER_MEDIUM, region, sheet, wb);
+sheet.addMergedRegion(region);

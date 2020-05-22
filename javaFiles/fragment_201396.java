@@ -1,0 +1,6 @@
+...
+DateFormat outputFormat = new SimpleDateFormat("dd/MM/yyyy");
+String startDateString = outputFormat.format(startDate);
+String endDateString = outputFormat.format(endDate);
+System.out.println("Your reservation has been successfully booked for "+startDateString+" until "+endDateString);
+...

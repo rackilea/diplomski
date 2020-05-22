@@ -1,0 +1,9 @@
+if (convertView == null) {
+...
+} else {
+...
+}
+
+holder.verselist.setTextColor(Color.parseColor("#fe00fb"));
+colors=new ArrayList<>();
+...

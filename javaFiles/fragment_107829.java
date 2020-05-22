@@ -1,0 +1,6 @@
+PdfXObject backgroundXObject = backgroundImage.getImage();
+...
+Rectangle imageRectangle = new Rectangle(backgroundArea.getX(), backgroundArea.getTop() - backgroundXObject.getHeight(),
+        backgroundXObject.getWidth(), backgroundXObject.getHeight());
+...
+drawContext.getCanvas().addXObject(backgroundXObject, imageRectangle);

@@ -1,0 +1,9 @@
+DSL.using(configuration)
+   .insertInto(TABLE)
+   .set(record1)
+   .newRecord()
+   .set(record2)
+   .newRecord()
+   ...
+   .returning()
+   .fetch();

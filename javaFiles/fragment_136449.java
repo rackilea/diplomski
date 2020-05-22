@@ -1,0 +1,11 @@
+pstmt.setString(11, petname);
+pstmt.setString(1, petphoto);
+pstmt.setString(2, pettype);
+pstmt.setString(3, color);
+pstmt.setInt(4, gender);
+pstmt.setInt(5, isSterilized);
+pstmt.setString(6, pedigree);
+pstmt.setString(7, date_entry);
+pstmt.setString(8, vaccine1);
+pstmt.setString(9, vaccine2);
+pstmt.setString(10, vaccine3);

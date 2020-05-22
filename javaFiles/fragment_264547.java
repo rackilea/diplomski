@@ -1,0 +1,6 @@
+List<String> strings = ...
+List<Filter> filters = ...
+
+strings = filters.stream()
+        .reduce(s -> s, (a, b) -> s -> b.filter(a.filter(s)))
+        .filter(strings);

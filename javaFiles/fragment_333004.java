@@ -1,0 +1,24 @@
+{
+   "query":{
+      "filtered":{
+         "filter":{
+            "and":[
+               {
+                  "range":{
+                     "duration":{
+                        "gte":1
+                     }
+                  }
+               },
+               {
+                  "range":{
+                     "duration":{
+                        "lte":12
+                     }
+                  }
+               }
+            ]
+         }
+      }
+   }
+}

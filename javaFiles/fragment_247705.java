@@ -1,0 +1,16 @@
+System.out.println(getSesson(1, 0));
+    System.out.println(getSesson(2, 0));
+    System.out.println(getSesson(3, 0));
+    System.out.println(getSesson(3, 21));
+    System.out.println(getSesson(4, 0));
+    System.out.println(getSesson(5, 0));
+    System.out.println(getSesson(6, 0));
+    System.out.println(getSesson(6, 21));
+    System.out.println(getSesson(7, 0));
+    System.out.println(getSesson(8, 0));
+    System.out.println(getSesson(9, 0));
+    System.out.println(getSesson(9, 21));
+    System.out.println(getSesson(10, 0));
+    System.out.println(getSesson(11, 0));
+    System.out.println(getSesson(12, 0));
+    System.out.println(getSesson(12, 21));

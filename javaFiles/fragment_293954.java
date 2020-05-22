@@ -1,0 +1,9 @@
+String color = "2E8B57" // SeaGreen
+int r1 = Integer.parseInt(color.substring(0, 2), 16);
+int g1 = Integer.parseInt(color.substring(2, 2), 16);
+int b1 = Integer.parseInt(color.substring(4, 2), 16);
+int r2 = (r1 < 0x80 ? 0xFF : 0x00);
+int g2 = (g1 < 0x80 ? 0xFF : 0x00);
+int b2 = (b1 < 0x80 ? 0xFF : 0x00);
+String newColor = String.format("%02x%02x%02x", r2, g2, b2);
+// newColor = "FF00FF" (Fuchsia)

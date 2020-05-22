@@ -1,0 +1,6 @@
+int[][] HP = new int[3][3];
+int[] HPTotal = new int[3];
+...
+int[] remainingCards = filterCardsFromDeck(card1, card2, card3, card4, card5);
+...
+int[] newArray = filter2Cards(remainingCards, oCard1, oCard2);

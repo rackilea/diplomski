@@ -1,0 +1,11 @@
+public static final String KEY_STUDENTID = "Student ID";
+public static final String KEY_PASSWORD = "Student Password";
+public static final String KEY_FIRSTNAME = "First Name";
+public static final String KEY_ADDRESSONE = "Address Line 1";
+public static final String KEY_ADDRESSTWO = "Address Line 2";
+public static final String KEY_TOWNCITY = "Town or City";
+public static final String KEY_MOBILENO = "Mobile Number";
+public static final String KEY_LANDLINENO = "Home Number";
+public static final String KEY_PEMAIL = "Personal Email";
+public static final String KEY_CEMAIL = "College Email";
+public static final String KEY_COURSEID = "Course ID";

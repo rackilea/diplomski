@@ -1,0 +1,10 @@
+RestTemplate template = new RestTemplate();
+String uri = "http://localhost:8080/multipart-http/inboundAdapter.htm";
+Resource s2logo = new ClassPathResource("org/springframework/samples/multipart/spring09_logo.png");
+MultiValueMap map = new LinkedMultiValueMap();
+map.add("company", "SpringSource");
+map.add("company-logo", s2logo);
+HttpHeaders headers = new HttpHeaders();
+headers.setContentType(new MediaType("multipart", "form-data"));
+HttpEntity request = new HttpEntity(map, headers);
+ResponseEntity<?> httpResponse = template.exchange(uri, HttpMethod.POST, request, null);

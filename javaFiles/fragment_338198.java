@@ -1,0 +1,32 @@
+[
+  {
+    "id":1,
+    "name":"name1",
+    "items":
+    [
+      {"id":2,"name":"name2","valid":true},
+      {"id":3,"name":"name3","valid":false},
+      {"id":4,"name":"name4","valid":true}
+    ]
+  },
+  {
+    "id":5,
+    "name":"name5",
+    "items":
+    [
+      {"id":6,"name":"name6","valid":true},
+      {"id":7,"name":"name7","valid":false}
+    ]
+  },
+  {
+    "id":8,
+    "name":"name8",
+    "items":
+    [
+      {"id":9,"name":"name9","valid":true},
+      {"id":10,"name":"name10","valid":false},
+      {"id":11,"name":"name11","valid":false},
+      {"id":12,"name":"name12","valid":true}
+    ]
+  }
+]

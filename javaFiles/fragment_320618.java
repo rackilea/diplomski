@@ -1,0 +1,11 @@
+PreparedStatement myStatement = myDBConnection.prepareStatement(myQuery);
+myStatement.setString(1, studentId);
+myStatement.setString(2, lastName);
+myStatement.setString(3, firstName);
+myStatement.setString(4, middleName);
+myStatement.setString(5, placeOfBirth);
+myStatement.setString(6, dateOfBirth);
+myStatement.setString(7, gender);
+myStatement.setString(8, civilStatus);
+myStatement.setString(9, religion);
+myStatement.setString(10, nationality);

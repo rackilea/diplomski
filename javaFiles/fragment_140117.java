@@ -1,0 +1,6 @@
+public void addItem(Item item)
+{
+    // ...
+    System.out.println(itemDescription.equals("This room contains: ")); 
+    // ...
+}

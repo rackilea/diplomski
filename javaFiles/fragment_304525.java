@@ -1,0 +1,6 @@
+...
+"vResolvedParameters": {
+  "##RUNDATE##": "2018045",
+  "##julian##": "2018033"
+},
+...

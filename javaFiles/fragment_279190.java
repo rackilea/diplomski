@@ -1,0 +1,6 @@
+for (int k = 0; k < listDir1.length; k++) 
+    {
+        map.clear();
+    ..............
+    ......
+    }

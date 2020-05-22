@@ -1,0 +1,12 @@
+dslContext
+    .select(
+        ITEMDATA.ITEMID,
+        ITEMDATA.COST,
+        field(select(ITEMNAMES.NAME)
+           .from(ITEMNAMES)
+           .where(ITEMDATA.ITEMID.eq(ITEMNAMES.ITEMID)))
+        .as(ITEMNAMES.NAME)
+    )
+    .from(ITEMDATA)
+    .where(conditions)
+    .fetch();

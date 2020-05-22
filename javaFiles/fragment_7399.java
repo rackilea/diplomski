@@ -1,0 +1,6 @@
+String a;
+if(a.equals("A"))
+{
+  ...
+  ...
+}

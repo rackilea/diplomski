@@ -1,0 +1,11 @@
+List<Employee> empls = list.entrySet()
+            .stream()
+            .flatMap(oe -> oe.getValue()
+                    .entrySet()
+                    .stream()
+                    .flatMap((Map.Entry<Integer, Map<String, Double>> me) -> me.getValue()
+                            .entrySet()
+                            .stream()
+                            .map((Map.Entry<String, Double> ie)
+                                    -> new Employee(oe.getKey(), me.getKey(), ie.getKey(), ie.getValue()))))
+            .collect(Collectors.toList());

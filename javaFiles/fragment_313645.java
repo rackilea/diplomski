@@ -1,0 +1,12 @@
+FileInputStream in = new FileInputStream("C:\\PracticeElement__i22_messages.properti‌​es");
+        Properties prop=new Properties(); 
+        prop.load(in);
+        FileOutputStream out = new FileOutputStream("C:\\PracticeElement__i22_messages.properti‌​es"); 
+        ByteArrayOutputStream arrayOut = new ByteArrayOutputStream(); 
+        prop.store(arrayOut, null); 
+        String string = new String(arrayOut.toByteArray(), "8859_1"); 
+        String sep = System.getProperty("line.separator"); 
+        String content = string.substring(string.indexOf(sep) + sep.length()); 
+        out.write(content.getBytes("8859_1"));
+        in.close();
+        out.close();

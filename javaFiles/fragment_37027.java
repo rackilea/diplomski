@@ -1,0 +1,6 @@
+public class FamilyTree {
+//....
+}
+class Person {
+//....
+}

@@ -1,0 +1,9 @@
+String a = "{\"OrderProductResponse\":{\"@ServiceVersionNumber\":\"5.0\",\"TransactionDetail\":{\"ServiceTransactionID\":\"Id-70e1fecb52ff474c207b0000-2\",\"TransactionTimestamp\":\"2014-02-15T05:54:10.834-05:00\"},\"TransactionResult\":{\"SeverityText\":\"Information\",\"ResultID\":\"CM000\",\"ResultText\":\"Success\"},\"OrderProductResponseDetail\":{\"InquiryDetail\":{\"DUNSNumber\":\"804735132\",\"CountryISOAlpha2Code\":\"US\"},\"Product\":{\"DNBProductID\":\"RTNG_TRND\",\"Organization\":{\"SubjectHeader\":{\"DUNSNumber\":\"804735132\"},\"Telecommunication\":{\"TelephoneNumber\":[{\"TelecommunicationNumber\":\"(650) 555-0000\",\"InternationalDialingCode\":\"1\"}]},\"Location\":{\"PrimaryAddress\":[{\"StreetAddressLine\":[{\"LineText\":\"492 Koller St\"}],\"PrimaryTownName\":\"San Francisco\",\"CountryISOAlpha2Code\":\"US\",\"TerritoryAbbreviatedName\":\"CA\",\"PostalCode\":\"94110\",\"TerritoryOfficialName\":\"California\"}]},\"OrganizationName\":{\"OrganizationPrimaryName\":[{\"OrganizationName\":{\"$\":\"Gorman Manufacturing Company, Inc.\"}}]},\"OrganizationDetail\":{\"FamilyTreeMemberRole\":[{\"FamilyTreeMemberRoleText\":{\"@DNBCodeValue\":12774,\"$\":\"Domestic Ultimate\"}},{\"FamilyTreeMemberRoleText\":{\"@DNBCodeValue\":12775,\"$\":\"Global Ultimate\"}},{\"FamilyTreeMemberRoleText\":{\"@DNBCodeValue\":12773,\"$\":\"Parent\"}}]},\"Assessment\":{\"DNBStandardRating\":{\"DNBStandardRating\":\"3A4\"},\"HistoryRatingText\":{\"@DNBCodeValue\":9078,\"$\":\"Clear\"},\"FinancialConditionText\":{\"@DNBCodeValue\":415,\"$\":\"Fair\"}}},\"ArchiveDetail\":{\"PortfolioAssetID\":47651715}}}}}";
+    JSONObject json = new JSONObject(a);
+
+    Object value = json.getJSONObject("OrderProductResponse")
+        .getJSONObject("OrderProductResponseDetail").getJSONObject("Product")
+        .getJSONObject("Organization")
+        .getJSONObject("Assessment").getJSONObject("DNBStandardRating").get("DNBStandardRating");
+
+    System.out.println(value);

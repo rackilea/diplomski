@@ -1,0 +1,22 @@
+{  
+  "type1":{  
+    "properties":{  
+        "name":{  
+            "type":"text",
+            "analyzer":"standard",
+            "index":"analyzed",
+            "store":"no",
+            "search_analyzer":"standard"
+            "fields": {
+                "autocomplete":{  
+                    "type":"text",
+                    "analyzer":"autocomplete",
+                    "index":"analyzed",
+                    "store":"no",
+                    "search_analyzer":"standard"
+                }
+            }
+        }
+    }
+  }
+}

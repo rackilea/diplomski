@@ -1,0 +1,17 @@
+ImageIcon icon = createImageIcon("images/middle.gif",
+                             "a pretty but meaningless splat");
+label1 = new JLabel("Image and Text", icon, JLabel.CENTER);
+...
+label3 = new JLabel(icon);
+
+/** Returns an ImageIcon, or null if the path was invalid. */
+protected ImageIcon createImageIcon(String path,
+                                           String description) {
+    java.net.URL imgURL = getClass().getResource(path);
+    if (imgURL != null) {
+        return new ImageIcon(imgURL, description);
+    } else {
+        System.err.println("Couldn't find file: " + path);
+        return null;
+    }
+}

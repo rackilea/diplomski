@@ -1,0 +1,17 @@
+ByteArrayOutputStream baos1=new ByteArrayOutputStream();
+    oos1=new ObjectOutputStream(baos1);
+    baos2=new ByteArrayOutputStream();
+    ObjectOutputStream oos2=new ObjectOutputStream(baos2);
+    String testString="First";
+    oos1.writeObject(testString);
+    oos2.writeUTF(testString);
+    testString="Second";
+    oos1.writeObject(testString);
+    oos2.writeUTF(testString);
+    testString="Third";
+    oos1.writeObject(testString);
+    oos2.writeUTF(testString);
+    oos1.flush();
+    oos2.flush();
+    byte[] byteArray1=baos1.toByteArray();
+    byte[] byteArray2=baos2.toByteArray();

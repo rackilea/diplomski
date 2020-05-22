@@ -1,0 +1,10 @@
+Calendar min = Calendar.getInstance();
+    min.add(Calendar.DAY_OF_MONTH, -1);
+    Calendar max = Calendar.getInstance();
+    max.add(Calendar.DAY_OF_MONTH, 13);
+    RangeEvaluator re = new RangeEvaluator();
+    re.setMinSelectableDate(min.getTime());
+    re.setMaxSelectableDate(max.getTime());
+    JCalendar jc = new JCalendar();
+    jc.getDayChooser().addDateEvaluator(re);
+    jc.setCalendar(jc.getCalendar());

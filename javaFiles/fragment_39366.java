@@ -1,0 +1,21 @@
+@Override
+public View getView(int position, View convertView, ViewGroup parent) {
+
+    if (convertView == null) {
+        LayoutInflater mInflater = (LayoutInflater) context
+            .getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
+
+        convertView = mInflater.inflate(R.layout.lv_arrow, null);
+    }
+
+
+    ImageView imgIcon = (ImageView) convertView.findViewById(R.id.imageView1);
+    TextView txtTitle = (TextView) convertView.findViewById(R.id.textView1);
+
+    IconRow row_pos = rowItem.get(position);
+    // setting the image resource and title
+    imgIcon.setImageResource(row_pos.getIcon());
+    txtTitle.setText(row_pos.getTitle());
+
+    return convertView;
+}

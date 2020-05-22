@@ -1,0 +1,8 @@
+String CREATE_CUSTOMERS_TABLE = "CREATE TABLE " + TABLE_CUSTOMERS + "(" +
+        COLUMN_ID + " INTEGER PRIMARY KEY , " +
+        COLUMN_COMPANYNAME + " TEXT , " +
+        COLUMN_ADRESS + " TEXT , " +
+        COLUMN_EMAIL + " TEXT , " +
+        COLUMN_ABN + " TEXT , " +
+        COLUMN_MOBILENO + " TEXT , " +
+        COLUMN_COMPANYNO + " TEXT) ";

@@ -1,0 +1,6 @@
+...
+//pivotTable.getCTPivotTableDefinition().setShowHeaders(false);
+pivotTable.getCTPivotTableDefinition().setRowHeaderCaption("Category");
+pivotTable.getCTPivotTableDefinition().setDataCaption("Changed Data Caption");
+CellUtil.getRow(pos.getRow(), pivotSheet).setZeroHeight(true);
+...

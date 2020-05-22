@@ -1,0 +1,12 @@
+String cert_1= "-----BEGIN CERTIFICATE-----\n"
+    + "MIIBuTCCASKgAwIBAgIQNdNhtuV5GbNHYZsf+LvM0zANBgkqhkiG9w0BAQUFADAb\n"
+    + "MRkwFwYDVQQDExBFZGlkZXYgU21va2VUZXN0MB4XDTA4MTExMjE5NTEzNVoXDTM5\n"
+    + "MTIzMTIzNTk1OVowGzEZMBcGA1UEAxMQRWRpZGV2IFNtb2tlVGVzdDCBnzANBgkq\n"
+    + "hkiG9w0BAQEFAAOBjQAwgYkCgYEAm6zGzqxejwswWTNLcSsa7P8xqODspX9VQBuq\n"
+    + "CBpT4S5AaO3/wkYQSKdI108pXH7Aue0e/ZOwgEEX1N6OaPQn7AmAB4uq1h+ffw+r\n"
+    + "5W1RoTgQ0LNR64+7ywLjH8+wrb/lB6QV7s2SFUiWDeduVesvMJkWtZ5zzQyl3iUa\n"
+    + "RKNHqnsCAwEAATANBgkqhkiG9w0BAQUFAAOBgQCZmj+pgRsN6HpoICawK3XXNAmi\n"
+    + "cgfQkailX9akIjD3xSCwEQx4nG6tZjTz30u4NoSffW7pch58SxuZQDqW5NsJcQNq\n"
+    + "Ngo/dMoqqpXdi2/0BYEcJ8pjsngrFm+fM2BnyGpXH7aWuKsWjVFGlWlF+yi8I35Q\n"
+    + "8wFJt2Z/XGA7WWDjvw==\n"
+    + "-----END CERTIFICATE-----";

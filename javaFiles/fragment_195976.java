@@ -1,0 +1,11 @@
+enum Example {
+    CANCELLED,
+    RUNNING,
+    WAITING,
+    FINISHED
+}
+
+enum Example {
+    GREEN(0, 255, 0),
+    RED(255, 0, 0)
+}

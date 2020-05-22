@@ -1,0 +1,18 @@
+System.loadLibrary("ffmpeg");
+  System.loadLibrary("ogg");
+  System.loadLibrary("lpc10");
+  System.loadLibrary("gsm");
+  System.loadLibrary("vorbis");
+  System.loadLibrary("vorbisenc");
+  System.loadLibrary("vorbisfile");
+  System.loadLibrary("FLAC");
+  System.loadLibrary("fmemopen");
+  System.loadLibrary("mad");
+  System.loadLibrary("mp3lame");
+  System.loadLibrary("smr");
+  System.loadLibrary("png");
+  System.loadLibrary("smrx");
+  System.loadLibrary("sndfile");
+  System.loadLibrary("wavpack");      
+  System.loadLibrary("sox");
+  System.loadLibrary("sox-test-jni");

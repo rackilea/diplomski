@@ -1,0 +1,10 @@
+EntityManager em = entityManagerFactory.createEntityManager();
+  em.getTransaction().begin();
+  log("write thread before acquiring lock");
+  Article article = em.find(Article.class, 1L, LockModeType.PESSIMISTIC_WRITE);
+  log("write thread after acquiring lock");
+  article.setContent("updated content .. ");
+  log("committing in write thread.");
+  em.getTransaction().commit();
+  em.close();
+  log("Article updated", article);

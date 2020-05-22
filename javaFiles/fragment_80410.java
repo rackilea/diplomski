@@ -1,0 +1,12 @@
+String query = "{\n"
+            +"    \"query\" : {\n"
+            +"        \"match\" : {\"id\":" + aptitudeId + "}\n"
+            +"    },\n"
+            +"    \"aggs\" : {\n"
+            +"        \"max1\" : {\n"
+            +"            \"max\" : {\n"
+            +"                \"field\" : \"behaviors.id\"\n"
+            +"            }\n"
+            +"        }\n"
+            +"    }\n"
+            +"}";

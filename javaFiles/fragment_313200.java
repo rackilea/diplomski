@@ -1,0 +1,6 @@
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    ....
+    fmTrans.add(R.id.fragmentContainerID, menuFragment);
+    ....
+}

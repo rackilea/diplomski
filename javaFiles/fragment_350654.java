@@ -1,0 +1,6 @@
+...
+fileIn.close();
+fileIn = null;
+
+fileOut = new ObjectOutputStream(new FileOutputStream(file));
+...

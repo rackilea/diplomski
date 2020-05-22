@@ -1,0 +1,6 @@
+...
+} catch (FileNotFoundException e) {
+    System.out.println("file not found");
+} catch (Exception e) {
+    System.out.println("something else went wrong");
+} ...

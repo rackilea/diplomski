@@ -1,0 +1,10 @@
+[
+  {"$unwind":"$deviceStatus"},
+  {"$project":{
+    "_id":0,
+    "className":1,
+   "deviceStatus.deviceName":1,
+   "deviceStatus.errorCode":1
+   }
+  }
+]

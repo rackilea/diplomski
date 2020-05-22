@@ -1,0 +1,13 @@
+ITEM {
+  ID
+  RELATED_ITEM_ID
+  DTYPE
+}
+
+INVOICE {
+  ID
+}
+
+CATALOGUE {
+  ID
+}

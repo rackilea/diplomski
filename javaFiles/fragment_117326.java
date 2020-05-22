@@ -1,0 +1,10 @@
+String color = driver.findElement(By.xpath("//div[@class='gb_e gb_f gb_g gb_xb']/a")).getCssValue("color");
+String s1 = color.substring(4);
+color = s1.replace(')', ' ');
+StringTokenizer st = new StringTokenizer(color);
+int r = Integer.parseInt(st.nextToken(",").trim());
+int g = Integer.parseInt(st.nextToken(",").trim());
+int b = Integer.parseInt(st.nextToken(",").trim());
+Color c = new Color(r, g, b);
+String hex = "#"+Integer.toHexString(c.getRGB()).substring(2);
+System.out.println(hex);

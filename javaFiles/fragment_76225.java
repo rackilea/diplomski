@@ -1,0 +1,10 @@
+grammar Hello;
+r         : (statement ';')+ ;         
+statement : decl | init ;
+decl      : 'int' ID  ; 
+init      : decl '=' numexpr ;
+numexpr   : Number op Number | Number ;
+op        : '+' | '-' | '/' | '*' ; 
+WS        : [ \t\r\n\u000C]+ -> skip ;
+Number    : [0-9]+ ;
+ID        : [a-zA-Z]+ ;

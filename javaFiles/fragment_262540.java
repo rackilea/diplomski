@@ -1,0 +1,6 @@
+...
+catch (InputMismatchException e) {
+    System.out.printf("Paycode cannot have decimal places. \n");
+    myscanner.next();
+}
+...

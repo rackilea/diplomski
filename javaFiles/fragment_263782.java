@@ -1,0 +1,6 @@
+private static String getLogLocation(Scanner scanner){
+    ...
+    String data = scanner.readLine();
+    ...
+    //scanner.close(); //DON'T do it in this method!!!
+}

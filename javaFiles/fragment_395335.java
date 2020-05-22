@@ -1,0 +1,6 @@
+@Test
+    public void testCreateNodetype() {
+      ...
+        nodetypes.setName("44");
+      ... 
+    }

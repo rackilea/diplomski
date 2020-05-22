@@ -1,0 +1,10 @@
+Robot robot = new Robot();
+        robot.delay(5000);
+        robot.keyPress(KeyEvent.VK_CONTROL);
+        robot.keyPress(KeyEvent.VK_SHIFT);
+        robot.keyPress(KeyEvent.VK_DELETE);
+        robot.delay(100);
+        robot.keyRelease(KeyEvent.VK_DELETE);
+        robot.keyRelease(KeyEvent.VK_SHIFT);
+        robot.keyRelease(KeyEvent.VK_CONTROL);
+        Thread.sleep(2000);

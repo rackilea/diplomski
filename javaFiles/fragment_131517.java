@@ -1,0 +1,9 @@
+public ArrayList<double[]>  ec; // Changed type
+public double[][]           ei;
+...
+...
+for (int i = 0; i < ec.size(); i++) {
+    // Simpler changes here
+    ei[i] = ec.get(i).clone();
+}
+...

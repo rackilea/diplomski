@@ -1,0 +1,16 @@
+{
+   "rows":[
+      {
+         "key":[
+            "BuildArea"
+         ],
+         "value":1
+      },
+      {
+         "key":[
+            "Area"
+         ],
+         "value":1
+      }
+   ]
+}

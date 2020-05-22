@@ -1,0 +1,12 @@
+JSONObject main = new JSONObject();
+main.put("feature","testFeature");
+JSONArray scenario = new JSONArray();
+JSONObject s1 = new JSONObject();
+s1.put("name","Add numbers");
+s1.put("tags","@test");
+JSONObject s2 = new JSONObject();
+s2.put("name","Delete numbers");
+s2.put("tags","@test123");
+scenario.add(s1);
+scenario.add(s2);
+main.put("scenario", scenario);

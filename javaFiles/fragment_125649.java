@@ -1,0 +1,6 @@
+// ...
+
+@Embedded
+private PersonName personName;
+
+// ...

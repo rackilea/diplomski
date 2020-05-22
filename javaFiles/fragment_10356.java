@@ -1,0 +1,13 @@
+public class User {
+   //...
+   @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+   private Set<Task> tasks;
+   //...
+}
+
+public class Task {
+   //...
+    @ManyToMany(mappedBy = "tasks")
+    private Set<User> users;
+   //...
+}

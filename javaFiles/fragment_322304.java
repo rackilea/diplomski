@@ -1,0 +1,9 @@
+@Path("/")
+public class ApiListingResource {
+    ...
+    @GET
+    ...
+    @Path("/swagger.{type:json|yaml}")
+    public Response getListing(..) {...}
+    ...
+}

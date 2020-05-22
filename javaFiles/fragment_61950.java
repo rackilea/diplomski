@@ -1,0 +1,13 @@
+String url = "https://picasaweb.google.com/data/feed/base/featured?max-results=16";             
+
+File ext = Environment.getExternalStorageDirectory();
+File target = new File(ext, "aquery/myfolder/photos.xml");              
+aq.progress(R.id.progress).download(url, target, new AjaxCallback<File>(){            
+        public void callback(String url, File file, AjaxStatus status) {                    
+                if(file != null){
+                        showResult("File:" + file.length() + ":" + file, status);
+                }else{
+                        showResult("Failed", status);
+                }
+        }            
+});

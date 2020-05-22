@@ -1,0 +1,11 @@
+musicTimeLine = new EventTimeLine<Note>();
+musicTimeLine.add(0.1f, new Note(Duration.ofMillis(1000)));
+musicTimeLine.add(0.12f, new Note(Duration.ofMillis(500)));
+musicTimeLine.add(0.2f, new Note(Duration.ofMillis(500)));
+musicTimeLine.add(0.21f, new Note(Duration.ofMillis(500)));
+musicTimeLine.add(0.22f, new Note(Duration.ofMillis(500)));
+musicTimeLine.add(0.25f, new Note(Duration.ofMillis(1000)));
+musicTimeLine.add(0.4f, new Note(Duration.ofMillis(2000)));
+musicTimeLine.add(0.5f, new Note(Duration.ofMillis(2000)));
+musicTimeLine.add(0.7f, new Note(Duration.ofMillis(2000)));
+musicTimeLine.add(0.8f, new Note(Duration.ofMillis(2000)));

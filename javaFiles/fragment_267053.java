@@ -1,0 +1,11 @@
+BaseFont unicode = BaseFont.createFont(FONT, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
+Font font=new Font(unicode,12,Font.NORMAL,new BaseColor(50,205,50));
+PdfPTable table = new PdfPTable(new float[] { 10, 60, 30 });
+table.setWidthPercentage(100);
+PdfPCell customerLblCell = new PdfPCell(new Phrase("CUSTOMERS"));
+PdfPCell balanceLblCell = new PdfPCell(new Phrase("\u0915\u093e\u0930\u092a\u093e\u0930\u094d\u0915\u093f\u0902\u0917", font));
+table.addCell(customerLblCell);
+table.addCell(balanceLblCell);
+table.completeRow();
+table.setSpacingBefore(10);
+document.add(table);

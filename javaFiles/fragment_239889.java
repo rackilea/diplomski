@@ -1,0 +1,17 @@
+@Override
+public View getView(int position, View convertView, ViewGroup parent) {
+    View grid;
+    if(convertView == null) {
+        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        grid = inflater.inflate(R.layout.grid_single, null);
+    } else {
+        grid = (View) convertView;
+    }
+    TextView textView = (TextView) grid.findViewById(R.id.textView);
+    ImageView imageView = (ImageView) grid.findViewById(R.id.imageView);
+    textView.setText(text[position]);
+    Picasso.with(context)
+                .load("http://www.funsundivetravel.com/wp-content/uploads/2015/02/200x300.gif")
+                .into(imageView);
+    return grid;
+}

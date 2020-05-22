@@ -1,0 +1,12 @@
+base.getDriver().switchTo().frame("PopUpCont");
+    Add_Prefix_NewContact();
+    Add_FirstName_NewContact();
+    Add_MiddleName_NewContact();
+    Add_LastName_NewContact();
+    Add_Suffix_NewContact();
+    iFrameConvertion_Add_PrimaryAcct_NewContact();
+    base.getDriver().switchTo().frame("PrimaryAcctPick");
+    Add_PrimaryAcct_NewContact();
+    base.getDriver().switchTo().parentFrame();
+    Add_JobTitle_NewContact();
+    Add_Email_NewContact();

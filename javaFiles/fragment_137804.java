@@ -1,0 +1,9 @@
+private final List<Color> clut = new ArrayList<Color>();
+…
+for (int i = 0; i < N; i++) {
+    clut.add(Color.getHSBColor((float) i / N, 1, 1));
+}
+…
+Collections.shuffle(clut);
+…
+g2d.setColor(clut.get(i));

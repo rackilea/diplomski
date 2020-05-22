@@ -1,0 +1,10 @@
+List<String> args = new ArrayList<String>();
+args.add("java");
+args.add("-cp"); 
+args.add("/path/to/weka.jar");
+args.add("weka.filters.MultiFilter");
+args.add("-F");
+args.add("weka.filters.unsupervised.attribute.ClusterMembership -I first");
+args.add("-i"); 
+args.add("/path/to/in.arff");
+ProcessBuilder pb = new ProcessBuiler(args);

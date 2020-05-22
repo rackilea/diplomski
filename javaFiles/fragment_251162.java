@@ -1,0 +1,21 @@
+private static final char[] CHAR_abc1_1 = {'.', '?', '!', ',', '1', ';', ':'};
+    private static final char[] CHAR_abc1_2 = {'a', 'b', 'c', '2', '\u00a0'};
+    private static final char[] CHAR_abc1_3 = {'d', 'e', 'f', '3', '\u201a'};
+    private static final char[] CHAR_abc1_4 = {'g', 'h', 'i', '4', '\u00a1'};
+    private static final char[] CHAR_abc1_5 = {'j', 'k', 'l', '5'};
+    private static final char[] CHAR_abc1_6 = {'m', 'n', 'o', '6', '\u00a4', '\u00a2'};
+    private static final char[] CHAR_abc1_7 = {'p', 'q', 'r', 's', '7'};
+    private static final char[] CHAR_abc1_8 = {'t', 'u', 'v', '8', '\u00a3', '\ufffd'};
+    private static final char[] CHAR_abc1_9 = {'w', 'x', 'y', 'z', '9'};
+    private static final char[] CHAR_abc1_0 = {' ', '0'};
+
+    private static final char[] CHAR_ABC1_1 = {'.', '?', '!', ',', '1', ';', ':'};
+    private static final char[] CHAR_ABC1_2 = {'A', 'B', 'C', '2', '\u00b5'};
+    private static final char[] CHAR_ABC1_3 = {'D', 'E', 'F', '3', '\u00c9'};
+    private static final char[] CHAR_ABC1_4 = {'G', 'H', 'I', '4', '\u00cd'};
+    private static final char[] CHAR_ABC1_5 = {'J', 'K', 'L', '5'};
+    private static final char[] CHAR_ABC1_6 = {'M', 'N', 'O', '6', '\u00d1', '\u00d3'};
+    private static final char[] CHAR_ABC1_7 = {'P', 'Q', 'R', 'S', '7'};
+    private static final char[] CHAR_ABC1_8 = {'T', 'U', 'V', '8', '\u00da', '\u00dc'};
+    private static final char[] CHAR_ABC1_9 = {'W', 'X', 'Y', 'Z', '9'};
+    private static final char[] CHAR_ABC1_0 = {' ', '0'};

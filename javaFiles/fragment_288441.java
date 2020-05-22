@@ -1,0 +1,9 @@
+wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath1)));
+driver.findElement(By.xpath(xpath1)).clear();
+Thread.sleep(1000);
+driver.findElement(By.xpath(xpath1)).sendKeys("A");
+Thread.sleep(1000);
+wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath2)));
+driver.findElement(By.xpath(xpath2)).clear();
+Thread.sleep(1000);
+driver.findElement(By.xpath(xpath2)).sendKeys("B");

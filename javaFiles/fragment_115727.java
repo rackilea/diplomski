@@ -1,0 +1,6 @@
+Person person = new Person( "Anton", 33 );
+String buffer = Streamer.get().toString( person );
+//...
+person = (Person) Streamer.get().fromString( buffer );
+//...
+Person personCopy = Streamer.get().deepCopy( person );

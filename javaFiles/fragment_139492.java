@@ -1,0 +1,6 @@
+@Override
+public void onCreate(Bundle savedInstanceState) throws MalformedURLException {
+    ...
+    URL url_g = new URL("http://www.google.com/");
+    ...
+}

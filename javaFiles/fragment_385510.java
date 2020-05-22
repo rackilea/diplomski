@@ -1,0 +1,9 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+...
+<body>
+...
+    <c:forEach items="${selections }" var="name">
+        <input type="checkbox" name="${name}" value="${name}" id="${name}">
+        ...
+    </c:forEach>
+</body>

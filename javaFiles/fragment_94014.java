@@ -1,0 +1,11 @@
+{
+   "propertyName":{
+      "1":[
+         {
+            "1":"value1",
+            "2":"value2",
+            "3":false
+         }
+      ]
+   }
+}

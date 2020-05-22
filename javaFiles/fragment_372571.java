@@ -1,0 +1,6 @@
+public UserDatabaseResource(ServletContext servletContext) {
+    Assert.assertNotNull(servletContext);
+    ...
+    String jndiNameForDatasource = servletContext.getInitParameter("whatever")) ;
+    ...
+}

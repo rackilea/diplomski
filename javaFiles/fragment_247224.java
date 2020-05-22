@@ -1,0 +1,6 @@
+Query q = ...
+if (response.getBatch().getMoreResults() == QueryResultBatch.MoreResultsType.NOT_FINISHED) {
+  ByteString endCursor = response.getBatch().getEndCursor();
+  q.setStartCursor(endCursor);
+  // reissue the query to get more results...
+}

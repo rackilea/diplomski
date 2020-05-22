@@ -1,0 +1,18 @@
+ContentPanel cp=new ContentPanel();
+cp.setHeadingText("Central Panel");
+cp.setHeaderVisible(true);
+cp.setBorders(true);
+VerticalLayoutContainer vcon = new VerticalLayoutContainer();
+HorzontalLayoutContainer hcon1 = new HorizontalLayoutContainer();
+hcon1.add(panel1,new HorizontalLayoutData(0.25,-1);
+hcon1.add(panel2,new HorizontalLayoutData(0.25,-1);
+hcon1.add(panel3,new HorizontalLayoutData(0.25,-1);
+hcon1.add(panel4,new HorizontalLayoutData(0.25,-1);
+HorzontalLayoutContainer hcon2 = new HorizontalLayoutContainer();
+hcon2.add(panel5,new HorizontalLayoutData(0.25,-1);
+hcon2.add(panel6,new HorizontalLayoutData(0.25,-1);
+hcon2.add(panel7,new HorizontalLayoutData(0.25,-1);
+hcon2.add(panel8,new HorizontalLayoutData(0.25,-1);
+vcon.add(hcon);
+vcon.add(hcon);
+cp.add(vcon);

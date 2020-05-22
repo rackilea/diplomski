@@ -1,0 +1,11 @@
+export JAVA_ROOT=/opt/java
+export MAVEN_HOME=/opt/maven
+export MAVEN_BINDIR=/opt/maven/bin
+export JAVA_HOME=/opt/java
+export JAVA_BINDIR=/opt/java/bin
+export JRE_HOME=/opt/java/jre
+export JRE_BINDIR=/opt/java/jre/bin
+export PATH=${JAVA_HOME}:${JAVA_BINDIR}:$PATH
+export PATH=${MAVEN_HOME}:${MAVEN_BINDIR}:$PATH
+export PATH=${JRE_HOME}:${JRE_BINDIR}:$PATH
+export PATH=${JAVA_HOME}:${JAVA_BINDIR}:$PATH

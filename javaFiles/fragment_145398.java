@@ -1,0 +1,11 @@
+figure('Position',[100 100 640 480]); hold all;
+plot(x,y1,'-r','LineWidth',2);
+plot(x,y2,':k','LineWidth',3);
+title('Stock 1 vs. Stock 2');
+xlim([10 100]);
+ylim([200 300]);
+xlabel('Days');
+ylabel('Price');
+grid on;
+legend('AAPL','BAC','Location','northeast');
+saveas(gcf,'MyPlot','jpeg');

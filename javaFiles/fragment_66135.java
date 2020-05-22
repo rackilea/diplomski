@@ -1,0 +1,10 @@
+{"iss":"accounts.google.com",
+ "at_hash":"HK6E_P6.....DB1Q",
+ "email_verified":"true",
+ "sub":"10769150350006150715113082367",
+ "azp":"1234987819200.apps.googleusercontent.com",
+ "email":"bob@example.com",
+ "aud":"1234987819200.apps.googleusercontent.com",
+ "iat":1353601026,
+ "exp":1353604926,
+ "hd":"example.com" }

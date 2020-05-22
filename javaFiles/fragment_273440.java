@@ -1,0 +1,10 @@
+Workbook existingWorkbook = Workbook.getWorkbook(new File(fileToEdit.getAbsolutePath()));
+WritableWorkbook workbookCopy = Workbook.createWorkbook(new File("output.xls"), existingWorkbook);
+WritableSheet sheetToEdit = workbookCopy.getSheet(sheetName);
+WritableCell cell;
+Label l = new Label(currentColumn, currentRow, value);
+cell = (WritableCell) l;
+sheetToEdit.addCell(cell);
+ workbookCopy.write();
+ workbookCopy.close();
+ existingWorkbook.close();

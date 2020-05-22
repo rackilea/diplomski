@@ -1,0 +1,11 @@
+File src = new File("C:\\Utility\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe");
+System.setProperty("phantomjs.binary.path", src.getAbsolutePath());
+WebDriver driver = new PhantomJSDriver();
+driver.get("https://www.facebook.com/");
+System.out.println(driver.getTitle());
+Thread.sleep(2000);
+driver.findElement(By.name("email")).sendKeys("Administrator");
+driver.findElement(By.name("pass")).sendKeys("12iso*help");
+driver.findElement(By.name("login")).click(); 
+Thread.sleep(2000);
+System.out.println("Page title is: " + driver.getTitle());

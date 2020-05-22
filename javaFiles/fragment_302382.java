@@ -1,0 +1,6 @@
+public Cursor fetchAllJournals(String sort) {
+
+mDb.rawQuery("UPDATE "+DATABASE_JOURNAL_TABLE+" SET "+KEY_JOURNAL_NOTES+" = (SELECT COUNT(*) FROM "+DATABASE_HOMES_TABLE+"WHERE "+DATABASE_JOURNAL_TABLE+"."+KEY_JROWID+" =+"DATABASE_HOMES_TABLE"+."+KEY_HOME_JOURNALID+")");
+
+return mDb.query(DATABASE_JOURNAL_TABLE, new String[] {KEY_JROWID, KEY_JOURNAL_TITLE, KEY_JOURNAL_NOTES, KEY_JDATE},null , null, null, null, sort ,null);
+}

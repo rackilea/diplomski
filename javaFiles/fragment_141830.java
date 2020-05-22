@@ -1,0 +1,9 @@
+Object val = Integer.valueOf(12);
+if(val instanceof Integer){
+    Integer i = (Integer)val;
+    int iVal = i.intValue(); 
+}else if(val instanceof Double){
+    //...
+}else if (val instanceof String){
+    //...
+}//...

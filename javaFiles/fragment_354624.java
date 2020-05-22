@@ -1,0 +1,6 @@
+void foo(Base a) {
+    // Use `a` here...
+}
+
+// A long time later in a class far, far away...
+xyz.foo(new Agg());

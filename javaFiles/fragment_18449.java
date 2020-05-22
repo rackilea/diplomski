@@ -1,0 +1,22 @@
+final String name = "tmp.data";
+int numberOfDirectories = 2;
+int fileSystemSize = 4;
+byte[] bitMap = new byte[] { 0, 1, 0 };
+File someObject = new File(".");
+ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(name));
+outputStream.write(numberOfDirectories);
+outputStream.write(fileSystemSize);
+outputStream.write(bitMap.length);
+outputStream.write(bitMap);
+outputStream.writeObject(someObject);
+outputStream.close();
+// ....
+ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream(name));
+System.out.println("numberOfDirectories:" + inputStream.read());
+System.out.println("fileSystemSize:" + inputStream.read());
+final int size = inputStream.read();
+byte[] readBitMap = new byte[size];
+inputStream.read(readBitMap);
+System.out.println("bitMap:" + readBitMap);
+System.out.println("someObject:" + inputStream.readObject());
+inputStream.close();

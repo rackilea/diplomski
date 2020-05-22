@@ -1,0 +1,9 @@
+//...
+public class GUI extends JFrame {
+    //...
+    JLabel result=new JLabel();
+    //...
+    void result(){
+        panel.add(result);
+    }    
+}

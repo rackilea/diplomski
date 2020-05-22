@@ -1,0 +1,16 @@
+Compiler arguments: 
+-source 11 
+-target 11 
+-d build\classes\java\test 
+-g 
+-sourcepath  
+-proc:none 
+-s build\generated\sources\annotationProcessor\java\test 
+-XDuseUnsharedTable=true 
+-classpath  
+--module-path build\classes\java\main;build\resources\main;truth-0.42.jar;junit-4.12.jar;hamcrest-core-1.3.jar;guava-25.1-android.jar;checker-compat-qual-2.5.3.jar;checker-qual-2.5.3.jar;diffutils-1.3.0.jar;auto-value-annotations-1.6.2.jar;error_prone_annotations-2.3.1.jar;jsr305-3.0.2.jar;j2objc-annotations-1.1.jar;animal-sniffer-annotations-1.14.jar 
+--patch-module truth.tests.main=src\test\java 
+--add-modules junit 
+--add-reads truth.tests.main=junit 
+--patch-module truth=${gradle-path}\truth-java8-extension-0.42.jar 
+--add-reads truth.tests.main=truth src\test\java\example\truthtest\ATest.java

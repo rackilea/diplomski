@@ -1,0 +1,6 @@
+if (acType != null && acType.equals("400G")){
+    ...
+}
+else {
+    ...
+}

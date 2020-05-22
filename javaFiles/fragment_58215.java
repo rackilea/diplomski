@@ -1,0 +1,9 @@
+Data : 1=A
+Data : 2=B
+Data : 3={AAAAAA}
+Data : 4={AAAAAA  AAAAAA   AAAAAA}
+Data : 5=AAAAAA
+Data : 6=[10]
+Data : 7=[]
+Data : 8=[10,11]
+Data : 99=0

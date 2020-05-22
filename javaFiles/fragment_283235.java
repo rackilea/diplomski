@@ -1,0 +1,6 @@
+public V put(K key, V value) {
+    ...
+    //cpr is the the comparator being used
+    Comparator<? super K> cpr = comparator;
+    ....
+}

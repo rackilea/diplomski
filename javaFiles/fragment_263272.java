@@ -1,0 +1,16 @@
+arrayPengiriman[0] = kirim1;
+arrayPengiriman[1] = kirim2;
+arrayPengiriman[2] = kirim3;
+arrayPengiriman[3] = kirim4;
+arrayPengiriman[4] = kirim5;
+arrayPengiriman[5] = kirim6;
+arrayPengiriman[6] = kirim7;
+arrayPengiriman[7] = kirim8;
+arrayPengiriman[8] = kirim9;
+arrayPengiriman[9] = kirim10;
+arrayPengiriman[10] = kirim11;
+arrayPengiriman[11] = kirim12;
+arrayPengiriman[12] = kirim13;
+arrayPengiriman[13] = kirim14;
+arrayPengiriman[14] = kirim15;
+arrayPengiriman[15] = kirim16;

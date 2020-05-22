@@ -1,0 +1,7 @@
+from("seda:next")
+    .routeId("direct-route")
+    .tracing()
+    .log(">>> ${body.id}")
+    .log(">>> ${body.name}")
+    .transform().simple("Hello ${in.body.name}")
+    .inOnly("activemq:queue:foo")

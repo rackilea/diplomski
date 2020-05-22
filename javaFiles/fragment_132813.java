@@ -1,0 +1,9 @@
+{"message":"WARC-Target-URI: http://www.archive.org/robots.txt","@version":"1","@timestamp":"2016-11-22T12:55:48.151Z","path":"D:\\better.txt","host":"FREIFDKT0021127","url":"http://www.archive.org/robots.txt"}
+{"message":"WARC-Target-URI: http://www.archive.org/","@version":"1","@timestamp":"2016-11-22T12:55:48.151Z","path":"D:\\better.txt","host":"FREIFDKT0021127","url":"http://www.archive.org/"}
+{"message":"HTTP/1.1 200 OK","@version":"1","@timestamp":"2016-11-22T12:55:48.167Z","path":"D:\\better.txt","host":"FREIFDKT0021127","response":"200"}
+{"message":"Date: Wed, 30 Apr 2008 20:48:25 GMT","@version":"1","@timestamp":"2016-11-22T12:55:48.167Z","path":"D:\\better.txt","host":"FREIFDKT0021127","date":"2008-04-30T20:48:25.000Z"}
+{"message":"WARC-Target-URI: http://www.archive.org/","@version":"1","@timestamp":"2016-11-22T12:55:48.183Z","path":"D:\\better.txt","host":"FREIFDKT0021127","url":"http://www.archive.org/"}
+{"message":"WARC-Target-URI: http://www.archive.org/","@version":"1","@timestamp":"2016-11-22T12:55:48.183Z","path":"D:\\better.txt","host":"FREIFDKT0021127","url":"http://www.archive.org/"}
+{"message":"WARC-Target-URI: http://www.archive.org/index.php","@version":"1","@timestamp":"2016-11-22T12:55:48.183Z","path":"D:\\better.txt","host":"FREIFDKT0021127","url":"http://www.archive.org/index.php"}
+{"message":"HTTP/1.1 200 OK","@version":"1","@timestamp":"2016-11-22T12:55:48.198Z","path":"D:\\better.txt","host":"FREIFDKT0021127","response":"200"}
+{"message":"Date: Wed, 30 Apr 2008 20:48:25 GMT","@version":"1","@timestamp":"2016-11-22T12:55:48.198Z","path":"D:\\better.txt","host":"FREIFDKT0021127","date":"2008-04-30T20:48:25.000Z"}

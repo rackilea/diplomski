@@ -1,0 +1,10 @@
+WebDriver driver = new FirefoxDriver();
+    driver.manage().window().maximize();
+    driver.get("http://www.vodafone.de/privat/handys-tablets-tarife/smartphones-tarife.html");
+    driver.findElement(By.xpath(".//*[@id='deviceSliderbuttonNext']/a")).click();
+    Thread.sleep(2000L);
+    driver.findElement(By.xpath(".//*[@id='deviceSliderbuttonNext']/a")).click();
+    Thread.sleep(2000L);
+    driver.findElement(By.xpath(".//*[@id='deviceSliderbuttonNext']/a")).click();
+    Thread.sleep(2000L);
+    driver.findElement(By.xpath(".//*[@id='deviceSliderbuttonNext']/a")).click();

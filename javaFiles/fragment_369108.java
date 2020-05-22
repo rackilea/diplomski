@@ -1,0 +1,9 @@
+/**
+  comments
+  .... 
+*/
+@Annotation
+type method(){
+    ...
+    ...
+ }

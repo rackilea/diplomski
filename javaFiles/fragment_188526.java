@@ -1,0 +1,12 @@
+int alpha  = 255;
+System.out.println(Integer.toBinaryString(alpha));
+int red = 255;
+System.out.println(Integer.toBinaryString(red));
+int green = 0;
+System.out.println(Integer.toBinaryString(green));
+int blue = 100;
+System.out.println(Integer.toBinaryString(blue));
+int argb = 255<<24 | 255 << 16 | 0 << 8 | 100;
+System.out.println(Integer.toBinaryString(argb));
+byte argbbyte = (byte) argb;
+System.out.println(Integer.toBinaryString(argbbyte));

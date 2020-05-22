@@ -1,0 +1,27 @@
+systemOne {
+   akka {
+     actor {
+      provider = "akka.remote.RemoteActorRefProvider"
+    }
+     remote {
+       enabled-transports = ["akka.remote.netty.tcp"]
+       netty.tcp {
+         port = 2552
+       }
+     }
+  }
+}
+
+systemTwo {
+  akka {
+    actor {
+      provider = "akka.remote.RemoteActorRefProvider"
+    }
+    remote {
+      enabled-transports = ["akka.remote.netty.tcp"]
+      netty.tcp {
+        port = 2553
+      }
+    }
+  }
+}

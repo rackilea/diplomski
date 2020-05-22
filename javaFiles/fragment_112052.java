@@ -1,0 +1,6 @@
+...
+    JButton plus = new JButton("+");
+    JButton multiplication = new JButton("*");
+    JButton divide = new JButton("/");
+    JButton minus = new JButton("-");
+    ...

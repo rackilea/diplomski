@@ -1,0 +1,6 @@
+if (isIgnoreCase) {
+    return ...
+}
+else {
+    return ...
+}

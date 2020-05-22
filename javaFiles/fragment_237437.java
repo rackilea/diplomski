@@ -1,0 +1,6 @@
+while (on) {
+  //...
+  datagramSocket.setSoTimeout(5000);
+  datagramSocket.receive(packet);
+  //...
+}

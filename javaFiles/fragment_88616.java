@@ -1,0 +1,19 @@
+{
+   "testSuiteInfo":{
+      "description":"parse"
+   },
+   "listOfTestCases":{
+      "testCaseData":[
+         {
+            "sequence":"sequential",
+            "testNumber":"2",
+            "testCaseFile":"testcase\\Web\\Ab.xml"
+         },
+         {
+            "sequence":"sequential",
+            "testNumber":"3",
+            "testCaseFile":"testcase\\Web\\BC.xml"
+         }
+      ]
+   }
+}

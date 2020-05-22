@@ -1,0 +1,10 @@
+String result = Jsoup.connect(baseUrl + keyword)
+            .followRedirects(true)
+            .ignoreContentType(true)
+            .userAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:43.0) Gecko/20100101 Firefox/43.0")
+            .header("Accept-Encoding", "gzip, deflate")
+            .header("Accept-Language", "en-US,en;q=0.5")
+            .header("Host", "data.studentedge.com.au")
+            .header("Origin", "https://studentedge.com.au")
+            .header("Referer", "https://studentedge.com.au/forums/details/any-surfers-out-there")
+            .execute().body();

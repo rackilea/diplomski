@@ -1,0 +1,12 @@
+XWPFDocument document = new XWPFDocument();
+CTP ctp = CTP.Factory.newInstance();
+CTR ctr = ctp.addNewR();
+CTRPr rpr = ctr.addNewRPr();
+CTText textt = ctr.addNewT();
+textt.setStringValue( " Page 1" );
+XWPFParagraph codePara = new XWPFParagraph( ctp, document );
+XWPFParagraph[] newparagraphs = new XWPFParagraph[1];
+newparagraphs[0] = codePara;
+CTSectPr sectPr = document.getDocument().getBody().addNewSectPr();
+XWPFHeaderFooterPolicy headerFooterPolicy = new  XWPFHeaderFooterPolicy( document, sectPr );
+headerFooterPolicy.createFooter( STHdrFtr.DEFAULT, newparagraphs );

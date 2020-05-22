@@ -1,0 +1,6 @@
+catch (EXCEPTION1 EX) {
+    // ...
+}
+catch (EXCEPTION2 EX) {
+    // ...
+}

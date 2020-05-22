@@ -1,0 +1,12 @@
+JLabel[][] score = { { Subject1Semester1, Subject2Semester1, Subject3Semester1,
+        Subject4Semester1, Subject5Semester1, Subject6Semester1 },
+        { Subject1Semester2, Subject2Semester2, Subject3Semester2,
+                Subject4Semester2, Subject5Semester2, Subject6Semester2 },
+        { Subject1Semester3, Subject2Semester3, Subject3Semester3,
+                Subject4Semester3, Subject5Semester3, Subject6Semester3 },
+        { Subject1Semester4, Subject2Semester4, Subject3Semester4,
+                Subject4Semester4, Subject5Semester4, Subject6Semester4 },
+        { Subject1Semester5, Subject2Semester5, Subject3Semester5,
+                Subject4Semester5, Subject5Semester5, Subject6Semester5 },
+        { Subject1Semester6, Subject2Semester6, Subject3Semester6,
+                Subject4Semester6, Subject5Semester6, Subject6Semester6 } };

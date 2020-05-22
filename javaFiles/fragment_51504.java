@@ -1,0 +1,6 @@
+interface ViewInterface{
+    // ...        
+
+
+    DatabaseInterface getDatabaseInterface();
+}

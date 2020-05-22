@@ -1,0 +1,11 @@
+StreamResult streamResult = new StreamResult(out);
+SAXTransformerFactory tf = (SAXTransformerFactory) SAXTransformerFactory.newInstance();
+TransformerHandler hd = tf.newTransformerHandler();
+Transformer serializer = hd.getTransformer();
+serializer.setOutputProperty(OutputKeys.CDATA_SECTION_ELEMENTS, "column");
+hd.setResult(streamResult);
+hd.startDocument();
+hd.startElement("","","column",atts);
+hd.characters(asdf,0, asdf.length());
+hd.endElement("","","column");
+hd.endDocument();

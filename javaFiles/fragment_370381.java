@@ -1,0 +1,10 @@
+StringBuilder sb_url = new StringBuilder("jdbc:cassandra://")
+    .append(this.username)
+    .append("/")
+    .append(this.password)
+    .append("@")
+    .append(this.url)
+    .append(":")
+    .append(this.port)
+    .append("/")
+    .append(this.database);

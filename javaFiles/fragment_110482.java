@@ -1,0 +1,34 @@
+// Default connection and socket timeout of 60 seconds.  Tweak to taste.
+private static final int SOCKET_OPERATION_TIMEOUT = 60 * 1000;
+
+// ---------------------------------------------------------------------- //
+HttpParams params = new BasicHttpParams();
+
+// Turn off stale checking.  Our connections break all the time anyway,
+// and it's not worth it to pay the penalty of checking every time.
+HttpConnectionParams.setStaleCheckingEnabled(params, false);
+
+HttpConnectionParams.setConnectionTimeout(params, SOCKET_OPERATION_TIMEOUT);
+HttpConnectionParams.setSoTimeout(params, SOCKET_OPERATION_TIMEOUT);
+HttpConnectionParams.setSocketBufferSize(params, 8192);
+
+// Don't handle redirects -- return them to the caller.  Our code
+// often wants to re-POST after a redirect, which we must do ourselves.
+HttpClientParams.setRedirecting(params, false);
+
+// Use a session cache for SSL sockets
+SSLSessionCache sessionCache = context == null ? null : new SSLSessionCache(context);
+
+// Set the specified user agent and register standard protocols.
+HttpProtocolParams.setUserAgent(params, userAgent);
+SchemeRegistry schemeRegistry = new SchemeRegistry();
+schemeRegistry.register(new Scheme("http",
+        PlainSocketFactory.getSocketFactory(), 80));
+schemeRegistry.register(new Scheme("https",
+        SSLCertificateSocketFactory.getHttpSocketFactory(
+        SOCKET_OPERATION_TIMEOUT, sessionCache), 443));
+
+ClientConnectionManager manager =
+        new ThreadSafeClientConnManager(params, schemeRegistry);
+
+return new DefaultHttpClient(manager, params);

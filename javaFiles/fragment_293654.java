@@ -1,0 +1,26 @@
+String url = "https://www.fangraphs.com/leaders/splits-leaderboards?splitArr=5&strgroup=season&statgroup=1&startDate=2018-03-01&endDate=2018-11-01&filter=IP%7Cgt%7C0&position=P&statType=player&autoPt=true&players=&pg=0&pageItems=30&sort=22,1&splitArrPitch=&splitTeams=false";
+
+try (final WebClient webClient = new WebClient(BrowserVersion.FIREFOX_60)) {                                                                                                                                                                                                       
+    webClient.getOptions().setThrowExceptionOnScriptError(false);                                                                                                                                                                                                                  
+
+    HtmlPage page = webClient.getPage(url);                                                                                                                                                                                                                                        
+    webClient.waitForBackgroundJavaScript(50000);                                                                                                                                                                                                                                  
+    System.out.println("----------------");                                                                                                                                                                                                                                        
+    System.out.println(page.asText());                                                                                                                                                                                                                                             
+
+    HtmlDivision div = (HtmlDivision) page.getElementById("react-drop-test");                                                                                                                                                                                                      
+    List<HtmlElement> anchors = div.getElementsByTagName("a");                                                                                                                                                                                                                     
+    for (DomElement anchor:anchors) {                                                                                                                                                                                                                                              
+        if ((anchor.getAttribute("class").contains("data-export"))) {                                                                                                                                                                                                              
+
+            HtmlAnchor leftyAnchor = (HtmlAnchor) anchor;                                                                                                                                                                                                                          
+
+            Page p = leftyAnchor.click();                                                                                                                                                                                                                                          
+            System.out.println();                                                                                                                                                                                                                                                  
+            System.out.println("----------------");                                                                                                                                                                                                                                
+            System.out.println(p.getWebResponse().getContentAsString());                                                                                                                                                                                                           
+
+            break;                                                                                                                                                                                                                                                                 
+        }                                                                                                                                                                                                                                                                          
+    }                                                                                                                                                                                                                                                                              
+}

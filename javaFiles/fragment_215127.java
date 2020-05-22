@@ -1,0 +1,17 @@
+(assert (not (and
+  (= c3 3)
+  (= c2 9)
+  (= c1 1)
+  (= b3 5)
+  (= b2 2)
+  (= b1 8)
+  (= a3 4)
+  (= a2 6)
+  (= a1 7)
+  (= r3 6)
+  (= r2 72)
+  (= r1 55)
+  (= rc 27)
+  (= rb 1)
+  (= ra 38))))
+(check-sat) ; unsat => no other model exists

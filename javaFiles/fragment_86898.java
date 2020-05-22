@@ -1,0 +1,6 @@
+...
+g.fillRect(0, 0, bounds.width, bounds.height);
+g.setColor(Color.black); // added
+g.drawString(String.valueOf(lag), 100, 100); // added
+bufferStrategy.show();
+...

@@ -1,0 +1,6 @@
+...
+HttpServletResponse response;
+...
+
+response.setStatus(HttpServletResponse.SC_BAD_GATEWAY);
+response.flushBuffer();

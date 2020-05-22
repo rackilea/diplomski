@@ -1,0 +1,10 @@
+Book myBooks0, myBooks1, myBooks2;
+myBooks0 = new Book();
+myBooks1 = new Book();
+myBooks2 = new Book();
+myBooks0.title = "Example title xx";
+myBooks1.title = "Example title cc";
+myBooks2.title = "Example title yy";
+myBooks0.author = "Example author xx";
+myBooks1.author = "Example author cc";
+myBooks2.author = "Example author yy";

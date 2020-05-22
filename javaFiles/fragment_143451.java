@@ -1,0 +1,6 @@
+ObjectContext context = ...
+List<MyEntity> objects = context.performQuery(...); 
+MyEntity o = objects.get(0);  
+o.setXyz("new value"); // I assume you got to this point
+...
+context.commitChanges();

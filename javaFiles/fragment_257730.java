@@ -1,0 +1,6 @@
+int SomeMethod(Base aBase)
+{
+     ...
+     double value = aBase.Calculate(a,b,c);
+     ...
+}

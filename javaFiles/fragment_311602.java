@@ -1,0 +1,6 @@
+for (int y = 1; y <= 5; y= y + 1) {             
+   ...
+       if (y < minGuess)                    
+           minGuess = y; 
+   ...
+   }

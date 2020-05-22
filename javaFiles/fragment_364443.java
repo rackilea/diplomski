@@ -1,0 +1,6 @@
+protected void encodeCurrentNode(...) {
+        .....
+        out.writeAttribute(HTML.WIDTH_ATTR, "19", null);
+        out.writeAttribute(HTML.HEIGHT_ATTR, "100%", null);
+        ...
+}

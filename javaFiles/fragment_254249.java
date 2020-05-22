@@ -1,0 +1,6 @@
+try {
+   sendMessageWithAttachment();
+}
+catch {
+   sendMessageWithoutAttachment();
+}

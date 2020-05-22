@@ -1,0 +1,6 @@
+private void initComp() {
+    ...
+    this.setVisible(true);  // add this to show the frame
+
+    ...
+}

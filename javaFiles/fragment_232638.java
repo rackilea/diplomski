@@ -1,0 +1,13 @@
+CREATE TRIGGER t2_bu BEFORE UPDATE ON t2 BEGIN
+  DELETE FROM t3 WHERE docid=old.rowid;
+END;
+CREATE TRIGGER t2_bd BEFORE DELETE ON t2 BEGIN
+  DELETE FROM t3 WHERE docid=old.rowid;
+END;
+
+CREATE TRIGGER t2_au AFTER UPDATE ON t2 BEGIN
+  INSERT INTO t3(docid, b, c) VALUES(new.rowid, new.b, new.c);
+END;
+CREATE TRIGGER t2_ai AFTER INSERT ON t2 BEGIN
+  INSERT INTO t3(docid, b, c) VALUES(new.rowid, new.b, new.c);
+END;

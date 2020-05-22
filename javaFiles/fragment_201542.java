@@ -1,0 +1,6 @@
+public USCrimeArray(String filename) {
+    ... 
+    try (BufferedReader crimeArrayInput = new BufferedReader(new FileReader(filename))) {
+    ... 
+
+}

@@ -1,0 +1,8 @@
+{
+cat
++
+dog
+[
+mouse
+/
+snake

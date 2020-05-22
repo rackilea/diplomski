@@ -1,0 +1,9 @@
+<artifactItem>
+                    <groupId>${project.groupId}</groupId>
+                    <artifactId>${project.artifactId}</artifactId>
+                    <version>${project.version}</version>
+                    <overWrite>true</overWrite>
+                    <type>${project.packaging}</type>
+                    <outputDirectory>build</outputDirectory>
+                    <destFileName>protobuf-java-2.5.0.jar</destFileName>
+                  </artifactItem>

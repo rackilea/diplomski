@@ -1,0 +1,6 @@
+...
+FacesContext fc = FacesContext.getCurrentInstance();
+ExternalContext ec = fc.getExternalContext();
+HttpServletResponse hp = (HttpServletResponse) ec.getResponse();
+hp.setStatus(hp.getStatus(), "my new message");
+...

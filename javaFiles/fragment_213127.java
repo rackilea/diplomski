@@ -1,0 +1,9 @@
+switch (operation) {
+    case ADDITION:
+        // ...
+        break;
+    case SUBTRACTION:
+        // ...
+        break;
+    //...and so on...
+}

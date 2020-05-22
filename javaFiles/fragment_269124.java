@@ -1,0 +1,10 @@
+JFrame frame = new JFrame("test");
+JProgressBar progressBar = new JProgressBar();
+progressBar.setMinimum(0);
+progressBar.setMaximum(100);
+progressBar.setValue(50);
+progressBar.setForeground(Color.GREEN);
+progressBar.setString("50/100");
+progressBar.setStringPainted(true);
+frame.add(progressBar);
+frame.setVisible(true);

@@ -1,0 +1,9 @@
+apply plugin: 'groovy'
+
+repositories {
+   mavenCentral()
+}
+
+dependencies {
+   compile 'org.codehaus.groovy:groovy:2.3.7'
+}

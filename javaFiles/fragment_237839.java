@@ -1,0 +1,6 @@
+while (pCur.moveToNext()) {
+    ...
+    ContactData contactsData = new ContactData();
+    contactsData.setPhoneNumber(...);
+    ...
+}

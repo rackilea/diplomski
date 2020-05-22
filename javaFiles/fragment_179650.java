@@ -1,0 +1,11 @@
+> java Test
+input data:
+4
+(a+[b*c]-{d/3}) 
+(a + [b * c) - 17]
+((a * x) + [b] * y) + c
+auf(zlo)men [gy<psy>] four{s}
+([]{})
+([)]
+(()[])
+()[]{}

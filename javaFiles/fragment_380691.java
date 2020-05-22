@@ -1,0 +1,15 @@
+configurations{
+    provided
+}
+
+sourceSets {
+    main.compileClasspath += configurations.provided
+    test.compileClasspath += configurations.provided
+    test.runtimeClasspath += configurations.provided
+}
+
+dependencies {
+    ...
+    provided 'group:module:version'
+    ...
+}

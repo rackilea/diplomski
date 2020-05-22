@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "userlist": {
+      "$user_id": {
+        // grants write access to the owner of this user account
+        // whose uid must exactly match the key ($user_id)
+        ".write": "$user_id === auth.uid"
+      }
+    }
+  }
+}

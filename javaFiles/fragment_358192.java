@@ -1,0 +1,9 @@
+// Create the request to send
+final HttpPost post = new HttpPost("your-destination");
+
+// Construct the body of the object...
+...
+...
+
+// Send the request and get the response
+HttpResponse response = client.execute(post);

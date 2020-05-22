@@ -1,0 +1,32 @@
+{
+   "name":"com",
+   "children":[
+      {
+         "name":"project",
+         "children":[
+            {
+               "name":"server",
+               "children":[
+
+               ]
+            },
+            {
+               "name":"client",
+               "children":[
+                  {
+                     "name":"util",
+                     "children":[
+                        {
+                           "name":"some",
+                           "children":[
+
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

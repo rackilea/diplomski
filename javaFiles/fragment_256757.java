@@ -1,0 +1,9 @@
+public class PersonService {
+ ...
+     private PersonDao personDao;
+ ...
+     public List<Person> findAll() {
+         return personDao.findAll();
+     }
+ ...
+ }

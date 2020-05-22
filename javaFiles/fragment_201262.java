@@ -1,0 +1,6 @@
+public class A implements Serializable {
+    // ...
+    public class B implements Serializable {
+        // ...
+    }
+}

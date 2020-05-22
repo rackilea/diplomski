@@ -1,0 +1,52 @@
+{  
+    "tripType": "OneWay",  
+    "tripInfos": {
+        "flightInfoParameters" : [  
+            {  
+                "from":"EARTH",  
+                "to":"MOON",  
+                "fromSchedule":"2015-12-21T04:30:00",  
+                "toSchedule":"2015-12-21T06:50:00"  
+            },  
+            {  
+                "from":"MOON",  
+                "to":"MARS",  
+                "fromSchedule":"2015-12-21T03:30:00",  
+                "toSchedule":"2015-12-21T011:10:00"  
+            },  
+            {  
+                "from":"VENUS",  
+                "to":"KEPLER",  
+                "fromSchedule":"2015-12-21T01:30:00",  
+                "toSchedule":"2015-12-21T22:30:00"  
+            },     
+            {     
+                "from":"EARTH",  
+                "to":"SUN",  
+                "fromSchedule":"2015-12-20T02:30:00",  
+                "toSchedule":"2015-12-29T15:10:00"  
+            }  
+        ]
+    },
+    "adultFare":{  
+        "paxType":"ADT",  
+        "baseFare":"1000",  
+        "totalFeesAndTaxes":"300",  
+        "totalAmount":"1300.00"  
+    },  
+    "childFare":{  
+        "paxType":"CHD",  
+        "baseFare":"750",  
+        "totalFeesAndTaxes":"250",  
+        "totalAmount":"1000.00"  
+    },  
+    "infantFare":{  
+        "paxType":"INF",  
+        "baseFare":"250",  
+        "totalFeesAndTaxes":"25",  
+        "totalAmount":"275.00"  
+    },  
+    "adultCount":"1",  
+    "childCount":"1",  
+    "infantCount":"2"  
+}

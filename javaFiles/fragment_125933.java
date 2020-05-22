@@ -1,0 +1,12 @@
+<Resource auth="Container"
+          connectionCacheName="CXCACHE"
+          connectionCacheProperties="{MaxStatementsLimit=5,MinLimit=1, MaxLimit=1, ValidateConnection=true}"
+          connectionCachingEnabled="true"
+          description="Oracle Datasource"
+          factory="oracle.jdbc.pool.OracleDataSourceFactory"
+          name="jdbc/TestDB"
+          user="default_user" 
+          password="password"
+          type="oracle.jdbc.pool.OracleDataSource"
+          url="jdbc:oracle:thin:@//localhost:1521/orcl"
+          />

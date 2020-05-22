@@ -1,0 +1,9 @@
+@Entity
+class Department {
+    ...
+    @OneToMany(mappedBy="employee")
+    Collection<Employee> getEmployees() {
+        ....
+    }
+    ...
+}

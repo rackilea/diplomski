@@ -1,0 +1,7 @@
+final Segment<K,V>[] segments;
+
+/**
+ * Segments are specialized versions of hash tables.  This
+ * subclasses from ReentrantLock opportunistically, just to
+ * simplify some locking and avoid separate construction.
+ */

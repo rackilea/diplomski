@@ -1,0 +1,13 @@
+public MyDataOps extends CacheAble<MyData>{
+   @Override
+   public boolean insertCacheAble(MyData data){
+       // ... data.getName(); ...
+       // ... data.getColor(); ...
+   }
+
+   @Override
+   public boolean deleteCacheAble(MyData data){
+       // ... data.getName(); ...
+       // ... data.getColor(); ...
+   }
+}

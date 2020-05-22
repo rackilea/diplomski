@@ -1,0 +1,13 @@
+public class A extends Fragment
+    implements GooglePlayServicesClient.ConnectionCallbacks,
+               GooglePlayServicesClient.OnConnectionFailedListener
+{
+    ...
+    @Override
+    public void onConnectionFailed(ConnectionResult connectionResult)
+    {
+        ...
+        connectionResult.startResolutionForResult(getActivity(), LocationUtils.CONNECTION_FAILURE_RESOLUTION_REQUEST);
+        ...
+    }
+...

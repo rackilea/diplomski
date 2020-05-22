@@ -1,0 +1,19 @@
+String formatString = String.format("
+%-35s
+%-10d
+%.1f\n
+%-35s
+%-10d
+%.1f\n
+%-35s
+%-10d
+%.1f",
+module1Name,
+module1Students,
+module1Mark,
+module2Name,
+module2Students,
+module2Mark,
+module3Name,
+module3Students,
+module3Mark);

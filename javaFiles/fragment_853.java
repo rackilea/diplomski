@@ -1,0 +1,6 @@
+import io.scif.gui.AWTImageTools;
+...
+byte[] bytes = new byte[width * height];
+...
+boolean signed = false;
+BufferedImage bi = AWTImageTools.makeImage(bytes, width, height, signed);

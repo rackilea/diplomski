@@ -1,0 +1,10 @@
+table.addGeneratedColumn(NEW_PROPERTY_ID, new PulseNewItemColumnGenerator());
+    table.setColumnWidth(NEW_PROPERTY_ID, 100);
+    table.addGeneratedColumn(TASK_PROPERTY_ID, new TaskSubjectColumnGenerator());
+    table.setColumnWidth(TASK_PROPERTY_ID, 220);
+    table.addGeneratedColumn(STATUS_PROPERTY_ID, new TaskStatusColumnGenerator());
+    table.setColumnWidth(STATUS_PROPERTY_ID, 80);
+    table.addGeneratedColumn(SENT_TO_PROPERTY_ID, new SentToColumnGenerator());
+    table.setColumnWidth(SENT_TO_PROPERTY_ID, 100);
+    table.addGeneratedColumn(LAST_CHANGE_PROPERTY_ID, new DateColumnFormatter(null));
+    table.setColumnWidth(LAST_CHANGE_PROPERTY_ID, 140);

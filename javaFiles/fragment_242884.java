@@ -1,0 +1,10 @@
+Calendar c = Calendar.getInstance();
+    c.setTimeZone(TimeZone.getTimeZone("UTC"));
+    c.set(1111, Calendar.NOVEMBER, 11, 0, 0, 0);
+    c.set(Calendar.MILLISECOND, 0);
+    Date d = c.getTime();
+    System.out.println("Date: " + d + " (" + d.getTime() + " milliseconds)");
+    System.out.println("ISO: " + new DateTime(d, ISOChronology.getInstance(DateTimeZone.forID("UTC"))));
+    System.out.println("Julian+Gregorian: " + new DateTime(d, GJChronology.getInstance(DateTimeZone.forID("UTC"))));
+    System.out.println("Julian: " + new DateTime(d, JulianChronology.getInstance(DateTimeZone.forID("UTC"))));
+    System.out.println("Gregorian: " + new DateTime(d, GregorianChronology.getInstance(DateTimeZone.forID("UTC"))));

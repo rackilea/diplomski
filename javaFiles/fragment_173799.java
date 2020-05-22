@@ -1,0 +1,13 @@
+PreparedStatement stmt = conn.prepareStatement("INSERT INTO STAFFDIR(Last_Name,First_Name,Middle,Phone,Dept_Code,Email,Title,Fax_Code,Loc_Code,Picture,Pic_Code) VALUES (?,?,?,?,?,?,?,?,?,?,?)");
+           stmt.setString(1, LN);
+           stmt.setString(2, FN);
+           stmt.setString(3, M);
+           stmt.setString(4, Phone);
+           stmt.setInt(5, DC);
+           stmt.setString(6, Email);
+           stmt.setInt(7, FC);
+           stmt.setString(8, Title);
+           stmt.setInt(9, LC);
+           stmt.setString(10, Picture);
+           stmt.setString(11, PC);
+           stmt.executeUpdate();

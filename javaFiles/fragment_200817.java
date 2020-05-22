@@ -1,0 +1,9 @@
+jobSummaries.setJobName(rs.getString("JOB_NAME"));
+    jobSummaries.setJobDescription(rs.getString("JOB_DESCRIPTION"));
+    jobSummaries.setJobRole(rs.getString("JOB_ROLE"));
+    jobSummaries.setJobPrimarySkill(rs.getString("JOB_PRIMARY_SKILL"));
+    jobSummaries.setJobDesignation(rs.getString("JOB_DESIGNATION"));
+    jobSummaries.setJobExp(rs.getString("JOB_EXP"));
+    jobSummaries.setJobSalaryRange(rs.getString("JOB_SAL_RANGE"));
+    jobSummaries.setJobPostedBy(rs.getString("JOB_POSTEDBY"));
+    jobSummaryList.add(jobSummaries);

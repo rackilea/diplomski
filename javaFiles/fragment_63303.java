@@ -1,0 +1,13 @@
+public class LaporanFragment extends Fragment {
+
+  ...
+  ...
+  kirim.setOnClickListener(new OnClickListener() {
+         @Override
+         public void onClick(View view) {
+           mListener.onSendReportClicked(jdlLaporan, isiLaporan, noktp);
+         }
+  });
+  ...
+  ...
+}

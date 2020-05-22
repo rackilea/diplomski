@@ -1,0 +1,6 @@
+TreeMap<K, V> map = ...
+K search = ...
+K closest = map.ceilingKey(search);
+if (closest == null) {
+    closest = map.floorKey(search);
+}

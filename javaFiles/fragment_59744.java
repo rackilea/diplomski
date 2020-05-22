@@ -1,0 +1,8 @@
+@Component
+public class SpringRestConfiguration extends 
+RepositoryRestConfigurerAdapter {
+@Override
+public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
+config.setRepositoryDetectionStrategy(RepositoryDetectionStrategy.RepositoryDetectionStrategies.ANNOTATED);
+}
+}

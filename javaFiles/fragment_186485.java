@@ -1,0 +1,6 @@
+...
+pivotTable.getCTPivotTableDefinition().setCompact(false);
+pivotTable.getCTPivotTableDefinition().setCompactData(false);
+pivotTable.getCTPivotTableDefinition().setOutline(true); 
+pivotTable.getCTPivotTableDefinition().setOutlineData(true);
+...

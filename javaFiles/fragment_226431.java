@@ -1,0 +1,9 @@
+AWTEventMulticaster
+{
+   first_listener_you_added;
+   AWTEventMulticaster
+   {
+       second_listener_you_added;
+       third_listener_you_added;
+   }
+}

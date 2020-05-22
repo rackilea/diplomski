@@ -1,0 +1,9 @@
+while (true) {
+  long current = value;
+  double currentVal = longBitsToDouble(current);
+  double nextVal = currentVal + delta;
+  long next = doubleToRawLongBits(nextVal);
+  if (updater.compareAndSet(this, current, next)) {
+    return nextVal;
+  }
+}

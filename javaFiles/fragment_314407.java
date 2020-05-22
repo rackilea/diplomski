@@ -1,0 +1,6 @@
+extenderTask task = new extenderTask();         
+new Thread(task).start();
+task.setOnSucceeded(e -> {
+setListYourVariable((List<String>) task.getValue()); ...
+...(all other action)...
+}

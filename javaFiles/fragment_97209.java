@@ -1,0 +1,11 @@
+mTabStripLayout = new PagerSlidingTabStrip(this);
+mTabStripLayout.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 140));
+mTabStripLayout.setShouldExpand(true);
+mTabStripLayout.setAllCaps(true);
+mTabStripLayout.setTextSize(60);
+mTabStripLayout.setTextColor(Color.BLACK);
+mTabStripLayout.setDividerColor(Color.BLUE);
+mTabStripLayout.setDividerPadding(30);
+mTabStripLayout.setIndicatorColor(Color.RED);
+mTabStripLayout.setIndicatorHeight(15);
+mTabStripLayout.setUnderlineColor(Color.BLUE);

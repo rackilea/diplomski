@@ -1,0 +1,6 @@
+public boolean closeTrade( BooleanSupplier f) {
+    // ...
+    if (f.getAsBoolean()) return true; // quit loop if successfully closed
+    // ...
+    return false;
+}

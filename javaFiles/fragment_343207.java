@@ -1,0 +1,12 @@
+<configuration>
+    <sourceRoot>${basedir}/src/main/java</sourceRoot>
+    <wsdlOptions>
+        <wsdlOption>
+            <wsdl>${basedir}/src/main/resources/HostavailableService.wsdl</wsdl>
+            <extraargs>
+                <extraarg>-verbose</extraarg>
+                <extraarg>-client</extraarg>
+            </extraargs>
+        </wsdlOption>
+    </wsdlOptions>
+</configuration>

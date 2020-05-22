@@ -1,0 +1,9 @@
+public <T extends AbstractBase> T getById(long id, Class<T> typeKey) {
+    if (ClassA.class.isAssignableFrom(typeKey)) {
+        // ...
+    } else if (ClassB.class.isAssignableFrom(typeKey)) {
+        // ...
+    } else {
+        // ...
+    }
+}

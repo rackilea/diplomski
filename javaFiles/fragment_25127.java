@@ -1,0 +1,13 @@
+public void init() {
+    Panel rootPanel = CreatePanel(new GridLayout(4, 1)); // 4 rows with 1 column
+    ...
+    rootPanel.add(row1);
+    ...
+    rootPanel.add(row2);
+    ...
+    rootPanel.add(row3);
+    ...
+    rootPanel.add(row5);
+
+    add(rootPanel);
+}

@@ -1,0 +1,6 @@
+for (int i = 0; input.hasNext(); i++) {
+    ...
+    weight = input.next();
+    ...
+    System.out.println(weight);
+}

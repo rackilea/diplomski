@@ -1,0 +1,6 @@
+for (int i=0; i<populationArray.length; i++){
+        for (int j=0; j<populationArray[i].length; j++) {
+            populationArray[i][j] = random.nextInt(5)+1;
+            populationArray[j][i] = populationArray[i][j];
+    }
+}

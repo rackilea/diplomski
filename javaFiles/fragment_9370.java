@@ -1,0 +1,6 @@
+public static boolean listContains(List<? extends MyObject> source, String value) {        
+    for (MyObject obj : source ) {
+        //...
+        //... value.equals(obj.getField())
+    }
+    //...

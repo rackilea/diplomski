@@ -1,0 +1,6 @@
+....
+ setBounds(100, 100, 450, 310);
+ buttonsCardPane.setLayout(cardLayout);
+ getContentPane().setLayout(new MigLayout("", "[450px][trailing]", "[][]"));
+ ....
+ case 0: cardLayout.show(buttonsCardPane, "addUserButtonPanel"); break;

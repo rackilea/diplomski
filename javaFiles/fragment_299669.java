@@ -1,0 +1,6 @@
+//...
+else if (c[i] == '/' && brackets == 0) {
+      String numerator = s.substring(0, i);
+      String denominator = s.substring(i+1, s.length);
+}
+//...

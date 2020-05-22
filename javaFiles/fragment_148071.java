@@ -1,0 +1,6 @@
+{
+    JButton button;
+    {
+        JButton button;
+    }
+}

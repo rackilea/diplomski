@@ -1,0 +1,14 @@
+// make a Config with just your special setting
+Config myConfig = ConfigFactory.parseString("something=somethingElse");
+
+// load the normal config stack (system props, then application.conf, then reference.conf)
+Config regularConfig = ConfigFactory.load();
+
+// override regular stack with myConfig
+Config combined = myConfig.withFallback(regularConfig);
+
+// put the result in between the overrides (system props) and defaults again
+Config complete = ConfigFactory.load(combined);
+
+// create ActorSystem
+ActorSystem system = ActorSystem.create("myname", complete);

@@ -1,0 +1,6 @@
+public void setJson(String result, Boolean isOnline) {
+    try {
+       ...
+    }
+    ...
+}

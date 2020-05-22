@@ -1,0 +1,11 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Map</TITLE>
+</HEAD>
+<BODY>
+    key1=value1<br>
+    key2=<br>
+
+</BODY>
+</HTML>

@@ -1,0 +1,6 @@
+...
+public void calcAvg () {
+
+    avgOfWeek = new double [3];
+    double [] sum = new double [3];
+....

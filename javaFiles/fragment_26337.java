@@ -1,0 +1,9 @@
+// Change names of build files in sub-projects for easier navigation in IDEs
+// and text editors.
+renameChildBuildFiles(rootProject)
+
+void renameChildBuildFiles(parentProject) {
+    for (p in parentProject.children) {
+        p.buildFileName = (p.name - "my-app-") + ".gradle"
+    }
+}

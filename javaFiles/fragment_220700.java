@@ -1,0 +1,6 @@
+public abstract Class JsonResponse {
+  private String errcode;
+  private String errmsg;
+  //getters...
+  //setters...
+}

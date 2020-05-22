@@ -1,0 +1,33 @@
+@RequestMapping(value = "/upload", method = RequestMethod.POST)
+  public @ResponseBody String handleFileUpload(
+          @RequestParam("name") String name,
+          @RequestParam("file") MultipartFile file) {
+
+            String yourUploadDirectory = "uploads";
+
+
+      if (!file.isEmpty()) {
+          try {
+              byte[] bytes = file.getBytes();
+              File file1 = new File("c:/" + yourUploadDirectory + "/" + name + ".uploaded");
+
+              // You must write this line so that the designated file is first created, otherwise getParentFile() will throw error.
+              file1.createNewFile();
+
+              file1.getParentFile().mkdirs();
+              BufferedOutputStream stream = new BufferedOutputStream(
+                      new FileOutputStream(file1));
+
+              stream.write(bytes);
+              stream.close();
+              return "You successfully uploaded " + name + " into " + name
+                      + "-uploaded !";
+          } catch (Exception e) {
+              e.printStackTrace();
+              return "You failed to upload " + name + " => " + e.getMessage();
+          }
+      } else {
+          return "You failed to upload " + name
+                  + " because the file was empty.";
+      }
+  }

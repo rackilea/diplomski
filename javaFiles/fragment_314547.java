@@ -1,0 +1,10 @@
+Pattern.compile("^["
+        + "\u1100-\u11FF"
+        + "\u302E-\u302F"
+        + "\u3131-\u318F"
+        + "\u3200-\u321F"
+        + "\u3260-\u327E"
+        + "\uA960-\uA97F"
+        + "\uAC00-\uD7FB"
+        + "\uFFA0-\uFFDF"
+        + "\\p{IsDigit}]+");

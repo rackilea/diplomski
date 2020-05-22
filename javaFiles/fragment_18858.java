@@ -1,0 +1,6 @@
+$a = new ArrayObject([1,2,3]);
+$b = $a;
+$b[2] = 99;
+
+print_r($b); // 1,2,99
+print_r($a); // 1,2,99

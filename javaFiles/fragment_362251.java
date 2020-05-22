@@ -1,0 +1,6 @@
+private void postInitComponents() {
+    ...
+    DefaultTableCellRenderer renderer = (DefaultTableCellRenderer) jTable1.getTableHeader().getDefaultRenderer();
+    renderer.setHorizontalAlignment(SwingConstants.CENTER);
+    ...
+}

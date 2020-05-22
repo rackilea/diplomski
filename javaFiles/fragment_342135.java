@@ -1,0 +1,11 @@
+List<String> student = new ArrayList<>();
+student.add("01, Pentecoast");
+student.add("02, Walker");
+student.add("03, Smith");
+student.add("04, Gonzalez");
+student.add("05, Kylekorn");
+student.add("06, Queen");
+student.add("07, Divan");
+student.add("08, Homero");
+student.add("09, Flanders");
+student.add("10, Simpsons");

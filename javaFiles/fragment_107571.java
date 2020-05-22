@@ -1,0 +1,6 @@
+public void draw(Canvas canvas) {
+   ....
+   // use this to place another bitmap, i.e. number images, onto the canvas
+   canvas.drawBitmap(..,..,..);  
+   ...
+}

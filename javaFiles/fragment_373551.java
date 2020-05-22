@@ -1,0 +1,6 @@
+........
+    case Sending:
+        this.state = State.Disconnecting;
+        future.getChannel().disconnect().addListener(this);
+        break;
+        ........

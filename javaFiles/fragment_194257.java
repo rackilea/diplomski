@@ -1,0 +1,15 @@
+ContentModule contentModule = new ContentModuleImpl();                
+List<ContentItem> contents = new ArrayList<ContentItem>();
+List<Content> contentValueDOM = new ArrayList<Content>();        
+String value = "<p>Some text here</p>";
+ContentItem content = new ContentItem();
+content.setContentValue(value);
+content.setContentAbout("Paragraph"); 
+content.setContentFormat("http://www.w3.org/TR/html4/");
+CDATA valueElement = new CDATA(value);
+contentValueDOM.add(valueElement);
+content.setContentValueDOM(contentValueDOM);      
+contents.add(content);
+contentModule.setContents(contents);
+contentModule.setContentItems(contents);
+entry.getModules().add(contentModule);

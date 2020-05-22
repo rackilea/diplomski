@@ -1,0 +1,13 @@
+byte b1 = din.readByte();
+byte b2 = din.readByte();
+byte b3 = din.readByte();
+byte b4 = din.readByte();
+int s = 0;
+s = s | (b4 & 0xff);
+s = (s << 8);
+s = s | (b3 & 0xff);
+s = (s << 8);
+s = s | (b2 & 0xff);
+s = (s << 8);
+s = s | (b1 & 0xff);
+return s;

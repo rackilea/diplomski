@@ -1,0 +1,9 @@
+@XmlSeeAlso({Entity.class})
+public class Entities{
+
+    @XmlElement(name="entity")
+    @XmlJavaTypeAdapter(YourAdapter.class)
+    private Map<String,Object> yourMap;
+
+    //getters, setters, and methods
+}

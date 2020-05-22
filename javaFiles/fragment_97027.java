@@ -1,0 +1,10 @@
+new Actions(driver)
+                .moveToElement(source)
+                .pause(Duration.ofSeconds(1))
+                .clickAndHold(source)
+                .pause(Duration.ofSeconds(1))
+                .moveByOffset(1, 0)
+                .moveToElement(destination)
+                .moveByOffset(1, 0)
+                .pause(Duration.ofSeconds(1))
+                .release().perform();

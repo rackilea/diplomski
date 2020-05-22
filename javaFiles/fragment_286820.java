@@ -1,0 +1,6 @@
+static final String[] argHolder = new String[1];
+public static void main(String[] args) {
+  ...
+  argsHolder[0] = args[0];
+  ...
+}

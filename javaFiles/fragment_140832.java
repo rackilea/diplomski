@@ -1,0 +1,9 @@
+int comparison = o.compareTo(currentNode.Value)
+if(comparison ==0){
+   ...
+} else if (comparison > 0) {
+   ...
+} else  {
+  // comparison < 0
+   ...
+}

@@ -1,0 +1,9 @@
+2018-10-12 09:30:17.322 DEBUG 55745 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [/data/apps/tomcat/apache-tomcat-9.0.0.M20/webapps/DataViewer/WEB-INF/classes/com/clarivate/dataviewer/controller/MainController.class]
+2018-10-12 09:30:17.328 DEBUG 55745 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [/data/apps/tomcat/apache-tomcat-9.0.0.M20/webapps/DataViewer/WEB-INF/classes/com/clarivate/dataviewer/database/ReadFromDb.class]
+2018-10-12 09:30:17.356 DEBUG 55745 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [/data/apps/tomcat/apache-tomcat-9.0.0.M20/webapps/DataViewer/WEB-INF/classes/com/clarivate/dataviewer/service/FileFuncs.class]
+2018-10-12 09:30:17.357 DEBUG 55745 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [/data/apps/tomcat/apache-tomcat-9.0.0.M20/webapps/DataViewer/WEB-INF/classes/com/clarivate/dataviewer/service/StringFuncs.class]
+...
+2018-10-12 09:30:19.417  INFO 55745 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tspsPatentSearch],methods=[POST]}" onto public java.lang.String com.clarivate.dataviewer.controller.MainController.tspsPatentSearch(com.clarivate.dataviewer.model.TspsPatent,org.springframework.ui.Model,org.springframework.validation.BindingResult)
+2018-10-12 09:30:19.417  INFO 55745 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tspsPatentSearch],methods=[GET]}" onto public java.lang.String com.clarivate.dataviewer.controller.MainController.tspsPatentSearch(org.springframework.ui.Model)
+...
+2018-10-12 09:30:19.769  INFO 55745 --- [           main] com.clarivate.dataviewer.DvMain          : Started DvMain in 3.125 seconds (JVM running for 5.845)

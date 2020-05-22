@@ -1,0 +1,7 @@
+Flux.just("alpha", "beta", "charlie")
+    .map(String::toUpperCase)
+    .flatMap(s -> Flux.fromArray(s.split("")))
+    .groupBy(String::toString)
+    .sort((o1,o2) -> o1.key().compareTo(o2.key()))
+    .flatMap(group -> Mono.zip(Mono.just(group.key()), group.count()))
+    .map(keyAndCount -> keyAndCount.getT1() + " => " + keyAndCount.getT2() + "; ")

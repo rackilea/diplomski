@@ -1,0 +1,12 @@
+TessResultIterator ri = TessAPI1.TessBaseAPIGetIterator(api);
+TessPageIterator pi = TessAPI1.TessResultIteratorGetPageIterator(ri);
+String str = TessAPI1.TessResultIteratorGetUTF8Text(ri, TessPageIteratorLevel.RIL_WORD);
+IntBuffer leftB = IntBuffer.allocate(1);
+IntBuffer topB = IntBuffer.allocate(1);
+IntBuffer rightB = IntBuffer.allocate(1);
+IntBuffer bottomB = IntBuffer.allocate(1);
+TessAPI1.TessPageIteratorBoundingBox(pi, TessPageIteratorLevel.RIL_WORD, leftB, topB, rightB, bottomB);
+int left = leftB.get();
+int top = topB.get();
+int right = rightB.get();
+int bottom = bottomB.get();

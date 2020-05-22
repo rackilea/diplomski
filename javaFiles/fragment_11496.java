@@ -1,0 +1,12 @@
+@RELATION yourTable
+
+@ATTRIBUTE F1 NUMERIC
+@ATTRIBUTE F2 NUMERIC
+@ATTRIBUTE F3 NUMERIC
+...
+@ATTRIBUTE Class {1,2,3} % your class labels
+
+@DATA
+5, 2, 1    % 50/10, 20/10, 1
+10, 5, 3   % 20/2, 100/20, 3
+...

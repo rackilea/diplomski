@@ -1,0 +1,6 @@
+...
+ try {
+     solrServer.add(docs);
+     solrServer.commit();
+ }
+ ...

@@ -1,0 +1,8 @@
+type Query {
+    users(first: Int, after: String): UserConnection @connection(for: "User")
+}
+
+type User {
+    id: ID!
+    name: String
+}

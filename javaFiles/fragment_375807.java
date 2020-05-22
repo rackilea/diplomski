@@ -1,0 +1,10 @@
+TreeMap<Long, Integer> m = new TreeMap<>();
+m.put(1L, 1);
+m.put(2L, 1);
+m.put(3L, 1);
+m.put(4L, 1);
+m.put(5L, 1);
+m.put(6L, 1);
+m.put(7L, 1);
+m.put(8L, 1);
+System.out.println(m.tailMap(3L));

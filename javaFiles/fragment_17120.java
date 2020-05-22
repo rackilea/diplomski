@@ -1,0 +1,7 @@
+webClient.get()
+                 .uri("http://localhost:8084/my-app/document/{id}", id)
+                 .accept(APPLICATION_PDF)
+                 .exchange()
+                 .block()
+                 .bodyToMono(byte[].class)
+                 .block()

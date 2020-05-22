@@ -1,0 +1,9 @@
+public void sort(Comparable<T> comparator) {
+    sort(SortType.MERGE, comparator);
+}
+....
+private LList<T> merge(LList<T> first, LList<T> second) {
+    ...
+        if(comparator.compare(first.headNode.data, second.headNode.data) < 0) {
+    ...
+}

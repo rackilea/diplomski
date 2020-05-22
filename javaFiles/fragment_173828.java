@@ -1,0 +1,6 @@
+done.expectedMessageCount(1);
+...
+// invoke your route here
+template.sendBody(...);
+...
+done.assertIsSatisfied();

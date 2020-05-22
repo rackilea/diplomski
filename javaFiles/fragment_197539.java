@@ -1,0 +1,16 @@
+contentValues=null;
+contentValues=new ContentValues();
+cal=null;
+cal=Calendar.getInstance();
+currentDay=0;
+currentDay=cal.get(Calendar.DAY_OF_MONTH);
+cal.set(Calendar.DAY_OF_MONTH, currentDay+Pl+1);
+contentValues.put("callfromdate",cal.getTime().toString());
+contentValues.put("type","Dll");
+contentValues.put("days",String.valueOf(Dl));
+cal=null;
+cal=Calendar.getInstance();
+currentDay=0;
+currentDay=cal.get(Calendar.DAY_OF_MONTH);
+cal.set(Calendar.DAY_OF_MONTH, currentDay+Pl+Dl);
+contentValues.put("calltodate",cal.getTime().toString());

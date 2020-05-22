@@ -1,0 +1,17 @@
+http
+    .csrf().disable()      
+    .httpBasic().and()
+    .authorizeRequests()
+        .antMatchers("/admin/**").hasAuthority("ADMIN")
+        .antMatchers("/**").permitAll()
+        .anyRequest().authenticated()
+        .and()
+    .formLogin()
+    .loginPage("/adminLogin").failureUrl("/adminLogin?error=true")
+    .defaultSuccessUrl("/admin/dashboard")
+    .usernameParameter("email")
+    .passwordParameter("password")
+    .and().logout()
+    .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+    .logoutSuccessUrl("/adminLogin?logout=true").and().exceptionHandling()
+    .accessDeniedPage("/accessdenied");

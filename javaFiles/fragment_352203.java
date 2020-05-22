@@ -1,0 +1,6 @@
+public final class Book {
+    ...
+    JComponent display() {
+        ...
+    }
+}

@@ -1,0 +1,20 @@
+[
+   {
+      "image1.bmp":{
+         "description":"Ok",
+         "filename":"image1.bmp"
+      }
+   },
+   {
+      "image2.bmp":{
+         "description":"Ok",
+         "filename":"image2.bmp"
+      }
+   },
+   {
+      "image3.bmp":{
+         "description":"Ok",
+         "filename":"image3.bmp"
+      }
+   }
+]

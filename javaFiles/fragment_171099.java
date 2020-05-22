@@ -1,0 +1,8 @@
+CREATE SEQUENCE my_table_seq START WITH 1 INCREMENT BY 1;
+CREATE TABLE my_table
+(
+  id INT8 NOT NULL DEFAULT NEXTVAL('my_table_seq'),
+  state VARCHAR(20),
+  created_on TIMESTAMP WITH TIME ZONE,
+  PRIMARY KEY (id),
+);

@@ -1,0 +1,6 @@
+...
+        for(int col = 0; col < b.numCols(); col++)
+        {
+            res = 0;
+            for(int k = 0; k < a.numCols(); k ++)
+....

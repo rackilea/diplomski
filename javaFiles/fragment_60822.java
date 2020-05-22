@@ -1,0 +1,11 @@
+XMPPTCPConnectionConfiguration.Builder config = XMPPTCPConnectionConfiguration.builder();
+config.setHost("192.168.1.50");
+config.setSecurityMode(ConnectionConfiguration.SecurityMode.disabled);
+config.setSendPresence(false);
+config.setHostAddress(InetAddress.getByName("192.168.1.50");
+config.setPort(5222);
+config.setResource("myResource");
+config.setDebuggerEnabled(true);
+config.setXmppDomain("myDomain");
+connection = new XMPPTCPConnection(config.build());
+connection.setUseStreamManagement(false);

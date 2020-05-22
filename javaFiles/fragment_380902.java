@@ -1,0 +1,16 @@
+Arguments:
+    Hello
+    World
+    !
+Arguments:
+    Lorem
+    ipsum
+    dolor
+    sit
+Arguments:
+    Lorem
+    ipsum
+    dolor
+    sit
+Arguments:
+    [Ljava.lang.String;@1d9f953d

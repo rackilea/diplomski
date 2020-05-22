@@ -1,0 +1,13 @@
+[DEBUG] MainClientExec - Opening connection {s}->https://httpbin.org:443
+[DEBUG] DefaultHttpClientConnectionOperator - Connecting to httpbin.org/52.1.117.85:443
+[DEBUG] SSLConnectionSocketFactory - Connecting socket to httpbin.org/52.1.117.85:443 with timeout 0
+[DEBUG] SSLConnectionSocketFactory - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+[DEBUG] SSLConnectionSocketFactory - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_RSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA, TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA, SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+[DEBUG] SSLConnectionSocketFactory - Starting handshake
+[DEBUG] SSLConnectionSocketFactory - Secure session established
+[DEBUG] SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+[DEBUG] SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+[DEBUG] SSLConnectionSocketFactory -  peer principal: CN=httpbin.org
+[DEBUG] SSLConnectionSocketFactory -  peer alternative names: [httpbin.org, www.httpbin.org]
+[DEBUG] SSLConnectionSocketFactory -  issuer principal: CN=Let's Encrypt Authority X3, O=Let's Encrypt, C=US
+[DEBUG] DefaultHttpClientConnectionOperator - Connection established 192.168.43.64:58742<->52.1.117.85:443

@@ -1,0 +1,6 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+...
+t1 = <c:out value="${t1}"/>
+t2 = <c:out value="${t1}"/>
+<img src="url-pattern-for-servlet2">
+...

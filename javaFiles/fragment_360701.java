@@ -1,0 +1,12 @@
+pic1.setTag ("boot");pic1.setBackgroundResource(R.drawable.jordboots);
+ pic2.setTag ("boot");pic2.setBackgroundResource(R.drawable.jordboots);
+ pic3.setTag ("boot");pic3.setBackgroundResource(R.drawable.jordboots);
+ pic4.setTag ("boot");pic4.setBackgroundResource(R.drawable.jordboots); 
+ pic5.setTag ("boot");pic5.setBackgroundResource(R.drawable.jordboots);
+ pic6.setTag ("boot");pic6.setBackgroundResource(R.drawable.jordboots);
+ pic7.setTag ("boot");pic7.setBackgroundResource(R.drawable.jordboots); 
+ pic8.setTag ("boot");pic8.setBackgroundResource(R.drawable.jordboots);
+ pic9.setTag ("boot");pic9.setBackgroundResource(R.drawable.jordboots);
+ pic10.setTag ("boot");pic10.setBackgroundResource(R.drawable.jordboots); 
+ pic11.setTag ("boot");pic11.setBackgroundResource(R.drawable.jordboots); 
+ pic12.setTag ("boot");pic12.setBackgroundResource(R.drawable.jordboots);

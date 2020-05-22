@@ -1,0 +1,6 @@
+public class FooEntity implements Serializable {
+    ...
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "foo", cascade = CascadeType.ALL)  
+    List<FooErrorEntity> errors;
+    ...
+}

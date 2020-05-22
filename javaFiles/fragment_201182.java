@@ -1,0 +1,29 @@
+{
+    "foods":{
+        "user1":{
+            "-L30jqWgsXDUOsTlLgEE":{
+                "bestBefore":"22/03/2018",
+                "foodCategory":"Fruit",
+                "foodId":"-L30jqWgsXDUOsTlLgEE",
+                "foodName":"Banana"
+            },
+            "-L30js70gQ2tjCBA9aCJ":{
+                ...
+            },
+            "-L30jtpi1OCPPXrhbmqP":{
+                ...
+            }
+        },
+        "user2":{
+            "-L30js70gQ2tjCBA9aCJ":{
+                "bestBefore":"22/03/2018",
+                "foodCategory":"Fruit",
+                "foodId":"-L30js70gQ2tjCBA9aCJ",
+                "foodName":"Apple"
+            },
+            "-L30jtpi1OCPPXrhbmqP":{
+                ...
+            }
+        }
+    }
+}

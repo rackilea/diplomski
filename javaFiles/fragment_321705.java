@@ -1,0 +1,6 @@
+Random r = new Random();
+double radius = r.nextFloat() * range; // or r.nextDouble()...
+double angle = r.nextFloat() * 2.0f * Math.PI;
+double randomDistanceLatitude = Math.cos(angle) * radius;
+double randomDistanceLongitude = Math.sin(angle) * radius;
+...

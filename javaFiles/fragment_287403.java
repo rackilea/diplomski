@@ -1,0 +1,6 @@
+double multiplier = .75;
+    //...
+
+           double yPos = y - Pong.padel1y1 - (Padel.padelLength/2);
+           //...
+           double angle = multiplier * yPos;

@@ -1,0 +1,16 @@
+String[][] result;
+ArrayList<String[]> lines = new ArrayList<>();
+try (BufferedReader reader = new BufferedReader(new FileReader("path"))) {
+    while (reader.ready()) {
+        lines.add(reader.readLine().split(" ");
+    }
+} catch (IOException e) {
+    // proper error handling
+}
+result = lines.toArray(new String[lines.size()][]);
+
+for(String[] lineTokens) {
+  String studendNumber = lineTokens[0];
+  boolean gender = Boolean.parseBoolean(lineTokens[1]);
+  ...
+}

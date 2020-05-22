@@ -1,0 +1,6 @@
+TestEnumClass value = TestEnumClass.valueOf(str);
+
+switch (value) {
+    case TEST1: ...
+    case TEST2: ...
+}

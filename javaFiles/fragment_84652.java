@@ -1,0 +1,6 @@
+...
+        if(a < N - b)
+            tot += (a + 1.0) / ((double)a * b);
+        else
+            tot += (N - b + 1.0) / ((double)a * b);
+        ...

@@ -1,0 +1,11 @@
+subprojects {
+   apply plugin: 'java'
+
+   sourceSets {
+      main {
+         java {
+            srcDirs = ['src']
+         }
+      }
+   }
+}

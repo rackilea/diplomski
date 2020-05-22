@@ -1,0 +1,11 @@
+List <String> list= new ArrayList<String>();
+    list.add("0321564988");
+    list.add("7891268429");
+    contacts.addContact("Name1",list);
+    list.clear();
+    list.add("1891219122");
+    list.add("9495198929");
+    contacts.addContact("Name2",list);
+    list.clear();
+    list.add("8949219912");
+    contacts.addContact("Name3",list);

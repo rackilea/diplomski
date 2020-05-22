@@ -1,0 +1,10 @@
+Kernel32 kernel = Kernel32.INSTANCE;
+WinBase.SYSTEMTIME newTime = new WinBase.SYSTEMTIME();
+newTime.wYear = 2015; 
+newTime.wMonth = 11;
+newTime.wDay = 10;
+newTime.wHour = 12;
+newTime.wMinute = 0;
+newTime.wSecond = 0;
+newTime.wMilliseconds = 0;
+kernel.SetSystemTime(newTime);

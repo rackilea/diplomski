@@ -1,0 +1,19 @@
+{
+
+    "id1":[
+        "string1",
+        "string2"
+    ],
+    "id2":[
+        "string3",
+        "string4"
+    ],
+    "oo":[
+        {
+            "object1":""
+        },
+        {
+            "object2":""
+        }
+    ]
+}

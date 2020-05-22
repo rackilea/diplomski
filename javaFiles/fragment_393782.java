@@ -1,0 +1,13 @@
+@Entity
+...
+public class Account extends ... {
+    @OneToOne(..., cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    ...
+    private Contact contact;
+
+    @OneToOne(..., cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    ...
+    private Asset asset;
+
+    ...
+}

@@ -1,0 +1,6 @@
+"feeds":
+  [
+      {
+          "feed":{"name":"twitter"}
+      } 
+  ]

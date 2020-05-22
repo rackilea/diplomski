@@ -1,0 +1,11 @@
+float[] vertices1 = {0, 0, 75, 75, 0, 75, 75, 0};
+    vertices1 = GeometryUtils.scale(vertices1, 0, 0, 1, 1);
+    Image image1 = new Image(new PolygonRegionDrawable(new PolygonRegion(resources.getSolidTexture(Color.YELLOW), vertices1, new short[]{0, 1, 2, 0, 3, 2})));
+    float[] vertices2 = {0, 0, 130, 130, 0, 130, 130, 0};
+    vertices2 = GeometryUtils.scale(vertices2, 0, 0, 1, 1);
+    Image image2 = new Image(new PolygonRegionDrawable(new PolygonRegion(resources.getSolidTexture(Color.YELLOW), vertices2, new short[]{0, 1, 2, 0, 3, 2})));
+    mainTable.setFillParent(true);
+    mainTable.row();
+    mainTable.add(image1).uniform().fill();
+    mainTable.add(image2).uniform();
+    mainTable.pack();

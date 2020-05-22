@@ -1,0 +1,9 @@
+System.out.println(getFinalYear(1));// 2011
+System.out.println(getFinalYear(2));// 2012
+System.out.println(getFinalYear(3));// 2013
+System.out.println(getFinalYear(4));// 2004
+System.out.println(getFinalYear(5));// 2005
+System.out.println(getFinalYear(6));// 2006
+System.out.println(getFinalYear(7));// 2007
+System.out.println(getFinalYear(8));// 2008
+System.out.println(getFinalYear(9));// 2009

@@ -1,0 +1,11 @@
+create table GALLERY(
+    GALLERY_ID INT,
+    NAME VARCHAR2(20),
+    CREATION_DT
+);
+
+create table DOCUMENT(
+    GALLERY_ID INT,
+    NAME VARCHAR2(20),
+    CREATION_DT
+);

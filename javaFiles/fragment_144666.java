@@ -1,0 +1,6 @@
+public ImageDeployer(HashMap<String, String> volIDMap, HashMap<String, String> osMap) {
+    ....
+    makeAConnection();
+    //doInBackground();
+    ...
+}

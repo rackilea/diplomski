@@ -1,0 +1,11 @@
+final JFrame frame = new JFrame("JList horizontal auto-scroll to right");
+frame.setBounds(100, 100, 80, 600);
+frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+final String[] model = {"aaa", "bbbb", "ccccccccccccccccccccccccc"};
+final JList<String> jList = new JList<String>(model);
+jList.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
+final JScrollPane scrollPane = new JScrollPane(jList);
+frame.getContentPane().add(scrollPane);
+final int maximum = scrollPane.getHorizontalScrollBar().getMaximum();
+scrollPane.getHorizontalScrollBar().setValue(maximum);
+frame.setVisible(true);

@@ -1,0 +1,13 @@
+;it is pseudo code, not mips
+start:
+        jmp  to_the_limit
+        .....
+        .... 256MB bloated code
+        ....
+to_the_limit:
+        jmp  even_further
+        ....
+        .... another 256MB of even more bloated code.
+        ....
+even_further:
+        jmp  this_code

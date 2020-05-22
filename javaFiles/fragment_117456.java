@@ -1,0 +1,9 @@
+CREATE OR REPLACE TRIGGER REPORT_ID_TRIG
+BEFORE INSERT ON WEBPORTAL.REPORT
+FOR EACH ROW
+WHEN (new.report_id is null)
+BEGIN 
+    SELECT report_id_seq.NEXTVAL
+    INTO :new.report_id
+    FROM dual;
+END;

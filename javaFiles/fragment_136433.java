@@ -1,0 +1,6 @@
+PrintWriter fout= new PrintWriter("OutputFile.txt");
+//....
+fout.printf("\n%f , %f",x,y);
+fout.println();
+//....
+fout.close();

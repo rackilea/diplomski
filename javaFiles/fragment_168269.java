@@ -1,0 +1,13 @@
+ShakeDetector sd = new ShakeDetector(this);
+//...
+protected void onCreate(...){
+    //...
+    sd = new ShakeDetector(this);
+    sd.start(sensorManager);
+}
+
+public void hearShake(){
+    //...
+    sd.stop();
+    //...
+}

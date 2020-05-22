@@ -1,0 +1,12 @@
+p1 = new Panel();
+    p2 = new Panel();
+    l1 = new Label("Some random text");
+    cbg = new CheckboxGroup();
+    c1 = new Checkbox("Normal", cbg, false);
+    c1.addItemListener(ab);
+    c2 = new Checkbox("Bold", cbg, false);
+    c2.addItemListener(ab);
+    c3 = new Checkbox("Italic", cbg, false);
+    c3.addItemListener(ab);
+    c4 = new Checkbox("Bold/Italic", cbg, false);
+    c4.addItemListener(ab);

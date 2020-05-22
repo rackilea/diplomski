@@ -1,0 +1,16 @@
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        ...
+        targetSdkVersion 26
+        ...
+    }
+    ...
+}
+
+dependencies {
+    ...
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    ...
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+}

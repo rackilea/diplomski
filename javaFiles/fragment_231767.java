@@ -1,0 +1,17 @@
+http
+    .exceptionHandling()
+    .authenticationEntryPoint(spnegoEntryPoint())
+    .and()
+        .authorizeRequests()
+            .antMatchers("/login").permitAll()
+            .anyRequest().authenticated()
+            .and()
+        .formLogin()
+            .loginPage("/login").permitAll()
+            .and()
+        .logout()
+            .permitAll()
+            .and()
+        .addFilterBefore(
+                spnegoAuthenticationProcessingFilter(authenticationManagerBean()),
+                BasicAuthenticationFilter.class);

@@ -1,0 +1,9 @@
+wsResponse = this.webServiceTemplate.sendAndReceive(uri,
+        (webServiceMessage) -> {
+            ...
+            SoapMessage soapMessage = (SoapMessage) webServiceMessage;
+            ...
+            final SoapEnvelope envelope = soapMessage.getEnvelope();
+            headerNamespaces.forEach(envelope::addNamespaceDeclaration);
+            ...
+        }, this.responseExtractor);

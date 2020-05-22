@@ -1,0 +1,24 @@
+@Override
+public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.main);
+
+    final ToggleButton TB1 = (ToggleButton) findViewById(R.id.toggleButton1);
+    Handler handler = new Handler();
+    TB1.setOnClickListener(new OnClickListener() {
+        public void onClick(View v) {
+            if (TB1.isChecked()){
+                handler.postDelayed(new Runnable() {
+
+                    public void run() {
+                         TB1.setChecked(false);
+                    }
+                }, 1000);
+            }
+            else {
+                Toast.makeText(Vjezba5Activity.this, "Uncheck", Toast.LENGTH_SHORT).show();
+            }
+
+        }
+    });
+}
