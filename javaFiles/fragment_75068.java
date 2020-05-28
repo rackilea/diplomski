@@ -1,6 +1,0 @@
-class SecuredPage<T extends SecuredPage<T>> extends Page<T> {
-...
-}
-class HomePage extends SecuredPage<HomePage>  {
-...
-}

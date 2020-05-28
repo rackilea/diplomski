@@ -1,6 +1,0 @@
-...
-    if (preObj != null) {
-        //createCode();
-        code = createCode();
-    }  
-...

@@ -1,9 +1,0 @@
-$RE{num}{int}{-base}{-sep}{-group}{-places} 
-$RE{num}{real}{-base}{-radix}{-places}{-sep}{-group}{-expon} 
-$RE{num}{dec}{-radix}{-places}{-sep}{-group}{-expon} 
-$RE{num}{oct}{-radix}{-places}{-sep}{-group}{-expon} 
-$RE{num}{bin}{-radix}{-places}{-sep}{-group}{-expon} 
-$RE{num}{hex}{-radix}{-places}{-sep}{-group}{-expon} 
-$RE{num}{decimal}{-base}{-radix}{-places}{-sep}{-group} 
-$RE{num}{square} 
-$RE{num}{roman}

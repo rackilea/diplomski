@@ -1,6 +1,0 @@
-// Allow this code to be run by non-root users on Linux/Unix
-Settings settings = new MapSettings();
-settings.put(Keys.PORT_KEY, 4427);
-
-// Create the SLP ServiceAgent that advertises the JMX service
-ServiceAgent serviceAgent = SLP.newServiceAgent(settings);

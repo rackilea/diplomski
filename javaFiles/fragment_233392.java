@@ -1,6 +1,0 @@
-Connection conn = ...
-PreparedStatement ps = conn.prepareStatement(yourStatement);
-ResultSetMetadata metadata = ps.getMetadata(); // this is what you need
-...
-// now you can execute the query
-ResultSet rs = ps.executeQuery();

@@ -1,6 +1,0 @@
-@CrossOrigin
-@RequestMapping(value = "/createpayment", method = RequestMethod.POST)
-    public @ResponseBody 
-    Payment createPayment(HttpServletRequest request, HttpServletResponse response) {
-.....
-...

@@ -1,9 +1,0 @@
-case 1:
-            ...
-            listShape[indexShapeBox] = b;
-            indexShapeBox++;
-            ...
-        case 2:
-            ...
-            listShape[indexShapeLine] = l;
-            indexShapeLine++;

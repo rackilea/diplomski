@@ -1,6 +1,0 @@
-callableStatement.registerOutParameter("pOut", OracleTypes.CURSOR);
-...
-callableStatement.execute();
-...
-ResultSet rs = (ResultSet) callableStatement.getObject("pOut");
-// Read from result set.

@@ -1,6 +1,0 @@
-public void doSomething(Future<?> future, String id){
-    ...
-        A<?> a = new A<>(future, null);
-        map.put(id, future);
-    ...
-}

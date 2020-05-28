@@ -1,6 +1,0 @@
-public class CrossProduct<T1, T2, T3> implements List<T3> {
-    public CrossProduct(T1 list1, T2 list2, Function<T1, T2, T3> fn) {
-        // remember args...
-    }
-    // etc...
-}

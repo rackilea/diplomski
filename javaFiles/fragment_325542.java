@@ -1,6 +1,0 @@
-oldPrice = itemView.findViewById(R.id.meat_Direction);
-newPrice = itemView.findViewById(R.id.meat_price);
-...
-...
-double old_price = Double.parseDouble(oldPrice.getText().toString())
-double new_price = Double.parseDouble(newPrice.getText().toString())

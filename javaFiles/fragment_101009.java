@@ -1,7 +1,0 @@
-class Customer {
-
-  Long id;
-
-  ...
-
-}

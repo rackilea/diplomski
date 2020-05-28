@@ -1,7 +1,0 @@
-if (...) {
-  // ...
-  return;
-} else {
-  // ...
-  return;
-}

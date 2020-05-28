@@ -1,6 +1,0 @@
-<c:forEach var="atributo" items="${map[item]}">
-...
-    <form:label path="${item}.${atributo}" class="form-control">${atributo}</form:label>
-    <form:input path="${item}.${atributo}" class="form-control"/>
-...
-</c:forEach>

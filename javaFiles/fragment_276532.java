@@ -1,6 +1,0 @@
-...
-if ( video != null )
- jPanel1.add( video, BorderLayout.CENTER ); //add video component
-if ( controls != null )
- jPanel1.add( controls, BorderLayout.SOUTH ); //add controls
-...

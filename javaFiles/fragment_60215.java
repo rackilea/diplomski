@@ -1,6 +1,0 @@
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-    // ...
-    lblDrinks2 = (TextView) findViewById(R.id.lblDrinks2); // if R.id.lblDrinks2 exists 
-    // ...
-}

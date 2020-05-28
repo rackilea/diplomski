@@ -1,6 +1,0 @@
-...
-guess = sc.nextLine();
-for (char c : chosenWord.toCharArray()) {
-  System.out.print(guess.contains(String.valueOf(c)) ? c : '-');
-}
-...

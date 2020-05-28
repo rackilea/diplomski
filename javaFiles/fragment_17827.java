@@ -1,6 +1,0 @@
-Object o = ...
-Method m = ...
-Class cl = m.getParameterTypes()[0];
-if(cl.isAssignableFrom(o.getClass()))  // Is an 'o' assignable to a 'cl'?
-{
-}

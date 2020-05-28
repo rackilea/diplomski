@@ -1,6 +1,0 @@
-....
-public void onClick(AjaxRequestTarget target)
-{
-    this.send( this.getPage(), Broadcast.BREADTH, new CheeseAddedEvent( target ) );
-}
-....

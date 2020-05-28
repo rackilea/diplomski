@@ -1,6 +1,0 @@
-import java.util.Arrays;
-
-   ...
-   int[] array = new int[1024];
-   Arrays.fill(array, 42);
-   ...

@@ -1,9 +1,0 @@
-jTable1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-    jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
-       @Override
-       public void mouseClicked(java.awt.event.MouseEvent evt) {
-           ...
-           int row = jTable1.getSelectedRow();
-           int col = jTable1.getSelectedColumn());
-           if (evt.getClickCount() > 1) { // double-click etc...
-              ...

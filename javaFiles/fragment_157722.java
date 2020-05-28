@@ -1,6 +1,0 @@
-public SomeOtherClass extends ActivityClass
-{
-    ...    
-    Integer[] imageIDs = this.getImageIDs();
-    ...
-}

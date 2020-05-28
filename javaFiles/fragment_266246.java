@@ -1,9 +1,0 @@
-try{
-    if(someElement.isDisplayed()) {
-        // Do something...
-    } else {
-        // Do nothing...
-    }
-} catch (Exception e) {
-    // Do nothing or handle exception...
-}

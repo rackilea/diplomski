@@ -1,6 +1,0 @@
-public class MyCommonActivity implements MyCommonActivityInterface {
-    ...
-    public void sayHello() {Log.d("MyCommonActivity", "says hello")};
-    public void sayGoodbye() {Log.d("MyCommonActivity", "says goodbye")};
-    ...
-}

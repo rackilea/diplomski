@@ -1,6 +1,0 @@
-public static ImprovedLegacyObject create(LegacyObject legacyObject) {
-  ...
-  //copy stuff over
-  ...
-  return improvedLegacyObject;
-}

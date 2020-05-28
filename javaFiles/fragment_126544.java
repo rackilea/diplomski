@@ -1,6 +1,0 @@
-...
-canShoot = !canShoot && Gdx.input.isKeyPressed(Keys.SPACE);
-if (canShoot) {
-   shoot();
-}
-...

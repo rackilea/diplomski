@@ -1,6 +1,0 @@
-public static <T> T loadSerializable(Context context, String filename) {
-    // ...
-    T t = (T) readElement;
-    // ...
-    return t;
-}

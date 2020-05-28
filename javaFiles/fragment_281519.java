@@ -1,9 +1,0 @@
-public class GUI extends JFrame implements ActionListener {
-    ...
-    public GUI() {
-        ...
-    }
-    public void actionPerformed(ActionEvent event) {
-        ...
-    }
-}

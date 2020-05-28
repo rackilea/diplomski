@@ -1,6 +1,0 @@
-public void spawn() {
-    ...
-    obj.body.setUserValue(instances.size);
-    obj.body.setCollisionFlags(obj.body.getCollisionFlags() | btCollisionObject.CollisionFlags.CF_CUSTOM_MATERIAL_CALLBACK);
-    ...
-}

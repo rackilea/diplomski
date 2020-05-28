@@ -1,6 +1,0 @@
-class Stock {
-    String symbol;
-    ...
-    public String getSymbol() {...} //getter for symbol
-    ...
-}

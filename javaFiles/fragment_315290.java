@@ -1,9 +1,0 @@
-JTextArea text = new JTextArea();
-JButton button = new JButton("Generate");
-....
-button.addActionListener(new ActionListener() {
-    ....
-    String c = yep.nextString();
-    text.setText(c);
-    ....
-}

@@ -1,6 +1,0 @@
-...
-    ServletInvocableHandlerMethod exceptionHandlerMethod = getExceptionHandlerMethod(handlerMethod, exception);
-    if (exceptionHandlerMethod == null) {
-        return null;
-    }
-    ...

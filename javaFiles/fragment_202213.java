@@ -1,6 +1,0 @@
-private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
-..................................
-//Now read the above selected image by getting path from text field
-String path = JTextField_path.getText();
-..................................
-}

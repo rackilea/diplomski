@@ -1,6 +1,0 @@
-public List<Choice> getChoices(Context mContext) {
-    //...
-    ChoiceArray = mContext.getResources().getStringArray(R.array.group_iteme);
-   //....
-    return  choices;
-}

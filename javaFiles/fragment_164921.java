@@ -1,6 +1,0 @@
-org.osgi.framework.BundleException: Unresolved constraint in bundle org.apache.stanbol.commons.web.base.jersey [71]: Unable to resolve 71.0: missing requirement [71.0] osgi.wiring.package; (&(osgi.wiring.package=org.osgi.service.http)(version>=1.2.1)(!(version>=2.0.0)))
-    at org.apache.felix.framework.Felix.resolveBundleRevision(Felix.java:3962)
-    at org.apache.felix.framework.Felix.startBundle(Felix.java:2025)
-    at org.apache.felix.framework.Felix.setActiveStartLevel(Felix.java:1279)
-    at org.apache.felix.framework.FrameworkStartLevelImpl.run(FrameworkStartLevelImpl.java:304)
-    at java.lang.Thread.run(Thread.java:744)

@@ -1,6 +1,0 @@
-public class Node {
-    private Map<String, Node> children;
-
-    ...
-    // accessor methods to retrieve children ...
-}

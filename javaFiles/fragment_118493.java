@@ -1,6 +1,0 @@
-enum TweetType {
-  MENTIONS,
-  DIRECT_MESSAGES,
-  ALL_MESSAGES,
-  ;
-}

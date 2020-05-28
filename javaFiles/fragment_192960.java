@@ -1,6 +1,0 @@
-//consider using Java naming convention
-private enum StatusTypes {BESCHIKBAAR, VERHUURD, ONDERHOUD};
-...
-String s = model.getStatus();
-...
-StatusTypes status = StatusTypes.valueOf(s);

@@ -1,7 +1,0 @@
-{
-  "rules": {
-    "users": {
-      ".indexOn": "email"
-    }
-  }
-}

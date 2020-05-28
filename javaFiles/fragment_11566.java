@@ -1,9 +1,0 @@
-public class CalButton extends JPanel {
-    //...
-    private CalField calField;
-
-    public CalButton() {
-        //...
-        calField = new CalField();
-        //...
-    }

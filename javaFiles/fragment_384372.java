@@ -1,6 +1,0 @@
-public class Lights extends JPanel implements ActionListener {
-   private ImageIcon dimmable0; // initialize in constructor
-   ...
-   public Lights() {
-      dimmable0 = createImageIcon(...);
-      ...

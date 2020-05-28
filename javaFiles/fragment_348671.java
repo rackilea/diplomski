@@ -1,6 +1,0 @@
-public class Book {
-    // ...
-    private int numberOfLovers;
-    private int numberOfHaters;
-    // ...
-}

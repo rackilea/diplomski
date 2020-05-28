@@ -1,6 +1,0 @@
-...
-
-// creating the scroll pane that will scroll the panel.
-JScrollPane jscrlPane = new JScrollPane( new MyPanelWithCheckboxes() );
-jscrlPane.setBounds( 0, 0, 300, 300 );
-...

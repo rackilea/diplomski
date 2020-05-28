@@ -1,6 +1,0 @@
-....
-    BAoutput = new ByteArrayOutputStream();
-    Oout = new ObjectOutputStream(BAoutput);
-    BAinput = new ByteArrayInputStream(BAoutput.toByteArray());
-    Oin = new ObjectInputStream(BAinput);
-    ...

@@ -1,9 +1,0 @@
-public class AnotherFragment extends Fragment{...}
-
-...
-public void somethingWithFragments(List<? extends Fragment> fragments){
-    for(Fragment fragment:fragments){
-        ...
-    }
-}
-...

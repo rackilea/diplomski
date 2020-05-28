@@ -1,6 +1,0 @@
-for (Iterator<Song> iterator = songList.iterator();iterator.hasNext();) {
-    Song i = iterator.next();
-    ...
-    iterator.remove();
-    ...
-}

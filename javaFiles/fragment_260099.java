@@ -1,6 +1,0 @@
-class Booking {
-    String getUser() ...
-    Date getDate() ...
-}
-
-ArrayList<Booking> bookings;

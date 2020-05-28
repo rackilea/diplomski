@@ -1,6 +1,0 @@
-{
-    JButton button;
-    {
-        JButton button;
-    }
-}

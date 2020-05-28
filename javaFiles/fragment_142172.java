@@ -1,9 +1,0 @@
-try {
-    ....
-} 
-catch (EntityExistsException exception) {
-    ....
-}
-catch (PersistenceException exception) {
-    .... 
-}

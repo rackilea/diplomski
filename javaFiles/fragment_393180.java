@@ -1,9 +1,0 @@
-String jsonString1 = "{ \"hits\": {     \"hits\": [{            \"_source\": {              \"ID\": \"123\",                \"Status\": \"false\",              \"Name\": \"ABC_123\",              \"Date\": \"2010-08-16T11:07:48\"           }       }, {            \"_source\": {              \"ID\": \"124\",                \"Status\": \"false\",              \"Name\": \"ABC_678\",              \"Date\": \"2010-08-16T12:00:12\"           }       }, {            \"_source\": {              \"ID\": \"125\",                \"Status\": \"true\",               \"Name\": \"FGH_122\",              \"Date\": \"2010-08-16T12:01:48\"           }       }, {            \"_source\": {              \"ID\": \"126\",                \"Status\": \"false\",              \"Name\": \"TYT_333\",              \"Date\": \"2010-08-16T12:06:48\"           }       }, {            \"_source\": {              \"ID\": \"127\",                \"Status\": \"false\",              \"Name\": \"CVF_230\",              \"Date\": \"2010-08-16T12:07:18\"           }       }, {            \"_source\": {              \"ID\": \"128\",                \"Status\": \"true\",               \"Name\": \"AWE_101\",              \"Date\": \"2010-08-16T12:03:48\"           }       }, {            \"_source\": {              \"ID\": \"129\",                \"Status\": \"true\",               \"Name\": \"WEC_299\",              \"Date\": \"2010-08-16T12:07:29\"           }       }]  }}";
-JSONObject jsonObj = new JSONObject(jsonString1);
-JSONObject c = jsonObj.getJSONObject("hits");
-JSONArray c1 = c.getJSONArray("hits");
-// Iterate hits array
-for (int i = 0 ; i < c1.length(); i++) {
-    JSONObject jObject = c1.getJSONObject(i);
-    System.out.println(jObject.get("_source"));
-}

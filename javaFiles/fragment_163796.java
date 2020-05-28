@@ -1,9 +1,0 @@
-public class ChildData {
-    private String domain;
-    private String banned_by;
-    ...
-    ...
-    private int ups;
-
-    ...
-}

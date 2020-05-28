@@ -1,6 +1,0 @@
-String m = map.get(a)
-if( m != null && m.equals(b) ) {
-    // ...
-} else {
-    // ...
-}

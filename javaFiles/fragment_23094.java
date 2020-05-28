@@ -1,9 +1,0 @@
-private static final int N = 168; // a week
-…
-private static JFreeChart buildChart(
-    …
-    XYPlot plot = chart.getXYPlot();
-    ((DateAxis) plot.getDomainAxis()).setTimeline(newWorkdayTimeline());
-    …
-    return chart;
-}

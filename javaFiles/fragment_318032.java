@@ -1,6 +1,0 @@
-Vogel v1 = new Vogel();                
-Karpfen k = new Karpfen();
-...
-Super sup2 = new Sub();
-...
-sup2.m(v1, k);   //4 expected, got 3

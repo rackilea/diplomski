@@ -1,7 +1,0 @@
-repositories {
-    [...]
-    flatDir {
-        dirs 'lib'
-    }
-    [...]
-}

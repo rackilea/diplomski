@@ -1,9 +1,0 @@
-public class Hello {
-...
-    private Groceries createGroceries() {
-    ...
-        ShoppingList sList = new ShoppingList();
-        PriceList [] pricearray =  sList.getSortedPrices() //you call a method by its name, not return type.
-    ...
-    }
-}

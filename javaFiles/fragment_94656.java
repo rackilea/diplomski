@@ -1,8 +1,0 @@
-{
-  "field": [
-    {
-      "name": "brands",
-      "items": []
-    }
-  ]
-}

@@ -1,6 +1,0 @@
-Channels.newChannel(getOutputStream()).write(buffer);
-buffer.rewind();
-// ...
-Channels.newChannel(getOutputStream()).write(buffer);
-buffer.rewind();
-// ...

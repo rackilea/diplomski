@@ -1,7 +1,0 @@
-allprojects {
-...
-    repositories {
-...
-        maven { url "https://maven.google.com/"}
-    }
-}

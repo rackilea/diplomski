@@ -1,9 +1,0 @@
-{
-  "created_android":null,
-  "created_at":"2011-12-30T06:35:42Z",
-  "description":"Tatata",
-  "id":12,
-  "updated_android":null,
-  "updated_at":"2011-12-30T06:35:42Z",
-  "user_id":1
-}

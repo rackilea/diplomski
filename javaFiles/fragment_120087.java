@@ -1,9 +1,0 @@
-public class InterImplOne implements Inter {
-    ...
-}
-public class InterImplTwo implements Inter {
-    ...
-}    ...
-List<Inter> inventory = new ArrayList<Inter>();
-inventory.add(new InterImplOne());
-inventory.add(new InterImplTwo());

@@ -1,6 +1,0 @@
-public SimpleGrapher2(List<Double> scores) {
-    //...
-    double xScale = ((double) getWidth() - (2 * padding) - labelPadding) / (scores.size() - 1);
-    double yScale = ((double) getHeight() - 2 * padding - labelPadding) / (getMaxScore() - getMinScore());
-    //...
-}

@@ -1,6 +1,0 @@
-class Product {
-  private String productName;
-  … 
-  …
-  // getters / setters
-}

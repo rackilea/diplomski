@@ -1,7 +1,0 @@
-CREATE TABLE TEST_PAYLOAD
-(
-  BUCKET varchar,
-  TIME_STAMP timestamp,
-  TYPE text,
-  PRIMARY KEY (BUCKET, TIME_STAMP)
-);

@@ -1,9 +1,0 @@
-public ActionForward execute(ActionMapping mapping, ActionForm form,HttpServletRequest request, HttpServletResponse response) {
-  MyForm myForm = (MyForm) form;
-// assigning values to the inputs from action
-  myForm.setInput("input value");
-
- .....
- .....
- .....
-}

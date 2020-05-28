@@ -1,9 +1,0 @@
-int n1=128;
-        Integer n2=127;
-        Integer n3=127;
-        Integer n4=128;
-        Integer n5=128;
-        System.out.println(n1==n2); //false
-        System.out.println(n2==n3); //true
-        System.out.println(n4==n5); //false
-        System.out.println(n1==n5); //true

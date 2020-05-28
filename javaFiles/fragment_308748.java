@@ -1,6 +1,0 @@
-RadioGroup rg;
-RadioButton rb1;
-rg = ....
-rb1 = ....
-// check a RadioButton first
-rg.check(R.id.rb1);

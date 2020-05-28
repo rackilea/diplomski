@@ -1,6 +1,0 @@
-// ...
-    while (menuItem != 0) {
-        try {
-            menuItem = menu();
-            switch (menuItem) {
-            // ...

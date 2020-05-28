@@ -1,6 +1,0 @@
-public abstract class Tile{
-   // ...
-   // add a value to Tile
-   protected int value; 
-   // ...
-}

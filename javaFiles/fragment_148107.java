@@ -1,6 +1,0 @@
-...
-cons = getSerializableConstructor(cl);
-...
-} else if (cons == null) {
-    deserializeEx = new InvalidClassException(name, "no valid constructor");
-}

@@ -1,6 +1,0 @@
-public void onClick(View v) {
-
-mCurrentTime = calendar.getTimeInMillis();
-...
-...
-}

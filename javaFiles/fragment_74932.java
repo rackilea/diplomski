@@ -1,6 +1,0 @@
-{
-  "sendDataType": "MyRequest",
-  "sendData": {
-     ...
-   }
-}

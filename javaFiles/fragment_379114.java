@@ -1,7 +1,0 @@
-android {
-...
-defaultConfig {
-    ...
-    multiDexEnabled true
-    }
-}

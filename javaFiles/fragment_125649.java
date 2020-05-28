@@ -1,6 +1,0 @@
-// ...
-
-@Embedded
-private PersonName personName;
-
-// ...

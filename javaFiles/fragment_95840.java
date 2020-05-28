@@ -1,6 +1,0 @@
-@Override public E addEdge(V sourceVertex, V targetVertex)
-{
-    ...
-    E e = edgeFactory.createEdge(sourceVertex, targetVertex);
-    ... 
-}

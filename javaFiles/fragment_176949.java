@@ -1,6 +1,0 @@
-while(!"exit".equalsIgnoreCase(input)){
-    input = scanner.nextLine(); 
-    ...
-    writer.append(input + "\n");
-    ...
-}

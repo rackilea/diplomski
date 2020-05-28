@@ -1,6 +1,0 @@
-.hr {
-        -fx-background-color: slategray ;
-        -fx-background-insets: 2 5 2 5 ;
-
-        -fx-padding: 3 0 2 0  ;
-}

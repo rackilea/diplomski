@@ -1,6 +1,0 @@
-public void add(int data){
-    ...
-    first = x; 
-    last = x;
-    ...
-}

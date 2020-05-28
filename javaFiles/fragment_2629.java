@@ -1,6 +1,0 @@
-((A) null).get();
-A.get();
-...
-public static A someMethod() {}
-...
-someMethod().get();

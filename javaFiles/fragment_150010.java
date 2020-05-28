@@ -1,6 +1,0 @@
-while (running)
-{
-    ...
-    drawMaps();
-    ..
-}

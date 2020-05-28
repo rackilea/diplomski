@@ -1,7 +1,0 @@
-int a = 1;
-int b = 15;
-if (a > 10 & b <= 10) { // why <= by reading your question it should <
-   System.out.println("balanced");
-} else {
-   System.out.println("unbalanced");
-}

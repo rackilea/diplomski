@@ -1,6 +1,0 @@
-if(/*Undo is clicked*/) {
-    names.remove(names.size()-1);
-}
-...
-// Continue with your code of adding names
-...

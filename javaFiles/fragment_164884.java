@@ -1,6 +1,0 @@
-for (int i = 0; i <users.lenght; i++) {
-    if(users[i] == null) {
-        users[i] = new User(socket);
-    } ...
-    ...
-}

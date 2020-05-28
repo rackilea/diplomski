@@ -1,6 +1,0 @@
-...
-if(first != null && prize.first != null)
-{
-    first.setText(prize.first);
-}
-...

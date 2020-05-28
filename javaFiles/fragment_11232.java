@@ -1,9 +1,0 @@
-{
- 'jArray':
-          [
-           {'hello':'world'},
-           {'name':'Moses'},
-           ...
-           {'thisIs':'theLast'}
-          ]
-}

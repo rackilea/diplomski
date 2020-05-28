@@ -1,6 +1,0 @@
-public class Path2D {
-    public static class Float {
-       // ...
-    }
-    // ...
-}

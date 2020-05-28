@@ -1,6 +1,0 @@
-public abstract class A<T> extends ArrayList<T> {
-    ...
-}
-public abstract class B extends A<String> {
-    ...
-}

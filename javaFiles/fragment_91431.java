@@ -1,6 +1,0 @@
-Map<Integer,Integer> scoreToMod = new HashMap<>();
-...
-scoreToMod.put(10,0);
-scoreToMod.put(11,0);
-...
-int mod = scoreToMod.get(11); // will return 0

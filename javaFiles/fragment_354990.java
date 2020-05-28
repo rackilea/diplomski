@@ -1,6 +1,0 @@
-final Vector2 force = new Vector2();
-public void update(float delta) {
-    ...
-    force.set(_gravity).scl(mass);
-    ...
-}

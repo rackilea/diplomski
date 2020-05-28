@@ -1,6 +1,0 @@
-public int startUSB()
-{
-    usbManager = (UsbManager) context.getSystemService(Context.USB_SERVICE);
-    ....
-    ....
-}

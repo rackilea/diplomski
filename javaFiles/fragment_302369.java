@@ -1,6 +1,0 @@
-public static byte[] deriveAES256Key(String password)
-                throws InvalidKeySpecException, NoSuchAlgorithmException {
-
-   ...
-    int keyLength = 128; // 256-bits for AES-256, 128-bits for AES
-   ...

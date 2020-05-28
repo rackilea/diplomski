@@ -1,6 +1,0 @@
-Date d1 = ...
-Date d2 = ...
-
-long sum = d1.getTime() + d2.getTime();
-
-Date sumDate = new Date(sum);

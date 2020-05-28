@@ -1,7 +1,0 @@
-{
-   String myvar = "";
-}
-
-{
-   String myvar = "";
-}

@@ -1,6 +1,0 @@
-// the threads share the same `NameList`
-final NameList nl = new NameList();
-...
-nl.addName("A");
-...
-for (int i = 0; i < names.size(); i++) {

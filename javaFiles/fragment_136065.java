@@ -1,9 +1,0 @@
-LocalDate march26 = LocalDate.of ( 2017, Month.MARCH, 26 );
-LocalTime twoAm = LocalTime.of ( 2, 0 );
-ZoneId z = ZoneId.of ( "Europe/Amsterdam" );
-ZonedDateTime start = march26.atStartOfDay ( z );
-ZonedDateTime stop = ZonedDateTime.of ( march26, twoAm, z );
-long minutes = ChronoUnit.MINUTES.between ( start, stop );
-Duration duration = Duration.between ( start, stop );
-long durationAsMinutes = duration.toMinutes ( );
-int minuteOfDay = stop.get ( ChronoField.MINUTE_OF_DAY );

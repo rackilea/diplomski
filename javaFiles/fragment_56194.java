@@ -1,6 +1,0 @@
-...lock()
-try {
-    ...
-} finally {
-    ...unlock();
-}

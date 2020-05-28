@@ -1,8 +1,0 @@
-.text-input {
-    -fx-highlight-fill: paleturquoise;
-    -fx-highlight-text-fill: blue;
-}
-.text-input:focused {
-    -fx-highlight-fill: palegreen;
-    -fx-highlight-text-fill: fuchsia;
-}

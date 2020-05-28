@@ -1,9 +1,0 @@
-Collection items = ...
-Collection itemsToRemove = ...
-for (Object item : items) {
-  boolean condition = ...
-  if (condition) {
-    itemsToRemove.add(item);
-  }
-}
-items.removeAll(itemsToRemove);

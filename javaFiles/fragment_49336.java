@@ -1,6 +1,0 @@
-private LinearLayout mRootView;
-onCreate(...){
-  ...
-  mRootView = (LinearLayout) findViewById(R.id.my_root);
-  ... 
-}

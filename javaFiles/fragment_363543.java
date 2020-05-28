@@ -1,9 +1,0 @@
-if(input > 0 && input < 3999){ 
-  ...
-} 
-else if (input > 4000 && input < 8000){ 
-... 
-} 
-else { 
-...
-}

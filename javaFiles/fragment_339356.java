@@ -1,6 +1,0 @@
-private class CollectionBuilder(json: JValue, tpe: ScalaType)(implicit formats: Formats) {
-    ...
-      val array: Array[_] = json match {
-        case JArray(arr)      => arr.map(extractDetectingNonTerminal(_, typeArg)).toArray
-    ...
-    }

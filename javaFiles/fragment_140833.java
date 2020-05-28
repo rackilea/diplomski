@@ -1,6 +1,0 @@
-public class BinaryTree<T extends Comparable> {
-    public boolean contains(T target) {
-       ....
-    }
-    ...
-}

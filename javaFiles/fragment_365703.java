@@ -1,6 +1,0 @@
-public final class RandomInteger {
-  public static boolean isPrime(int random) {
-      ....
-  }
-  public static final void main(String... aArgs){
-      ....

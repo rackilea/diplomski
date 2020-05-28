@@ -1,6 +1,0 @@
-DefaultCategoryDataset model = …
-…
-@Override
-public void actionPerformed(ActionEvent e) {
-    model.setValue(…);
-}

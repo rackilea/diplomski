@@ -1,9 +1,0 @@
-public class User {
-    ...
-    private boolean mIsYahoo;
-    ...
-    public void setIsYahoo(boolean isYahoo) {
-        mIsYahoo = isYahoo;
-    }
-    ...
-}

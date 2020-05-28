@@ -1,9 +1,0 @@
-public class Student {
-
-    //field must not be static
-    private int id;
-
-    //other non-static fields...
-    //constructor...
-    //getters and setters...
-}

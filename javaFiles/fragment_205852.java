@@ -1,6 +1,0 @@
-...
-ConstraintMapping cm = new ConstraintMapping();
-cm.setMethod("GET"); //new line
-cm.setConstraint(constraint);
-cm.setPathSpec("/*");
-...

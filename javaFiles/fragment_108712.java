@@ -1,6 +1,0 @@
-...
-  int lastRowNum = sheet.getLastRowNum();
-  Row row = sheet.getRow(1);
-  if (row != null) sheet.removeRow(row);
-  sheet.shiftRows(2, lastRowNum, -1);
-...

@@ -1,9 +1,0 @@
-...
-@Autowired
-private PasswordEncoder passwordEncoder;
-
-public User addEntity(User user) {
-...
-    user.setPassword(passwordEncoder.encode(user.getPassword()))
-...
-}

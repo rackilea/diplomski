@@ -1,6 +1,0 @@
-Instances train_data = ...   
-Instances test_data = ...    
-Standardize filter = new Standardize();
-filter.setInputFormat(train_data);  
-Instances normalizedTrain_data = Filter.useFilter(train_data, filter);  
-Instances normalizedTest_data = Filter.useFilter(test_data, filter);

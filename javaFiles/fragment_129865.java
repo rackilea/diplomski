@@ -1,6 +1,0 @@
-...
-spritebatch.setShader(my_shader);
-my_second_texture.bind(1);
-Gdx.gl.glActiveTexture(GL10.GL_TEXTURE0);
-my_shader.setUniformi("my_second_texture", 1);
-...

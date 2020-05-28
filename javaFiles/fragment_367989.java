@@ -1,9 +1,0 @@
-{"schemas":[],
- "name":{"familyName":"Smith","givenName":"Paul"},
- "userName":"test110",
- "password":"password",
- "emails":[{"primary":true,"value":"email@gmail.com","type":"home"}, 
-           {"value":"email@gmail.com","type":"work"},
-           {"value":"email@gmail.com"}],
- "EnterpriseUser":{"askPassword":"true"},
-}

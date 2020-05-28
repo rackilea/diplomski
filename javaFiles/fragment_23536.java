@@ -1,8 +1,0 @@
-String pdf = "LEVERINGSBON 30/06/2012 27828/2012/NL/WebShop   Distributeur ID nummer: 15099191 Uw distributeur: Klant Naam: FM Point Marcel Snoeck Adres: Zonnedauw 17 5953MS Reuver Telefoon: +31654317017 E-MAIL: yvonneenmarcel@home.nl Opmerking: - Lp. Rekening Totaal FV/39525/2012/NL     vd Wal Sandra 72.00 1 3 x 354 - Luxury Collection 50ml NEW! 72.00 FV/39526/2012/NL     Slaats Tim 6.00 2 1 x KR01 - Eye Pencil DECADENCE BLACK 6.00 FV/39527/2012/NL     Nabben Britt 44.95 3 3 x E013 - Krachtreiniger 1000ml 24.75 4 2 x E016 -Tapijtreiniger 1000ml 9.20 5 1 x 3 Step Mascara PERFECT BLACK 11.00 FV/39528/2012/NL     Nabben Lieke 32.00 6 1 x 192 - Luxury Collection 50ml 21.00 7 1 x 3 Step Mascara PERFECT BLACK 11.00 FV/39529/2012/NL     Claessens Patrick 12.40 8 1 x P101 - Peeling VERBENA 12.40 FV/39530/2012/NL     Smits Yolanda 56.00 9 1 x E006 - Wasmiddel VIVID COLOURS 1000ml 7.00 10 2 x B023 - Body Lotion 200ml NEW 18.40 11 2 x 023 - Classic Collection 30ml 30.60 FV/39531/2012/NL     van Pol-Thijssen Silvia 34.70 12 1 x 110 - Classic Collection 50ml 15.30 13 1 x N003 - Nagellak HOT RED 7.00 14 1 x P103 - Peeling CHERRY BLOSSOM 12.40 Aantal: 21 Totaal: 258.05 € 1.17.4564.29482 1/1        ";
-    String patternString = "\\d\\s\\d\\sx.*?\\d\\.\\d\\d";
-    Matcher matcher = Pattern.compile(patternString).matcher(pdf);
-    List<String> dataRows = new ArrayList<String>();
-    while (matcher.find()) {
-        dataRows.add(matcher.group());
-    }
-    System.out.println(dataRows);

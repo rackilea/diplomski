@@ -1,9 +1,0 @@
-.....
-
-String location = request.getScheme() + "://" + request.getServerName() + childPage.getPath();
-locElementNode.setTextContent(location);
-....
-
-priorityElementNode.setTextContent(getPriority(location));
-
-....

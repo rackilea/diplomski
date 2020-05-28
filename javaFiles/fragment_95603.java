@@ -1,9 +1,0 @@
-double angle = rotation1.getAngle();
-double sinAngle = Math.sin(angle);
-double factor = Math.sin(number * angle) / sinAngle;
-double factor2 = Math.sin((1 - number) * angle) / sinAngle;
-double q0 = factor * rotation1.getQ0() + factor2;
-double q1 = factor * rotation1.getQ1();
-double q2 = factor * rotation1.getQ2();
-double q3 = factor * rotation1.getQ3();
-Rotation rotation2 = new Rotation(q0, q1, q2, q3, false);

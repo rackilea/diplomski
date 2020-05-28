@@ -1,6 +1,0 @@
-public void init()
-{
-    .....
-    sectors = new MySlider(10,50,12);
-    .....
-}

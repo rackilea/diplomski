@@ -1,9 +1,0 @@
-public class Room {
-  ...
-  public void Middleroom() {
-    MovementObject.PlayerSetUp();
-    this.location("Middleroom"); //same as this.location = "Middleroom"
-    ...
-  }
-  ...
-}

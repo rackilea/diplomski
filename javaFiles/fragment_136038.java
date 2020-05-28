@@ -1,6 +1,0 @@
-LoginDialog dialog = new LoginDialog(SwingUtilities.getWindowAncestor(this)); // this is a reference any valid Component
-dialog.setModal(true); // I would have already done this internally to the LoginDialog class...
-dialog.setVisible(true); // A modal dialog will block at this point until the window is closed
-if (dialog.isSuccessfulLogin()) {
-    login = dialog.getLogin(); // Login is a simple class containing the login information...
-}

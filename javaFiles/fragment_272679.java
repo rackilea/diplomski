@@ -1,6 +1,0 @@
-int currentapiVersion = android.os.Build.VERSION.SDK_INT;
-if (currentapiVersion >= android.os.Build.VERSION_CODES.LOLLIPOP){
-    // Do something for lollipop and above versions
-} else{
-    // do something for phones running an SDK before lollipop
-}

@@ -1,6 +1,0 @@
-class Square
-{
-    Color myColour;
-
-    // ...
-}

@@ -1,7 +1,0 @@
-Outer(){
-  createInner()
-}
-
-Inner(){
-   createOuter()
-}

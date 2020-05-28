@@ -1,6 +1,0 @@
-if(option.equals("On")) {
-    // ...
-}
-else if(option.equals("Off")) {
-    // ...
-}

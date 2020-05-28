@@ -1,9 +1,0 @@
-public class Hotel
-{
-....
-public static void main(String[] args)
-{
-...
-int quantity, sale,night;
- ...
- }

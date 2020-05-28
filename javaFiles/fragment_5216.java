@@ -1,6 +1,0 @@
-{
-
-    // Initialization
-
-    ...
-}

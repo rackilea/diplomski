@@ -1,6 +1,0 @@
-<html>
-<body>
-<h1 data-th-text="${message}">this gets replaced</h1>
-<h2>WORLD</h2>
-</body>
-</html>

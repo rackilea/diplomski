@@ -1,6 +1,0 @@
-public class TransformedJsp {
-    HashMap pdfOutputs = new HashMap();
-    // ...
-
-    try {
-        //...

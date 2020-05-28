@@ -1,6 +1,0 @@
-// assuming that this is a list of Strings
-List<String> list = ...
-while(!list.isEmpty())) {
-    String data = list.remove(0);
-    ...process data...
-}

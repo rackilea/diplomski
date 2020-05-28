@@ -1,8 +1,0 @@
-class SomeClass {
-
-    ...
-
-    class NestedClass {
-        ....
-    }
-}

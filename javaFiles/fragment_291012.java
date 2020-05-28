@@ -1,6 +1,0 @@
-new Handler(Looper.getMainLooper()).post(new Runnable() {
-  @Override
-  public void run() {
-    result.success("HardWork Result");
-  }
-});

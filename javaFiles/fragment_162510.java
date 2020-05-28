@@ -1,6 +1,0 @@
-SchoolTextBook[] theBooks = new SchoolTextBook[5];
-
-...
-theBooks[0] = new SchoolTextBook();
-theBooks[0].setAuthor("Ernest Hemingway");
-... and so on...

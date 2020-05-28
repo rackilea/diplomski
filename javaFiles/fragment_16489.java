@@ -1,6 +1,0 @@
-...
-PreparedStatement insert = con.prepareStatement(
-    "INSERT INTO bittable (bitcolumn) values (b?)"
-);
-insert.setString(1,"111000");
-...

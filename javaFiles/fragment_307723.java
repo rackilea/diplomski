@@ -1,9 +1,0 @@
-...
-test {
-    jvmArgs '-agentpath:/usr/lib/code_dependency_capturer.so' // add line
-    groovy {      
-        srcDirs = ['src/test']
-        ...
-    }
-    ...
-}

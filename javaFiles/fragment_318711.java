@@ -1,6 +1,0 @@
-...
-System.out.print("Name: ");  
-String input_nome;
-input.nextLine // This clears the \n character
-while (true) {
-...

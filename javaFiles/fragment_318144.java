@@ -1,6 +1,0 @@
-while (temp != null) {
-...
-  if (reg.equalsIgnoreCase(temp.getRegNum())) {
-  ...
-  }
-}

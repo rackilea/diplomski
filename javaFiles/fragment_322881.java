@@ -1,9 +1,0 @@
-@Contract({
-    @ExclusiveOr({
-        @IsType(IAtomicType.class),
-        @Or({
-            @IsType(IListType.class),
-            @IsType(ISetType.class)
-        })
-    })
-})

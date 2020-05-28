@@ -1,6 +1,0 @@
-// ...
-Scanner input = new Scanner(System.in);
-System.out.println("Enter an odd number:");
-i = input.nextInt();
-n = 0;                                     // <- Here
-// ...

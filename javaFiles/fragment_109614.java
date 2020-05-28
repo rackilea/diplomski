@@ -1,6 +1,0 @@
-MyObject myKey = new MyObject( ... );
-MyOtherObject myValue = new MyOtherObject( ... );
-...
-myHash.put( myKey, myValue );  // add myValue to the hash
-...
-MyOtherObject data = myhash.get( myKey );  // get myValue out of the hash

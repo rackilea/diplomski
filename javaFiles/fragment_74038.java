@@ -1,6 +1,0 @@
-public void onCreate (Bundle savedInstanceState) {
-    ...
-    et = (EditText)findViewById(R.id.editText1);
-    bull()
-    ...
-}

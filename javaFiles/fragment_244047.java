@@ -1,6 +1,0 @@
-public Map<String, List<String>> getListaAtributos() {
-...
-}
-public Map<String, List<?>> getListaValores() {
-...
-}

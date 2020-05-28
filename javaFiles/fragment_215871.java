@@ -1,6 +1,0 @@
-ByteArrayOutputStream templateBuffer = new ByteArrayOutputStream();
-while ((int c = template.read()) > 0) templateBuffer.write(c);
-for (/* your loop */) {
-    ...
-    PdfDocument filledInAcroFormTemplate = new PdfDocument(new PdfReader(new ByteArrayInputStream(templateBuffer.toByteArray())), new PdfWriter(tmp))
-   ...

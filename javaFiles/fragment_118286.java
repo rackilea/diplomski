@@ -1,6 +1,0 @@
-Jsoup                     //
-//.cookie(..., ...)       // Some cookies may be needed...
-.connect(imageCaptchaUrl) //
-.ignoreContentType(true)  // Needed for fetching image
-.execute()                //
-.bodyAsBytes();           // byte[] array returned...

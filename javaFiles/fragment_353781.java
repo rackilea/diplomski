@@ -1,6 +1,0 @@
-import org.slf4j.Logger;
-    import org.slf4j.LoggerFactory;
-    ...
-    private static final Logger LOG = LoggerFactory.getLogger(FooBarClass.class);
-    ...
-    LOG.debug("Foobar");

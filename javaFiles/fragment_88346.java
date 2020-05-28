@@ -1,6 +1,0 @@
-public class MyClass<T, O> {
-    ...
-
-    <T> public static MyClass<T, Object> create(...)
-    ...
-}

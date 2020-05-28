@@ -1,6 +1,0 @@
-List<Person> list = ...
-Person person = ...
-int index = list.indexOf(person);
-if (index >= 0) {
-    Person p = list.get(index);
-}

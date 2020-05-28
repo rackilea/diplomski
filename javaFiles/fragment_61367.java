@@ -1,6 +1,0 @@
-while (e1.hasMoreElements()) {
-  key = (String) e1.nextElement();
-  if (testcases.equals(key)) {
-    ... IN ...
-  } else {
-    ... OUT ...

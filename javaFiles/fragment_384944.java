@@ -1,6 +1,0 @@
-if(input == randNum){
-
-
-ReLaunchGame();
-
-}

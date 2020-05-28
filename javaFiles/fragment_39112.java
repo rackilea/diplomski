@@ -1,9 +1,0 @@
-...
-<script>
-<% 
-out.println("myJSONObj = " + myJSONObject.toString()) 
-%>
-//other javascript stuff...
-console.log(myJSONObj.key1);
-</script>
-...

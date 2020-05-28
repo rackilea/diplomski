@@ -1,6 +1,0 @@
-user = retrieveUser(username, (UsernamePasswordAuthenticationToken) authentication);
-...
-preAuthenticationChecks.check(user);
-additionalAuthenticationChecks(user, (UsernamePasswordAuthenticationToken) authentication);
-...
-postAuthenticationChecks.check(user);

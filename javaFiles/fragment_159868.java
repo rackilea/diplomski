@@ -1,6 +1,0 @@
-...
-Calendar localCalendar = Calendar.getInstance();
-localCalendar.set(Calendar.MONTH, Calendar.AUGUST);
-localCalendar.set(Calendar.DAY_OF_MONTH, 1);
-int dayOfWeek = localCalendar.get(Calendar.get(DAY_OF_WEEK));
-...

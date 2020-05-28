@@ -1,6 +1,0 @@
-Query query = HibernateUtil.getSessionFactory().getCurrentSession().
-              createQuery("SELECT * from User where substring(name, 1, :length) like :name");
-
-query.setParameter("length",name.length());
-........
-........

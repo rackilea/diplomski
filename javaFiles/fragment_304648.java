@@ -1,7 +1,0 @@
-project(":core") {
-    ...
-    dependencies {
-        ...
-        // here
-    }
-}

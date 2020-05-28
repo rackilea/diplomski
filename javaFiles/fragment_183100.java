@@ -1,9 +1,0 @@
-CREATE OR REPLACE PROCEDURE delete_user(
-  in_userID  USERS_DATA.USERID%TYPE
-)
-AS
-BEGIN
-  DELETE FROM USERS_DATA WHERE userId = in_userId;
-  DELETE FROM USERS      WHERE userId = in_userId;
-END;
-/

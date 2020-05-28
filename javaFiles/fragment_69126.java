@@ -1,6 +1,0 @@
-String s = "0x7D";
-//                  | casting to char
-//                  |    | parsing integer ...
-//                  |    |                | on stripped off String ...
-//                  |    |                |               | with hex radix
-System.out.println((char)Integer.parseInt(s.substring(2), 16));

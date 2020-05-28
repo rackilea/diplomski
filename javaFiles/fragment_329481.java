@@ -1,8 +1,0 @@
-public ##
- #if($field.modifierStatic)
-   static ##
- #end
- $field.type ##
- ${field.name}() {
-   return $field.name;
- }

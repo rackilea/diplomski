@@ -1,6 +1,0 @@
-public static GenericDecleration[] getT (DeclExtractor extractor, Class cl) {
-    ...
-    // When it's time to get components of the class, make this call:
-    GenericDecleration[] components = extractor.extract(cl);
-    ...
-}

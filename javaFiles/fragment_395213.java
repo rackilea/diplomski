@@ -1,6 +1,0 @@
-public int print(Graphics g, PageFormat pf, int page)
-  throws PrinterException {
-...
-  g.fillRect(userRect.x,userRect.y,userRect.width,userRect.height);
-...
-}

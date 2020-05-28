@@ -1,6 +1,0 @@
-...
-$data = file_get_contents("php://input");
-$json = json_decode($data);
-$username = $json['username'];
-$password = $json['password'];
-...

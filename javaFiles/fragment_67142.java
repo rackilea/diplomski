@@ -1,6 +1,0 @@
-public void addFilterCondition(String attributeName, Condition condition) {
-    if ( scanFilter == null )
-        scanFilter = new HashMap<String, Condition>();
-
-    scanFilter.put(attributeName, condition);
-}

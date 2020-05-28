@@ -1,8 +1,0 @@
-}
-
-            begin++;
-        }
-    }
-
-    return ans;
-}

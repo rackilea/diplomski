@@ -1,6 +1,0 @@
-public class TmtUser {
-    public Map<String, Object> get(String key) {
-        ...
-        ...
-    }
-}

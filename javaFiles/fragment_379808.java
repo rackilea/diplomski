@@ -1,6 +1,0 @@
-...
-FileInputStream fis =  openFileInput("test.xml");
-InputStreamReader in = new InputStreamReader(fis);
-
-xr.parse(new InputSource(in));
-...

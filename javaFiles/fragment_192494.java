@@ -1,6 +1,0 @@
-@Override
-public int compareTo(Distance obj) {
-    ....
-    if (this == obj) return EQUAL; <--- This
-    ...
-}

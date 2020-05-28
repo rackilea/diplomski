@@ -1,9 +1,0 @@
-apply plugin: 'idea'
-
-idea{
-    module{
-        inheritOutputDirs = false
-        outputDir = compileJava.destinationDir
-        testOutputDir = compileTestJava.destinationDir
-    }
-}

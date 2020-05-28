@@ -1,6 +1,0 @@
-public class BaseResponse{
-    int status;
-    String error;
-    ...
-    ...
-}

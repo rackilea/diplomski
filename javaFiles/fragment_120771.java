@@ -1,6 +1,0 @@
-...
-// get laf class name
-System.out.println(laf.getClass().getName());
-// prints "com.oyoaha.swing.plaf.oyoaha.OyoahaLookAndFeel"
-...
-UIManager.setLookAndFeel("com.oyoaha.swing.plaf.oyoaha.OyoahaLookAndFeel");

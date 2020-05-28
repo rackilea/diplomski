@@ -1,6 +1,0 @@
-....
-public Sortie addSortie(Sortie sortie) {
-persist(sortie);
-return sortie;
-}
-.....

@@ -1,6 +1,0 @@
-PropertiesLogin {
-    org.apache.openejb.core.security.jaas.PropertiesLoginModule required
-    Debug=false
-    UsersFile="users.properties"
-    GroupsFile="groups.properties";
-};

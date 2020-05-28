@@ -1,7 +1,0 @@
-<%
-    if (item != null) {
-
-    } else {
-
-    }
-%>

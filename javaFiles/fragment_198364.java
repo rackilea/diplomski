@@ -1,6 +1,0 @@
-...
-else if (plantList.get(i) instanceof Fungus) { //check if plant is fungus
-    System.out.print(plantList.get(i).getSmell());
-    System.out.print(((Fungus)plantList.get(i)).getThorns()); //downcasting
-}
-...

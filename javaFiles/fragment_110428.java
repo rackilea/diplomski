@@ -1,7 +1,0 @@
-class SimpleClass
-{
-    static{
-
-    }
-
-}

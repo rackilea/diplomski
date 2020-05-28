@@ -1,6 +1,0 @@
-...
-socket = new Socket("192.168.1.8",1371);
-InputStreamReader streamReader = new InputStreamReader(socket.getInputStream());
-input = new BufferedReader(streamReader);
-String messageReceived = input.readLine();
-...

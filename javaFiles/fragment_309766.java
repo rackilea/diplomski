@@ -1,9 +1,0 @@
-data[i][0] = da.rs.getString("SotwareID");
-data[i][1] = da.rs.getString("ID_Category");
-data[i][2] = da.rs.getString("SoftwareName");
-data[i][3] = da.rs.getString("UserID_Rent");
-data[i][4] = da.rs.getString("UserName");
-data[i][5] = da.rs.getString("Family");
-data[i][6] = da.rs.getString("Tel");
-data[i][7] = da.rs.getString("DataStart");
-data[i][8] = da.rs.getString("DataFinish");

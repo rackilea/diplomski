@@ -1,9 +1,0 @@
-...
-int[] count = new int[1];
-count(text, count);
-...
-
-public static void count(String text, int[] count){
-   ...
-   count[0] = ..
-}

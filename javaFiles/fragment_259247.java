@@ -1,6 +1,0 @@
-ByteBuffer src = ...
-ByteBuffer dst = ...
-int oldLimit = src.limit();
-src.limit(src.position()+dst.remaining());
-dst.put(src);
-src.limit(oldLimit);

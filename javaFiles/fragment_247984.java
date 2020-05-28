@@ -1,6 +1,0 @@
-aLoopName: for (;;) {
-  // ...
-  while (someCondition)
-  // ...
-    if (otherCondition)
-      continue aLoopName;

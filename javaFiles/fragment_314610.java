@@ -1,8 +1,0 @@
-@Override
-protected void finalize() throws Throwable
-    try {
-        super.finalize();
-    } finally {
-        ...
-    }
-}

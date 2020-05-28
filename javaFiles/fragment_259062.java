@@ -1,6 +1,0 @@
-...
-JSONArray cast = movie.getJSONArray("abridged_cast");
-for (int j = 0; j < cast.length(); j++) {
-    JSONObject castMember = cast.getJSONObject(j);
-    ... 
-}

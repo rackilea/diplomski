@@ -1,9 +1,0 @@
-@Component
-public class Initializer
-{
-    @PostConstruct
-    public void init()
-    {
-       org.hsqldb.util.DatabaseManagerSwing.main(new String[] { "--url","jdbc:hsqldb:mem:moviecollection", "--noexit" }); 
-    }
-}

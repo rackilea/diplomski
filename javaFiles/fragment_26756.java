@@ -1,6 +1,0 @@
-private final void internalRender()
-{
-...
-    MarkupElement elem = markup.get(0);
-...
-}

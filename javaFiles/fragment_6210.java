@@ -1,6 +1,0 @@
-// Reference to an object
-private static ActionListener e;
-...
-// Class
-public class e implements ActionListener{
-...

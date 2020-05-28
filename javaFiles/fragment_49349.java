@@ -1,6 +1,0 @@
-public LoginWidget( LoginClickHandler listener ) 
-{
-    ...
-    loginButton.addClickHandler( listener )
-    ...
-}

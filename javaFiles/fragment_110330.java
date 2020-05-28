@@ -1,6 +1,0 @@
-class Pojo {
-    ...
-   public MultiValuedMap<String,String> asQueryParams() {
-       ...
-   }
-}

@@ -1,6 +1,0 @@
-// ...
-@Override
-    public void onTick(long millisUntilFinished) {
-        runOnInterval(millisUntilFinished);
-    }
-// ...

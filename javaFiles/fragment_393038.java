@@ -1,6 +1,0 @@
-int next = current+1;
-            nextNext = next  + 1;
-            ...
-            if (arr[current] == arr[next]) {
-               ...
-            }

@@ -1,9 +1,0 @@
-public class SendVerifySubjectProcessor implements Consumer<JSONObject>
-{
-   @Override
-   public void accept(JSONObject data) {
-     String foo1 = data.getString("foo1_1");
-     String foo2 = data.getString("foo1_2");
-     ...
-   }
-}

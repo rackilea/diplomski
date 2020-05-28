@@ -1,6 +1,0 @@
-public void someMethod (Connection conn) 
-{
-    ...
-    SomeOtherClass instance = new SomeOtherClass (conn);
-    ...
-}

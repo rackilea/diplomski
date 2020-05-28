@@ -1,6 +1,0 @@
-class MyClass {
-    ...
-    public void setMyVariable(String value) {
-        ...
-    }
-}

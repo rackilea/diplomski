@@ -1,6 +1,0 @@
-{
-    SALES: 0,
-    SALE_PRODUCTS: 1,
-    EXPENSES: 2,
-    EXPENSES_ITEMS: 3
-}

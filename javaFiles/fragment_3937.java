@@ -1,6 +1,0 @@
-{
-    ;
-    ;;
-    //this block compiles successfully
-    ;{} 
-}

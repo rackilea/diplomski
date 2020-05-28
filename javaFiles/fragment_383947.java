@@ -1,6 +1,0 @@
-EventStreams.eventsOf(bothButton, ActionEvent.ACTION) // Observe actions of bothButton ...
-        .suspenderOf(bothStream)                      // but suspend bothStream ...
-        .subscribe((ActionEvent event) -> {           // before handling the action.
-            model.setA(Math.random()*10.0);
-            model.setB(Math.random()*10.0);
-        })

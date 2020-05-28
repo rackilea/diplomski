@@ -1,9 +1,0 @@
-ReturnType ret = ...
-try {
-    // Compute ret
-} catch {
-    ...
-} finally {
-    ...
-}
-return ret;

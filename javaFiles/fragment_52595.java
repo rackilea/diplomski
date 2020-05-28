@@ -1,6 +1,0 @@
-public class User {
-...
-
-      @Column(name = "code", unique=true)
-      public int code;
-...

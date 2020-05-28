@@ -1,6 +1,0 @@
-...
-   } finally {
-      ...
-      return done;
-   }
-}

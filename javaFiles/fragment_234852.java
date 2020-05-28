@@ -1,9 +1,0 @@
-protected boolean initializeCamera(int width, int height) {
-    ...
-    params.setPreviewFormat(ImageFormat.NV21);
-    ...
-    mCamera.setParameters(params);
-    ...
-    params = mCamera.getParameters();
-    Log.d(TAG, String.format("Actual preview format is 0x%X", params.getPreviewFormat()));
-}

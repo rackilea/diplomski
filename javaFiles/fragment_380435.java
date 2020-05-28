@@ -1,6 +1,0 @@
-import static MyValues.*
-//...
-
-if(variable.equals(VALUE1)){
-//...
-}

@@ -1,6 +1,0 @@
-File theDir = new File("language");
-if (!theDir.exists()) {
-  boolean result = theDir.mkdir();  
-  // Use result...
-}
-FileWriter writer = ...

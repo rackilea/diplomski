@@ -1,9 +1,0 @@
-string = string.replaceAll("\\t", " ");
- string = string.replaceAll("\\xA0", " ");
- string = string.replaceAll("\\u1680", " ");
- string = string.replaceAll("\\u180e", " ");
- string = string.replaceAll("\\u2000", " ");
- string = string.replaceAll("\\u200a", " ");
- string = string.replaceAll("\\u202f", " ");
- string = string.replaceAll("\\u205f", " ");
- string = string.replaceAll("\\u3000", " ");

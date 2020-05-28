@@ -1,8 +1,0 @@
-apply plugin: 'jacoco'
- jacocoTestReport {
-   reports {
-   xml.enabled false
-   csv.enabled false
-   html.destination "${buildDir}/jacocoHtml"
- }
-}

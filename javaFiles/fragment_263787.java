@@ -1,6 +1,0 @@
-int[][]intMatrix= new int[speaRealMatrixArray.length][];
-...
-for(int i=0; i<speaRealMatrixArray.length;i++){
-      intMatrix[i] = new new int[speaRealMatrixArray[i].length];
-      for(int y=0; y<speaRealMatrixArray[i].length;y++){
-...

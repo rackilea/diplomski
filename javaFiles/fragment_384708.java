@@ -1,6 +1,0 @@
-...
-db.open();
-RssArticleThing fromList = (RssArticleThing) listItems.getItemAtPosition(position);
-RssItem item = new RssItem();
-item.title = fromList.title;
-...

@@ -1,6 +1,0 @@
-class MyClass extends Thread {
-    ...
-    public void saveData(...) { ... }
-    public void run() { ... }
-    ...
-}

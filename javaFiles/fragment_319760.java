@@ -1,6 +1,0 @@
-...
-String separator = System.getProperty("line.separator");
-int k = s.indexOf(separator, 0);
-s2 = s.substring(k + separator.length());
-s2 = s2.trim();
-...

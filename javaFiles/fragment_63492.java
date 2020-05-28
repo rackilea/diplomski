@@ -1,9 +1,0 @@
-public class Launcher {
-  ...
-  public void main(String[] args) {
-    ... decide which action is wanted ...
-    if (playGame) { Game.main(gameArgs); }
-    else if (makeMaps) { MapMaker.main(mapMakerArgs); }
-  }
-  ...
-}

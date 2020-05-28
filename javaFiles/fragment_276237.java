@@ -1,6 +1,0 @@
-...
-System.out.println("");
-if(number > 0 && number % 2 == 1) {
-    System.out.println("Number " + number + " is odd.");
-}
-...

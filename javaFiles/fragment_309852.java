@@ -1,6 +1,0 @@
-void Start() :
-{ }
-{
-  XPathExpr()
-  < EOF >
-}

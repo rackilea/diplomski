@@ -1,9 +1,0 @@
-@XmlRootElement
-@XmlAccessorType(XmlAcceesType.FIELD)
-public class Students implements Serializable{
-
-    private static final long serialVersionUID = 1L;
-
-    private List<Person> personList;
-
-}

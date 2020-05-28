@@ -1,6 +1,0 @@
-@RequestMapping("upload")
-public String upload(@RequestParam Map<String, MultipartFile> fileMap) {
-    MultipartFile[] files = fileMap.values().toArray(new MultipartFile[0]);
-    .......
-    return ......
-}

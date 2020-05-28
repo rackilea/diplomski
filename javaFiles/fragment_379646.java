@@ -1,7 +1,0 @@
-sourceSets {
-    main {
-        java {
-            srcDirs = ["src"]
-        }
-    }
-}

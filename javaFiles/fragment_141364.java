@@ -1,9 +1,0 @@
-b1 = button1.getText().toString();
-b2 = button1.getText().toString();
-b3 = button1.getText().toString();
-b4 = button1.getText().toString();
-b5 = button1.getText().toString();
-b6 = button1.getText().toString();
-b7 = button1.getText().toString();
-b8 = button1.getText().toString();
-b9 = button1.getText().toString();

@@ -1,6 +1,0 @@
-if(!guard)
-{
-    while(true)
-    {
-    }
-}

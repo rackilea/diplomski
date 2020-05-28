@@ -1,6 +1,0 @@
-...
-    private JSplitPane       appPanel    = null;
-    private JScrollPane      listScrollPanel,appScrollPanel  = null;
-    // End of your controls...
-
-    private JPanel tabContainer;

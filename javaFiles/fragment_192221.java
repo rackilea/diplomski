@@ -1,6 +1,0 @@
-...set up...
-Shell shell = new Shell(SWT.ON_TOP);
-Label label = new Label(shell, SWT.NONE);
-label.setImage(someImage);
-...more set up...
-shell.open();

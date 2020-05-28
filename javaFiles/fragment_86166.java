@@ -1,9 +1,0 @@
-switch(command.get(1).toLowerCase){
-case "red":
-    ...
-case "blue":
-    ...
-...
-default:
-    System.out.println("Unrecognized color");
-}

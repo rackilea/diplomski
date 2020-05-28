@@ -1,6 +1,0 @@
-public void processInput(String input) {
-    if((input).equals("help"))
-          ............
-    else if ((input).equals("go"))
-          ............
-}

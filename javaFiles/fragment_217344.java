@@ -1,6 +1,0 @@
-void recursive(String key, Map<String, Object> value) {
-  ...
-}
-
-Map<String, Object> decodedJson = new Gson().fromJson(inputJson, Map.class);
-...

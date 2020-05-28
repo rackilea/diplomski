@@ -1,6 +1,0 @@
-...
-public class B implements Serializable
-...
-    @JoinColumn(name="personId", nullable=false)
-    @ManyToOne
-    private A person;

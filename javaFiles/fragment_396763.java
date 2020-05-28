@@ -1,6 +1,0 @@
-...
-if(_cell.getT() == STCellType.INLINE_STR) {
- //set the 'pre-evaluated result
- _cell.setV(str.getString());
-}
-...

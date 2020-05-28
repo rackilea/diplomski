@@ -1,6 +1,0 @@
-...
-Object selection = table.getValue();
-bic = new BeanItemContainer<Incoming>(l);
-table.setContainerDataSource(bic);
-table.setValue(selection);
-...

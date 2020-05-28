@@ -1,6 +1,0 @@
-private final class EntrySet extends AbstractSet<Map.Entry<K,V>> {
-    public Iterator<Map.Entry<K,V>> iterator() {
-        return newEntryIterator(); // returns a HashIterator...
-    }
-    // ...
-}

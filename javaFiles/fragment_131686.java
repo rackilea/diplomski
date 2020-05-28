@@ -1,6 +1,0 @@
-int timeNow = LocalDateTime.now().getHour();
-if(timeNow >= 9 && timeNow <= 10) {
-  ...
-} else {
-  ...
-}

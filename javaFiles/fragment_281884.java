@@ -1,6 +1,0 @@
-try {
-          // ...
-        } catch (Exception e) {
-          // Fall through to the return afterwards...
-        }
-        return null;

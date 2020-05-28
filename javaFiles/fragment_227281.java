@@ -1,9 +1,0 @@
-String veryFar;
-...
-if (resut == -1) {
-    veryFar = numNames[bii[1].intValue()];
-    ...
-} else if (resut == 1 || resut == 0) {
-    veryFar = numNames[bii2[1].intValue()];
-    ...
-}

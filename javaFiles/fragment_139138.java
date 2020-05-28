@@ -1,6 +1,0 @@
-@Autowired
-WebApplicationContext ctx;
-
-...
-   ServletContextListener listener = new ContextLoaderListener(ctx);
-...

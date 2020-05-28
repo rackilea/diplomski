@@ -1,9 +1,0 @@
-ColoringCellRenderer r = new ColoringCellRenderer();
-// Assign renderer to table...
-...
-
-// Later, highlight cells:
-r.setHighlighted(4,2,true);
-r.setHighlighted(6,1,true);
-r.setHighlighted(1,5,false);
-...

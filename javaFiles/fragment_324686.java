@@ -1,9 +1,0 @@
-minDistance = (int)AnnualFuelUse.min(distance);
-minMPG = AnnualFuelUse.min(milesPerGallon);
-minCost = AnnualFuelUse.min(totalCost);
-maxDistance = (int)AnnualFuelUse.max(distance);
-maxMPG = AnnualFuelUse.max(milesPerGallon);
-maxCost = AnnualFuelUse.max(totalCost);
-totalDistance = (int)AnnualFuelUse.totalOf(distance);
-totalGallonsUsed = AnnualFuelUse.totalOf(gallonsUsed);
-totalCostSum = AnnualFuelUse.totalOf(totalCost);

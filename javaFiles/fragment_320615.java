@@ -1,9 +1,0 @@
-...
-@Inject
-Event<ArticleEvent> newArticleEvent;
-
-public void publishArticle(Article article) {
-  ...
-  newArticleEvent.fire(new ArticleEvent(article));
-  ...
-}

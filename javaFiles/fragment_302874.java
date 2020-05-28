@@ -1,9 +1,0 @@
-locations:{
-    $groupID:{
-        $userid:{
-            ...
-        },
-        ...
-    },
-    ...
-}

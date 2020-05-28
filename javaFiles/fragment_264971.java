@@ -1,6 +1,0 @@
-...
-try {
-    tex = TextureLoader.getTexture("PNG", this.getClass().getResourceAsStream("/res/" + file + ".png");
-} catch (FileNotFoundException e) {
-     ...
-}

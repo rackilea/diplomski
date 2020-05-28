@@ -1,6 +1,0 @@
-// Using Workbook from Apache POI for example...
-Workbook wb;
-// ...
-ByteArrayOutputStream bos = new ByteArrayOutputStream();
-wb.write(bos);
-InputStream bis = new ByteArrayInputStream(bos.toByteArray());

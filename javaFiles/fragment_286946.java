@@ -1,6 +1,0 @@
-pst=(PreparedStatement) con.prepareStatement(sql1);
-
-pst.setInt(1, a);
-pst.setString(2, ...
-...  
-pst.executeUpdate();

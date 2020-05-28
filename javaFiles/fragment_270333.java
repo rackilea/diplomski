@@ -1,6 +1,0 @@
-public interface Dao<T>
-{
-    //...
-    List<T> getAllItems();
-    //...
-}

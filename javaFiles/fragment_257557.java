@@ -1,6 +1,0 @@
-public void click(IntWrapper wrapper) {
-    if (wrapper == a) {
-        ...
-    }
-    ...
-}

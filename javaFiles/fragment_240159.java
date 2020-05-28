@@ -1,6 +1,0 @@
-...
-        // add it
-        MimeMultipart multipart = new MimeMultipart("related");
-        multipart.addBodyPart(messageBodyPart);
-        // second part (the image)
-        ...

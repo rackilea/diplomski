@@ -1,6 +1,0 @@
-class FooBar {
-
-    class Foo {
-      ...
-    }
-}

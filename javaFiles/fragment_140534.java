@@ -1,9 +1,0 @@
-public class PoincareTransform implements Transform {
-   private Matrix matrix;
-   public Transform compose(Transform t) {
-     if (!t.hasMatrix()) {
-       // Throw an exception, or some other meaningful error.
-     }
-     ...
-   }
-}

@@ -1,6 +1,0 @@
-private <T> List<T> GetListFromFile(String filename, Class<T> elementType) {
-    ...
-    TypeToken<ArrayList<T>> token = new TypeToken<ArrayList<T>>() {};
-    List<T> something = gson.fromJson(data, token.getType());
-    ...
-}

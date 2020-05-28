@@ -1,8 +1,0 @@
-update()
- {
-    if(!isPaused)
-    {
-       animateBall();
-     }
-     ...
- }

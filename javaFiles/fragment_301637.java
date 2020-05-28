@@ -1,6 +1,0 @@
-....
-Element element = root.getChild("body")    
-if (element == null)
-    return null;
-List children = element.getChildren();
-...

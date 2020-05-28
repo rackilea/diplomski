@@ -1,6 +1,0 @@
-public byte[] serializeData(T object) throws IOException {
-    ...
-    FieldSerializer<?> serializer = new FieldSerializer<T>(kryo, object.getClass());
-    kryo.register(object.getClass(), serializer);
-    ...
-}

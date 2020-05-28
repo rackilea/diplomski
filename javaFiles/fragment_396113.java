@@ -1,9 +1,0 @@
-router.route().handler(io.vertx.rxjava.ext.web.handler.CorsHandler.create("https://login.com")
-.allowedMethod(io.vertx.core.http.HttpMethod.GET)
-.allowedMethod(io.vertx.core.http.HttpMethod.POST)
-.allowedMethod(io.vertx.core.http.HttpMethod.OPTIONS)
-.allowCredentials(true)
-.allowedHeader("Access-Control-Allow-Method")
-.allowedHeader("Access-Control-Allow-Origin")
-.allowedHeader("Access-Control-Allow-Credentials")
-.allowedHeader("Content-Type"));

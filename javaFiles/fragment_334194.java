@@ -1,6 +1,0 @@
-Path path = Paths.get(filename);
-try (BufferedReader bufferedReader =
-             Files.newBufferedReader(path, Charset.defaultCharset())) {
-     line = ...
-     ...
-} // Automatic close.

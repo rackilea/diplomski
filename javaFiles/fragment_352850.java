@@ -1,6 +1,0 @@
-@Configuration
-...
-@ImportResource("classpath:/hadoopContext.xml")
-public classConfig {
-...
-}

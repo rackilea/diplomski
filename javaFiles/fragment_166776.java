@@ -1,6 +1,0 @@
-...
-initComponents();
-ActionListener actionListener = new tCalculator();
-btn1.addActionListener(actionListener);
-btn2.addActionListener(actionListener);
-....

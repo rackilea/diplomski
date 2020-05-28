@@ -1,6 +1,0 @@
-android {
-    // ...
-    dexOptions {
-        dexInProcess = false
-    }
-}

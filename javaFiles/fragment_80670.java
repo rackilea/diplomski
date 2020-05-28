@@ -1,6 +1,0 @@
-public lightPanel(int room_num) {
-    ...
-    dimPanel1 = new makeComponents.DimSlider(1);
-    dimmer1 = ((makeComponents) dimPanel1).passBrightnessfromDimSlider();
-    ...
-}

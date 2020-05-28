@@ -1,6 +1,0 @@
-@RequestMapping("/home")
-public String showHome(ModelMap model) {
-    model.get("loginUser");...
-    model.get("signUpUser");...
-    return "home";
-}

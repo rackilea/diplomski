@@ -1,6 +1,0 @@
-task copyToLib(type: Copy, dependsOn: classes) {
-    ...
-    doLast {
-        ext.serverPath = ...
-    }
-}

@@ -1,9 +1,0 @@
-"students_key": {
-    "student_key_one": {
-       ...
-    }
-    "student_key_two": {
-       ...
-    }
-    ...
- }

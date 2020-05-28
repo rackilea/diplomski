@@ -1,6 +1,0 @@
-.....
-SalesPerson tmp = new SalesPerson(salespersonID, salespersonName, productType, unitsSold, unitPrice);
-salesPeople.add(tmp);
-
-}while (newRecord == true)
-....

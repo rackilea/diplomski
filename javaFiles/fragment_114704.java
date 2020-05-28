@@ -1,6 +1,0 @@
-DirectoryStream.Filter<Path> pathFilter = ...
-try (DirectoryStream<Path> directoryStream = Files.newDirectoryStream(Paths.get(directory), pathFilter)) {
-    for (Path path : directoryStream) {
-        ...
-    }
-} catch (IOException ex) {}

@@ -1,6 +1,0 @@
-class Streams {
-   // I don't know where "server" come from
-   public static BufferedReader in = ...
-   public static PrintStream out = ...
-
-}

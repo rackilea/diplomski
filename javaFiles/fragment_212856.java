@@ -1,6 +1,0 @@
-TextView mTextView;
-...
-protected void onCreateSetContentView() {
-    mTextView = (TextView) findViewById(R.id.splashTitle);
-    ...
-}

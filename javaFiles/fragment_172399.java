@@ -1,9 +1,0 @@
-// ...
-
-double average = Double.NaN; // NaN means not a number
-
-// ...
-
-average = (double) total / numberCounter;
-
-// ...

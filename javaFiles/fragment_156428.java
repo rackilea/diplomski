@@ -1,9 +1,0 @@
-// when zipping:
-ZipEntry e = ...
-e.setTime(file.lastModified());
-
-...
-
-// when unzipping
-File file = ...
-file.setLastModified(e.getTime());

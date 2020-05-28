@@ -1,6 +1,0 @@
-void someMethod() {
-    //...
-    Security securityObject = applicationContext.getBean("securityObject"); // 1
-    securityObject.doSomething(); // 2
-    //...
-}

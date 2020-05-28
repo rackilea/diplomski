@@ -1,6 +1,0 @@
-public final void write(final T t, final Type type, MediaType contentType, HttpOutputMessage outputMessage)
-            throws IOException, HttpMessageNotWritableException {
-    ...
-    writeInternal(t, type, outputMessage);
-    ...
-}

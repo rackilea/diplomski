@@ -1,6 +1,0 @@
-repositories {
-        maven { url "https://jitpack.io" }
-    }
-    dependencies {
-        compile 'com.github.MyUser:MyRepo:-SNAPSHOT'
-    }

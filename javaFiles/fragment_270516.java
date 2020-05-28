@@ -1,6 +1,0 @@
-try {
-   born = year - (Integer.parseInt(age));
-   ...
-} catch {
-   ...
-}

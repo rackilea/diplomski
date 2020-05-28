@@ -1,6 +1,0 @@
-...
-for (int i = 0; i < array.length(); i++) {
-   JSONObject obj = array.getJSONObject(i);
-   System.out.println("OBJ: " + obj);
-}
-...

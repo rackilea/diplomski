@@ -1,9 +1,0 @@
-<fileSet>
-        <directory>${project.build.directory}/lib</directory>
-        <outputDirectory>/lib</outputDirectory>
-        <filtered>false</filtered>
-        <includes>
-            <include>*.jar</include>
-        </includes>
-        <fileMode>0600</fileMode>
-    </fileSet>

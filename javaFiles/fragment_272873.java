@@ -1,6 +1,0 @@
-String[] a = genArray();
-...
-for (int i = 0; i < a.length; i++) {
-    String s = a[i];
-    // ...
-}

@@ -1,6 +1,0 @@
-...
-    public class Game extends JFrame {
-
-    JFrame frame;
-
-    public static void LoadUI()....

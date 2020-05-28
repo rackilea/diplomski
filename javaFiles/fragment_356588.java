@@ -1,7 +1,0 @@
-jfx {
-// ...
-    bundleArguments = [
-        'installdirChooser': true
-    ]
-// ...
-}

@@ -1,6 +1,0 @@
-setCachingEnabled(true);
-setAuthenticationCachingEnabled(true);
-setAuthorizationCachingEnabled(true);
-setCacheManager(new InfinispanCacheManager(securityCacheManager));
-setAuthenticationCacheName(authenticationCacheName);
-setAuthorizationCacheName(authorizationCacheName);

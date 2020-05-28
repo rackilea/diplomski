@@ -1,6 +1,0 @@
-public class Room {
-    ...
-    @ManyToMany(....
-    public Set<SeminarLecture> getSeminarLectures() {
-        return this.seminarLectures;
-    }

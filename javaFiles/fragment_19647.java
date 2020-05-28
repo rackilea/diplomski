@@ -1,6 +1,0 @@
-public void doIt(Object... args)...
-
-Object[] foo = ...
-
-doIt(foo);  // passes foo as the argument array
-doIt((Object) foo); // passes new Object[]{foo} as the argument array.

@@ -1,6 +1,0 @@
-...
-    //writing the workbook in a new file, it is like SAVE AS
-    XSSFFormulaEvaluator evaluator = workbook.getCreationHelper().createFormulaEvaluator();
-    evaluator.evaluateAll();
-    workbook.write(fileOut);
-...

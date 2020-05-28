@@ -1,6 +1,0 @@
-public void surfaceChanged(SurfaceHolder holder, int format, int w, int h) {
-...
-  mCamera.addCallbackBuffer(callbackBuffer);
-  mCamera.setPreviewCallbackWithBuffer(class that implements PreviewCallback);
-...
-}

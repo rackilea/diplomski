@@ -1,6 +1,0 @@
-String s1 = new String("Keval");     
-....
-hs.add(s1); 
-....
-s1 = new String("Demo");        
-hs.remove(s1);

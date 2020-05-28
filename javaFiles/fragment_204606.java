@@ -1,8 +1,0 @@
-public static LocalBroadcastManager getInstance(Context context) {
-    synchronized (mLock) {
-        if (mInstance == null) {
-            mInstance = new LocalBroadcastManager(context.getApplicationContext());
-        }
-        return mInstance;
-    }
-}

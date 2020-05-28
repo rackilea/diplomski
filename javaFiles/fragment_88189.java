@@ -1,9 +1,0 @@
-class MyTransformClassName.MyTransformFn extends...
-  @ProcessElement
-  public void processElement(ProcessContext c, ...) {
-    ...
-    result = ...
-    if (result != null) {
-       c.output(result);   //only output something that's not null
-    }
-  }

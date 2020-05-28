@@ -1,7 +1,0 @@
-60  9:59:34 03/10/2012  4.0285909   emulator-arm.exe    192.168.1.36    XX.XX.XXX.XXX   HTTP    HTTP:Request, POST /es/login.php    {HTTP:13, TCP:12, IPv4:11}
-65  9:59:34 03/10/2012  4.1524735   emulator-arm.exe    192.168.1.36    XX.XX.XXX.XXX   HTTP    HTTP:HTTP Payload, URL: /es/login.php   {HTTP:13, TCP:12, IPv4:11}
-75  9:59:35 03/10/2012  4.6276286   emulator-arm.exe    XX.XX.XXX.XXX   192.168.1.36    HTTP    HTTP:Response, HTTP/1.1, Status: Moved temporarily, URL: /es/login.php  {HTTP:13, TCP:12, IPv4:11}
-77  9:59:35 03/10/2012  4.7095994   emulator-arm.exe    192.168.1.36    XX.XX.XXX.XXX   HTTP    HTTP:Request, GET /es/login.php, Query:FASID=a5e39f35325499e060f43d35bc956a45   {HTTP:13, TCP:12, IPv4:11}
-311 9:59:55 03/10/2012  24.8355823  emulator-arm.exe    XX.XX.XXX.XXX   192.168.1.36    HTTP    HTTP:Response, HTTP/1.1, Status: Moved temporarily, URL: /es/login.php  {HTTP:13, TCP:12, IPv4:11}
-313 9:59:55 03/10/2012  24.9384843  emulator-arm.exe    192.168.1.36    XX.XX.XXX.XXX   HTTP    HTTP:Request, GET /es/main.html, Query:FASID=a5e39f35325499e060f43d35bc956a45   {HTTP:13, TCP:12, IPv4:11}
-317 9:59:55 03/10/2012  25.0535818  emulator-arm.exe    XX.XX.XXX.XXX   192.168.1.36    HTTP    HTTP:HTTP Payload, URL: /es/main.html   {HTTP:13, TCP:12, IPv4:11}

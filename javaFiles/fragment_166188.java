@@ -1,9 +1,0 @@
-$(".deleteBox").change(function(){
-  if($(".deleteBox:checked").length){
-    console.log("true");
-    $("#deletePanel").css("display","inline");
-  }else{
-    $("#deletePanel").css("display","none");
-    console.log("false");
-  }
-});

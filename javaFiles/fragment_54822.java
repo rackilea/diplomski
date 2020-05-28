@@ -1,6 +1,0 @@
-<build>
-  ...
-  <finalName>${project.artifactId}_${project.version}</finalName>
-  <!--this is the default value
-  <finalName>${artifactId}-${version}</finalName-->
-  ...

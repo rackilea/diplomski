@@ -1,6 +1,0 @@
-List<List<Integer>> graph = new ArrayList<List<Integer>>();
-// add a bunch of things ...
-// ...
-
-// Now, to sort:
-graph.sort((x,y) -> Integer.compare(x.get(0), y.get(0)));

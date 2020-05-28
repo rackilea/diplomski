@@ -1,6 +1,0 @@
-"foo.bar.Log4j": {
-  "name=foo,type=MyLogger": {
-    "desc": ...
-    "attr": {
-        ...
-}}}

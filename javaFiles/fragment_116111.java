@@ -1,6 +1,0 @@
-public class RestResponse implements Type {
-
-    public RestResponse() {}
-
-    ...
-    ...

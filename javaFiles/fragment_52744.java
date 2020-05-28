@@ -1,6 +1,0 @@
-...
-// Using Elements to get the Meta data
-Elements post = doc.select("div[class=col-xs-12]");
-// Locate the content attribute
-pst = post.text();
-...

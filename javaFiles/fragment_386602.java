@@ -1,6 +1,0 @@
-...
-apply plugin: 'kotlin-android'
-...
-sourceSets {
-    main.java.srcDirs += 'src/main/kotlin'
-}

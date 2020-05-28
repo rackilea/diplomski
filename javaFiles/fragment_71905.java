@@ -1,6 +1,0 @@
-@Override
-public void run() {
-    // ...
-    Thread.currentThread().setName("NO_THREAD_YET");
-    // ...
-}

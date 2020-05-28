@@ -1,6 +1,0 @@
-public static void main(String[] args) {
- SessionFactory sessionFactory = null;
- try{
- ...
-  sessionFactory = new MetadataSources( registry ).buildMetadata().buildSessionFactory();
-...

@@ -1,6 +1,0 @@
-...
-} else {
-    Notification.show("", Notification.Type.ERROR_MESSAGE);
-    return new ByteArrayOutputStream();
-}
-...

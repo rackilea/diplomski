@@ -1,7 +1,0 @@
-class Base
-{
-  Foo makeFoo()
-  {
-  }
-  ...
-};

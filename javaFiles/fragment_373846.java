@@ -1,9 +1,0 @@
-<resources>
-    <resource>
-        <directory>${project.basedir}</directory>
-        <targetPath>${project.build.directory}</targetPath>
-        <includes>
-            <include>chromedriver.exe</include>
-        </includes>
-    </resource> 
-</resources>

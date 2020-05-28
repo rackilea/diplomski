@@ -1,9 +1,0 @@
-@Entity
-@Table(name = "Tag")//map to the same table
-@NamedNativeQueries({
-  @NamedNativeQuery(name ="TagStatistic.someName",
-          resultClass =  TagStatistic.class,
-          query = "select tag as id, count(rt.request) as count ....
-...
-public class TagStatistic{
-...

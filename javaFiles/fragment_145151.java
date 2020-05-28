@@ -1,6 +1,0 @@
-offsetContentStart = (documentOutputStream.toString().indexOf("Contents <") + 10 - 1);
-offsetContentEnd = (documentOutputStream.toString().indexOf("000000>") + 7);
-...
-int xrefOffset = docString.indexOf("xref");
-...
-int startxrefOffset = docString.indexOf("startxref");

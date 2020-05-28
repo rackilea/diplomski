@@ -1,6 +1,0 @@
-...
-if (total == 21) {
-     System.out.println("You picked the last matchstick... YOU LOSE!!!");
-     return;
-}
-  ...

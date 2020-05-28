@@ -1,7 +1,0 @@
-project(":android") {
-    ...
-    dependencies {
-        ...
-        // here
-    }
-}

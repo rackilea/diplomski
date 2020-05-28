@@ -1,9 +1,0 @@
-...
-List<CanHunt> hunters = new LinkedList();
-hunters.add(new Dog());
-hunters.add(new Lion());
-
-for(CanHunt h:hunters){
-  h.getHunter().hunt(); //we don't know if it's a dog or a lion here...
-}
-...

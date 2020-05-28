@@ -1,6 +1,0 @@
-IManagerDescription IActivePivotManager.getDescription();
-List<ISchemaInstanceDescription> IManagerDescription.getSchemas();
-ISchemaDescription ISchemaInstanceDescription.getSchemaDescription();
-List<IActivePivotInstanceDescription> getActivePivotInstanceDescriptions();
-IActivePivotDescription IActivePivotInstanceDescription.getActivePivotDescription();
-...

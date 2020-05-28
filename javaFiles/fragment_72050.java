@@ -1,6 +1,0 @@
-public class TextToSpeech {
-    public class Engine {
-        // ...
-    }
-    // ...
-}

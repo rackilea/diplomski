@@ -1,7 +1,0 @@
-grant codebase "jrt:/jdk.jstatd" {    
-   permission java.security.AllPermission;    
-};
-
-grant codebase "jrt:/jdk.internal.jvmstat" {    
-   permission java.security.AllPermission;    
-};

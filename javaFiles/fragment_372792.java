@@ -1,6 +1,0 @@
-// server is listening
-while (true){
-...
-new Thread(new ClientHandler(client, desktop)).start();
-...
-}

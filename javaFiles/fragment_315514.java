@@ -1,6 +1,0 @@
-JTable jt=new JTable(rowsArray,columnNames);  
-jt.setBounds(30,40,200,300);   // you can put dimension as per your wish...
-
-JScrollPane sp=new JScrollPane(jt);  
-jPanel2.add(sp);
-// code fore set visible true to jpanel2...

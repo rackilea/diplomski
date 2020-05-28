@@ -1,6 +1,0 @@
-private Collection<T> queryStatement(String SelectStatement, Class<T> resultType) {
-    ...
-    Query query = getEntityManager().createNativeQuery(SelectStatement, resultType);
-    List<T> resultList = (List<T>) query.getResultList();
-    ...
-}

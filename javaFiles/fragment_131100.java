@@ -1,6 +1,0 @@
-if(args[0].equals("asc")) {
-...
-}
-else {
-...
-}

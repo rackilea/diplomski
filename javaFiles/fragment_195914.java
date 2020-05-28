@@ -1,6 +1,0 @@
-Exception in thread "main" java.io.FileNotFoundException: ::{031E4825-7B94-4DC3-B131-E946B44C8DD5}\Pictures.library-ms\hej.txt (The system cannot find the path specified)
-at java.io.FileOutputStream.open(Native Method)
-at java.io.FileOutputStream.<init>(FileOutputStream.java:212)
-at java.io.FileOutputStream.<init>(FileOutputStream.java:165)
-at java.io.FileWriter.<init>(FileWriter.java:90)
-at test.Main.main(Main.java:16)

@@ -1,8 +1,0 @@
-.chart-plot-background {
-  -fx-background-color: transparent;
-}
-.chart-alternative-row-fill {
-  -fx-fill: transparent;
-  -fx-stroke: transparent;
-  -fx-stroke-width: 0;
-}

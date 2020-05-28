@@ -1,9 +1,0 @@
-import java.nio.ByteBuffer;
-...
-
-private double Flow_Rate= 8.0; 
-...
-
-byte[] rate_buffer = new byte[8];
-ByteBuffer.wrap(rate_buffer).putDouble(Flow_Rate); 
-...

@@ -1,6 +1,0 @@
-public @interface WebMvcTest {
-  ...
-    @AliasFor("controllers")
-    Class<?>[] value() default {};
-  ...
-}

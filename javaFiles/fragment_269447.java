@@ -1,6 +1,0 @@
-Class<?> someClass = ....
-URL [] classPathWithAnnotations = ....
-
-ClassLoader cl = new URLClassLoader(classPathWithAnnotations);
-Annotation a = someClass.getAnnotation(cl.loadClass("somepkg.SomeAnnotation"));
-// a will be null

@@ -1,6 +1,0 @@
-public class Explorer2 {
-    ...
-    private ArrayList<Integer> nonwallDirections = new ArrayList<Integer>();
-    private ArrayList<Integer> passageDirections = new ArrayList<Integer>();
-    ...
-}

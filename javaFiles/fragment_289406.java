@@ -1,6 +1,0 @@
-PrintWriter out = response.getWriter();
-try {
-....
-} catch (IOException e) {
-....
-}

@@ -1,7 +1,0 @@
-CREATE TRIGGER DeleteOneRecordOnOverflow
-AFTER INSERT ON MyTable
-FOR EACH ROW
-WHEN (SELECT COUNT(*) FROM MyTable) > 1000
-BEGIN
-    DELETE FROM MyTable WHERE rowid = (SELECT MIN(rowid) FROM MyTable);
-END;

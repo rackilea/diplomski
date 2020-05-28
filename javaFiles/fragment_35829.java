@@ -1,6 +1,0 @@
-//...
-constraintName=alter_table_constraint_name 'CHECK' content=contentRule  #alterTableAddCheck
-//...
-
-
-contentRule : ~(';')+;

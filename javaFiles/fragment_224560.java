@@ -1,6 +1,0 @@
-; ...
-  :trust-store "truststore"  ; XXX
-  :trust-store-pass "secret" ; XXX
-  :keystore "keystore.pfx"
-  :keystore-pass "****"
-  ; ...

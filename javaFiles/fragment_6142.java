@@ -1,6 +1,0 @@
-...
-    @Override
-    public void remove(T t) {
-        Foo.this.remove(t);         
-    }
-...

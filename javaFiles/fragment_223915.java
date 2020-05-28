@@ -1,6 +1,0 @@
-public class appBucksAdv extends QtActivity
-{
- ...
- static appBucksAdv getActivity() { return thisActivity; }
- ...
-}

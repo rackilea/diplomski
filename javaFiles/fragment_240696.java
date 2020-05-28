@@ -1,6 +1,0 @@
-public class GameBoard extends javax.swing.JFrame {
-    //...
-    private Grid grid;
-    public GameBoard(Grid grid) {
-        this.grid = grid;
-        //...

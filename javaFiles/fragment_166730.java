@@ -1,6 +1,0 @@
-void xmlExport(String fileName) throws IOException, TransformerConfigurationException
-{
-     // ...
-     File file = new File(fileName);
-     // ...
- }

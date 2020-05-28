@@ -1,6 +1,0 @@
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-    ...
-    MovieDetailsAdapter ca = new MovieDetailsAdapter(createList(5));
-    ...
-}

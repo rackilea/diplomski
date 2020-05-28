@@ -1,6 +1,0 @@
-MERGE INTO NT_PROPERTY D  
-      USING (SELECT * FROM DUAL ) S  
-      ON (D.NAME = 'minDPTObjectId')  
-      WHEN MATCHED THEN UPDATE SET D.VALUE =   '1234' 
-      WHEN NOT MATCHED THEN INSERT (NAME, VALUE, NOTE) 
-      VALUES ('maxDPTObjectId', '1111', 'Ending DPT Object Id') ;

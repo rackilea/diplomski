@@ -1,6 +1,0 @@
-public static boolean checkMemberID(int memberId) ... {
-    int memberId
-    ...
-    String id;
-    ...
-    if(id.equals(memberId)){

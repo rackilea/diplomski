@@ -1,6 +1,0 @@
-public <V extends ListResponse<T>> List<T> getAll(JSONObject response, TypeToken<V> token) throws IOException {
-    ...
-    V responseObject = 
-        Shared.gson.fromJson(response.toString(), token.getType());
-    ...
-}

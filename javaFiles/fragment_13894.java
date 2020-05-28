@@ -1,9 +1,0 @@
-DefaultTableModel model = (DefaultTableModel)table.getModel();
-for (int i = model.getRowCount() - 1; i >= 0; i--) { // ends condition is updated dinamically
-    ...
-    if (str1 != null) {
-        model.removeRow(i);            
-        ...
-    }
-    ...
-}

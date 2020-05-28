@@ -1,6 +1,0 @@
-android {
-    ....
-    dataBinding {
-        enabled = true
-    }
-}

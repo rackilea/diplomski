@@ -1,7 +1,0 @@
-CREATE TABLE t
-  ( a NUMBER(2)
-  );
-INSERT INTO t VALUES
-  (10.2
-  );
-SELECT * FROM t;

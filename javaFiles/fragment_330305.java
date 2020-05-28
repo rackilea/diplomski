@@ -1,6 +1,0 @@
-// ...
-
-File confFile = new File("./conf/conf.xml"); 
-confFile.getParentFile().mkdirs();
-
-// ...

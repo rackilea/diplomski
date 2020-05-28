@@ -1,6 +1,0 @@
-class A implements Serializable {
-}
-
-...
-    HashMap<Integer,A> hmap;
-...

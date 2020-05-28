@@ -1,6 +1,0 @@
-@Entity
-public class Actels {
- ...
-private int region_id_region;
- ...
- }

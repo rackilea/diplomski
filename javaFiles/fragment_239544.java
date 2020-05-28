@@ -1,7 +1,0 @@
-[
-  {
-    "publisher": "Allrecipes.com",
-    ...
-  },
-    ...
-]

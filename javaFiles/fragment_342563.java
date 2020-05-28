@@ -1,7 +1,0 @@
-Observable.range(1, 10)
-.subscribeOn(Schedulers.computation())
-.map(v -> v * v)                       // (1)
-.observeOn(Schedulers.io())
-.map(v -> -v)                          // (2)
-.toBlocking()
-.subscribe(System.out::println);       // (3)

@@ -1,6 +1,0 @@
-...
-    else
-    {
-        throw new IllegalArgumentException("...");
-    }
-    ...

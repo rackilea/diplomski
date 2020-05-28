@@ -1,6 +1,0 @@
-// ...
-        try {
-            session = HibernateUtil.getSessionFactory().openSession();
-            user =  (User) session.get(User.class, user_id);
-        } catch (Exception e) {
- // ...

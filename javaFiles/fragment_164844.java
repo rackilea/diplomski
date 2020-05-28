@@ -1,9 +1,0 @@
-additiveExpression 
-:   multiplicativeExpression
-    (   
-        (   '+'
-        |   '-'
-        )
-        multiplicativeExpression
-     )*
-;

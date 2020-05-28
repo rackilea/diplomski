@@ -1,6 +1,0 @@
-SubClass subClass = ...
-BaseClass baseClass = ...
-
-ToDTOMapper mapper = ToDTOMapper.MAPPER;
-BaseSubDTO dto = mapper.map(subClass);
-dto = mapper.map(baseClass);

@@ -1,6 +1,0 @@
-@ManagedBean(name="bean2")
-@SessionScoped
-public class Bean2 {
-    ....
-    ....
-}

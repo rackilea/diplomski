@@ -1,6 +1,0 @@
-public class DeviceAdminSample extends PreferenceActivity {
-   ...
-   public static class DeviceAdminSampleReceiver extends DeviceAdminReceiver {
-   ...
-   }
-}

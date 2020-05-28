@@ -1,6 +1,0 @@
-NTRUSigningKeyPairGenerator ntruSigningKeyPairGenerator = new NTRUSigningKeyPairGenerator();
-NTRUSigningKeyGenerationParameters ntruSigningKeyGenerationParameters = NTRUSigningKeyGenerationParameters.TEST157;
-ntruSigningKeyPairGenerator.init(ntruSigningKeyGenerationParameters);
-AsymmetricCipherKeyPair asymmetricCipherKeyPair = ntruSigningKeyPairGenerator.generateKeyPair();
-NTRUSigningPrivateKeyParameters params = (NTRUSigningPrivateKeyParameters) asymmetricCipherKeyPair.getPrivate();
-System.out.println(Hex.encodeHexString(params.getEncoded()));

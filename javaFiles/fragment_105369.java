@@ -1,7 +1,0 @@
-ALOAD 1
-INVOKEVIRTUAL Data.check ()Z
-IFEQ L3
-ALOAD 1
-ALOAD 2
-INVOKESTATIC Utilities.someOtherCheck (LData;LData;)Z
-IFNE L3

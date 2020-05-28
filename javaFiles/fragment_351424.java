@@ -1,6 +1,0 @@
-public abstract class Activity {    
-    ...
-    ...
-
-    public abstract ActivityType getActivityType();
-}

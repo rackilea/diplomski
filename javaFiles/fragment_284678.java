@@ -1,6 +1,0 @@
-private WeakReference<MyCallBack> caller;   // object to be called back when data arrives
-// ...
-caller = new WeakReference<>(cb);
-// ...
-if (caller.get() != null)
-     // call callback

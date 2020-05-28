@@ -1,6 +1,0 @@
-Set< ZoneID > zones = new TreeSet<>() ;
-zones.add( ZoneId.of( "America/Chicago" ) ;
-zones.add( ZoneId.of( "America/Manitoba" ) ;
-…
-.appendZoneText( TextStyle.SHORT , zones ) 
-…

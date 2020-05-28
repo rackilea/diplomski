@@ -1,9 +1,0 @@
-Matcher m = firstPattern.matcher ...
-if (!m.matches()) {
-    m = secondPattern.matcher ...
-    if (!m.matches()) {
-        continue;
-    }
-}
-name = m.group(NAME_GROUP);
-...

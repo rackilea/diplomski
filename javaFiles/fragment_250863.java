@@ -1,9 +1,0 @@
-String xml = "<resp><status>good</status><msg>hi</msg></resp>";
-XPathFactory xpathFactory = XPathFactory.newInstance();
-XPath xpath = xpathFactory.newXPath();
-InputSource source = new InputSource(new StringReader(xml));
-Document doc = (Document) xpath.evaluate("/", source, XPathConstants.NODE);
-String status = xpath.evaluate("/resp/status", doc);
-String msg = xpath.evaluate("/resp/msg", doc);
-System.out.println("status=" + status);
-System.out.println("Message=" + msg);

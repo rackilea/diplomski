@@ -1,6 +1,0 @@
-Set<String> s = new HashSet<>();
-....
-for (String item : s)
-{
-    do something...
-}

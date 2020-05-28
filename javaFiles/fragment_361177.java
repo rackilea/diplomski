@@ -1,6 +1,0 @@
-public class Account {
-    …
-    @ForeignCollectionField(eager = false)
-    ForeignCollection<Order> orders;
-    …
-}

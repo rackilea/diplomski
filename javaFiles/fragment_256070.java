@@ -1,6 +1,0 @@
-compileSdkVersion 28
-defaultConfig {
-    ......
-    targetSdkVersion 28
-    ......
-}

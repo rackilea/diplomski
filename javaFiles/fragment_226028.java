@@ -1,6 +1,0 @@
-for ( int i = 1 ; i < tokens.length ; i+=2)     // adds two so it skips WID
-{
-    ...
-    placeHolder = tokens[i];
-    ...
-    placeHolder.charAt(...)

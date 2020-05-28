@@ -1,6 +1,0 @@
-........
-XmlMapper xmlMapper = new XmlMapper();
-xmlMapper.configure(DeserializationFeature.UNWRAP_ROOT_VALUE, true);
-xmlMapper.setPropertyNamingStrategy(PropertyNamingStrategy.KEBAB_CASE);
-xmlMapper.enable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
-........

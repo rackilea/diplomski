@@ -1,9 +1,0 @@
-POST /v1/projects/foo-project/regions/global/clusters/
-{
-   ...
-   "gceClusterConfig": {
-      "zoneUri": "https://www.googleapis.com/compute/v1/projects/foo-project/zones/us-west1-a"
-      ...
-   }
-   ...
-}

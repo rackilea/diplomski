@@ -1,7 +1,0 @@
-android{
-   sourceSets {
-       main {
-           jniLibs.srcDirs = ['libs']
-       }
-   }    
-}

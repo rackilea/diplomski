@@ -1,9 +1,0 @@
-if(strStatusID.equals("0"){
-    ...
-} 
-else if(strStatusID.equals("1")){
-    ...
-} 
-else {
-   ...
-}

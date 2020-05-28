@@ -1,6 +1,0 @@
-protected void onCreate(Bundle savedInstanceState) {        
-        ...
-         //RelativeLayout view = (RelativeLayout) findViewById(R.layout.activity_main);
-        RelativeLayout view = (RelativeLayout) findViewById(R.id.root_relativelayout);
-        ...
-  }

@@ -1,9 +1,0 @@
-System.out.println("Saving");
-em.setPps(file.readUTF());
-em.setPps(file.readUTF());
-em.setName(file.readUTF());
-em.setSurname(file.readUTF());
-em.setGender(file.readBoolean());
-em.setDep(file.readUTF());
-em.setSalary(file.readInt());
-em.setFulltime(file.readBoolean());

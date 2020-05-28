@@ -1,7 +1,0 @@
-repositories {
-    mavenCentral()
-}
-dependencies {
-   compile 'com.google.android:android:4.1.1.4'
-   ...
-}

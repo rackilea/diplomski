@@ -1,6 +1,0 @@
-UserAccount account = new UserAccount();
-...
-accountRepository.save(account);
-...
-executive.setUserAccount(account);
-marketingExecutiveService.saveMarketingExecutive(executive);

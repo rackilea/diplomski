@@ -1,6 +1,0 @@
-root.addChild(new BranchGroup());
-...
-root.addChild(ob1);  
-...
-root.addChild(tg);       
-root.addChild(tg1);

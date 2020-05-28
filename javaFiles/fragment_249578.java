@@ -1,9 +1,0 @@
-public static void sendResult(String result) {
-    try {
-        ...
-        ObjectOutputStream os = new ObjectOutputStream(clientSocket.getOutputStream());
-        ...
-    } catch (Exception ex) {
-        ...
-    }
-}

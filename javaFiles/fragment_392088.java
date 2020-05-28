@@ -1,6 +1,0 @@
-class SomeYourDeserializationClass {
-      ...
-        @SerializedName("protected")
-        public String myProtected;
-      ...
-   }

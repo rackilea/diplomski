@@ -1,9 +1,0 @@
-/**
-  comments
-  .... 
-*/
-@Annotation
-type method(){
-    ...
-    ...
- }

@@ -1,7 +1,0 @@
-class X {
-
-    HERE - WHERE THE FIELD DECLARATIONS GO
-
-    X() {
-        STATEMENT SHOULD GO HERE
-    }

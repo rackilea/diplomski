@@ -1,6 +1,0 @@
-// in BasicComboBoxUI
-protected void configureEditor() {
-    ....
-    editor.setFocusable(comboBox.isFocusable());
-    ....
-]

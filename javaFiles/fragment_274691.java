@@ -1,6 +1,0 @@
-@Repository
-public interface PersonRepository extends JpaRepository<Person, AtomicInteger> {
-    ...
-    Person findByCodeAndName(String code, String name);
-    ...
-}

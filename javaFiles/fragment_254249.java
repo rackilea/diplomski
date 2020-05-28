@@ -1,6 +1,0 @@
-try {
-   sendMessageWithAttachment();
-}
-catch {
-   sendMessageWithoutAttachment();
-}

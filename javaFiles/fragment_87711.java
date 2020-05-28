@@ -1,6 +1,0 @@
-@Test
-public void test() {
-    ...
-    Assert.assertEquals(1, TestAppender.events.size());
-    ...
-}

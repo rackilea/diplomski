@@ -1,6 +1,0 @@
-<socket-binding-group name="standard-sockets" default-interface="public" port-offset="${jboss.socket.binding.port-offset:0}">
-    ...
-    <socket-binding name="http" port="${jboss.http.port:80}"/>
-    <socket-binding name="https" port="${jboss.https.port:443}"/>
-    ...
-</socket-binding-group>

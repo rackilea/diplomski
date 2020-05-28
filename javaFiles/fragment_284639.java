@@ -1,6 +1,0 @@
-// in thread 1
-ByteBuffer duplicate = buffer.duplicate();
-// ...
-// in thread 2
-ByteBuffer duplicate = buffer.duplicate();
-// ...

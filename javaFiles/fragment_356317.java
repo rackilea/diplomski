@@ -1,6 +1,0 @@
-JComponent panel = new JLabel(new ImageIcon(ImageIO.read(new File("res/FinalBG.png"))));
-panel.setLayout(new GridBagLayout());
-...
-// continue adding the components as before
-...
-frame.add(panel);

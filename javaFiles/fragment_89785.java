@@ -1,6 +1,0 @@
-for (String code1 : codes) {
-    // ...
-    for (String code2 : codes) {
-        // ...
-    }
-}

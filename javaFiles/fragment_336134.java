@@ -1,6 +1,0 @@
-public static void useQuickDiffPreferencePage(IPreferenceStore store) {
-  MarkerAnnotationPreferences.useQuickDiffPreferencePage(store);
-  store.setToDefault(AbstractDecoratedTextEditorPreferenceConstants.QUICK_DIFF_ALWAYS_ON);
-  store.setToDefault(AbstractDecoratedTextEditorPreferenceConstants.QUICK_DIFF_CHARACTER_MODE);
-  store.setToDefault(AbstractDecoratedTextEditorPreferenceConstants.QUICK_DIFF_DEFAULT_PROVIDER);
-}

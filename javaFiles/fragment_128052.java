@@ -1,6 +1,0 @@
-aJsonObject = new JSONObject();
-// fill JSON as needed...
-String msg = aJsonObject.toString();
-byte[] bytes = msg.toBytes(StandardCharsets.UTF_8);
-int count = bytes.length;
-// use length and bytes as needed...

@@ -1,7 +1,0 @@
-Root node: 1; children=[[data=2], [data=3], [data=4]]
-2; children=[[data=5], [data=7]]
-3; children=[]
-4; children=[[data=6]]
-5; children=[]
-6; children=[]
-7; children=[]

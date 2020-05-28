@@ -1,9 +1,0 @@
-do {
-    String confirm = ...
-    ....
-    if(confirm.equalsIgnoreCase("N")) {
-        break;
-    }
-} while (!confirm.equalsIgnoreCase("Y"))
-
-// Code to run game or whatever is next...

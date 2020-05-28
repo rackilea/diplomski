@@ -1,7 +1,0 @@
-appengine {
-
-  deploy {
-    ...
-    version = '1-2-0
-  }
-}

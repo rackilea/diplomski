@@ -1,6 +1,0 @@
-public class MyStuff {
-...
-@Inject
-IReport myReport;
-...
-}

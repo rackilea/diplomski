@@ -1,7 +1,0 @@
-defaultConfig {
-         minSdkVersion 14 //lower than 14 doesn't support multidex
-         targetSdkVersion 22
-
-         // Enabling multidex support.
-         multiDexEnabled true
-     }

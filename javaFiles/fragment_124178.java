@@ -1,6 +1,0 @@
-StringBuilder sb = new StringBuilder();
-for (i = 0; i < boxes.length; ++i) {
-    ...
-    sb.append(boxes[i].getText() + " ");
-    ...
-}

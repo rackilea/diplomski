@@ -1,7 +1,0 @@
-CREATE TRIGGER ins_b AFTER INSERT ON b
-FOR EACH ROW
-BEGIN
-  UPDATE a 
-  SET hasb = true
-  WHERE id = NEW.a;
-END;

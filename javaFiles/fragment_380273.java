@@ -1,9 +1,0 @@
-String req="UPDATE `fos_user`
-        set `addressmailperso` = ? 
-        ,`pays`  = ? 
-        ,`job` =? 
-        ,`sexe` = ? 
-        , `addressjob` =?
-        ,`skills` = ? 
-        ,`description` =? 
-  WHERE username='"+Apptest.current+"';";

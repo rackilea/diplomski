@@ -1,6 +1,0 @@
-static Queue merge(Queue q1, Queue q2) {
-     ...
-}
-
-//in main()...
-Queue merged = Queue.merge(new1, new2);

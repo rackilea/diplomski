@@ -1,6 +1,0 @@
-public public BoardGraphics(Board board){
-
-    int rows = ...
-    int cols = ...
-    setLayout(new GridLayout(rows, cols, 0, 0));
-    drawElements(rows, cols);

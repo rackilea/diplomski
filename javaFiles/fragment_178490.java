@@ -1,6 +1,0 @@
-public class MyAdapter extends BaseAdapter<BaseModel> 
-{
-    ...
-    protected List<? extends BaseModel> build(JSONArray jsonArray)
-    ...
-}

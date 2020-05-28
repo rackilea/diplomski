@@ -1,9 +1,0 @@
-public void testAction() {
-    QueueService mock = ...
-    ...
-    ServiceFactory serviceFactory = ServiceFactory.getInstance();
-    serviceFactory.setQueueService(mock);
-    ...
-    MyController.action();
-    verify(mock);
-}

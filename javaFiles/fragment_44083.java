@@ -1,9 +1,0 @@
-public class MainActivity extends Activity implements SensorEventListener {
-    ...
-    int cburn = 0;
-    ...
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        ...
-    }
-}

@@ -1,7 +1,0 @@
-{
-        "type": "java",
-        "name": "Debug (Attach)",
-        "request": "attach",
-        "hostName": "localhost",
-        "port": 8000
-}

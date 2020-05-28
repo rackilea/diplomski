@@ -1,6 +1,0 @@
-...
-DataFormat dataformat = workbook.createDataFormat();
-short numFmtId = dataformat.getFormat("0.0");
-
-pivotTable.getCTPivotTableDefinition().getDataFields().getDataFieldArray(0).setNumFmtId(numFmtId);
-...

@@ -1,6 +1,0 @@
-@Configuration
-@EnableAspectJAutoProxy
-...
-class AspectConfiguration{
-...
-}

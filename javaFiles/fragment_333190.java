@@ -1,6 +1,0 @@
-try {
-    c = Integer.parseInt(theApp.tblue.getText());
-    ...
-    message.setText("CE203 Assignment submitted by: Steven Beresford - 1404398");
-    ...
-}

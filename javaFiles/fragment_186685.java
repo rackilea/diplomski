@@ -1,9 +1,0 @@
-FileInputStream fin;
-try {
-    fin = ...
-    //more code goes here...
-} catch (...) {
-    //exception handling...
-} finally {
-    fin.close(); //fin is not even null for the compiler
-}

@@ -1,6 +1,0 @@
-private byte[] getConfigLabel(String parameter) {
-
-     .....
-     String cpclConfigLabel = "! 0 200 200 406 1\r\n" + "ON-FEED IGNORE\r\n" + "BOX 20 20 380 380 8\r\n" + "T 0 6 137 177 " + parameter + "r\n" + "PRINT\r\n";
-     .......
-}

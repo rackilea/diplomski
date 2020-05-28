@@ -1,6 +1,0 @@
-if(turn == 1){
-    ...
-}
-else{       //for turn ==2
-    ...
-}

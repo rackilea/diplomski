@@ -1,9 +1,0 @@
-Integer[] numbers;
-try {
-  ...
-  // set numbers here
-  ...
-} catch (IOException e) {
-  ...
-}
-// can use numbers here

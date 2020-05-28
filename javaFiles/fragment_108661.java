@@ -1,6 +1,0 @@
-CREATE TABLE mytable (
-  id NUMBER PRIMARY KEY,
-  date_created DATE
-);
-
-ALTER TABLE mytable MODIFY date_created DEFAULT SYSTIMESTAMP AT TIME ZONE 'UTC';

@@ -1,9 +1,0 @@
-{  
-   "payment_id":795448840585614,
-   "amount":"0.79",
-   "currency":"GBP",
-   "quantity":"1",
-   "request_id":"xxxx",
-   "status":"completed",
-   "signed_request":"xxx"
-}

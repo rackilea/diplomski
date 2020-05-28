@@ -1,7 +1,0 @@
-// A VERY SIMPLE WHITELISTING POLICY
-    final ImmutableSet<String> okTags = ImmutableSet.of(
-        "a", "b", "br", "div", "i", "img", "input", "li",
-        "ol", "p", "span", "ul");
-
-    final ImmutableSet<String> okAttrs = ImmutableSet.of(
-        "div", "checked", "class", "href", "id", "target", "title", "type");

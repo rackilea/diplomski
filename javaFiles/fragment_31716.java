@@ -1,6 +1,0 @@
-log4j.rootLogger = INFO
-log4j.appender.INFO = org.apache.log4j.DailyRollingFileAppender
-log4j.appender.INFO.File = ${catalina.home}/logs/info.log
-log4j.appender.INFO.Append = true
-log4j.appender.INFO.Threshold = INFO
-log4j.appender.INFO.layout = org.apache.log4j.PatternLayout

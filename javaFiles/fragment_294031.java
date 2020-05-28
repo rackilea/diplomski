@@ -1,6 +1,0 @@
-while(!(guessedSpaces.replaceAll("\\d","").length()==3 && guessedSpaces.split(" ").length-1==3)){
-    .....
-    .....
-    System.out.println("Enter word with white-spaces:");
-    guessedSpaces = keyboard.nextLine();
-}

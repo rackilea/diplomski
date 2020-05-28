@@ -1,6 +1,0 @@
-int size = myList.size();
-for (int i = 0 ; i < size ; i++) {
-    //...
-    Notes note = myList.get(i);
-    //...
-}

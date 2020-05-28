@@ -1,6 +1,0 @@
-rePartition.foreachRDD(new Function<JavaRDD<String>, Void>() {
-     String host = ActiveMQConfig.HOST_ADDRESS 
-     ...
-          System.out.println("Inside :" + host)
-     ...
-}

@@ -1,6 +1,0 @@
-public TypeFE(final String fabricant) {
-   ....
-
-  marticle = allarticles.getTypeForFabricant(fabricant);
-   .....
-}

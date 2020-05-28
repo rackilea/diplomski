@@ -1,6 +1,0 @@
-int numInputs = 5;
-List<Integer> list1 = new LinkedList<Integer>();
-...
-for (int i = 0; i < numInputs; i++) {
-    ...
-}

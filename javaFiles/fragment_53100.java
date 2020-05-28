@@ -1,6 +1,0 @@
-class ABC {
-
-    public ABC() {
-
-    }
-}

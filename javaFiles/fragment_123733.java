@@ -1,7 +1,0 @@
-enum PackagePrivateEnum {
-    PUBLIC_VALUE_1,
-    PUBLIC_VALUE_2,
-    PUBLIC_VALUE_3,
-    PACKAGE_PRIVATE_VALUE_1,
-    PACKAGE_PRIVATE_VALUE_2;
-}
